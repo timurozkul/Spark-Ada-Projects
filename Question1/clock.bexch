@@ -1,0 +1,22 @@
+[MAPPING FILE]
+/home/students/999072/sparkadacoursework/question1/GNAT-TEMP-000003.TMP
+[TOOLCHAIN VERSION]
+ada
+GNAT 2015
+[MAIN BASE NAME]
+clock
+[COMPILER PATH]
+/usr/gnat/bin/gcc
+[COMPILER LEADING SWITCHES]
+-c
+-x
+ada
+-gnatA
+[MAIN DEPENDENCY FILE]
+/home/students/999072/sparkadacoursework/question1/clock.ali
+[DEPENDENCY FILES]
+[BINDING OPTIONS]
+gnatbind_prefix=
+[PROJECT FILES]
+/home/students/999072/sparkadacoursework/question1/default.gpr
+20171018134607

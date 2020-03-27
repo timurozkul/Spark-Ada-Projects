@@ -1,0 +1,70 @@
+V "GNAT Lib v2015"
+A -O2
+A -gnatA
+A -g
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IO
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U spark%s		spark.ads		be55f851 NE OO PK IU
+W ada%s			ada.ads			ada.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+D ada.ads		20171018134701 3ffc8e18 ada%s
+D a-except.ads		20171018134659 5250cb69 ada.exceptions%s
+D a-ioexce.ads		20171018134701 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20171018134700 119b8fb3 ada.streams%s
+D a-tags.ads		20171018134659 dc4d0634 ada.tags%s
+D a-textio.ads		20171018134659 386df5d4 ada.text_io%s
+D a-unccon.ads		20171018134700 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20171018134659 6033a23f interfaces%s
+D i-cstrea.ads		20171018134659 e53d8b8e interfaces.c_streams%s
+D spark.ads		20200214095545 86380d85 spark%s
+D system.ads		20171018134659 1d274481 system%s
+D s-crtl.ads		20171018134659 0ebbdb71 system.crtl%s
+D s-exctab.ads		20171018134700 54135002 system.exception_table%s
+D s-ficobl.ads		20171018134700 078245e4 system.file_control_block%s
+D s-parame.ads		20171018134658 7e2a0d7f system.parameters%s
+D s-soflin.ads		20171018134659 aa763b52 system.soft_links%s
+D s-stache.ads		20171018134700 a37c21ec system.stack_checking%s
+D s-stalib.ads		20171018134659 fa0a3617 system.standard_library%s
+D s-stoele.ads		20171018134701 2dc34a04 system.storage_elements%s
+D s-traent.ads		20171018134700 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20171018134700 9d58a4c0 system.unsigned_types%s
+D s-wchcon.ads		20171018134701 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 19e8 10|35r6 71r16
+X 6 a-textio.ads
+49K13*Text_IO 471e16 10|35w10 71r20
+52P9*File_Type 10|71r28
+X 10 spark.ads
+37K9*SPARK 65E9 74l5 74e10
+49E9*File_Status 59e38 69r16
+49n25*Unopened{49E9} 69r37
+50n25*Success{49E9}
+51n25*Std_File_Error{49E9}
+52n25*Status_Error{49E9}
+53n25*Mode_Error{49E9}
+54n25*Name_Error{49E9}
+55n25*Use_Error{49E9}
+56n25*Device_Error{49E9}
+57n25*End_Error{49E9}
+58n25*Data_Error{49E9}
+59n25*Layout_Error{49E9}
+61R9*Text_IO_File_Type 68c9 72e14
+65E9 Text_IO_File_Sort 65e66 66r25 70r16
+65n31 Std_In{65E9} 66r49
+65n39 Std_Out{65E9}
+65n48 Std_Error{65E9} 66r59
+65n59 A_File{65E9} 70r37
+66E12 Std_Files{65E9}
+69e7*Status{49E9}
+70e7*Sort{65E9}
+71p7*File{6|52P9}
+

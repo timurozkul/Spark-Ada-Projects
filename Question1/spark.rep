@@ -1,0 +1,92 @@
+           *******************************************************
+                         Report of SPARK Examination
+                           SPARK Examiner GPL 2010
+             Copyright (C) 2010 Altran Praxis Limited, Bath, U.K.
+           *******************************************************
+
+
+                        DATE : 06-MAR-2020 09:44:13.24
+
+Options:
+    noswitch
+    noindex_file
+    nowarning_file
+    notarget_compiler_data
+    noconfig_file
+    source_extension=ada
+    listing_extension=lst
+    nodictionary_file
+    report_file=spark.rep
+    nohtml
+    brief=nopath
+    nostatistics
+    fdl_identifiers=accept
+    flow_analysis=information
+    language=95
+    profile=sequential
+    annotation_character=#
+    rules=none
+    error_explanations=off
+    justification_option=full
+    output_directory=/home/students/999072/sparkadacoursework/question1
+    output_directory (actual)=/home/students/999072/sparkadacoursework/question1/
+
+Selected files:
+   /home/students/999072/sparkadacoursework/question1/main.adb
+
+
+No Index files were used
+
+
+No Meta Files used
+
+
+Full warning reporting selected
+
+
+Source Filename(s) used were:
+   /home/students/999072/sparkadacoursework/question1/main.adb
+
+
+
+Source Filename:   /home/students/999072/sparkadacoursework/question1/main.adb
+Listing Filename:  /home/students/999072/sparkadacoursework/question1/main.lst
+
+***     No units in file
+
+
+7 error(s) or warning(s)
+
+Line
+   1  with AS_IO_Wrapper;  use AS_IO_Wrapper; 
+
+                               ^2
+--- (  1)  Warning           :430 - SLI generation abandoned owing to syntax or 
+           semantic errors or multiple units in a single source file.
+*** (  2)  Syntax Error      : reserved word "TYPE" expected.
+
+   2  with Angles;  use Angles; 
+                        ^3
+*** (  3)  Syntax Error      : reserved word "TYPE" expected.
+
+   7     User_Input : String(1 .. 359);
+                            ^4
+*** (  4)  Syntax Error      : ";" or ":=" expected.
+
+  23        AS_Get_Line(User_Input, Last);  -- clearing input buffer 
+                                    ^5
+*** (  5)  Syntax Error      : No EXPRESSION can start with 
+           PREDEFINED_FDL_IDENTIFIER.
+
+  26        AS_Get_Line(User_Input, Last);
+                                    ^6
+*** (  6)  Syntax Error      : No EXPRESSION can start with 
+           PREDEFINED_FDL_IDENTIFIER.
+
+  27        exit when User_Input(1 .. 1) = "n";
+                                   ^7
+*** (  7)  Syntax Error      : No complete SIMPLE_EXPRESSION can be followed by 
+           ".." here.
+
+
+--End of file--------------------------------------------------

@@ -1,0 +1,16 @@
+pragma SPARK_Mode (On)
+
+with Ada.Text_IO; use Ada.Text_IO;
+with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
+
+procedure Angles (X, Y : Integer) is
+   Aux : Integer
+   MaxAngleValue: Integer := 360;
+begin
+      Aux := X + Y;
+      if Aux >= 360 then
+        Put_Line("Sum of two angles: " & Integer'Image (Aux / MaxAngleValue));
+      else
+        Put_Line("Sum of two angles: " & Integer'Image (Aux));
+      end if;
+end angles;

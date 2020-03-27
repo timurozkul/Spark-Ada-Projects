@@ -1,0 +1,125 @@
+constant aux : int
+  
+  constant u : int
+  
+  axiom H : dynamic_property4 first4 last4 x
+  
+  axiom H1 : dynamic_property4 first4 last4 y
+  
+  axiom H2 : first4 <= last4 -> dynamic_property4 first4 last4 u
+  
+  axiom H3 : first1 <= last1 -> dynamic_property1 first1 last1 maxanglevalue
+  
+  axiom H4 : first1 <= last1 -> dynamic_property1 first1 last1 aux
+  
+  constant aux1 : int
+  
+  axiom H5 : aux1 = (x + y)
+  
+  axiom H6 : aux1 >= 360
+
+  ---- Since mod uses division and one can not divide by zero it checks this condition
+  goal WP_parameter_def : not 360 = 0
+end
+
+
+----------------------------------------------------------------
+----------------------------------------------------------------
+
+
+constant aux : int
+  
+  constant u : int
+  
+  axiom H : dynamic_property4 first4 last4 x
+  
+  axiom H1 : dynamic_property4 first4 last4 y
+  
+  axiom H2 : first4 <= last4 -> dynamic_property4 first4 last4 u
+  
+  axiom H3 : first1 <= last1 -> dynamic_property1 first1 last1 maxanglevalue
+  
+  axiom H4 : first1 <= last1 -> dynamic_property1 first1 last1 aux
+  
+  constant aux1 : int
+  
+  axiom H5 : aux1 = (x + y)
+  
+  axiom H6 : aux1 >= 360
+  
+  axiom H7 : not 360 = 0
+  
+  constant u1 : int
+  
+  axiom H8 : u1 = mod2 aux1 360
+  
+  goal WP_parameter_def : (x + y) = u1 \/ ((x + y) - 360) = u1
+end
+
+
+------------------------------------------------------------------
+------------------------------------------------------------------
+
+
+constant aux : int
+  
+  constant u : int
+  
+  axiom H : dynamic_property4 first4 last4 x
+  
+  axiom H1 : dynamic_property4 first4 last4 y
+  
+  axiom H2 : first4 <= last4 -> dynamic_property4 first4 last4 u
+  
+  axiom H3 : first1 <= last1 -> dynamic_property1 first1 last1 maxanglevalue
+  
+  axiom H4 : first1 <= last1 -> dynamic_property1 first1 last1 aux
+  
+  constant aux1 : int
+  
+  axiom H5 : aux1 = (x + y)
+  
+  axiom H6 : not aux1 >= 360
+  
+  goal WP_parameter_def : in_range4 aux1
+end
+
+
+------------------------------------------------------------------
+------------------------------------------------------------------
+
+ constant aux : int
+  
+  constant u : int
+  
+  axiom H : dynamic_property4 first4 last4 x
+  
+  axiom H1 : dynamic_property4 first4 last4 y
+  
+  axiom H2 : first4 <= last4 -> dynamic_property4 first4 last4 u
+  
+  axiom H3 : first1 <= last1 -> dynamic_property1 first1 last1 maxanglevalue
+  
+  axiom H4 : first1 <= last1 -> dynamic_property1 first1 last1 aux
+  
+  constant aux1 : int
+  
+  axiom H5 : aux1 = (x + y)
+  
+  axiom H6 : not aux1 >= 360
+  
+  axiom H7 : in_range4 aux1
+  
+  axiom H8 : in_range4 aux1
+  
+  constant u1 : int
+  
+  axiom H9 : u1 = aux1
+  
+  goal WP_parameter_def : (x + y) = u1 \/ ((x + y) - 360) = u1
+end
+
+
+
+
+

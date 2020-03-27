@@ -1,0 +1,8 @@
+20200313113947
+-c
+-x
+ada
+-gnatA
+-gnatwa
+-gnatc
+-gnates=/Users/timurozkul/criticalhighintegritysystems/timur/gnatprove/8fb7b3ae.tmp

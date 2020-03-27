@@ -1,0 +1,749 @@
+V "GNAT Lib v2015"
+A -g
+A -O2
+A -gnatc
+P GP ZX
+
+RN
+RV NO_ELABORATION_CODE
+
+U spark.text_io.integer_io%b  spark-text_io-integer_io.adb  68995fa1 OO PK IU
+Z ada%s			ada.ads			ada.ali
+Z ada.text_io%s		a-textio.adb		a-textio.ali
+Z ada.text_io.integer_aux%s  a-tiinau.adb	a-tiinau.ali
+W ada.text_io.integer_io%s  a-tiinio.adb	a-tiinio.ali
+W spark.text_io%s	spark-text_io.adb	spark-text_io.ali
+
+U spark.text_io.integer_io%s  spark-text_io-integer_io.ads  df01d5cd EE OO PK IU
+W spark.text_io%s	spark-text_io.adb	spark-text_io.ali
+
+D ada.ads		20171018134719 3ffc8e18 ada%s
+D a-ioexce.ads		20171018134719 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20171018134718 119b8fb3 ada.streams%s
+D a-textio.ads		20171018134717 386df5d4 ada.text_io%s
+D a-tiinau.ads		20171018134718 8114c8e4 ada.text_io.integer_aux%s
+D a-tiinio.ads		20171018134717 aa04e5d6 ada.text_io.integer_io%s
+D a-tiinio.adb		20171018134717 df9cd7af ada.text_io.integer_io%b
+D interfac.ads		20171018134717 6033a23f interfaces%s
+D i-cstrea.ads		20171018134717 e53d8b8e interfaces.c_streams%s
+D spark.ads		20200214095545 86380d85 spark%s
+D spark-text_io.ads	20200214095545 3f556f64 spark.text_io%s
+D spark-text_io-integer_io.ads  20200214095545 e054baa9 spark.text_io.integer_io%s
+D spark-text_io-integer_io.adb  20200214095545 88cde508 spark.text_io.integer_io%b
+D system.ads		20171018134717 1d274481 system%s
+D s-crtl.ads		20171018134718 0ebbdb71 system.crtl%s
+D s-ficobl.ads		20171018134718 078245e4 system.file_control_block%s
+D s-parame.ads		20171018134717 7e2a0d7f system.parameters%s
+D s-wchcon.ads		20171018134718 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 19e8 13|43r34 55r33 64r12 67r12 70r12 73r12 76r12 85r27 89r12 92r12
+. 95r12 98r12 101r12 115r33 119r33 127r12 128r12 129r12 137r27 140r12 142r12
+. 144r12 156r12
+X 4 a-textio.ads
+49K13*Text_IO 471e16 13|43r38 55r37 64r16 67r16 70r16 73r16 76r16 85r31 89r16
+. 92r16 95r16 98r16 101r16 115r37 119r37 127r16 128r16 129r16 137r31 140r16
+. 142r16 144r16 156r16
+52P9*File_Type
+53n32*Out_File{53E9} 12|98r46
+64I9*Count<integer>
+73I12*Field{integer}
+78I12*Number_Base{integer}
+117V13*Standard_Input{52P9} 13|55s45 85s39
+118V13*Standard_Output{52P9} 13|115s45 137s39
+119V13*Standard_Error{52P9} 13|119s45
+292X4*Status_Error 13|64r24 89r24 127r24 140r24
+293X4*Mode_Error 13|67r24 92r24 128r24 142r24
+296X4*Device_Error 13|70r24 95r24 129r24 144r24
+297X4*End_Error 13|73r24 98r24
+298X4*Data_Error 13|76r24 101r24 156r24
+455p4 Current_In{52P9} 13|80r23 82r23
+456p4 Current_Out{52P9} 13|135r23 137r23
+X 5 a-tiinau.ads
+39K29*Integer_Aux 83e28 13|36r36
+41U14*Get_Int 13|62s14 82s14
+46U14*Get_LLI 13|60s14 80s14
+51U14*Put_Int 13|124s14 137s14
+57U14*Put_LLI 13|122s14 135s14
+63U14*Gets_Int 13|103s14
+68U14*Gets_LLI 13|101s14
+73U14*Puts_Int 13|150s14
+78U14*Puts_LLI 13|148s14
+X 6 a-tiinio.ads
+46k21*Integer_IO 85e27 13|43r46
+X 10 spark.ads
+37K9*SPARK 74e10 12|43r9 122r5 13|40r14 166r5
+50n25*Success{49E9} 12|50r15 81r63 96r48 13|56r32 57r28 60r32 61r28 86r26
+. 87r32 117r28 121r28 124r28 138r33 154r26
+52n25*Status_Error{49E9} 12|48r49 13|65r29 66r25 90r29 91r35 127r55 141r36
+53n25*Mode_Error{49E9} 13|52r32 53r28 68r29 69r25 93r29 94r35 113r28 128r55
+. 143r36
+56n25*Device_Error{49E9} 13|71r29 72r25 96r29 97r35 129r55 145r36
+57n25*End_Error{49E9} 13|74r29 75r25 99r29 100r35
+58n25*Data_Error{49E9} 13|77r29 78r25 102r29 103r35 157r29
+65n31 Std_In{65E9} 13|54r15 112r15
+65n39 Std_Out{65E9} 13|51r15 114r15
+65n48 Std_Error{65E9} 13|51r25 118r15
+65n59 A_File{65E9} 13|58r15 122r15
+69e7*Status{49E9} 13|53m18 57m18 61m18 66m15 69m15 72m15 75m15 78m15 87m22
+. 91m25 94m25 97m25 100m25 103m25 113m18 117m18 121m18 124m18 127m45 128m45
+. 129m45 138m23 141m26 143m26 145m26
+70e7*Sort{65E9} 13|50r17 111r17
+71p7*File{4|52P9} 13|59r38 123r38
+X 11 spark-text_io.ads
+49K15*Text_IO 10|37k9 11|774e18 12|43r15 122r11 13|40r20 166r11
+58R9*File_Type<10|61R9> 12|55r34 76r34
+59E9*File_Status<10|49E9> 12|48r34
+60E9*File_Mode<4|53E9>
+61I9*Count<4|64I9>
+64I12*Field{integer} 12|45r29 57r34 66r31 78r30 92r30 13|47r30 82r31 108r30
+. 134r30
+65I12*Number_Base{integer} 12|46r29 79r30 93r30 117r31 13|109r30 135r30 163r31
+102r4*Standard_Input{58R9} 12|67r32 68r23 68r48 69r34 70r27 71r30 72r27 73r30
+. 74r40 13|87m7 91m10 94m10 97m10 100m10 103m10
+103r4*Standard_Output{58R9} 12|94r32 95r22 95r61 96r29 97r30 98r27 99r27
+. 100r30 101r27 102r30 103r34 104r37 105r34 106r37 107r41 13|138m7 141m10
+. 143m10 145m10
+133V13*Status{59E9} 12|81s47 96s21
+139V13*Is_Standard_Input{boolean} 12|74s21
+143V13*Is_Standard_Output{boolean} 12|107s21
+156V13*Is_Standard_File{boolean} 12|63s19 63s45 89s19 89s45
+162V13*Is_Open{boolean} 12|83s19 97s21
+165V13*Mode{60E9} 12|84s19 84s33 98s21
+172V13*Name{string} 12|61s19 61s33 70s21 71s24 85s19 85s33 99s21 100s24
+176V13*Form{string} 12|62s19 62s33 72s21 73s24 86s19 86s33 101s21 102s24
+180V13*Is_Readable{boolean} 12|59s19 60s19 69s21
+184V13*Is_Writable{boolean} 12|81s19 82s19
+345V14*Line_Length{61I9} 12|87s19 87s40 103s21 104s24
+352V14*Page_Length{61I9} 12|88s19 88s40 105s21 106s24
+X 12 spark-text_io-integer_io.ads
+43K23*Integer_IO 11|49k15 12|122l19 122e29 13|40b28 166l19 166t29
+45i4*Default_Width{11|64I12} 78r39 92r39 13|108r39 134r39
+46i4*Default_Base{11|65I12} 79r45 93r45 117r46 13|109r45 135r45 163r46
+48R9*Integer_Result 48d25 53e14 56r34 65r31 110r32 13|46r31 81r31 149r32
+48e25*Status{11|59E9} 49r12
+50i26*Item{integer} 13|56m41 60m41 86m35 154m35
+55U14*Get 55=19 56<19 57>19 13|45b14 79l8 79t11
+55r19 File{11|58R9} 59r32 60r32 61r25 61r39 62r25 62r39 63r37 63r63 13|45b19
+. 50r12 53m13 57m13 59r33 61m13 66m10 69m10 72m10 75m10 78m10
+56r19 Item{48R9} 13|46b19 52m13 56m13 60m13 65m10 68m10 71m10 74m10 77m10
+57i19 Width{11|64I12} 13|47b19 55r66 59r49
+65U14*Get 65<19 66>19 13|81b14 104l8 104t11
+65r19 Item{48R9} 68r38 13|81b19 86m7 90m10 93m10 96m10 99m10 102m10
+66i19 Width{11|64I12} 68r63 13|82b19 85r60
+76U14*Put 76=19 77>19 78>19 79>19 13|106b14 130l8 130t11
+76r19 File{11|58R9} 81r32 81r55 82r32 83r28 84r25 84r39 85r25 85r39 86r25
+. 86r39 87r32 87r53 88r32 88r53 89r37 89r63 13|106b19 111r12 113m13 117m13
+. 121m13 123r33 124m13 127m40 128m40 129m40
+77i19 Item{integer} 13|107b19 116r33 120r33 123r44
+78i19 Width{11|64I12} 13|108b19 116r39 120r39 123r50
+79i19 Base{11|65I12} 13|109b19 116r46 120r46 123r57
+91U14*Put 91>19 92>19 93>19 13|133b14 146l8 146t11
+91i19 Item{integer} 95r42 13|133b19 137r56
+92i19 Width{11|64I12} 95r48 13|134b19 137r62
+93i19 Base{11|65I12} 95r55 13|135b19 137r69
+109U14*Get 109>19 110<19 111<19 13|148b14 159l8 159t11
+109a19 From{string} 113r39 13|148b19 153r27
+110r19 Item{48R9} 113r24 13|149b19 154m7 157m10
+111i19 Last{positive} 113r30 13|150b19 153m38 158m10
+115U14*Put 115<19 116>19 117>19 13|161b14
+115a19 To{string} 119r24 120r23 13|161b19
+116i19 Item{integer} 119r31 120r51 13|162b19
+117i19 Base{11|65I12} 119r37 13|163b19
+X 13 spark-text_io-integer_io.adb
+43K12 Ada_Integer_IO[6|46] 55r13 59r13 85r7 115r13 119r13 123r13 137r7 153r7
+. 164r6
+48i7 Int{integer} 55m61 56r49 59m44 60r49
+83i7 Int{integer} 85m55 86r43
+151i7 Int{integer} 153m33 154r43
+44I9 Num{integer} 48r29[43] 53r19[43] 57r19[43] 62r15[43] 67r15[43] 73r18[43]
+. 78r14[43] 38r35[43] 50r19[43] 70r19[43] 91r18[43] 116r15[43] 129r15[43]
+. 143r14[43]
+48i4*Default_Width{4|73I12} 63r24[43] 68r24[43] 117r24[43] 130r24[43]
+49i4*Default_Base{4|78I12} 64r30[43] 69r30[43] 79r29[43] 118r30[43] 131r30[43]
+. 144r29[43]
+51U14*Get 55s28[43] 59s28[43] 85s22[43]
+52p7 File{4|52P9} 60r23[43] 62r23[43]
+53i7 Item{integer} 60m48[43] 60r48[43] 62m38[43] 62r38[43]
+54i7 Width{4|73I12} 60r55[43] 62r45[43]
+57i7 Item{integer} 80m54[43] 80r54[43] 82m44[43] 82r44[43]
+58i7 Width{4|73I12} 80r61[43] 82r51[43]
+60U14*Put 115s28[43] 119s28[43] 123s28[43] 137s22[43]
+61p7 File{4|52P9} 122r23[43] 124r23[43]
+62i7 Item{integer} 122r48[43] 124r38[43]
+63i7 Width{4|73I12} 122r55[43] 124r45[43]
+64i7 Base{4|78I12} 122r62[43] 124r52[43]
+67i7 Item{integer} 135r55[43] 137r45[43]
+68i7 Width{4|73I12} 135r62[43] 137r52[43]
+69i7 Base{4|78I12} 135r69[43] 137r59[43]
+71U14*Get 153s22[43]
+72a7 From{string} 101r24[43] 103r24[43]
+73i7 Item{integer} 101m49[43] 101r49[43] 103m39[43] 103r39[43]
+74i7 Last{positive} 101m56[43] 103m46[43]
+76U14*Put 164r21[43]
+77a7 To{string} 148m24[43] 150m24[43]
+78i7 Item{integer} 148r47[43] 150r37[43]
+79i7 Base{4|78I12} 148r54[43] 150r44[43]
+38b4 Need_LLI{boolean} 59r10[43] 79r10[43] 100r10[43] 121r10[43] 134r10[43]
+. 147r10[43]
+FD 1 ada.ads
+FS .1 16K9 ada
+FD 2 a-ioexce.ads
+FS .1 18K13 ada__io_exceptions
+FD 3 a-stream.ads
+FS .1 36K13 ada__streams
+FS .2 76U14 ada__streams__read_sea
+FS .3 80U14 ada__streams__write_sea
+FS .4 84U4 ada__streams__stream_element_arraySR
+FS .5 85U4 ada__streams__stream_element_arraySW
+FS .6 84U4 ada__streams__stream_element_arraySR -> 3.4
+FS .7 85U4 ada__streams__stream_element_arraySW -> 3.5
+FD 4 a-textio.ads
+FS .1 49K13 ada__text_io
+FS .2 86U14 ada__text_io__create
+FS .3 92U14 ada__text_io__open
+FS .4 98U14 ada__text_io__close
+FS .5 99U14 ada__text_io__delete
+FS .6 100U14 ada__text_io__reset
+FS .7 101U14 ada__text_io__reset__2
+FS .8 103V13 ada__text_io__mode
+FS .9 104V13 ada__text_io__name
+FS .10 105V13 ada__text_io__form
+FS .11 107V13 ada__text_io__is_open
+FS .12 113U14 ada__text_io__set_input
+FS .13 114U14 ada__text_io__set_output
+FS .14 115U14 ada__text_io__set_error
+FS .15 117V13 ada__text_io__standard_input
+FS .16 118V13 ada__text_io__standard_output
+FS .17 119V13 ada__text_io__standard_error
+FS .18 121V13 ada__text_io__current_input
+FS .19 122V13 ada__text_io__current_output
+FS .20 123V13 ada__text_io__current_error
+FS .21 127V13 ada__text_io__standard_input__2
+FS .22 128V13 ada__text_io__standard_output__2
+FS .23 129V13 ada__text_io__standard_error__2
+FS .24 131V13 ada__text_io__current_input__2
+FS .25 132V13 ada__text_io__current_output__2
+FS .26 133V13 ada__text_io__current_error__2
+FS .27 142U14 ada__text_io__flush
+FS .28 143U14 ada__text_io__flush__2
+FS .29 149U14 ada__text_io__set_line_length
+FS .30 150U14 ada__text_io__set_line_length__2
+FS .31 152U14 ada__text_io__set_page_length
+FS .32 153U14 ada__text_io__set_page_length__2
+FS .33 155V13 ada__text_io__line_length
+FS .34 156V13 ada__text_io__line_length__2
+FS .35 158V13 ada__text_io__page_length
+FS .36 159V13 ada__text_io__page_length__2
+FS .37 165U14 ada__text_io__new_line
+FS .38 166U14 ada__text_io__new_line__2
+FS .39 168U14 ada__text_io__skip_line
+FS .40 169U14 ada__text_io__skip_line__2
+FS .41 171V13 ada__text_io__end_of_line
+FS .42 172V13 ada__text_io__end_of_line__2
+FS .43 174U14 ada__text_io__new_page
+FS .44 175U14 ada__text_io__new_page__2
+FS .45 177U14 ada__text_io__skip_page
+FS .46 178U14 ada__text_io__skip_page__2
+FS .47 180V13 ada__text_io__end_of_page
+FS .48 181V13 ada__text_io__end_of_page__2
+FS .49 183V13 ada__text_io__end_of_file
+FS .50 184V13 ada__text_io__end_of_file__2
+FS .51 186U14 ada__text_io__set_col
+FS .52 187U14 ada__text_io__set_col__2
+FS .53 189U14 ada__text_io__set_line
+FS .54 190U14 ada__text_io__set_line__2
+FS .55 192V13 ada__text_io__col
+FS .56 193V13 ada__text_io__col__2
+FS .57 195V13 ada__text_io__line
+FS .58 196V13 ada__text_io__line__2
+FS .59 198V13 ada__text_io__page
+FS .60 199V13 ada__text_io__page__2
+FS .61 205U14 ada__text_io__get
+FS .62 206U14 ada__text_io__get__2
+FS .63 207U14 ada__text_io__put
+FS .64 208U14 ada__text_io__put__2
+FS .65 210U14 ada__text_io__look_ahead
+FS .66 215U14 ada__text_io__look_ahead__2
+FS .67 219U14 ada__text_io__get_immediate
+FS .68 223U14 ada__text_io__get_immediate__2
+FS .69 226U14 ada__text_io__get_immediate__3
+FS .70 231U14 ada__text_io__get_immediate__4
+FS .71 239U14 ada__text_io__get__3
+FS .72 240U14 ada__text_io__get__4
+FS .73 241U14 ada__text_io__put__3
+FS .74 242U14 ada__text_io__put__4
+FS .75 244U14 ada__text_io__get_line
+FS .76 249U14 ada__text_io__get_line__2
+FS .77 253V13 ada__text_io__get_line__3
+FS .78 256V13 ada__text_io__get_line__4
+FS .79 259U14 ada__text_io__put_line
+FS .80 263U14 ada__text_io__put_line__2
+FS .81 426V13 ada__text_io__afcb_allocate__2
+FS .82 428U14 ada__text_io__afcb_close__2
+FS .83 429U14 ada__text_io__afcb_free__2
+FS .84 431U14 ada__text_io__read__2
+FS .85 437U14 ada__text_io__write__2
+FS .86 460V13 ada__text_io__eof_char
+FS .87 466U14 ada__text_io__initialize_standard_files
+FD 5 a-tiinau.ads
+FS .1 39K29 ada__text_io__integer_aux
+FS .2 41U14 ada__text_io__integer_aux__get_int
+FS .3 46U14 ada__text_io__integer_aux__get_lli
+FS .4 51U14 ada__text_io__integer_aux__put_int
+FS .5 57U14 ada__text_io__integer_aux__put_lli
+FS .6 63U14 ada__text_io__integer_aux__gets_int
+FS .7 68U14 ada__text_io__integer_aux__gets_lli
+FS .8 73U14 ada__text_io__integer_aux__puts_int
+FS .9 78U14 ada__text_io__integer_aux__puts_lli
+FD 6 a-tiinio.ads
+FD 7 a-tiinio.adb
+FD 8 interfac.ads
+FS .1 38K9 interfaces
+FS .2 75V13 interfaces__shift_left
+FS .3 79V13 interfaces__shift_right
+FS .4 83V13 interfaces__shift_right_arithmetic
+FS .5 87V13 interfaces__rotate_left
+FS .6 91V13 interfaces__rotate_right
+FS .7 95V13 interfaces__shift_left__2
+FS .8 99V13 interfaces__shift_right__2
+FS .9 103V13 interfaces__shift_right_arithmetic__2
+FS .10 107V13 interfaces__rotate_left__2
+FS .11 111V13 interfaces__rotate_right__2
+FS .12 115V13 interfaces__shift_left__3
+FS .13 119V13 interfaces__shift_right__3
+FS .14 123V13 interfaces__shift_right_arithmetic__3
+FS .15 127V13 interfaces__rotate_left__3
+FS .16 131V13 interfaces__rotate_right__3
+FS .17 135V13 interfaces__shift_left__4
+FS .18 139V13 interfaces__shift_right__4
+FS .19 143V13 interfaces__shift_right_arithmetic__4
+FS .20 147V13 interfaces__rotate_left__4
+FS .21 151V13 interfaces__rotate_right__4
+FD 9 i-cstrea.ads
+FS .1 37K20 interfaces__c_streams
+FS .2 72V13 interfaces__c_streams__stdin
+FS .3 73V13 interfaces__c_streams__stdout
+FS .4 74V13 interfaces__c_streams__stderr
+FS .5 95V13 interfaces__c_streams__feof
+FS .6 97V13 interfaces__c_streams__ferror
+FS .7 106V13 interfaces__c_streams__fileno
+FS .8 128V13 interfaces__c_streams__fread
+FS .9 134V13 interfaces__c_streams__fread__2
+FS .10 171V13 interfaces__c_streams__fwrite
+FS .11 184V13 interfaces__c_streams__setvbuf
+FS .12 212V13 interfaces__c_streams__file_exists
+FS .13 215V13 interfaces__c_streams__is_regular_file
+FS .14 223U14 interfaces__c_streams__set_binary_mode
+FS .15 224U14 interfaces__c_streams__set_text_mode
+FS .16 254U14 interfaces__c_streams__set_mode
+FS .17 262U14 interfaces__c_streams__full_name
+FD 10 spark.ads
+FS .1 37K9 spark
+FD 11 spark-text_io.ads
+FS .1 49K15 spark__text_io
+FS .2 113U14 spark__text_io__init_standard_input
+FS .3 119U14 spark__text_io__init_standard_output
+FS .4 125U14 spark__text_io__init_standard_error
+FS .5 133V13 spark__text_io__status
+FS .6 139V13 spark__text_io__is_standard_input
+FS .7 143V13 spark__text_io__is_standard_output
+FS .8 147V13 spark__text_io__is_standard_error
+FS .9 151V13 spark__text_io__is_standard_writable
+FS .10 156V13 spark__text_io__is_standard_file
+FS .11 162V13 spark__text_io__is_open
+FS .12 165V13 spark__text_io__mode__2
+FS .13 172V13 spark__text_io__name
+FS .14 176V13 spark__text_io__form
+FS .15 180V13 spark__text_io__is_readable
+FS .16 184V13 spark__text_io__is_writable
+FS .17 191U14 spark__text_io__create__2
+FS .18 211U14 spark__text_io__open__2
+FS .19 229U14 spark__text_io__close
+FS .20 235U14 spark__text_io__delete
+FS .21 241U14 spark__text_io__reset__2
+FS .22 252U14 spark__text_io__reset__3
+FS .23 272U14 spark__text_io__flush
+FS .24 283U14 spark__text_io__flush__2
+FS .25 299U14 spark__text_io__set_line_length__2
+FS .26 310U14 spark__text_io__set_line_length__3
+FS .27 323U14 spark__text_io__set_page_length__2
+FS .28 333U14 spark__text_io__set_page_length__3
+FS .29 345V14 spark__text_io__line_length__2
+FS .30 349V14 spark__text_io__line_length__3
+FS .31 352V14 spark__text_io__page_length__2
+FS .32 356V14 spark__text_io__page_length__3
+FS .33 361U14 spark__text_io__new_line__2
+FS .34 372U14 spark__text_io__new_line__3
+FS .35 386U14 spark__text_io__skip_line__2
+FS .36 395U14 spark__text_io__skip_line__3
+FS .37 404V14 spark__text_io__end_of_line
+FS .38 408V14 spark__text_io__end_of_line__2
+FS .39 411U14 spark__text_io__new_page
+FS .40 421U14 spark__text_io__new_page__2
+FS .41 435U14 spark__text_io__skip_page
+FS .42 443U14 spark__text_io__skip_page__2
+FS .43 452V14 spark__text_io__end_of_page
+FS .44 456V14 spark__text_io__end_of_page__2
+FS .45 459V14 spark__text_io__end_of_file
+FS .46 463V14 spark__text_io__end_of_file__2
+FS .47 467U14 spark__text_io__set_col__2
+FS .48 482U14 spark__text_io__set_col__3
+FS .49 499U14 spark__text_io__set_line__2
+FS .50 514U14 spark__text_io__set_line__3
+FS .51 531V13 spark__text_io__col__3
+FS .52 535V13 spark__text_io__col__4
+FS .53 538V13 spark__text_io__line__3
+FS .54 542V13 spark__text_io__line__4
+FS .55 545V13 spark__text_io__page__3
+FS .56 549V13 spark__text_io__page__4
+FS .57 554U14 spark__text_io__get
+FS .58 562U14 spark__text_io__get__2
+FS .59 577U14 spark__text_io__put
+FS .60 589U14 spark__text_io__put__2
+FS .61 605U14 spark__text_io__look_ahead
+FS .62 615U14 spark__text_io__look_ahead__2
+FS .63 623U14 spark__text_io__get_immediate
+FS .64 632U14 spark__text_io__get_immediate__2
+FS .65 641U14 spark__text_io__get_immediate__3
+FS .66 651U14 spark__text_io__get_immediate__4
+FS .67 663U14 spark__text_io__get__3
+FS .68 674U14 spark__text_io__get__4
+FS .69 686U14 spark__text_io__put__3
+FS .70 698U14 spark__text_io__put__4
+FS .71 717U14 spark__text_io__get_line
+FS .72 732U14 spark__text_io__get_line__2
+FS .73 745U14 spark__text_io__put_line
+FS .74 758U14 spark__text_io__put_line__2
+FS .75 151V13 spark__text_io__is_standard_writable -> 11.9
+FS .76 156V13 spark__text_io__is_standard_file -> 11.10
+FS .77 180V13 spark__text_io__is_readable -> 11.15
+FS .78 184V13 spark__text_io__is_writable -> 11.16
+FD 12 spark-text_io-integer_io.ads
+FS .1 43K23 spark__text_io__integer_io
+FS .2 55U14 spark__text_io__integer_io__get
+FS .3 65U14 spark__text_io__integer_io__get__2
+FS .4 76U14 spark__text_io__integer_io__put
+FS .5 91U14 spark__text_io__integer_io__put__2
+FS .6 109U14 spark__text_io__integer_io__get__3
+FS .7 115U14 spark__text_io__integer_io__put__3
+FD 13 spark-text_io-integer_io.adb
+FS .1 40K28 spark__text_io__integer_io -> 12.1
+FS .2 43K12 spark__text_io__integer_io__ada_integer_io
+FS .3 51U14 spark__text_io__integer_io__ada_integer_io__get
+FS .4 56U14 spark__text_io__integer_io__ada_integer_io__get__2
+FS .5 60U14 spark__text_io__integer_io__ada_integer_io__put
+FS .6 66U14 spark__text_io__integer_io__ada_integer_io__put__2
+FS .7 71U14 spark__text_io__integer_io__ada_integer_io__get__3
+FS .8 76U14 spark__text_io__integer_io__ada_integer_io__put__3
+FS .9 43K12 spark__text_io__integer_io__ada_integer_io -> 13.2
+FS .10 48U14 spark__text_io__integer_io__ada_integer_io__get -> 13.3
+FS .11 69U14 spark__text_io__integer_io__ada_integer_io__get__2 -> 13.4
+FS .12 89U14 spark__text_io__integer_io__ada_integer_io__get__3 -> 13.7
+FS .13 114U14 spark__text_io__integer_io__ada_integer_io__put -> 13.5
+FS .14 128U14 spark__text_io__integer_io__ada_integer_io__put__2 -> 13.6
+FS .15 141U14 spark__text_io__integer_io__ada_integer_io__put__3 -> 13.8
+FS .16 45U14 spark__text_io__integer_io__get -> 12.2
+FS .17 81U14 spark__text_io__integer_io__get__2 -> 12.3
+FS .18 106U14 spark__text_io__integer_io__put -> 12.4
+FS .19 133U14 spark__text_io__integer_io__put__2 -> 12.5
+FS .20 148U14 spark__text_io__integer_io__get__3 -> 12.6
+FS .21 161U14 spark__text_io__integer_io__put__3 -> 12.7
+FD 14 system.ads
+FS .1 37K9 system
+FS .2 77V13 system__Olt
+FS .3 78V13 system__Ole
+FS .4 79V13 system__Ogt
+FS .5 80V13 system__Oge
+FS .6 81V13 system__Oeq
+FD 15 s-crtl.ads
+FS .1 38K16 system__crtl
+FS .2 85V13 system__crtl__strlen
+FS .3 88U14 system__crtl__strncpy
+FS .4 95V13 system__crtl__atoi
+FS .5 98U14 system__crtl__clearerr
+FS .6 101V13 system__crtl__dup
+FS .7 104V13 system__crtl__dup2
+FS .8 107V13 system__crtl__fclose
+FS .9 110V13 system__crtl__fdopen
+FS .10 113V13 system__crtl__fflush
+FS .11 116V13 system__crtl__fgetc
+FS .12 119V13 system__crtl__fgets
+FS .13 122V13 system__crtl__fopen
+FS .14 128V13 system__crtl__fputc
+FS .15 131V13 system__crtl__fputwc
+FS .16 134V13 system__crtl__fputs
+FS .17 137U14 system__crtl__free
+FS .18 140V13 system__crtl__freopen
+FS .19 147V13 system__crtl__fseek
+FS .20 153V13 system__crtl__fseek64
+FS .21 159V13 system__crtl__ftell
+FS .22 162V13 system__crtl__ftell64
+FS .23 165V13 system__crtl__getenv
+FS .24 168V13 system__crtl__isatty
+FS .25 171V13 system__crtl__lseek
+FS .26 174V13 system__crtl__malloc
+FS .27 177U14 system__crtl__memcpy
+FS .28 180U14 system__crtl__memmove
+FS .29 183U14 system__crtl__mktemp
+FS .30 186V13 system__crtl__pclose
+FS .31 189V13 system__crtl__popen
+FS .32 192V13 system__crtl__realloc
+FS .33 196U14 system__crtl__rewind
+FS .34 199V13 system__crtl__rmdir
+FS .35 202V13 system__crtl__chdir
+FS .36 205V13 system__crtl__mkdir
+FS .37 210V13 system__crtl__setvbuf
+FS .38 217U14 system__crtl__tmpnam
+FS .39 220V13 system__crtl__tmpfile
+FS .40 223V13 system__crtl__ungetc
+FS .41 226V13 system__crtl__unlink
+FS .42 229V13 system__crtl__open
+FS .43 232V13 system__crtl__close
+FS .44 235V13 system__crtl__read
+FS .45 238V13 system__crtl__write
+FD 16 s-ficobl.ads
+FS .1 42K16 system__file_control_block
+FD 17 s-parame.ads
+FS .1 51K16 system__parameters
+FS .2 81V13 system__parameters__default_stack_size
+FS .3 84V13 system__parameters__minimum_stack_size
+FS .4 87V13 system__parameters__adjust_storage_size
+FD 18 s-wchcon.ads
+FS .1 41K16 system__wch_con
+FS .2 203V13 system__wch_con__get_wc_encoding_method
+FS .3 207V13 system__wch_con__get_wc_encoding_method__2
+FS .4 212V13 system__wch_con__is_start_of_encoding
+FX 4 a-textio.ads .1 ada__text_io
+F 117*13 ada__text_io__standard_input 13|.16:55s45 .17:85s39
+F 118*13 ada__text_io__standard_output 13|.18:115s45 .19:137s39
+F 119*13 ada__text_io__standard_error 13|.18:119s45
+F 455*4 ada__text_io__current_in 13|.11:80r23 82r23
+F 456*4 ada__text_io__current_out 13|.14:135r23 137r23
+FX 5 a-tiinau.ads .1 ada__text_io__integer_aux
+F 41*14 ada__text_io__integer_aux__get_int 13|.10:62s14 .11:82s14
+F 46*14 ada__text_io__integer_aux__get_lli 13|.10:60s14 .11:80s14
+F 51*14 ada__text_io__integer_aux__put_int 13|.13:124s14 .14:137s14
+F 57*14 ada__text_io__integer_aux__put_lli 13|.13:122s14 .14:135s14
+F 63*14 ada__text_io__integer_aux__gets_int 13|.12:103s14
+F 68*14 ada__text_io__integer_aux__gets_lli 13|.12:101s14
+F 73*14 ada__text_io__integer_aux__puts_int 13|.15:150s14
+F 78*14 ada__text_io__integer_aux__puts_lli 13|.15:148s14
+FX 11 spark-text_io.ads .1 spark__text_io
+F 102*4 spark__text_io__standard_input 12|.3:67r32 68r23 68r48 69r34 70r27
+. 71r30 72r27 73r30 74r40 13|.17:87m7 91m10 94m10 97m10 100m10 103m10
+F 103*4 spark__text_io__standard_output 12|.5:94r32 95r22 95r61 96r29 97r30
+. 98r27 99r27 100r30 101r27 102r30 103r34 104r37 105r34 106r37 107r41 13|.19:138m7
+. 141m10 143m10 145m10
+F 133*13 spark__text_io__status 12|.4:81s47 .5:96s21
+F 139*13 spark__text_io__is_standard_input 12|.3:74s21
+F 143*13 spark__text_io__is_standard_output 12|.5:107s21
+F 156*13 spark__text_io__is_standard_file 12|.2:63s19 63s45 .4:89s19 89s45
+F 162*13 spark__text_io__is_open 12|.4:83s19 .5:97s21
+F 165*13 spark__text_io__mode__2 12|.4:84s19 84s33 .5:98s21
+F 172*13 spark__text_io__name 12|.2:61s19 61s33 .3:70s21 71s24 .4:85s19 85s33
+. .5:99s21 100s24
+F 176*13 spark__text_io__form 12|.2:62s19 62s33 .3:72s21 73s24 .4:86s19 86s33
+. .5:101s21 102s24
+F 180*13 spark__text_io__is_readable 12|.2:59s19 60s19 .3:69s21
+F 184*13 spark__text_io__is_writable 12|.4:81s19 82s19
+F 345*14 spark__text_io__line_length__2 12|.4:87s19 87s40 .5:103s21 104s24
+F 352*14 spark__text_io__page_length__2 12|.4:88s19 88s40 .5:105s21 106s24
+FX 12 spark-text_io-integer_io.ads .1 spark__text_io__integer_io
+F 45*4 spark__text_io__integer_io__default_width .4:78c39 .5:92c39 13|.18:108c39
+. .19:134c39
+F 46*4 spark__text_io__integer_io__default_base .4:79c45 .5:93c45 .7:117c46
+. 13|.18:109c45 .19:135c45
+FX 12 spark-text_io-integer_io.ads .2 spark__text_io__integer_io__get
+F 55=19 spark__text_io__integer_io__get__file 59r32 60r32 61r25 61r39 62r25
+. 62r39 63r37 63r63 13|.16:50r12 53m13 57m13 59r33 61m13 66m10 69m10 72m10
+. 75m10 78m10
+F 56<19 spark__text_io__integer_io__get__item 13|.16:52m13 56m13 60m13 65m10
+. 68m10 71m10 74m10 77m10
+F 57>19 spark__text_io__integer_io__get__width 13|.16:55c66 59c49
+FX 12 spark-text_io-integer_io.ads .3 spark__text_io__integer_io__get__2
+F 65<19 spark__text_io__integer_io__get__2__item 68r38 13|.17:86m7 90m10
+. 93m10 96m10 99m10 102m10
+F 66>19 spark__text_io__integer_io__get__2__width 68c63 13|.17:85c60
+FX 12 spark-text_io-integer_io.ads .4 spark__text_io__integer_io__put
+F 76=19 spark__text_io__integer_io__put__file 81r32 81r55 82r32 83r28 84r25
+. 84r39 85r25 85r39 86r25 86r39 87r32 87r53 88r32 88r53 89r37 89r63 13|.18:111r12
+. 113m13 117m13 121m13 123r33 124m13 127m40 128m40 129m40
+F 77>19 spark__text_io__integer_io__put__item 13|.18:116c33 120c33 123c44
+F 78>19 spark__text_io__integer_io__put__width 13|.18:116c39 120c39 123c50
+F 79>19 spark__text_io__integer_io__put__base 13|.18:116c46 120c46 123c57
+FX 12 spark-text_io-integer_io.ads .5 spark__text_io__integer_io__put__2
+F 91>19 spark__text_io__integer_io__put__2__item 95c42 13|.19:137c56
+F 92>19 spark__text_io__integer_io__put__2__width 95c48 13|.19:137c62
+F 93>19 spark__text_io__integer_io__put__2__base 95c55 13|.19:137c69
+FX 12 spark-text_io-integer_io.ads .6 spark__text_io__integer_io__get__3
+F 109>19 spark__text_io__integer_io__get__3__from 113c39 13|.20:153c27
+F 110<19 spark__text_io__integer_io__get__3__item 113r24 13|.20:154m7 157m10
+F 111<19 spark__text_io__integer_io__get__3__last 113r30 13|.20:153m38 158m10
+FX 12 spark-text_io-integer_io.ads .7 spark__text_io__integer_io__put__3
+F 115<19 spark__text_io__integer_io__put__3__to 119r24 120r23
+F 116>19 spark__text_io__integer_io__put__3__item 119c31 120c51
+F 117>19 spark__text_io__integer_io__put__3__base 119c37
+FX 13 spark-text_io-integer_io.adb .2 spark__text_io__integer_io__ada_integer_io
+F 48*4 spark__text_io__integer_io__ada_integer_io__default_width .5:63r24
+. .6:68r24 .13:117r24 .14:130r24
+F 49*4 spark__text_io__integer_io__ada_integer_io__default_base .5:64r30
+. .6:69r30 .8:79r29 .13:118r30 .14:131r30 .15:144r29
+F 51*14 spark__text_io__integer_io__ada_integer_io__get .16:55s28 59s28 .17:85s22
+F 60*14 spark__text_io__integer_io__ada_integer_io__put .18:115s28 119s28
+. 123s28 .19:137s22
+F 71*14 spark__text_io__integer_io__ada_integer_io__get__3 .20:153s22
+FX 13 spark-text_io-integer_io.adb .3 spark__text_io__integer_io__ada_integer_io__get
+F 52>7 spark__text_io__integer_io__ada_integer_io__get__file .10:60c23 62c23
+F 53<7 spark__text_io__integer_io__ada_integer_io__get__item .10:60m48 60r48
+. 62m38 62r38
+F 54>7 spark__text_io__integer_io__ada_integer_io__get__width .10:60c55 62c45
+FX 13 spark-text_io-integer_io.adb .4 spark__text_io__integer_io__ada_integer_io__get__2
+F 57<7 spark__text_io__integer_io__ada_integer_io__get__2__item .11:80m54
+. 80r54 82m44 82r44
+F 58>7 spark__text_io__integer_io__ada_integer_io__get__2__width .11:80c61
+. 82c51
+FX 13 spark-text_io-integer_io.adb .5 spark__text_io__integer_io__ada_integer_io__put
+F 61>7 spark__text_io__integer_io__ada_integer_io__put__file .13:122c23 124c23
+F 62>7 spark__text_io__integer_io__ada_integer_io__put__item .13:122c48 124c38
+F 63>7 spark__text_io__integer_io__ada_integer_io__put__width .13:122c55
+. 124c45
+F 64>7 spark__text_io__integer_io__ada_integer_io__put__base .13:122c62 124c52
+FX 13 spark-text_io-integer_io.adb .6 spark__text_io__integer_io__ada_integer_io__put__2
+F 67>7 spark__text_io__integer_io__ada_integer_io__put__2__item .14:135c55
+. 137c45
+F 68>7 spark__text_io__integer_io__ada_integer_io__put__2__width .14:135c62
+. 137c52
+F 69>7 spark__text_io__integer_io__ada_integer_io__put__2__base .14:135c69
+. 137c59
+FX 13 spark-text_io-integer_io.adb .7 spark__text_io__integer_io__ada_integer_io__get__3
+F 72>7 spark__text_io__integer_io__ada_integer_io__get__3__from .12:101c24
+. 103c24
+F 73<7 spark__text_io__integer_io__ada_integer_io__get__3__item .12:101m49
+. 101r49 103m39 103r39
+F 74<7 spark__text_io__integer_io__ada_integer_io__get__3__last .12:101m56
+. 103m46
+FX 13 spark-text_io-integer_io.adb .8 spark__text_io__integer_io__ada_integer_io__put__3
+F 77<7 spark__text_io__integer_io__ada_integer_io__put__3__to .15:148m24
+. 150m24
+F 78>7 spark__text_io__integer_io__ada_integer_io__put__3__item .15:148c47
+. 150c37
+F 79>7 spark__text_io__integer_io__ada_integer_io__put__3__base .15:148c54
+. 150c44
+FX 13 spark-text_io-integer_io.adb .9 spark__text_io__integer_io__ada_integer_io
+F 38*4 spark__text_io__integer_io__ada_integer_io__need_lli .10:59c10 .11:79c10
+. .12:100c10 .13:121c10 .14:134c10 .15:147c10
+FX 13 spark-text_io-integer_io.adb .16 spark__text_io__integer_io__get
+F 48*7 spark__text_io__integer_io__get__int 55m61 56r49 59m44 60r49
+FX 13 spark-text_io-integer_io.adb .17 spark__text_io__integer_io__get__2
+F 83*7 spark__text_io__integer_io__get__2__int 85m55 86r43
+FX 13 spark-text_io-integer_io.adb .20 spark__text_io__integer_io__get__3
+F 151*7 spark__text_io__integer_io__get__3__int 153m33 154r43
+
+GG S XR spark__text_io__integer_io__ada_integer_io__get
+GG VP
+GG VI
+GG VO
+GG CP
+GG CD
+GG CC ada__text_io__integer_aux__get_int ada__text_io__integer_aux__get_lli
+GG LV
+GG LS
+GG S XR spark__text_io__integer_io__ada_integer_io__put
+GG VP
+GG VI spark__text_io__integer_io__ada_integer_io__default_width spark__text_io__integer_io__ada_integer_io__default_base
+GG VO
+GG CP
+GG CD
+GG CC ada__text_io__integer_aux__put_int ada__text_io__integer_aux__put_lli
+GG LV
+GG LS
+GG S XR spark__text_io__integer_io__ada_integer_io__get__3
+GG VP
+GG VI
+GG VO
+GG CP
+GG CD
+GG CC ada__text_io__integer_aux__gets_int ada__text_io__integer_aux__gets_lli
+GG LV
+GG LS
+GG S XR spark__text_io__integer_io__ada_integer_io__put__3
+GG VP
+GG VI spark__text_io__integer_io__ada_integer_io__default_base
+GG VO
+GG CP
+GG CD
+GG CC ada__text_io__integer_aux__puts_int ada__text_io__integer_aux__puts_lli
+GG LV
+GG LS
+GG S UG spark__text_io__integer_io__get
+GG VP
+GG VI
+GG VO
+GG CP
+GG CD
+GG CC
+GG LV
+GG LS
+GG S UG spark__text_io__integer_io__get__2
+GG VP
+GG VI spark__text_io__standard_input
+GG VO spark__text_io__standard_input
+GG CP
+GG CD
+GG CC
+GG LV
+GG LS
+GG S UG spark__text_io__integer_io__put
+GG VP
+GG VI
+GG VO
+GG CP
+GG CD
+GG CC
+GG LV
+GG LS
+GG S UG spark__text_io__integer_io__put__2
+GG VP
+GG VI spark__text_io__standard_output
+GG VO spark__text_io__standard_output
+GG CP
+GG CD
+GG CC
+GG LV
+GG LS
+GG S UG spark__text_io__integer_io__get__3
+GG VP
+GG VI
+GG VO
+GG CP
+GG CD
+GG CC
+GG LV
+GG LS
+GG S UG spark__text_io__integer_io__put__3
+GG VP
+GG VI
+GG VO
+GG CP
+GG CD
+GG CC
+GG LV
+GG LS
+GG S XR spark__text_io__integer_io__ada_integer_io__get__2
+GG VP
+GG VI ada__text_io__current_in
+GG VO
+GG CP
+GG CD
+GG CC ada__text_io__integer_aux__get_int ada__text_io__integer_aux__get_lli
+GG LV
+GG LS
+GG S XR spark__text_io__integer_io__ada_integer_io__put__2
+GG VP
+GG VI ada__text_io__current_out spark__text_io__integer_io__ada_integer_io__default_width spark__text_io__integer_io__ada_integer_io__default_base
+GG VO
+GG CP
+GG CD
+GG CC ada__text_io__integer_aux__put_int ada__text_io__integer_aux__put_lli
+GG LV
+GG LS

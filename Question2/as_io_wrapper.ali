@@ -1,0 +1,148 @@
+V "GNAT Lib v2019"
+A -gnatA
+A -gnatwa
+A -mtune=core2
+A -mmacosx-version-min=10.14.0
+A -fPIC
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U as_io_wrapper%b	as_io_wrapper.adb	a72e2afe NE OO PK
+W spark%s		spark.ads		spark.ali
+W spark.text_io%s	spark-text_io.adb	spark-text_io.ali
+W spark.text_io.integer_io%s  spark-text_io-integer_io.adb  spark-text_io-integer_io.ali
+
+U as_io_wrapper%s	as_io_wrapper.ads	3f5aa9b8 EE NE OO PK
+W spark%s		spark.ads		spark.ali
+W spark.text_io%s	spark-text_io.adb	spark-text_io.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-ioexce.ads		20190518041254 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-textio.ads		20190518041256 aef4d56d ada.text_io%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D as_io_wrapper.ads	20200214112854 000fc6dc as_io_wrapper%s
+D as_io_wrapper.adb	20200214112854 4775568b as_io_wrapper%b
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D i-cstrea.ads		20190518041254 e53d8b8e interfaces.c_streams%s
+D spark.ads		20200214112854 86380d85 spark%s
+D spark-text_io.ads	20200214112854 3f556f64 spark.text_io%s
+D spark-text_io-integer_io.ads  20200214112854 e054baa9 spark.text_io.integer_io%s
+D system.ads		20190518041255 085b6ffb system%s
+D s-crtl.ads		20190518041254 0ebbdb71 system.crtl%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-ficobl.ads		20190518041256 078245e4 system.file_control_block%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20190518041255 1b7d22d2 system.wch_con%s
+G a e
+G c Z s b [as_init_standard_input as_io_wrapper 25 14 none]
+G c Z s b [as_init_standard_output as_io_wrapper 32 14 none]
+G c Z s b [as_get as_io_wrapper 39 14 none]
+G c Z s b [as_put as_io_wrapper 45 14 none]
+G c Z s b [as_get as_io_wrapper 53 14 none]
+G c Z s b [as_put as_io_wrapper 59 14 none]
+G c Z s b [as_get_line as_io_wrapper 76 14 none]
+G c Z s b [as_put_line as_io_wrapper 83 14 none]
+G c Z s b [as_put_line as_io_wrapper 88 14 none]
+G c Z s b [as_get as_io_wrapper 106 14 none]
+G c Z s b [as_put as_io_wrapper 114 14 none]
+G c Z s b [as_put_line as_io_wrapper 119 14 none]
+G r c none [as_init_standard_input as_io_wrapper 25 14 none] [init_standard_input spark__text_io 113 14 none]
+G r c none [as_init_standard_output as_io_wrapper 32 14 none] [init_standard_output spark__text_io 119 14 none]
+G r c none [as_get as_io_wrapper 39 14 none] [get spark__text_io 562 14 none]
+G r c none [as_put as_io_wrapper 45 14 none] [put spark__text_io 589 14 none]
+G r c none [as_get as_io_wrapper 53 14 none] [get spark__text_io 674 14 none]
+G r c none [as_put as_io_wrapper 59 14 none] [put spark__text_io 698 14 none]
+G r c none [as_get_line as_io_wrapper 76 14 none] [get_line spark__text_io 732 14 none]
+G r c none [as_put_line as_io_wrapper 83 14 none] [put_line spark__text_io 758 14 none]
+G r c none [as_put_line as_io_wrapper 88 14 none] [put_line spark__text_io 758 14 none]
+G r s integer_result [as_get as_io_wrapper 106 14 none] [integer_resultIP spark__text_io__integer_io 48 9 none]
+G r c none [as_get as_io_wrapper 106 14 none] [get_line spark__text_io 732 14 none]
+G r c none [as_get as_io_wrapper 106 14 none] [get spark__text_io__integer_io 109 14 none]
+G r c none [as_get as_io_wrapper 106 14 none] [put_line spark__text_io 758 14 none]
+G r c none [as_put as_io_wrapper 114 14 none] [put spark__text_io__integer_io 91 14 none]
+G r c none [as_put_line as_io_wrapper 119 14 none] [put spark__text_io__integer_io 91 14 none]
+G r c none [as_put_line as_io_wrapper 119 14 none] [put_line spark__text_io 758 14 none]
+X 8 as_io_wrapper.ads
+21K9*AS_Io_Wrapper 124l5 124e18 9|8b14 107l5 107t18
+25U14*AS_Init_Standard_Input 9|11b14 14l8 14t30
+32U14*AS_Init_Standard_Output 9|16b14 19l8 19t31
+39U14*AS_Get 39<22 9|24b14 31l8 31t14
+39r22 Item{13|76R9} 42r17 9|24b22 30m25
+45U14*AS_Put 45>22 9|34b14 42l8 42t14
+45e22 Item{character} 47r42 9|34b22 36r26
+53U14*AS_Get 53<22 9|46b14 49l8 49t14
+53a22 Item{string} 56r17 9|46b22 48m26
+59U14*AS_Put 59>22 9|52b14 55l8 55t14
+59a22 Item{string} 61r44 9|52b22 54r26
+76U14*AS_Get_Line 76<27 76<46 9|58b14 61l8 61t19
+76a27 Item{string} 79r18 9|58b27 60m31
+76i46 Last{natural} 79r23 9|58b46 60m36
+83U14*AS_Put_Line 83>27 9|68b14 71l8 71t19 75s7
+83a27 Item{string} 85r49 9|68b27 70r31
+88U14*AS_Put_Line 9|73b14 76l8 76t19 104s7
+106U14*AS_Get 106<22 106>43 9|78b14 92l8 92t14
+106i22 Item{integer} 109r40 9|78b22 91m7
+106a43 Prompt_Try_Again_When_Not_Integer{string} 108r90 9|78b43 89r33
+114U14*AS_Put 114>22 9|95b14 98l8 98t14
+114i22 Item{integer} 116r49 9|95b23 97r36
+119U14*AS_Put_Line 119>27 9|101b14 105l8 105t19
+119i27 Item{integer} 121r49 9|101b28 103r36
+X 9 as_io_wrapper.adb
+79i7 Length_String{integer} 80r35
+80a7 Input_By_User{string} 86m33 87r40
+81r7 Converted_Result{14|48R9} 87m74 88r20 91r15
+82i7 Length_Input{natural} 86m47 87r59 88r78
+83i7 Length_Input_Used{positive} 87m91 88r58
+X 12 spark.ads
+37K9*SPARK 8|5r6 6r6 9|4r6 5r6 13r7 18r7 30r7 36r7 48r7 54r7 60r7 70r7 86r10
+. 87r10 89r10 97r7 103r7 12|74e10
+50n25*Success{49E9} 8|29r32 36r37 9|88r46
+X 13 spark-text_io.ads
+49K15*Text_IO 8|5w12 6r12 9|4r12 5r12 13r13 18r13 30r13 36r13 48r13 54r13
+. 60r13 70r13 86r16 87r16 89r16 97r13 103r13 13|774e18
+58R9*File_Type<12|61R9>
+59E9*File_Status<12|49E9>
+76R9*Character_Result 8|39r33 9|24r33 13|81e14
+102r4*Standard_Input{58R9} 8|26r32 27r23 28r32 29r14 40r33 41r17 41r35 42r25
+. 54r38 55r17 55r35 56r25 77r38 78r17 78r35 79r32 106r177 107r40 107r58 108r59
+. 109r48
+103r4*Standard_Output{58R9} 8|33r32 34r23 35r32 36r18 46r32 47r22 47r48 60r34
+. 61r24 61r50 84r39 85r29 85r55 89r39 90r29 90r49 106r192 108r40 108r74 115r39
+. 116r29 116r55 120r39 121r29 121r55
+113U14*Init_Standard_Input 9|13s21
+119U14*Init_Standard_Output 9|18s21
+133V13*Status{59E9} 8|29s6 36s10
+180V13*Is_Readable{boolean} 8|28s19
+184V13*Is_Writable{boolean} 8|35s19
+562U14*Get 9|30s21
+589U14*Put 9|36s21
+674U14*Get 9|48s21
+698U14*Put 9|54s21
+732U14*Get_Line 9|60s21 86s24
+758U14*Put_Line 9|70s21 89s24
+X 14 spark-text_io-integer_io.ads
+43K23*Integer_IO 9|4w20 5r20 87r24 97r21 103r21 14|122e29
+48R9*Integer_Result 9|81r27 14|53e14
+48e25*Status{13|59E9} 9|88r37
+50i26*Item{integer} 9|91r32
+91U14*Put 9|97s32 103s32
+109U14*Get 9|87s35
+

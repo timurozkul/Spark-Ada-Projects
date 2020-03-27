@@ -1,0 +1,107 @@
+Analyzed 6 units
+in unit angles, 3 subprograms and packages out of 3 analyzed
+  Angles at angles.ads:3 flow analyzed (0 errors and 0 warnings) and proved (0 checks)
+  Angles.AddAngles at angles.ads:9 flow analyzed (0 errors and 0 warnings) and proved (3 checks)
+  Angles.AddAngles2 at angles.ads:6 flow analyzed (0 errors and 0 warnings) and proved (3 checks)
+in unit as_io_wrapper, 0 subprograms and packages out of 13 analyzed
+  AS_Io_Wrapper at as_io_wrapper.ads:21 skipped
+  AS_Io_Wrapper.AS_Get at as_io_wrapper.ads:39 skipped
+  AS_Io_Wrapper.AS_Get at as_io_wrapper.ads:53 skipped
+  AS_Io_Wrapper.AS_Get at as_io_wrapper.ads:106 skipped
+  AS_Io_Wrapper.AS_Get_Line at as_io_wrapper.ads:76 skipped
+  AS_Io_Wrapper.AS_Init_Standard_Input at as_io_wrapper.ads:25 skipped
+  AS_Io_Wrapper.AS_Init_Standard_Output at as_io_wrapper.ads:32 skipped
+  AS_Io_Wrapper.AS_Put at as_io_wrapper.ads:45 skipped
+  AS_Io_Wrapper.AS_Put at as_io_wrapper.ads:59 skipped
+  AS_Io_Wrapper.AS_Put at as_io_wrapper.ads:114 skipped
+  AS_Io_Wrapper.AS_Put_Line at as_io_wrapper.ads:83 skipped
+  AS_Io_Wrapper.AS_Put_Line at as_io_wrapper.ads:88 skipped
+  AS_Io_Wrapper.AS_Put_Line at as_io_wrapper.ads:119 skipped
+in unit main, 1 subprograms and packages out of 1 analyzed
+  Main at main.ads:3 flow analyzed (0 errors and 0 warnings) and proved (3 checks)
+in unit spark, 1 subprograms and packages out of 1 analyzed
+  SPARK at spark.ads:37 flow analyzed (0 errors and 0 warnings) and proved (0 checks)
+in unit spark-text_io, 4 subprograms and packages out of 74 analyzed
+  SPARK.Text_IO at spark-text_io.ads:49 skipped
+  SPARK.Text_IO.Close at spark-text_io.ads:229 skipped
+  SPARK.Text_IO.Col at spark-text_io.ads:531 skipped
+  SPARK.Text_IO.Col at spark-text_io.ads:535 skipped
+  SPARK.Text_IO.Create at spark-text_io.ads:191 skipped
+  SPARK.Text_IO.Delete at spark-text_io.ads:235 skipped
+  SPARK.Text_IO.End_Of_File at spark-text_io.ads:459 skipped
+  SPARK.Text_IO.End_Of_File at spark-text_io.ads:463 skipped
+  SPARK.Text_IO.End_Of_Line at spark-text_io.ads:404 skipped
+  SPARK.Text_IO.End_Of_Line at spark-text_io.ads:408 skipped
+  SPARK.Text_IO.End_Of_Page at spark-text_io.ads:452 skipped
+  SPARK.Text_IO.End_Of_Page at spark-text_io.ads:456 skipped
+  SPARK.Text_IO.Flush at spark-text_io.ads:272 skipped
+  SPARK.Text_IO.Flush at spark-text_io.ads:283 skipped
+  SPARK.Text_IO.Form at spark-text_io.ads:176 skipped
+  SPARK.Text_IO.Get at spark-text_io.ads:554 skipped
+  SPARK.Text_IO.Get at spark-text_io.ads:562 skipped
+  SPARK.Text_IO.Get at spark-text_io.ads:663 skipped
+  SPARK.Text_IO.Get at spark-text_io.ads:674 skipped
+  SPARK.Text_IO.Get_Immediate at spark-text_io.ads:623 skipped
+  SPARK.Text_IO.Get_Immediate at spark-text_io.ads:632 skipped
+  SPARK.Text_IO.Get_Immediate at spark-text_io.ads:641 skipped
+  SPARK.Text_IO.Get_Immediate at spark-text_io.ads:651 skipped
+  SPARK.Text_IO.Get_Line at spark-text_io.ads:717 skipped
+  SPARK.Text_IO.Get_Line at spark-text_io.ads:732 skipped
+  SPARK.Text_IO.Init_Standard_Error at spark-text_io.ads:125 skipped
+  SPARK.Text_IO.Init_Standard_Input at spark-text_io.ads:113 skipped
+  SPARK.Text_IO.Init_Standard_Output at spark-text_io.ads:119 skipped
+  SPARK.Text_IO.Is_Open at spark-text_io.ads:162 skipped
+  SPARK.Text_IO.Is_Readable at spark-text_io.ads:180 flow analyzed (0 errors and 0 warnings) and proved (1 checks)
+  SPARK.Text_IO.Is_Standard_Error at spark-text_io.ads:147 skipped
+  SPARK.Text_IO.Is_Standard_File at spark-text_io.ads:156 flow analyzed (0 errors and 0 warnings) and proved (0 checks)
+  SPARK.Text_IO.Is_Standard_Input at spark-text_io.ads:139 skipped
+  SPARK.Text_IO.Is_Standard_Output at spark-text_io.ads:143 skipped
+  SPARK.Text_IO.Is_Standard_Writable at spark-text_io.ads:151 flow analyzed (0 errors and 0 warnings) and proved (0 checks)
+  SPARK.Text_IO.Is_Writable at spark-text_io.ads:184 flow analyzed (0 errors and 0 warnings) and proved (2 checks)
+  SPARK.Text_IO.Line at spark-text_io.ads:538 skipped
+  SPARK.Text_IO.Line at spark-text_io.ads:542 skipped
+  SPARK.Text_IO.Line_Length at spark-text_io.ads:345 skipped
+  SPARK.Text_IO.Line_Length at spark-text_io.ads:349 skipped
+  SPARK.Text_IO.Look_Ahead at spark-text_io.ads:605 skipped
+  SPARK.Text_IO.Look_Ahead at spark-text_io.ads:615 skipped
+  SPARK.Text_IO.Mode at spark-text_io.ads:165 skipped
+  SPARK.Text_IO.Name at spark-text_io.ads:172 skipped
+  SPARK.Text_IO.New_Line at spark-text_io.ads:361 skipped
+  SPARK.Text_IO.New_Line at spark-text_io.ads:372 skipped
+  SPARK.Text_IO.New_Page at spark-text_io.ads:411 skipped
+  SPARK.Text_IO.New_Page at spark-text_io.ads:421 skipped
+  SPARK.Text_IO.Open at spark-text_io.ads:211 skipped
+  SPARK.Text_IO.Page at spark-text_io.ads:545 skipped
+  SPARK.Text_IO.Page at spark-text_io.ads:549 skipped
+  SPARK.Text_IO.Page_Length at spark-text_io.ads:352 skipped
+  SPARK.Text_IO.Page_Length at spark-text_io.ads:356 skipped
+  SPARK.Text_IO.Put at spark-text_io.ads:577 skipped
+  SPARK.Text_IO.Put at spark-text_io.ads:589 skipped
+  SPARK.Text_IO.Put at spark-text_io.ads:686 skipped
+  SPARK.Text_IO.Put at spark-text_io.ads:698 skipped
+  SPARK.Text_IO.Put_Line at spark-text_io.ads:745 skipped
+  SPARK.Text_IO.Put_Line at spark-text_io.ads:758 skipped
+  SPARK.Text_IO.Reset at spark-text_io.ads:241 skipped
+  SPARK.Text_IO.Reset at spark-text_io.ads:252 skipped
+  SPARK.Text_IO.Set_Col at spark-text_io.ads:467 skipped
+  SPARK.Text_IO.Set_Col at spark-text_io.ads:482 skipped
+  SPARK.Text_IO.Set_Line at spark-text_io.ads:499 skipped
+  SPARK.Text_IO.Set_Line at spark-text_io.ads:514 skipped
+  SPARK.Text_IO.Set_Line_Length at spark-text_io.ads:299 skipped
+  SPARK.Text_IO.Set_Line_Length at spark-text_io.ads:310 skipped
+  SPARK.Text_IO.Set_Page_Length at spark-text_io.ads:323 skipped
+  SPARK.Text_IO.Set_Page_Length at spark-text_io.ads:333 skipped
+  SPARK.Text_IO.Skip_Line at spark-text_io.ads:386 skipped
+  SPARK.Text_IO.Skip_Line at spark-text_io.ads:395 skipped
+  SPARK.Text_IO.Skip_Page at spark-text_io.ads:435 skipped
+  SPARK.Text_IO.Skip_Page at spark-text_io.ads:443 skipped
+  SPARK.Text_IO.Status at spark-text_io.ads:133 skipped
+in unit spark-text_io-integer_io, 0 subprograms and packages out of 8 analyzed
+  SPARK.Text_IO.Integer_IO at spark-text_io-integer_io.ads:43 skipped
+  SPARK.Text_IO.Integer_IO.Ada_Integer_IO at spark-text_io-integer_io.adb:43 skipped
+  SPARK.Text_IO.Integer_IO.Get at spark-text_io-integer_io.ads:55 skipped
+  SPARK.Text_IO.Integer_IO.Get at spark-text_io-integer_io.ads:65 skipped
+  SPARK.Text_IO.Integer_IO.Get at spark-text_io-integer_io.ads:109 skipped
+  SPARK.Text_IO.Integer_IO.Put at spark-text_io-integer_io.ads:76 skipped
+  SPARK.Text_IO.Integer_IO.Put at spark-text_io-integer_io.ads:91 skipped
+  SPARK.Text_IO.Integer_IO.Put at spark-text_io-integer_io.ads:115 skipped

@@ -1,0 +1,64 @@
+V "GNAT Lib v2015"
+A -g
+A -O2
+A -gnatc
+P GP ZX
+
+RN
+RV NO_ELABORATION_CODE
+
+U angles%b		angles.adb		94f0c49f OO PK
+
+U angles%s		angles.ads		2ff68156 EE OO PK
+
+D angles.ads		20200306105614 2ff68156 angles%s
+D angles.adb		20200306105314 bb0645c9 angles%b
+D system.ads		20171018134717 1d274481 system%s
+X 1 angles.ads
+3K9*Angles 13l5 13e11 2|3b14 25l5 25t11
+4I12*angle{integer} 6r34 6r48 9r33 9r47 2|5r35 5r49 10r33 11r19 15r35 15r49
+. 20r31 21r17
+6V13*AddAngles2{4I12} 6>24 6>27 7r23 7r60 2|5b13 13l8 13t18
+6i24 X{4I12} 7r15 7r46 2|5b25 9r22
+6i27 Y{4I12} 7r19 7r50 2|5b28 9r35
+9U13*AddAngles 9>23 9>26 9<40 2|15b14 23l8 23t17
+9i23 X{4I12} 10r29 11r15 11r30 2|15b25 19r22
+9i26 Y{4I12} 10r32 11r19 11r34 2|15b28 19r35
+9i40 U{4I12} 10r23 11r23 11r44 2|15b42 20m26 21m12
+X 2 angles.adb
+6i7 maxAngleValue{integer} 10r47
+7i7 aux{integer} 9m7 10r10 10r39 11r25
+16i7 maxAngleValue{integer} 20r45
+17i7 aux{integer} 19m7 20r10 20r37 21r23
+FD 1 angles.ads
+FS .1 3K9 angles
+FS .2 6V13 angles__addangles2
+FS .3 9U13 angles__addangles
+FD 2 angles.adb
+FS .1 3K14 standard__angles -> 1.1
+FS .2 5V13 angles__addangles2 -> 1.2
+FS .3 15U14 angles__addangles -> 1.3
+FD 3 system.ads
+FX 1 angles.ads .2 angles__addangles2
+F 6>24 angles__addangles2__x 7c15 7c46 2|.2:9c22
+F 6>27 angles__addangles2__y 7c19 7c50 2|.2:9c35
+FX 1 angles.ads .3 angles__addangles
+F 9>23 angles__addangles__x 10c29 11c15 11c30 2|.3:19c22
+F 9>26 angles__addangles__y 10c32 11c19 11c34 2|.3:19c35
+F 9<40 angles__addangles__u 10r23 11r23 11r44 2|.3:20m26 21m12
+FX 2 angles.adb .2 angles__addangles2
+F 6*7 angles__addangles2__maxanglevalue 10c47
+F 7*7 angles__addangles2__aux 9m7 10r10 10r39 11r25
+FX 2 angles.adb .3 angles__addangles
+F 16*7 angles__addangles__maxanglevalue 20c45
+F 17*7 angles__addangles__aux 19m7 20r10 20r37 21r23
+
+GG S FA angles__addangles2
+GG VP
+GG VI
+GG VO
+GG CP
+GG CD
+GG CC
+GG LV angles__addangles2__y angles__addangles2__x angles__addangles2__aux angles__addangles2__maxanglevalue
+GG LS

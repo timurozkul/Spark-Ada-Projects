@@ -1,0 +1,79 @@
+V "GNAT Lib v2019"
+M P W=b
+A -gnatA
+A -gnatwa
+A -mtune=core2
+A -mmacosx-version-min=10.14.0
+A -fPIC
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U main%b		main.adb		12dd0291 NE OO SU
+W as_io_wrapper%s	as_io_wrapper.adb	as_io_wrapper.ali
+W nkires%s		nkires.adb		nkires.ali
+
+U main%s		main.ads		cd1c0576 EE NE OO SU
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-ioexce.ads		20190518041254 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-textio.ads		20190518041256 aef4d56d ada.text_io%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D as_io_wrapper.ads	20200214112854 000fc6dc as_io_wrapper%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D i-cstrea.ads		20190518041254 e53d8b8e interfaces.c_streams%s
+D main.ads		20200224161800 cd1c0576 main%s
+D main.adb		20200313113718 50bf0560 main%b
+D nkires.ads		20200313113921 8f71c45b nkires%s
+D spark.ads		20200214112854 86380d85 spark%s
+D spark-text_io.ads	20200214112854 3f556f64 spark.text_io%s
+D system.ads		20190518041255 085b6ffb system%s
+D s-crtl.ads		20190518041254 0ebbdb71 system.crtl%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-ficobl.ads		20190518041256 078245e4 system.file_control_block%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20190518041255 1b7d22d2 system.wch_con%s
+G a e
+G c Z s b [main standard 3 11 none]
+G r c none [main standard 3 11 none] [as_init_standard_output as_io_wrapper 32 14 none]
+G r c none [main standard 3 11 none] [as_init_standard_input as_io_wrapper 25 14 none]
+G r c none [main standard 3 11 none] [as_put_line as_io_wrapper 83 14 none]
+G r c none [main standard 3 11 none] [as_put as_io_wrapper 59 14 none]
+G r c none [main standard 3 11 none] [as_get as_io_wrapper 106 14 none]
+G r c none [main standard 3 11 none] [nkiresproc nkires 6 14 none]
+G r c none [main standard 3 11 none] [as_put_line as_io_wrapper 119 14 none]
+G r c none [main standard 3 11 none] [as_get_line as_io_wrapper 76 14 none]
+X 8 as_io_wrapper.ads
+21K9*AS_Io_Wrapper 124e18 12|3w6 4r5
+25U14*AS_Init_Standard_Input 12|16s4
+32U14*AS_Init_Standard_Output 12|15s4
+59U14*AS_Put 12|20s10 27s10 36s6 38s6 42s9
+76U14*AS_Get_Line 12|43s9
+83U14*AS_Put_Line 12|18s7 23s9 30s9 45s9
+106U14*AS_Get 12|21s10 28s10
+119U14*AS_Put_Line 12|37s6 39s7
+X 11 main.ads
+3U11*Main 12|9b11 67l5 67t9
+X 12 main.adb
+10i4 N{integer} 28m17 29r19 34r18
+10i7 K{integer} 21m17 22r19 34r21
+11i4 Res{integer} 34m27 39r19
+11i9 I{integer} 34m24 37r18
+11i12 Last{integer} 43m33 44r19
+12a3 User_Input{string} 43m21 47r17
+X 13 nkires.ads
+2K9*Nkires 12|5w6 6r5 13|11e11
+6U14*NkiresProc 12|34s7
+

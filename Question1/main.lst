@@ -1,0 +1,67 @@
+           *******************************************************
+                            Listing of SPARK Text
+                           SPARK Examiner GPL 2010
+             Copyright (C) 2010 Altran Praxis Limited, Bath, U.K.
+           *******************************************************
+
+
+                        DATE : 06-MAR-2020 09:44:13.23
+
+Line
+   1  with AS_IO_Wrapper;  use AS_IO_Wrapper; 
+
+                               ^2
+--- (  1)  Warning           :430 - SLI generation abandoned owing to syntax or 
+           semantic errors or multiple units in a single source file.
+*** (  2)  Syntax Error      : reserved word "TYPE" expected.
+
+   2  with Angles;  use Angles; 
+                        ^3
+*** (  3)  Syntax Error      : reserved word "TYPE" expected.
+
+   3  
+   4  procedure Main is
+   5     X, Y : angle;
+   6     U : angle;
+   7     User_Input : String(1 .. 359);
+                            ^4
+*** (  4)  Syntax Error      : ";" or ":=" expected.
+
+   8     Last : Integer;
+   9  begin
+  10      -- First we initialise standard_input and standard output
+  11     AS_Init_Standard_Output;
+  12     AS_Init_Standard_Input;   
+  13     loop
+  14        AS_Put("Enter an angle from 0 .. 359: ");   
+  15        AS_Get(X);
+  16        AS_Put("Enter another angle from 0 .. 359: ");
+  17        AS_Get(Y);
+  18        
+  19        AddAngles(X, Y, U);
+  20        AS_Put_Line("The sum of angles is: ");
+  21        AS_Put(Integer(AddAngles2(X, Y))); 
+  22        
+  23        AS_Get_Line(User_Input, Last);  -- clearing input buffer 
+                                    ^5
+*** (  5)  Syntax Error      : No EXPRESSION can start with 
+           PREDEFINED_FDL_IDENTIFIER.
+
+  24  
+  25        AS_Put("Do you want to try again (y/n):");
+  26        AS_Get_Line(User_Input, Last);
+                                    ^6
+*** (  6)  Syntax Error      : No EXPRESSION can start with 
+           PREDEFINED_FDL_IDENTIFIER.
+
+  27        exit when User_Input(1 .. 1) = "n";
+                                   ^7
+*** (  7)  Syntax Error      : No complete SIMPLE_EXPRESSION can be followed by 
+           ".." here.
+
+  28     end loop;   
+  29  end Main;
+  30  
+
+
+--End of file--------------------------------------------------

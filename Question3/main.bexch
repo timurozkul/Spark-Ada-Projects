@@ -1,0 +1,22 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/main.gpr
+20200214112854
+[BOUND OBJECT FILES]
+/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/spark.o
+/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/spark-text_io.o
+/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/spark-text_io-integer_io.o
+/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/as_io_wrapper.o
+/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/power_grid_energy_stabilizer.o
+/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-L/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/
+-L/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/
+-L/users/timurozkul/opt/gps/lib/gcc/x86_64-apple-darwin17.7.0/8.3.1/adalib/
+-static
+/users/timurozkul/opt/gps/lib/gcc/x86_64-apple-darwin17.7.0/8.3.1/adalib/libgnat.a

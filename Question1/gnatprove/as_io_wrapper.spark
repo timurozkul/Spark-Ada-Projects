@@ -1,0 +1,140 @@
+{
+  "spark": [
+    {
+      "name": "AS_Io_Wrapper.AS_Init_Standard_Input",
+      "sloc": [
+        {
+          "file": "as_io_wrapper.ads",
+          "line": 25
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "AS_Io_Wrapper.AS_Init_Standard_Output",
+      "sloc": [
+        {
+          "file": "as_io_wrapper.ads",
+          "line": 32
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "AS_Io_Wrapper.AS_Get",
+      "sloc": [
+        {
+          "file": "as_io_wrapper.ads",
+          "line": 39
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "AS_Io_Wrapper.AS_Put",
+      "sloc": [
+        {
+          "file": "as_io_wrapper.ads",
+          "line": 45
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "AS_Io_Wrapper.AS_Get",
+      "sloc": [
+        {
+          "file": "as_io_wrapper.ads",
+          "line": 53
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "AS_Io_Wrapper.AS_Put",
+      "sloc": [
+        {
+          "file": "as_io_wrapper.ads",
+          "line": 59
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "AS_Io_Wrapper.AS_Get_Line",
+      "sloc": [
+        {
+          "file": "as_io_wrapper.ads",
+          "line": 76
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "AS_Io_Wrapper.AS_Put_Line",
+      "sloc": [
+        {
+          "file": "as_io_wrapper.ads",
+          "line": 83
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "AS_Io_Wrapper.AS_Put_Line",
+      "sloc": [
+        {
+          "file": "as_io_wrapper.ads",
+          "line": 88
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "AS_Io_Wrapper.AS_Get",
+      "sloc": [
+        {
+          "file": "as_io_wrapper.ads",
+          "line": 106
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "AS_Io_Wrapper.AS_Put",
+      "sloc": [
+        {
+          "file": "as_io_wrapper.ads",
+          "line": 114
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "AS_Io_Wrapper.AS_Put_Line",
+      "sloc": [
+        {
+          "file": "as_io_wrapper.ads",
+          "line": 119
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "AS_Io_Wrapper",
+      "sloc": [
+        {
+          "file": "as_io_wrapper.ads",
+          "line": 21
+        }
+      ],
+      "spark": "spec"
+    }
+  ],
+  "flow": [
+  ],
+  "proof": [
+  ],
+  "assumptions": [
+  ]
+}

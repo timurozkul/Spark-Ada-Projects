@@ -1,0 +1,31 @@
+V "GNAT Lib v2019"
+M P W=b
+A -gnatA
+A -gnatwa
+A -mtune=core2
+A -mmacosx-version-min=10.14.0
+A -fPIC
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U main%b		main.adb		c1f00ece NE OO SU
+W power_grid_energy_stabilizer%s  power_grid_energy_stabilizer.adb  power_grid_energy_stabilizer.ali
+
+U main%s		main.ads		cd1c0576 EE NE OO SU
+
+D main.ads		20200327134543 cd1c0576 main%s
+D main.adb		20200327134922 382da2ae main%b
+D power_grid_energy_stabilizer.ads  20200327135032 34c1a916 power_grid_energy_stabilizer%s
+D system.ads		20190518041255 085b6ffb system%s
+G a e
+G c Z s b [main standard 14 11 none]
+G r c none [main standard 14 11 none] [init power_grid_energy_stabilizer 16 14 none]
+X 1 main.ads
+14U11*Main 2|20b11 30l5 30t9
+X 3 power_grid_energy_stabilizer.ads
+13K9*Power_Grid_Energy_Stabilizer 2|15w6 16r5 3|21e34
+16U14*Init 2|23s4
+

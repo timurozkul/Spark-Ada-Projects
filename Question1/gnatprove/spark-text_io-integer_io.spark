@@ -1,0 +1,90 @@
+{
+  "spark": [
+    {
+      "name": "SPARK.Text_IO.Integer_IO.Ada_Integer_IO",
+      "sloc": [
+        {
+          "file": "spark-text_io-integer_io.adb",
+          "line": 43
+        }
+      ],
+      "spark": "no"
+    },
+    {
+      "name": "SPARK.Text_IO.Integer_IO.Get",
+      "sloc": [
+        {
+          "file": "spark-text_io-integer_io.ads",
+          "line": 55
+        }
+      ],
+      "spark": "no"
+    },
+    {
+      "name": "SPARK.Text_IO.Integer_IO.Get",
+      "sloc": [
+        {
+          "file": "spark-text_io-integer_io.ads",
+          "line": 65
+        }
+      ],
+      "spark": "no"
+    },
+    {
+      "name": "SPARK.Text_IO.Integer_IO.Put",
+      "sloc": [
+        {
+          "file": "spark-text_io-integer_io.ads",
+          "line": 76
+        }
+      ],
+      "spark": "no"
+    },
+    {
+      "name": "SPARK.Text_IO.Integer_IO.Put",
+      "sloc": [
+        {
+          "file": "spark-text_io-integer_io.ads",
+          "line": 91
+        }
+      ],
+      "spark": "no"
+    },
+    {
+      "name": "SPARK.Text_IO.Integer_IO.Get",
+      "sloc": [
+        {
+          "file": "spark-text_io-integer_io.ads",
+          "line": 109
+        }
+      ],
+      "spark": "no"
+    },
+    {
+      "name": "SPARK.Text_IO.Integer_IO.Put",
+      "sloc": [
+        {
+          "file": "spark-text_io-integer_io.ads",
+          "line": 115
+        }
+      ],
+      "spark": "no"
+    },
+    {
+      "name": "SPARK.Text_IO.Integer_IO",
+      "sloc": [
+        {
+          "file": "spark-text_io-integer_io.ads",
+          "line": 43
+        }
+      ],
+      "spark": "no"
+    }
+  ],
+  "flow": [
+  ],
+  "proof": [
+  ],
+  "assumptions": [
+  ]
+}

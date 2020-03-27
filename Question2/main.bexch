@@ -1,0 +1,22 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+/Users/timurozkul/criticalhighintegritysystems/timur/main.gpr
+20200214112854
+[BOUND OBJECT FILES]
+/Users/timurozkul/criticalhighintegritysystems/timur/nkires.o
+/Users/timurozkul/criticalhighintegritysystems/timur/spark.o
+/Users/timurozkul/criticalhighintegritysystems/timur/spark-text_io.o
+/Users/timurozkul/criticalhighintegritysystems/timur/spark-text_io-integer_io.o
+/Users/timurozkul/criticalhighintegritysystems/timur/as_io_wrapper.o
+/Users/timurozkul/criticalhighintegritysystems/timur/main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-L/Users/timurozkul/criticalhighintegritysystems/timur/
+-L/Users/timurozkul/criticalhighintegritysystems/timur/
+-L/users/timurozkul/opt/gps/lib/gcc/x86_64-apple-darwin17.7.0/8.3.1/adalib/
+-static
+/users/timurozkul/opt/gps/lib/gcc/x86_64-apple-darwin17.7.0/8.3.1/adalib/libgnat.a

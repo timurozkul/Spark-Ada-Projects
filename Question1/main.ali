@@ -1,0 +1,72 @@
+V "GNAT Lib v2015"
+M P W=b
+A -O2
+A -gnatA
+A -g
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U main%b		main.adb		3911ae98 NE OO SU
+W angles%s		angles.adb		angles.ali
+W as_io_wrapper%s	as_io_wrapper.adb	as_io_wrapper.ali
+
+U main%s		main.ads		cd1c0576 EE NE OO SU
+
+D ada.ads		20171018134701 3ffc8e18 ada%s
+D a-except.ads		20171018134659 5250cb69 ada.exceptions%s
+D a-ioexce.ads		20171018134701 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20171018134700 119b8fb3 ada.streams%s
+D a-tags.ads		20171018134659 dc4d0634 ada.tags%s
+D a-textio.ads		20171018134659 386df5d4 ada.text_io%s
+D a-unccon.ads		20171018134700 f9eb8f06 ada.unchecked_conversion%s
+D angles.ads		20200306105614 2ff68156 angles%s
+D as_io_wrapper.ads	20200214095545 000fc6dc as_io_wrapper%s
+D interfac.ads		20171018134659 6033a23f interfaces%s
+D i-cstrea.ads		20171018134659 e53d8b8e interfaces.c_streams%s
+D main.ads		20200228111728 cd1c0576 main%s
+D main.adb		20200313095135 dbf4ec64 main%b
+D spark.ads		20200214095545 86380d85 spark%s
+D spark-text_io.ads	20200214095545 3f556f64 spark.text_io%s
+D system.ads		20171018134659 1d274481 system%s
+D s-crtl.ads		20171018134659 0ebbdb71 system.crtl%s
+D s-exctab.ads		20171018134700 54135002 system.exception_table%s
+D s-ficobl.ads		20171018134700 078245e4 system.file_control_block%s
+D s-parame.ads		20171018134658 7e2a0d7f system.parameters%s
+D s-soflin.ads		20171018134659 aa763b52 system.soft_links%s
+D s-stache.ads		20171018134700 a37c21ec system.stack_checking%s
+D s-stalib.ads		20171018134659 fa0a3617 system.standard_library%s
+D s-stoele.ads		20171018134701 2dc34a04 system.storage_elements%s
+D s-traent.ads		20171018134700 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20171018134700 9d58a4c0 system.unsigned_types%s
+D s-wchcon.ads		20171018134701 1b7d22d2 system.wch_con%s
+X 8 angles.ads
+3K9*Angles 13e11 13|5w6 6r5
+4I12*angle{integer} 13|9r11 10r8 32r17 32r27 36r33 36r43
+6V13*AddAngles2{4I12} 13|36s22
+9U13*AddAngles 13|32s7
+X 9 as_io_wrapper.ads
+21K9*AS_Io_Wrapper 124e18 13|3w6 3r26
+25U14*AS_Init_Standard_Input 13|16s4
+32U14*AS_Init_Standard_Output 13|15s4
+59U14*AS_Put 13|19s10 26s10 40s9
+76U14*AS_Get_Line 13|41s9
+83U14*AS_Put_Line 13|22s10 29s10 33s7 35s7 39s9 43s9
+106U14*AS_Get 13|20s10 27s10
+114U14*AS_Put 13|36s7
+119U14*AS_Put_Line 13|34s7
+X 12 main.ads
+3U11*Main 13|8b11 47l5 47t9
+X 13 main.adb
+9i4 X{8|4I12} 24m7 32r23 36r39
+9i7 Y{8|4I12} 31m7 32r33 36r49
+10i4 U{8|4I12} 32m37 34r19
+11a4 User_Input{string} 41m21 45r16
+12i4 Xtemp{integer} 20m17 21r20 24r12
+12i11 Ytemp{integer} 27m17 28r20 31r12
+12i18 Last{integer} 41m33 42r19
+
