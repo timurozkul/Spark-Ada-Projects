@@ -19,6 +19,7 @@ package Power_Grid_Energy_Stabilizer is
    
    Maximum_Electricity_Possible : constant Integer := 10000000;--in watts or 10,000kw
    Maximum_Reserved_Electricity_Possible : constant Integer := 1000000;--in watts or 1000kw
+   Critical_Reserve_level : constant Integer := 5000;
    
    subtype Electricity_Range is new Integer range 0 .. Maximum_Electricity_Possible
    subtype Reserve_Electricity_Range is new Integer range 0 .. Maximum_Reserved_Electricity_Possible
@@ -27,14 +28,15 @@ package Power_Grid_Energy_Stabilizer is
    
    type Status_System_Type  is 
       record
+         Consumption_Measured : Electricity_Range;
          Supplied_Measured : Electricity_Range;
-	 Consumption_Measured : Electricity_Range;
+         Reserved_Measured : Reserved_Range;
 	 Status_Reserved_Electricity : Status_Reserved_Electricity_Type;
       end record;
    
    Status_System : Status_System_Type;
    
-   -- Function to create fake consumption energy (Random number generator) or (user input)
+   
    -- Function to create fake supply energy (Random number generator)
    -- Function to check if consumption >=< supply
    -- Function to refill reserverse every second by 10 watts if reserve is currently not being used 
@@ -50,17 +52,17 @@ package Power_Grid_Energy_Stabilizer is
      Global => (Output => (Standard_Output,Standard_Input,Status_System)),
      Depends => ((Standard_Output,Standard_Input,Status_System) => null),
      Post    => Is_Safe(Status_System);
+ 
+   function Status_Electricity_System_To_String (Status_Reserved_Electricity   : Status_Reserved_Electricity_Type) return String;
      
-   -- Read_Consumption gets the current temperature from console input output
-   -- and updates Status_System
-   -- it does NOT monitor the cooling system
-   -- so after executing it the system might be unsafe.x
    procedure Read_Consumption with
      Global => (In_Out => (Standard_Output, Standard_Input,Status_System)),
      Depends => (Standard_Output => (Standard_Output,Standard_Input),
 		 Standard_Input  => Standard_Input,
 		 Status_System   => (Status_System, Standard_Input));
    
+   function Is_Safe (Status : Status_System_Type) return Boolean;
+
    
 end  Power_Grid_Energy_Stabilizer;
 

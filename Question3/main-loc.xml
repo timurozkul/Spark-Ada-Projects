@@ -1,77 +1,22 @@
 <?xml version="1.0"?>
 <Locations >
-  <Project >
-    <file_marker column=" 1" line=" 1" >
+  <Project>
+    <vfs_file>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/main.gpr</vfs_file>
+    <file_marker column=" 4" line=" 44" >
+      <vfs_project>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/main.gpr</vfs_project>
+      <vfs_file>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/power_grid_energy_stabilizer.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 3" line=" 6" >
       <vfs_project />
       <vfs_file>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/main.gpr</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/main.gpr</vfs_project>
-      <vfs_file>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/cooling_system_nuclear_power.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/main.gpr</vfs_project>
-      <vfs_file>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/cooling_system_nuclear_power.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/main.gpr</vfs_project>
-      <vfs_file>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/main.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
+    <file_marker column=" 13" line=" 31" >
       <vfs_project>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/main.gpr</vfs_project>
       <vfs_file>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/main.gpr</vfs_project>
-      <vfs_file>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/cooling_system_nuclear_power.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/main.gpr</vfs_project>
-      <vfs_file>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/cooling_system_nuclear_power.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 4" line=" 41" >
-      <vfs_project>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/main.gpr</vfs_project>
-      <vfs_file>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/power_grid_energy_stabilizer.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/main.gpr</vfs_project>
-      <vfs_file>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/power_grid_energy_stabilizer.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 6" line=" 22" >
-      <vfs_project>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/main.gpr</vfs_project>
-      <vfs_file>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 4" line=" 41" >
-      <vfs_project>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/main.gpr</vfs_project>
-      <vfs_file>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/power_grid_energy_stabilizer.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 4" line=" 23" >
-      <vfs_project>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/main.gpr</vfs_project>
-      <vfs_file>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 16" >
-      <vfs_project>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/main.gpr</vfs_project>
-      <vfs_file>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 17" line=" 49" >
-      <vfs_project>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/main.gpr</vfs_project>
-      <vfs_file>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/power_grid_energy_stabilizer.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 49" >
-      <vfs_project>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/main.gpr</vfs_project>
-      <vfs_file>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/power_grid_energy_stabilizer.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 13" line=" 10" >
-      <vfs_project>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/main.gpr</vfs_project>
-      <vfs_file>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/power_grid_energy_stabilizer.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 33" line=" 49" >
-      <vfs_project>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/main.gpr</vfs_project>
-      <vfs_file>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/power_grid_energy_stabilizer.adb</vfs_file>
-    </file_marker>
-    <file_marker current="true" column=" 13" line=" 10" >
-      <vfs_project>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/main.gpr</vfs_project>
-      <vfs_file>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/power_grid_energy_stabilizer.ads</vfs_file>
+    <file_marker current="true" column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/main.gpr</vfs_file>
     </file_marker>
   </Project>
 </Locations>
