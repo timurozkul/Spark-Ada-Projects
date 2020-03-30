@@ -21,12 +21,14 @@ procedure Main
 is
 begin
    Init;
---   loop
---      pragma Loop_Invariant (Is_Safe(Status_System));
---      Read_Temperature;
---      Monitor_Cooling_System;
---      Print_Status;
---   end loop;
+   loop
+      pragma Loop_Invariant (Is_Safe(Status_System));
+      Read_Consumption;
+      Read_Supply;
+      Energy_Stabilizerg_System;
+      Print_Status;
+      Refill_Reserve;
+   end loop;
 end Main;
-      -- if 
+      
       
