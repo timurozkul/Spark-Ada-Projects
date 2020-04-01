@@ -1,0 +1,410 @@
+V "GNAT Lib v2019"
+A -x
+A ada
+A -gnatA
+A -gnatwa
+A -gnatc
+P GP FX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U power_grid_energy_stabilizer%b  power_grid_energy_stabilizer.adb  8f540964 OO PK
+W as_io_wrapper%s	as_io_wrapper.adb	as_io_wrapper.ali
+
+U power_grid_energy_stabilizer%s  power_grid_energy_stabilizer.ads  af2ecb77 OO PK
+W spark%s		spark.ads		spark.ali
+W spark.text_io%s	spark-text_io.adb	spark-text_io.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-ioexce.ads		20190518041254 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-textio.ads		20190518041256 aef4d56d ada.text_io%s
+D as_io_wrapper.ads	20200214112854 000fc6dc as_io_wrapper%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D i-cstrea.ads		20190518041254 e53d8b8e interfaces.c_streams%s
+D power_grid_energy_stabilizer.ads  20200401125621 907ba413 power_grid_energy_stabilizer%s
+D power_grid_energy_stabilizer.adb  20200401125633 1f206bab power_grid_energy_stabilizer%b
+D spark.ads		20200214112854 86380d85 spark%s
+D spark-text_io.ads	20200214112854 3f556f64 spark.text_io%s
+D system.ads		20190518041255 085b6ffb system%s
+D s-crtl.ads		20190518041254 0ebbdb71 system.crtl%s
+D s-ficobl.ads		20190518041256 078245e4 system.file_control_block%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-wchcon.ads		20190518041255 1b7d22d2 system.wch_con%s
+G a Z
+X 5 as_io_wrapper.ads
+21K9*AS_Io_Wrapper 124e18 9|3w6 3r26
+25U14*AS_Init_Standard_Input 9|10s7
+32U14*AS_Init_Standard_Output 9|11s7
+59U14*AS_Put 9|12s7 37s10 51s10 78s7 81s7 86s15 89s15 91s7 94s7
+83U14*AS_Put_Line 9|33s7 39s10 47s7 53s10 80s7 83s7 93s7
+106U14*AS_Get 9|35s10 49s10
+114U14*AS_Put 9|38s10 52s10 79s7 82s7 92s7 95s7
+X 8 power_grid_energy_stabilizer.ads
+13K9*Power_Grid_Energy_Stabilizer 80l6 80e34 9|6b14 111l5 111t33
+20i4*Maximum_Electricity_Possible{integer} 24r52 9|38r17 52r17
+21i4*Maximum_Reserved_Electricity_Possible{integer} 25r60 53r26 55r54 60r26
+. 62r55 9|15r46 36r58 50r58
+22i4*Critical_Reserve_level{integer} 73r43 74r69 9|24r64 88r54
+24I12*Electricity_Range{integer} 31r33 32r30 9|41r45 55r42
+25I12*Reserve_Electricity_Range{integer} 33r30 9|106r48
+27E9*Status_Reserved_Electricity_Type 27e71 34r40 49r80 9|58r80
+27n46*Activated{27E9} 9|60r45 70r57
+27n57*Not_Activated{27E9} 9|16r56 71r57
+29R9*Status_System_Type 35e17 37r20 47r31 9|19r31
+31i10*Consumption_Measured{24I12} 9|13m25 23r28 41m21 68r32 79r28 85r25 102r75
+. 104r98
+32i10*Supplied_Measured{24I12} 9|14m25 23r67 55m21 68r78 82r28 85r63 102r32
+. 104r55
+33i10*Reserved_Measured{25I12} 9|15m25 24r43 69r27 85r97 88r33 92r36 95r28
+. 105r71 106m27
+34e10*Status_Reserved_Electricity{27E9} 9|16m25 70m26 71m26
+37r4*Status_System{29R9} 43r59 44r50 45r25 52r60 56r18 56r38 59r60 63r18
+. 63r38 66r28 67r18 67r35 68r25 73r28 74r54 77r28 78r18 78r35 9|13m7 41m7
+. 55m7 68r18 68r64 69r13 70m12 71m12 79r14 82r14 85r11 85r49 85r83 88r19
+. 92r22 95r14 102r18 102r61 104r41 104r84 105r57 106m13
+42U14*Init 9|8b14 17l8 17t12
+47V13*Is_Safe{boolean} 45s17 47>22 68s17 9|19b13 28l11 28t18
+47r22 Status{29R9} 9|19b22 23r21 23r60 24r36
+49V13*Status_Electricity_System_To_String{string} 49>50 9|58b13 64l8 64t43
+49e50 Status_Reserved_Electricity{27E9} 9|58b50 60r15
+51U14*Read_Consumption 9|30b13 42l8 42t24
+58U15*Read_Supply 9|44b15 56l8 56t19
+65U15*Energy_Stabilizerg_System 9|66b14 73l8 73t33
+71U14*Print_Status 9|75b14 96l11 96t23
+76U14*Refill_Reserve 9|98b14 108l8 108t22
+X 9 power_grid_energy_stabilizer.adb
+31i7 Electricity{integer} 35m17 36r21 36r43 41r63
+45i7 Electricity{integer} 49m17 50r21 50r43 55r60
+99i10 Remaining_Supply{integer} 104m13 105r30
+100i10 Reserve_Total{integer} 105m13 106r74
+X 10 spark.ads
+37K9*SPARK 8|10r6 10r25 10|74e10
+X 11 spark-text_io.ads
+49K15*Text_IO 8|10w12 10r31 11|774e18
+58R9*File_Type<10|61R9>
+102r4*Standard_Input{58R9} 8|43r44 44r35 52r45 54r54 55r18 55r38 56r53 59r45
+. 61r54 62r19 62r39 63r53
+103r4*Standard_Output{58R9} 8|43r28 44r19 52r28 54r18 54r38 59r28 61r18 61r38
+. 72r27 74r18 74r38
+
+QQ SPARKVERSION 2019 (20190517)
+GG EK_DIRECT_CALLS power_grid_energy_stabilizer__init 4 power_grid_energy_stabilizer__is_safe as_io_wrapper__as_init_standard_input as_io_wrapper__as_init_standard_output as_io_wrapper__as_put__2
+GG EK_GLOBALS power_grid_energy_stabilizer__init local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 3 power_grid_energy_stabilizer__status_system spark__text_io__standard_input spark__text_io__standard_output refined_proof_in 0 refined_input 0 refined_output 3 power_grid_energy_stabilizer__status_system spark__text_io__standard_input spark__text_io__standard_output calls_proof 0 calls 0 calls_conditional 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 3 power_grid_energy_stabilizer__status_system spark__text_io__standard_input spark__text_io__standard_output LOCKS 0
+GG EK_DIRECT_CALLS power_grid_energy_stabilizer__is_safe 0
+GG EK_GLOBALS power_grid_energy_stabilizer__is_safe local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS power_grid_energy_stabilizer__status_electricity_system_to_string 0
+GG EK_GLOBALS power_grid_energy_stabilizer__status_electricity_system_to_string local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS power_grid_energy_stabilizer__read_consumption 4 as_io_wrapper__as_put__2 as_io_wrapper__as_put_line as_io_wrapper__as_get__3 as_io_wrapper__as_put__3
+GG EK_GLOBALS power_grid_energy_stabilizer__read_consumption local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 3 power_grid_energy_stabilizer__status_system spark__text_io__standard_input spark__text_io__standard_output proper_output 3 power_grid_energy_stabilizer__status_system spark__text_io__standard_input spark__text_io__standard_output refined_proof_in 0 refined_input 3 power_grid_energy_stabilizer__status_system spark__text_io__standard_input spark__text_io__standard_output refined_output 3 power_grid_energy_stabilizer__status_system spark__text_io__standard_input spark__text_io__standard_output calls_proof 0 calls 0 calls_conditional 0 FALSE TRUE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 3 power_grid_energy_stabilizer__status_system spark__text_io__standard_input spark__text_io__standard_output LOCKS 0
+GG EK_DIRECT_CALLS power_grid_energy_stabilizer__read_supply 4 as_io_wrapper__as_put__2 as_io_wrapper__as_put_line as_io_wrapper__as_get__3 as_io_wrapper__as_put__3
+GG EK_GLOBALS power_grid_energy_stabilizer__read_supply local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 3 power_grid_energy_stabilizer__status_system spark__text_io__standard_input spark__text_io__standard_output proper_output 3 power_grid_energy_stabilizer__status_system spark__text_io__standard_input spark__text_io__standard_output refined_proof_in 0 refined_input 3 power_grid_energy_stabilizer__status_system spark__text_io__standard_input spark__text_io__standard_output refined_output 3 power_grid_energy_stabilizer__status_system spark__text_io__standard_input spark__text_io__standard_output calls_proof 0 calls 0 calls_conditional 0 FALSE TRUE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 3 power_grid_energy_stabilizer__status_system spark__text_io__standard_input spark__text_io__standard_output LOCKS 0
+GG EK_DIRECT_CALLS power_grid_energy_stabilizer__energy_stabilizerg_system 1 power_grid_energy_stabilizer__is_safe
+GG EK_GLOBALS power_grid_energy_stabilizer__energy_stabilizerg_system local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 1 power_grid_energy_stabilizer__status_system proper_output 1 power_grid_energy_stabilizer__status_system refined_proof_in 0 refined_input 1 power_grid_energy_stabilizer__status_system refined_output 1 power_grid_energy_stabilizer__status_system calls_proof 0 calls 0 calls_conditional 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 1 power_grid_energy_stabilizer__status_system LOCKS 0
+GG EK_DIRECT_CALLS power_grid_energy_stabilizer__print_status 3 as_io_wrapper__as_put__2 as_io_wrapper__as_put_line as_io_wrapper__as_put__3
+GG EK_GLOBALS power_grid_energy_stabilizer__print_status local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 2 power_grid_energy_stabilizer__status_system spark__text_io__standard_output proper_output 1 spark__text_io__standard_output refined_proof_in 0 refined_input 2 power_grid_energy_stabilizer__status_system spark__text_io__standard_output refined_output 1 spark__text_io__standard_output calls_proof 0 calls 0 calls_conditional 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 2 power_grid_energy_stabilizer__status_system spark__text_io__standard_output LOCKS 0
+GG EK_DIRECT_CALLS power_grid_energy_stabilizer__refill_reserve 0
+GG EK_GLOBALS power_grid_energy_stabilizer__refill_reserve local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 1 power_grid_energy_stabilizer__status_system proper_output 1 power_grid_energy_stabilizer__status_system refined_proof_in 0 refined_input 1 power_grid_energy_stabilizer__status_system refined_output 1 power_grid_energy_stabilizer__status_system calls_proof 0 calls 0 calls_conditional 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 1 power_grid_energy_stabilizer__status_system LOCKS 0
+GG EK_DIRECT_CALLS power_grid_energy_stabilizer 0
+GG EK_GLOBALS power_grid_energy_stabilizer local FALSE E_PACKAGE TRUE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 initializes 0 calls_proof 0 calls 0 calls_conditional 0 local_var 1 power_grid_energy_stabilizer__status_system FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_FLOW_SCOPE ada__text_io__new_page FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__get_immediate__3 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__get_line__3 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE interfaces__c_streams__set_binary_mode FALSE FALSE FALSE FALSE TRUE interfaces__c_streams VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__initialize_standard_files FALSE FALSE FALSE FALSE TRUE ada__text_io PRIVATE_PART
+GG EK_FLOW_SCOPE interfaces__shift_left__3 FALSE FALSE FALSE FALSE TRUE interfaces VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__put__2 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__set_col__3 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__col__4 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE system__crtl__unlink FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE system__crtl__mktemp FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__is_standard_input FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__streams__stream_element_arraySW FALSE FALSE FALSE FALSE TRUE ada__streams PRIVATE_PART
+GG EK_FLOW_SCOPE ada__text_io__line_length FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE system__crtl__fclose FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__standard_input__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE interfaces__c_streams__set_text_mode FALSE FALSE FALSE FALSE TRUE interfaces__c_streams VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__put FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE as_io_wrapper__as_get_line FALSE FALSE FALSE FALSE TRUE as_io_wrapper VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__line__3 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE system__crtl TRUE FALSE FALSE FALSE FALSE system
+GG EK_FLOW_SCOPE interfaces__c_streams__fileno FALSE FALSE FALSE FALSE TRUE interfaces__c_streams VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__skip_page FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__io_exceptions TRUE FALSE FALSE FALSE FALSE ada
+GG EK_FLOW_SCOPE power_grid_energy_stabilizer__refill_reserve FALSE FALSE FALSE FALSE TRUE power_grid_energy_stabilizer VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__get_line__4 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__set_line FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__flush FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE system__crtl__fseek FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE interfaces__shift_right__3 FALSE FALSE FALSE FALSE TRUE interfaces VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__standard_output__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE system__crtl__open FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE system__crtl__pclose FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__get__3 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__is_standard_output FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE system__crtl__fdopen FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__put_line FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE power_grid_energy_stabilizer TRUE FALSE FALSE FALSE FALSE __standard
+GG EK_FLOW_SCOPE ada__text_io__standard_error__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__put__4 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__line__4 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__line_length__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__new_page__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__open__2 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE interfaces__shift_right_arithmetic__3 FALSE FALSE FALSE FALSE TRUE interfaces VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__skip_line__2 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__reset__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__current_input__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__is_standard_error FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE system__wch_con TRUE FALSE FALSE FALSE FALSE system
+GG EK_FLOW_SCOPE system__crtl__popen FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__page__3 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__file_typeDefault_Initial_Condition FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE spark TRUE FALSE FALSE FALSE FALSE __standard
+GG EK_FLOW_SCOPE as_io_wrapper__as_put_line FALSE FALSE FALSE FALSE TRUE as_io_wrapper VISIBLE_PART
+GG EK_FLOW_SCOPE system__crtl__close FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE system__crtl__fseek64 FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__page_length FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__put_line__2 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__current_output__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE system__crtl__fflush FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__get__4 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__get_immediate__4 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE interfaces__rotate_left__3 FALSE FALSE FALSE FALSE TRUE interfaces VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__put__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__skip_page FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__is_standard_writable FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__current_error__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__page__4 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__skip_page__2 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__set_page_length__3 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE interfaces__c_streams__fwrite FALSE FALSE FALSE FALSE TRUE interfaces__c_streams VISIBLE_PART
+GG EK_FLOW_SCOPE system__crtl__read FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__look_ahead FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE as_io_wrapper__as_put_line__2 FALSE FALSE FALSE FALSE TRUE as_io_wrapper VISIBLE_PART
+GG EK_FLOW_SCOPE system__crtl__realloc FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__flush FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE system__crtl__fgetc FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__get FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__streams TRUE FALSE FALSE FALSE FALSE ada
+GG EK_FLOW_SCOPE ada__text_io__page_length__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE interfaces__shift_left FALSE FALSE FALSE FALSE TRUE interfaces VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__put_line__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE interfaces__rotate_right__3 FALSE FALSE FALSE FALSE TRUE interfaces VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__set_line__2 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE system__crtl__ftell FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__create FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__flush__2 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__set_line__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__is_standard_file FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__put__3 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__afcb_allocate__2 FALSE FALSE FALSE FALSE TRUE ada__text_io PRIVATE_PART
+GG EK_FLOW_SCOPE as_io_wrapper__as_get__3 FALSE FALSE FALSE FALSE TRUE as_io_wrapper VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__skip_page__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__mode FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__look_ahead FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__new_line FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE interfaces__c_streams__set_mode FALSE FALSE FALSE FALSE TRUE interfaces__c_streams VISIBLE_PART
+GG EK_FLOW_SCOPE system__crtl__fgets FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__skip_line__3 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE interfaces__shift_right FALSE FALSE FALSE FALSE TRUE interfaces VISIBLE_PART
+GG EK_FLOW_SCOPE system__Olt FALSE FALSE FALSE FALSE TRUE system VISIBLE_PART
+GG EK_FLOW_SCOPE system__crtl__write FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE interfaces__shift_left__4 FALSE FALSE FALSE FALSE TRUE interfaces VISIBLE_PART
+GG EK_FLOW_SCOPE system__crtl__rewind FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE system__crtl__ftell64 FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__get_line FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__afcb_close__2 FALSE FALSE FALSE FALSE TRUE ada__text_io PRIVATE_PART
+GG EK_FLOW_SCOPE spark__text_io__end_of_page FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__name FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__is_open FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__end_of_page FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__get__3 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE interfaces__c_streams__full_name FALSE FALSE FALSE FALSE TRUE interfaces__c_streams VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__afcb_free__2 FALSE FALSE FALSE FALSE TRUE ada__text_io PRIVATE_PART
+GG EK_FLOW_SCOPE spark__text_io__close FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE system__Ole FALSE FALSE FALSE FALSE TRUE system VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__flush__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE interfaces__shift_right_arithmetic FALSE FALSE FALSE FALSE TRUE interfaces VISIBLE_PART
+GG EK_FLOW_SCOPE system__crtl__rmdir FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__col FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE system__crtl__getenv FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE interfaces__shift_right__4 FALSE FALSE FALSE FALSE TRUE interfaces VISIBLE_PART
+GG EK_FLOW_SCOPE interfaces__c_streams__stdin FALSE FALSE FALSE FALSE TRUE interfaces__c_streams VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__line_length__2 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__end_of_page__2 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE as_io_wrapper__as_put__3 FALSE FALSE FALSE FALSE TRUE as_io_wrapper VISIBLE_PART
+GG EK_FLOW_SCOPE system__crtl__fopen FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__look_ahead__2 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__mode__2 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE interfaces__c_streams__stdout FALSE FALSE FALSE FALSE TRUE interfaces__c_streams VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__read__2 FALSE FALSE FALSE FALSE TRUE ada__text_io PRIVATE_PART
+GG EK_FLOW_SCOPE ada__text_io__look_ahead__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__streams__read FALSE FALSE FALSE FALSE TRUE ada__streams VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__form FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__get__2 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE interfaces__c_streams__fread FALSE FALSE FALSE FALSE TRUE interfaces__c_streams VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__put__4 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__set_line_length__2 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE interfaces__c_streams__stderr FALSE FALSE FALSE FALSE TRUE interfaces__c_streams VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__end_of_file FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE system__Ogt FALSE FALSE FALSE FALSE TRUE system VISIBLE_PART
+GG EK_FLOW_SCOPE as_io_wrapper TRUE FALSE FALSE FALSE FALSE __standard
+GG EK_FLOW_SCOPE interfaces__rotate_left FALSE FALSE FALSE FALSE TRUE interfaces VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__end_of_page__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE system__crtl__chdir FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE power_grid_energy_stabilizer__init FALSE FALSE FALSE FALSE TRUE power_grid_energy_stabilizer VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__set_line_length FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE interfaces__shift_right_arithmetic__4 FALSE FALSE FALSE FALSE TRUE interfaces VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__new_line__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE system__crtl__isatty FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE system__parameters TRUE FALSE FALSE FALSE FALSE system
+GG EK_FLOW_SCOPE ada__text_io__col__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE as_io_wrapper__as_init_standard_input FALSE FALSE FALSE FALSE TRUE as_io_wrapper VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__end_of_line FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__line_length__3 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__name FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE interfaces__c_streams__setvbuf FALSE FALSE FALSE FALSE TRUE interfaces__c_streams VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__delete FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__open FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE as_io_wrapper__as_put_line__3 FALSE FALSE FALSE FALSE TRUE as_io_wrapper VISIBLE_PART
+GG EK_FLOW_SCOPE system__crtl__strlen FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__is_open FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__end_of_file FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__streams__write FALSE FALSE FALSE FALSE TRUE ada__streams VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__line FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__page_length__2 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE system__Oge FALSE FALSE FALSE FALSE TRUE system VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__end_of_file__2 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE system__crtl__mkdir FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE interfaces__rotate_right FALSE FALSE FALSE FALSE TRUE interfaces VISIBLE_PART
+GG EK_FLOW_SCOPE system__crtl__fputc FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE system__crtl__lseek FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE interfaces__rotate_left__4 FALSE FALSE FALSE FALSE TRUE interfaces VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__write__2 FALSE FALSE FALSE FALSE TRUE ada__text_io PRIVATE_PART
+GG EK_FLOW_SCOPE ada__text_io__get_line FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__get_immediate FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__end_of_line__2 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE power_grid_energy_stabilizer__is_safe FALSE FALSE FALSE FALSE TRUE power_grid_energy_stabilizer VISIBLE_PART
+GG EK_FLOW_SCOPE interfaces__c_streams__fread__2 FALSE FALSE FALSE FALSE TRUE interfaces__c_streams VISIBLE_PART
+GG EK_FLOW_SCOPE as_io_wrapper__as_init_standard_output FALSE FALSE FALSE FALSE TRUE as_io_wrapper VISIBLE_PART
+GG EK_FLOW_SCOPE system__file_control_block__afcb_allocate FALSE FALSE FALSE FALSE TRUE system__file_control_block VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__set_input FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__form FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__skip_line FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__get__4 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE system__crtl__strncpy FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE system__wch_con__get_wc_encoding_method FALSE FALSE FALSE FALSE TRUE system__wch_con VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__get_immediate FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__set_col__2 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE system__Oeq FALSE FALSE FALSE FALSE TRUE system VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__get_line__2 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__new_page FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__page_length__3 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE interfaces__shift_left__2 FALSE FALSE FALSE FALSE TRUE interfaces VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__line__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__end_of_file__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__set_line__3 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE system__parameters__default_stack_size FALSE FALSE FALSE FALSE TRUE system__parameters VISIBLE_PART
+GG EK_FLOW_SCOPE power_grid_energy_stabilizer__status_electricity_system_to_string FALSE FALSE FALSE FALSE TRUE power_grid_energy_stabilizer VISIBLE_PART
+GG EK_FLOW_SCOPE interfaces__rotate_right__4 FALSE FALSE FALSE FALSE TRUE interfaces VISIBLE_PART
+GG EK_FLOW_SCOPE system__file_control_block__afcb_close FALSE FALSE FALSE FALSE TRUE system__file_control_block VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__reset__2 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__streams__read_sea FALSE FALSE FALSE FALSE TRUE ada__streams PRIVATE_PART
+GG EK_FLOW_SCOPE ada__text_io__set_output FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE system__crtl__setvbuf FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE system__crtl__fputwc FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE system__wch_con__get_wc_encoding_method__2 FALSE FALSE FALSE FALSE TRUE system__wch_con VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__set_line_length__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE system__parameters__minimum_stack_size FALSE FALSE FALSE FALSE TRUE system__parameters VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__new_line__2 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__is_readable FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__page FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE as_io_wrapper__as_get FALSE FALSE FALSE FALSE TRUE as_io_wrapper VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__set_col FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE system__crtl__malloc FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE power_grid_energy_stabilizer__read_consumption FALSE FALSE FALSE FALSE TRUE power_grid_energy_stabilizer VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__init_standard_input FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE system__parameters__adjust_storage_size FALSE FALSE FALSE FALSE TRUE system__parameters VISIBLE_PART
+GG EK_FLOW_SCOPE system__file_control_block__afcb_free FALSE FALSE FALSE FALSE TRUE system__file_control_block VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__get_immediate__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__put FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE interfaces__shift_right__2 FALSE FALSE FALSE FALSE TRUE interfaces VISIBLE_PART
+GG EK_FLOW_SCOPE system__wch_con__is_start_of_encoding FALSE FALSE FALSE FALSE TRUE system__wch_con VISIBLE_PART
+GG EK_FLOW_SCOPE ada TRUE FALSE FALSE FALSE FALSE __standard
+GG EK_FLOW_SCOPE interfaces__c_streams__feof FALSE FALSE FALSE FALSE TRUE interfaces__c_streams VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__set_error FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__streams__write_sea FALSE FALSE FALSE FALSE TRUE ada__streams PRIVATE_PART
+GG EK_FLOW_SCOPE ada__text_io__skip_line__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE system__crtl__atoi FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__set_line_length__3 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE system__crtl__fputs FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__is_writable FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE interfaces__c_streams__ferror FALSE FALSE FALSE FALSE TRUE interfaces__c_streams VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__set_page_length FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE system__crtl__memcpy FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__page__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__close FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE as_io_wrapper__as_put FALSE FALSE FALSE FALSE TRUE as_io_wrapper VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__standard_input FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE interfaces TRUE FALSE FALSE FALSE FALSE __standard
+GG EK_FLOW_SCOPE spark__text_io__init_standard_output FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE interfaces__shift_right_arithmetic__2 FALSE FALSE FALSE FALSE TRUE interfaces VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__get_line__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE power_grid_energy_stabilizer__read_supply FALSE FALSE FALSE FALSE TRUE power_grid_energy_stabilizer VISIBLE_PART
+GG EK_FLOW_SCOPE system__crtl__tmpnam FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE system__crtl__clearerr FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__get_immediate__3 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__get FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__standard_output FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__get_immediate__2 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__put__3 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__end_of_line FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io TRUE FALSE FALSE FALSE FALSE ada
+GG EK_FLOW_SCOPE ada__streams__stream_element_arraySR FALSE FALSE FALSE FALSE TRUE ada__streams PRIVATE_PART
+GG EK_FLOW_SCOPE spark__text_io TRUE FALSE FALSE FALSE FALSE spark
+GG EK_FLOW_SCOPE system__crtl__free FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__standard_error FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE interfaces__rotate_left__2 FALSE FALSE FALSE FALSE TRUE interfaces VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__create__2 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE system TRUE FALSE FALSE FALSE FALSE __standard
+GG EK_FLOW_SCOPE as_io_wrapper__as_get__2 FALSE FALSE FALSE FALSE TRUE as_io_wrapper VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__delete FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE system__crtl__tmpfile FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__new_page__2 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__reset__3 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__init_standard_error FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE system__file_control_block TRUE FALSE FALSE FALSE FALSE system
+GG EK_FLOW_SCOPE system__crtl__dup FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE system__crtl__memmove FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__put_line FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE interfaces__c_streams__file_exists FALSE FALSE FALSE FALSE TRUE interfaces__c_streams VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__current_input FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE power_grid_energy_stabilizer__energy_stabilizerg_system FALSE FALSE FALSE FALSE TRUE power_grid_energy_stabilizer VISIBLE_PART
+GG EK_FLOW_SCOPE system__crtl__ungetc FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE system__crtl__freopen FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE interfaces__rotate_right__2 FALSE FALSE FALSE FALSE TRUE interfaces VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__col__3 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__set_col__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__set_page_length__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__current_output FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__get__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__new_line__3 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE interfaces__c_streams TRUE FALSE FALSE FALSE FALSE interfaces
+GG EK_FLOW_SCOPE ada__text_io__end_of_line__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE interfaces__c_streams__is_regular_file FALSE FALSE FALSE FALSE TRUE interfaces__c_streams VISIBLE_PART
+GG EK_FLOW_SCOPE system__crtl__dup2 FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE as_io_wrapper__as_put__2 FALSE FALSE FALSE FALSE TRUE as_io_wrapper VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__get_immediate__4 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__status FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__reset FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__set_page_length__2 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__eof_char FALSE FALSE FALSE FALSE TRUE ada__text_io PRIVATE_PART
+GG EK_FLOW_SCOPE ada__text_io__current_error FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE power_grid_energy_stabilizer__print_status FALSE FALSE FALSE FALSE TRUE power_grid_energy_stabilizer VISIBLE_PART
+GG EK_END_MARKER

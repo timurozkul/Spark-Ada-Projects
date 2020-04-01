@@ -7,7 +7,7 @@
 
 pragma SPARK_Mode (On);
 
---with SPARK.Text_IO;use  SPARK.Text_IO;
+with SPARK.Text_IO;use  SPARK.Text_IO;
 
 
 package Power_Grid_Energy_Stabilizer is
@@ -49,15 +49,17 @@ package Power_Grid_Energy_Stabilizer is
    function Status_Electricity_System_To_String (Status_Reserved_Electricity : Status_Reserved_Electricity_Type) return String;
      
    procedure Read_Consumption with
-     Global => (In_Out => (Standard_Output, Standard_Input,Status_System)),
+     Global => (In_Out => (Standard_Output, Standard_Input,Status_System),
+                Input => Maximum_Reserved_Electricity_Possible),
      Depends => (Standard_Output => (Standard_Output,Standard_Input),
-		 Standard_Input  => Standard_Input,
+		 Standard_Input  => (Standard_Input, Maximum_Reserved_Electricity_Possible),
                  Status_System   => (Status_System, Standard_Input));
    
     procedure Read_Supply with
-     Global => (In_Out => (Standard_Output, Standard_Input,Status_System)),
+     Global => (In_Out => (Standard_Output, Standard_Input,Status_System),
+                Input => Maximum_Reserved_Electricity_Possible),
      Depends => (Standard_Output => (Standard_Output,Standard_Input),
-		 Standard_Input  => Standard_Input,
+		  Standard_Input  => (Standard_Input, Maximum_Reserved_Electricity_Possible),
                  Status_System   => (Status_System, Standard_Input));
    
     procedure Energy_Stabilizerg_System  with
@@ -68,10 +70,12 @@ package Power_Grid_Energy_Stabilizer is
    -- Print Status prints out the status of the system on console
    procedure Print_Status with
      Global => (In_Out => Standard_Output, 
-		Input  => Status_System),
-     Depends => (Standard_Output => (Standard_Output,Status_System));
+		Input  => (Status_System, Critical_Reserve_level)),
+     Depends => (Standard_Output => (Standard_Output,Status_System, Critical_Reserve_level));
 
-   procedure Refill_Reserve;
+   procedure Refill_Reserve with
+     Global  => (In_Out => Status_System),
+     Depends => (Status_System => Status_System);
    
 end  Power_Grid_Energy_Stabilizer;
 

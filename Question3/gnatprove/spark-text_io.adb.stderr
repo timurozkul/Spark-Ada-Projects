@@ -1,0 +1,6 @@
+spark-text_io.ads:51:42: high: "Standard_Input" is not initialized[#0]
+spark-text_io.ads:52:42: high: "Standard_Output" is not initialized[#2]
+spark-text_io.ads:53:42: high: "Standard_Error" is not initialized[#4]
+spark-text_io.ads:102:04: high: "Standard_Input" is not initialized in "Text_IO"[#1]
+spark-text_io.ads:103:04: high: "Standard_Output" is not initialized in "Text_IO"[#3]
+spark-text_io.ads:104:04: high: "Standard_Error" is not initialized in "Text_IO"[#5]

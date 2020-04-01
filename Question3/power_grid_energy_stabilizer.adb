@@ -21,11 +21,11 @@ package body Power_Grid_Energy_Stabilizer is
           -- This system has two critical points one if consumptionn becomes greater than
           -- supply & when the reserve levels drop below 5000 watts
          if(Integer(Status.Consumption_Measured) > Integer(Status.Supplied_Measured) 
-                       AND Integer(Status.Reserved_Measured) > Critical_Reserve_level)) 
-         then return true;
-         else return false
-    
-   end Is_Safe;
+                       AND Integer(Status.Reserved_Measured) > Critical_Reserve_level) 
+           then return true;
+           else return false;
+         end if;
+      end Is_Safe;
   
   procedure Read_Consumption is
       Electricity: Integer;
@@ -33,7 +33,7 @@ package body Power_Grid_Energy_Stabilizer is
       AS_Put_Line("Please type in current electricity consumption as read by sensor");
       loop
 	 AS_Get(Electricity,"Please type in an integer");
-	 exit when (Electricity >=0) and (Electricity <= Maximum_Temperature_Possible);
+	 exit when (Electricity >=0) and (Electricity <= Maximum_Reserved_Electricity_Possible);
 	 AS_Put("Please type in a value between 0 and ");
 	 AS_Put(Maximum_Electricity_Possible);
 	 AS_Put_Line("");
@@ -47,7 +47,7 @@ package body Power_Grid_Energy_Stabilizer is
       AS_Put_Line("Please type in current electricity supplied as read by sensor.");
       loop
 	 AS_Get(Electricity,"Please type in an integer: ");
-	 exit when (Electricity >=0) and (Electricity <= Maximum_Temperature_Possible);
+	 exit when (Electricity >=0) and (Electricity <= Maximum_Reserved_Electricity_Possible);
 	 AS_Put("Please type in a value between 0 and ");
 	 AS_Put(Maximum_Electricity_Possible);
 	 AS_Put_Line("");
@@ -58,18 +58,15 @@ package body Power_Grid_Energy_Stabilizer is
    function Status_Electricity_System_To_String (Status_Reserved_Electricity : Status_Reserved_Electricity_Type) return String is
       begin
          case Status_Reserved_Electricity = Activated is
-            when Activated => return "Activated";
-            when Not_Activated => return "Not_Activated";
-	 --if (Status_Reserved_Electricity = Activated) 
-	 --then return "Activated";
-	 --else return "Not_Activated";
-	 --end if;
+            when true => return "Activated";
+            when false => return "Not_Activated";
+         end case;
    end Status_Electricity_System_To_String;
    
    procedure Energy_Stabilizerg_System  is
    begin
       if Integer(Status_System.Consumption_Measured) > Integer(Status_System.Supplied_Measured)
-        AND Reserved_Measured > 1
+        AND Status_System.Reserved_Measured > 0
       then Status_System.Status_Reserved_Electricity := Activated;
       else Status_System.Status_Reserved_Electricity := Not_Activated;
       end if;
@@ -86,12 +83,13 @@ package body Power_Grid_Energy_Stabilizer is
       AS_Put_Line("");
          
       if (Status_System.Consumption_Measured > (Status_System.Supplied_Measured + Status_System.Reserved_Measured)) 
-         then return AS_Put("System Critical! Not enough energy to supply all.");
-            
-      if (Status_System.Status_Reserved_Electricity < Critical_Reserve_level) 
-	 then return AS_Put("Reserve Levels at Critical! ");
+         then AS_Put("System Critical! Not enough energy to supply all.");
+      end if;     
+      if (Integer(Status_System.Reserved_Measured) < Critical_Reserve_level) 
+         then AS_Put("Reserve Levels at Critical! ");
+      end if;
       AS_Put("Reserve status = ");
-      AS_Put(Status_System.Status_Reserved_Electricity);
+      AS_Put(Integer(Status_System.Reserved_Measured));
       AS_Put_Line("");
       AS_Put("Electricity remaining in reserve = ");
       AS_Put(Status_System.Reserved_Measured);

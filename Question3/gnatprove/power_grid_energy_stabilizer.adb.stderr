@@ -1,0 +1,6 @@
+power_grid_energy_stabilizer.ads:53:26: medium: constant without variable input "Maximum_Reserved_Electricity_Possible" cannot appear in Globals[#2]
+power_grid_energy_stabilizer.ads:55:54: medium: constant without variable input "Maximum_Reserved_Electricity_Possible" cannot appear in Depends[#3]
+power_grid_energy_stabilizer.ads:60:26: medium: constant without variable input "Maximum_Reserved_Electricity_Possible" cannot appear in Globals[#0]
+power_grid_energy_stabilizer.ads:62:55: medium: constant without variable input "Maximum_Reserved_Electricity_Possible" cannot appear in Depends[#1]
+power_grid_energy_stabilizer.ads:73:43: medium: constant without variable input "Critical_Reserve_level" cannot appear in Globals[#4]
+power_grid_energy_stabilizer.ads:74:69: medium: constant without variable input "Critical_Reserve_level" cannot appear in Depends[#5]

@@ -1,0 +1,124 @@
+{
+  "spark": [
+    {
+      "name": "Main",
+      "sloc": [
+        {
+          "file": "main.ads",
+          "line": 14
+        }
+      ],
+      "spark": "all"
+    }
+  ],
+  "flow": [
+  ],
+  "assumptions": [
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Energy_Stabilizerg_System",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 65
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Init",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 42
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Is_Safe",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 47
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Print_Status",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 71
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Read_Consumption",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 51
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Read_Supply",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 58
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Refill_Reserve",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 76
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Main",
+          "sloc": [
+            {
+              "file": "main.ads",
+              "line": 14
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "timings": {
+    "marking": 2.24400009028614E-03,
+    "globals (basic)": 7.91900046169758E-03,
+    "globals/properties (advanced)": 1.99749991297722E-02,
+    "flow analysis": 1.22079998254776E-02
+  }
+}
