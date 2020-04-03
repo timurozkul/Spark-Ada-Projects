@@ -222,6 +222,7 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
+   --   /Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/global_variables.o
    --   /Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/spark.o
    --   /Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/spark-text_io.o
    --   /Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/spark-text_io-integer_io.o

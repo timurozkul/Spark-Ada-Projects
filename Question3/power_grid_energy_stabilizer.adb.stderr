@@ -1,0 +1,3 @@
+power_grid_energy_stabilizer.adb:22:21: missing argument for parameter "File" in call to "Status" declared at spark-text_io.ads:133
+power_grid_energy_stabilizer.adb:22:61: missing argument for parameter "File" in call to "Status" declared at spark-text_io.ads:133
+power_grid_energy_stabilizer.adb:23:36: missing argument for parameter "File" in call to "Status" declared at spark-text_io.ads:133

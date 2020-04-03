@@ -1,0 +1,1568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE why3session PUBLIC "-//Why3//proof session v5//EN"
+"http://why3.lri.fr/why3session.dtd">
+<why3session shape_version="6">
+<prover id="0" name="CVC4" version="1.6-gnatprove" timelimit="1" steplimit="0" memlimit="1000"/>
+<prover id="1" name="CVC4_CE" version="1.6-gnatprove" timelimit="1" steplimit="0" memlimit="1000"/>
+<file>
+<path name=".."/>
+<path name="spark-text_io.mlw"/>
+<theory name="Spark__text_io__package_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="postcondition">
+  </goal>
+  <goal name="VC def.1" expl="postcondition">
+  </goal>
+  <goal name="VC def.2" expl="postcondition">
+  </goal>
+  <goal name="VC def.3" expl="precondition">
+  </goal>
+  <goal name="VC def.4" expl="precondition">
+  </goal>
+  <goal name="VC def.5" expl="precondition">
+  </goal>
+  <goal name="VC def.6" expl="precondition">
+  </goal>
+  <goal name="VC def.7" expl="precondition">
+  </goal>
+  <goal name="VC def.8" expl="precondition">
+  </goal>
+  <goal name="VC def.9" expl="postcondition">
+  <proof prover="0"><result status="unknown" steps="96"/></proof>
+  </goal>
+  <goal name="VC def.10" expl="postcondition">
+  <proof prover="0"><result status="unknown" steps="133"/></proof>
+  </goal>
+  <goal name="VC def.11" expl="postcondition">
+  <proof prover="0"><result status="unknown" steps="133"/></proof>
+  </goal>
+  <goal name="VC def.12" expl="postcondition">
+  <proof prover="0"><result status="unknown" steps="108"/></proof>
+  <proof prover="1"><result status="unknown" steps="186"/></proof>
+  </goal>
+  <goal name="VC def.13" expl="postcondition">
+  </goal>
+  <goal name="VC def.14" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__is_open__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__mode__2__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__is_readable__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="postcondition">
+  </goal>
+  <goal name="VC def.1" expl="precondition">
+  </goal>
+  <goal name="VC def.2" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.3" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__status__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__init_standard_input__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__is_writable__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="postcondition">
+  </goal>
+  <goal name="VC def.1" expl="precondition">
+  </goal>
+  <goal name="VC def.2" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.3" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.4" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__init_standard_output__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__init_standard_error__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__is_standard_input__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__is_standard_output__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__is_standard_error__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__is_standard_writable__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="postcondition">
+  </goal>
+  <goal name="VC def.1" expl="precondition">
+  </goal>
+  <goal name="VC def.2" expl="precondition">
+  </goal>
+  <goal name="VC def.3" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__is_standard_file__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="postcondition">
+  </goal>
+  <goal name="VC def.1" expl="precondition">
+  </goal>
+  <goal name="VC def.2" expl="precondition">
+  </goal>
+  <goal name="VC def.3" expl="precondition">
+  </goal>
+  <goal name="VC def.4" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__name__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__form__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__line_length__2__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__page_length__2__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__create__2__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__open__2__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__close__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="precondition">
+  </goal>
+  <goal name="VC def.2" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__delete__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="precondition">
+  </goal>
+  <goal name="VC def.2" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__reset__2__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="precondition">
+  </goal>
+  <goal name="VC def.2" expl="postcondition">
+  </goal>
+  <goal name="VC def.3" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.4" expl="postcondition">
+  </goal>
+  <goal name="VC def.5" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.6" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__reset__3__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="precondition">
+  </goal>
+  <goal name="VC def.2" expl="postcondition">
+  </goal>
+  <goal name="VC def.3" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.4" expl="postcondition">
+  </goal>
+  <goal name="VC def.5" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.6" expl="postcondition">
+  </goal>
+  <goal name="VC def.7" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.8" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__flush__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="postcondition">
+  </goal>
+  <goal name="VC def.2" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="29"/></proof>
+  </goal>
+  <goal name="VC def.3" expl="postcondition">
+  </goal>
+  <goal name="VC def.4" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="29"/></proof>
+  </goal>
+  <goal name="VC def.5" expl="postcondition">
+  </goal>
+  <goal name="VC def.6" expl="precondition">
+  </goal>
+  <goal name="VC def.7" expl="postcondition">
+  </goal>
+  <goal name="VC def.8" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.9" expl="postcondition">
+  </goal>
+  <goal name="VC def.10" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.11" expl="postcondition">
+  </goal>
+  <goal name="VC def.12" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="29"/></proof>
+  </goal>
+  <goal name="VC def.13" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__flush__2__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="postcondition">
+  </goal>
+  <goal name="VC def.1" expl="precondition">
+  <proof prover="0"><result status="unknown" steps="74"/></proof>
+  <proof prover="1"><result status="unknown" steps="87"/></proof>
+  </goal>
+  <goal name="VC def.2" expl="postcondition">
+  </goal>
+  <goal name="VC def.3" expl="precondition">
+  <proof prover="0"><result status="unknown" steps="74"/></proof>
+  <proof prover="1"><result status="unknown" steps="87"/></proof>
+  </goal>
+  <goal name="VC def.4" expl="postcondition">
+  </goal>
+  <goal name="VC def.5" expl="precondition">
+  <proof prover="0"><result status="unknown" steps="38"/></proof>
+  <proof prover="1"><result status="unknown" steps="51"/></proof>
+  </goal>
+  <goal name="VC def.6" expl="postcondition">
+  </goal>
+  <goal name="VC def.7" expl="precondition">
+  <proof prover="0"><result status="unknown" steps="38"/></proof>
+  <proof prover="1"><result status="unknown" steps="51"/></proof>
+  </goal>
+  <goal name="VC def.8" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__set_line_length__2__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="postcondition">
+  </goal>
+  <goal name="VC def.2" expl="precondition">
+  </goal>
+  <goal name="VC def.3" expl="postcondition">
+  </goal>
+  <goal name="VC def.4" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.5" expl="postcondition">
+  </goal>
+  <goal name="VC def.6" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="29"/></proof>
+  </goal>
+  <goal name="VC def.7" expl="postcondition">
+  </goal>
+  <goal name="VC def.8" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="29"/></proof>
+  </goal>
+  <goal name="VC def.9" expl="postcondition">
+  </goal>
+  <goal name="VC def.10" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="29"/></proof>
+  </goal>
+  <goal name="VC def.11" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__set_line_length__3__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="postcondition">
+  </goal>
+  <goal name="VC def.1" expl="precondition">
+  <proof prover="0"><result status="unknown" steps="74"/></proof>
+  <proof prover="1"><result status="unknown" steps="87"/></proof>
+  </goal>
+  <goal name="VC def.2" expl="postcondition">
+  </goal>
+  <goal name="VC def.3" expl="precondition">
+  <proof prover="0"><result status="unknown" steps="38"/></proof>
+  <proof prover="1"><result status="unknown" steps="51"/></proof>
+  </goal>
+  <goal name="VC def.4" expl="postcondition">
+  </goal>
+  <goal name="VC def.5" expl="precondition">
+  <proof prover="0"><result status="unknown" steps="38"/></proof>
+  <proof prover="1"><result status="unknown" steps="51"/></proof>
+  </goal>
+  <goal name="VC def.6" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__set_page_length__2__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="postcondition">
+  </goal>
+  <goal name="VC def.2" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="29"/></proof>
+  </goal>
+  <goal name="VC def.3" expl="postcondition">
+  </goal>
+  <goal name="VC def.4" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="29"/></proof>
+  </goal>
+  <goal name="VC def.5" expl="postcondition">
+  </goal>
+  <goal name="VC def.6" expl="precondition">
+  </goal>
+  <goal name="VC def.7" expl="postcondition">
+  </goal>
+  <goal name="VC def.8" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.9" expl="postcondition">
+  </goal>
+  <goal name="VC def.10" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="29"/></proof>
+  </goal>
+  <goal name="VC def.11" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__set_page_length__3__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="postcondition">
+  </goal>
+  <goal name="VC def.1" expl="precondition">
+  <proof prover="0"><result status="unknown" steps="74"/></proof>
+  <proof prover="1"><result status="unknown" steps="87"/></proof>
+  </goal>
+  <goal name="VC def.2" expl="postcondition">
+  </goal>
+  <goal name="VC def.3" expl="precondition">
+  <proof prover="0"><result status="unknown" steps="38"/></proof>
+  <proof prover="1"><result status="unknown" steps="51"/></proof>
+  </goal>
+  <goal name="VC def.4" expl="postcondition">
+  </goal>
+  <goal name="VC def.5" expl="precondition">
+  <proof prover="0"><result status="unknown" steps="38"/></proof>
+  <proof prover="1"><result status="unknown" steps="51"/></proof>
+  </goal>
+  <goal name="VC def.6" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__line_length__3__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__page_length__3__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__new_line__2__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="postcondition">
+  </goal>
+  <goal name="VC def.2" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="29"/></proof>
+  </goal>
+  <goal name="VC def.3" expl="postcondition">
+  </goal>
+  <goal name="VC def.4" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="29"/></proof>
+  </goal>
+  <goal name="VC def.5" expl="postcondition">
+  </goal>
+  <goal name="VC def.6" expl="precondition">
+  </goal>
+  <goal name="VC def.7" expl="postcondition">
+  </goal>
+  <goal name="VC def.8" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.9" expl="postcondition">
+  </goal>
+  <goal name="VC def.10" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.11" expl="postcondition">
+  </goal>
+  <goal name="VC def.12" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="29"/></proof>
+  </goal>
+  <goal name="VC def.13" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__new_line__3__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="postcondition">
+  </goal>
+  <goal name="VC def.1" expl="precondition">
+  <proof prover="0"><result status="unknown" steps="74"/></proof>
+  <proof prover="1"><result status="unknown" steps="87"/></proof>
+  </goal>
+  <goal name="VC def.2" expl="postcondition">
+  </goal>
+  <goal name="VC def.3" expl="precondition">
+  <proof prover="0"><result status="unknown" steps="38"/></proof>
+  <proof prover="1"><result status="unknown" steps="51"/></proof>
+  </goal>
+  <goal name="VC def.4" expl="postcondition">
+  </goal>
+  <goal name="VC def.5" expl="precondition">
+  <proof prover="0"><result status="unknown" steps="38"/></proof>
+  <proof prover="1"><result status="unknown" steps="51"/></proof>
+  </goal>
+  <goal name="VC def.6" expl="postcondition">
+  </goal>
+  <goal name="VC def.7" expl="precondition">
+  <proof prover="0"><result status="unknown" steps="74"/></proof>
+  <proof prover="1"><result status="unknown" steps="87"/></proof>
+  </goal>
+  <goal name="VC def.8" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__end_of_file__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__skip_line__2__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.2" expl="postcondition">
+  </goal>
+  <goal name="VC def.3" expl="precondition">
+  </goal>
+  <goal name="VC def.4" expl="postcondition">
+  </goal>
+  <goal name="VC def.5" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="30"/></proof>
+  </goal>
+  <goal name="VC def.6" expl="postcondition">
+  </goal>
+  <goal name="VC def.7" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="30"/></proof>
+  </goal>
+  <goal name="VC def.8" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__end_of_file__2__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__skip_line__3__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="precondition">
+  </goal>
+  <goal name="VC def.2" expl="postcondition">
+  </goal>
+  <goal name="VC def.3" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="30"/></proof>
+  </goal>
+  <goal name="VC def.4" expl="postcondition">
+  </goal>
+  <goal name="VC def.5" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="30"/></proof>
+  </goal>
+  <goal name="VC def.6" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__end_of_line__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__end_of_line__2__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__new_page__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="postcondition">
+  </goal>
+  <goal name="VC def.2" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="29"/></proof>
+  </goal>
+  <goal name="VC def.3" expl="postcondition">
+  </goal>
+  <goal name="VC def.4" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="29"/></proof>
+  </goal>
+  <goal name="VC def.5" expl="postcondition">
+  </goal>
+  <goal name="VC def.6" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="29"/></proof>
+  </goal>
+  <goal name="VC def.7" expl="postcondition">
+  </goal>
+  <goal name="VC def.8" expl="precondition">
+  </goal>
+  <goal name="VC def.9" expl="postcondition">
+  </goal>
+  <goal name="VC def.10" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.11" expl="postcondition">
+  </goal>
+  <goal name="VC def.12" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.13" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__new_page__2__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="postcondition">
+  </goal>
+  <goal name="VC def.1" expl="precondition">
+  <proof prover="0"><result status="unknown" steps="74"/></proof>
+  <proof prover="1"><result status="unknown" steps="87"/></proof>
+  </goal>
+  <goal name="VC def.2" expl="postcondition">
+  </goal>
+  <goal name="VC def.3" expl="precondition">
+  <proof prover="0"><result status="unknown" steps="74"/></proof>
+  <proof prover="1"><result status="unknown" steps="87"/></proof>
+  </goal>
+  <goal name="VC def.4" expl="postcondition">
+  </goal>
+  <goal name="VC def.5" expl="precondition">
+  <proof prover="0"><result status="unknown" steps="38"/></proof>
+  <proof prover="1"><result status="unknown" steps="51"/></proof>
+  </goal>
+  <goal name="VC def.6" expl="postcondition">
+  </goal>
+  <goal name="VC def.7" expl="precondition">
+  <proof prover="0"><result status="unknown" steps="38"/></proof>
+  <proof prover="1"><result status="unknown" steps="51"/></proof>
+  </goal>
+  <goal name="VC def.8" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__skip_page__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.2" expl="postcondition">
+  </goal>
+  <goal name="VC def.3" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="30"/></proof>
+  </goal>
+  <goal name="VC def.4" expl="postcondition">
+  </goal>
+  <goal name="VC def.5" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="30"/></proof>
+  </goal>
+  <goal name="VC def.6" expl="postcondition">
+  </goal>
+  <goal name="VC def.7" expl="precondition">
+  </goal>
+  <goal name="VC def.8" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__skip_page__2__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="precondition">
+  </goal>
+  <goal name="VC def.2" expl="postcondition">
+  </goal>
+  <goal name="VC def.3" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="30"/></proof>
+  </goal>
+  <goal name="VC def.4" expl="postcondition">
+  </goal>
+  <goal name="VC def.5" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="30"/></proof>
+  </goal>
+  <goal name="VC def.6" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__end_of_page__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__end_of_page__2__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__col__3__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__set_col__2__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.2" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.3" expl="precondition">
+  </goal>
+  <goal name="VC def.4" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.5" expl="postcondition">
+  </goal>
+  <goal name="VC def.6" expl="precondition">
+  </goal>
+  <goal name="VC def.7" expl="postcondition">
+  </goal>
+  <goal name="VC def.8" expl="precondition">
+  </goal>
+  <goal name="VC def.9" expl="postcondition">
+  </goal>
+  <goal name="VC def.10" expl="precondition">
+  <proof prover="0"><result status="unknown" steps="103"/></proof>
+  <proof prover="1"><result status="unknown" steps="126"/></proof>
+  </goal>
+  <goal name="VC def.11" expl="postcondition">
+  </goal>
+  <goal name="VC def.12" expl="precondition">
+  <proof prover="0"><result status="unknown" steps="118"/></proof>
+  <proof prover="1"><result status="unknown" steps="141"/></proof>
+  </goal>
+  <goal name="VC def.13" expl="postcondition">
+  </goal>
+  <goal name="VC def.14" expl="precondition">
+  <proof prover="0"><result status="unknown" steps="118"/></proof>
+  <proof prover="1"><result status="unknown" steps="141"/></proof>
+  </goal>
+  <goal name="VC def.15" expl="postcondition">
+  </goal>
+  <goal name="VC def.16" expl="precondition">
+  <proof prover="0"><result status="unknown" steps="103"/></proof>
+  <proof prover="1"><result status="unknown" steps="126"/></proof>
+  </goal>
+  <goal name="VC def.17" expl="postcondition">
+  </goal>
+  <goal name="VC def.18" expl="precondition">
+  <proof prover="0"><result status="unknown" steps="103"/></proof>
+  <proof prover="1"><result status="unknown" steps="126"/></proof>
+  </goal>
+  <goal name="VC def.19" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__set_col__3__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.2" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.3" expl="postcondition">
+  </goal>
+  <goal name="VC def.4" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.5" expl="postcondition">
+  </goal>
+  <goal name="VC def.6" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.7" expl="postcondition">
+  </goal>
+  <goal name="VC def.8" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="40"/></proof>
+  </goal>
+  <goal name="VC def.9" expl="postcondition">
+  </goal>
+  <goal name="VC def.10" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="40"/></proof>
+  </goal>
+  <goal name="VC def.11" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__page__3__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__set_line__2__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.2" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.3" expl="precondition">
+  </goal>
+  <goal name="VC def.4" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.5" expl="postcondition">
+  </goal>
+  <goal name="VC def.6" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="37"/></proof>
+  </goal>
+  <goal name="VC def.7" expl="postcondition">
+  </goal>
+  <goal name="VC def.8" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="37"/></proof>
+  </goal>
+  <goal name="VC def.9" expl="postcondition">
+  </goal>
+  <goal name="VC def.10" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="37"/></proof>
+  </goal>
+  <goal name="VC def.11" expl="postcondition">
+  </goal>
+  <goal name="VC def.12" expl="precondition">
+  </goal>
+  <goal name="VC def.13" expl="postcondition">
+  </goal>
+  <goal name="VC def.14" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.15" expl="postcondition">
+  </goal>
+  <goal name="VC def.16" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.17" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__line__3__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__set_line__3__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="precondition">
+  </goal>
+  <goal name="VC def.2" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.3" expl="postcondition">
+  </goal>
+  <goal name="VC def.4" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="36"/></proof>
+  </goal>
+  <goal name="VC def.5" expl="postcondition">
+  </goal>
+  <goal name="VC def.6" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.7" expl="postcondition">
+  </goal>
+  <goal name="VC def.8" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.9" expl="postcondition">
+  </goal>
+  <goal name="VC def.10" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="36"/></proof>
+  </goal>
+  <goal name="VC def.11" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__col__4__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__line__4__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__page__4__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__get__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.2" expl="postcondition">
+  </goal>
+  <goal name="VC def.3" expl="precondition">
+  </goal>
+  <goal name="VC def.4" expl="postcondition">
+  </goal>
+  <goal name="VC def.5" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="30"/></proof>
+  </goal>
+  <goal name="VC def.6" expl="postcondition">
+  </goal>
+  <goal name="VC def.7" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="30"/></proof>
+  </goal>
+  <goal name="VC def.8" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__get__2__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="precondition">
+  </goal>
+  <goal name="VC def.2" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.3" expl="postcondition">
+  </goal>
+  <goal name="VC def.4" expl="precondition">
+  <proof prover="0"><result status="unknown" steps="88"/></proof>
+  <proof prover="1"><result status="unknown" steps="108"/></proof>
+  </goal>
+  <goal name="VC def.5" expl="postcondition">
+  </goal>
+  <goal name="VC def.6" expl="precondition">
+  <proof prover="0"><result status="unknown" steps="88"/></proof>
+  <proof prover="1"><result status="unknown" steps="108"/></proof>
+  </goal>
+  <goal name="VC def.7" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__put__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="precondition">
+  </goal>
+  <goal name="VC def.2" expl="postcondition">
+  </goal>
+  <goal name="VC def.3" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="31"/></proof>
+  </goal>
+  <goal name="VC def.4" expl="postcondition">
+  </goal>
+  <goal name="VC def.5" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="31"/></proof>
+  </goal>
+  <goal name="VC def.6" expl="postcondition">
+  </goal>
+  <goal name="VC def.7" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="31"/></proof>
+  </goal>
+  <goal name="VC def.8" expl="postcondition">
+  </goal>
+  <goal name="VC def.9" expl="precondition">
+  </goal>
+  <goal name="VC def.10" expl="postcondition">
+  </goal>
+  <goal name="VC def.11" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.12" expl="postcondition">
+  </goal>
+  <goal name="VC def.13" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.14" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__put__2__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="postcondition">
+  </goal>
+  <goal name="VC def.2" expl="precondition">
+  <proof prover="0"><result status="unknown" steps="44"/></proof>
+  <proof prover="1"><result status="unknown" steps="57"/></proof>
+  </goal>
+  <goal name="VC def.3" expl="postcondition">
+  </goal>
+  <goal name="VC def.4" expl="precondition">
+  <proof prover="0"><result status="unknown" steps="44"/></proof>
+  <proof prover="1"><result status="unknown" steps="57"/></proof>
+  </goal>
+  <goal name="VC def.5" expl="postcondition">
+  </goal>
+  <goal name="VC def.6" expl="precondition">
+  <proof prover="0"><result status="unknown" steps="82"/></proof>
+  <proof prover="1"><result status="unknown" steps="95"/></proof>
+  </goal>
+  <goal name="VC def.7" expl="postcondition">
+  </goal>
+  <goal name="VC def.8" expl="precondition">
+  <proof prover="0"><result status="unknown" steps="82"/></proof>
+  <proof prover="1"><result status="unknown" steps="95"/></proof>
+  </goal>
+  <goal name="VC def.9" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__look_ahead__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="postcondition">
+  </goal>
+  <goal name="VC def.2" expl="precondition">
+  </goal>
+  <goal name="VC def.3" expl="postcondition">
+  </goal>
+  <goal name="VC def.4" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="29"/></proof>
+  </goal>
+  <goal name="VC def.5" expl="postcondition">
+  </goal>
+  <goal name="VC def.6" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="29"/></proof>
+  </goal>
+  <goal name="VC def.7" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__look_ahead__2__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="postcondition">
+  </goal>
+  <goal name="VC def.1" expl="precondition">
+  <proof prover="0"><result status="unknown" steps="38"/></proof>
+  <proof prover="1"><result status="unknown" steps="51"/></proof>
+  </goal>
+  <goal name="VC def.2" expl="postcondition">
+  </goal>
+  <goal name="VC def.3" expl="precondition">
+  <proof prover="0"><result status="unknown" steps="38"/></proof>
+  <proof prover="1"><result status="unknown" steps="51"/></proof>
+  </goal>
+  <goal name="VC def.4" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__get_immediate__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.2" expl="postcondition">
+  </goal>
+  <goal name="VC def.3" expl="precondition">
+  </goal>
+  <goal name="VC def.4" expl="postcondition">
+  </goal>
+  <goal name="VC def.5" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="30"/></proof>
+  </goal>
+  <goal name="VC def.6" expl="postcondition">
+  </goal>
+  <goal name="VC def.7" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="30"/></proof>
+  </goal>
+  <goal name="VC def.8" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__get_immediate__2__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="precondition">
+  </goal>
+  <goal name="VC def.2" expl="postcondition">
+  </goal>
+  <goal name="VC def.3" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="30"/></proof>
+  </goal>
+  <goal name="VC def.4" expl="postcondition">
+  </goal>
+  <goal name="VC def.5" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="30"/></proof>
+  </goal>
+  <goal name="VC def.6" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__get_immediate__3__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.2" expl="postcondition">
+  </goal>
+  <goal name="VC def.3" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="30"/></proof>
+  </goal>
+  <goal name="VC def.4" expl="postcondition">
+  </goal>
+  <goal name="VC def.5" expl="precondition">
+  </goal>
+  <goal name="VC def.6" expl="postcondition">
+  </goal>
+  <goal name="VC def.7" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="30"/></proof>
+  </goal>
+  <goal name="VC def.8" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__get_immediate__4__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="precondition">
+  </goal>
+  <goal name="VC def.2" expl="postcondition">
+  </goal>
+  <goal name="VC def.3" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="30"/></proof>
+  </goal>
+  <goal name="VC def.4" expl="postcondition">
+  </goal>
+  <goal name="VC def.5" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="30"/></proof>
+  </goal>
+  <goal name="VC def.6" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__get__3__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="postcondition">
+  </goal>
+  <goal name="VC def.2" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="51"/></proof>
+  </goal>
+  <goal name="VC def.3" expl="postcondition">
+  </goal>
+  <goal name="VC def.4" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="51"/></proof>
+  </goal>
+  <goal name="VC def.5" expl="postcondition">
+  </goal>
+  <goal name="VC def.6" expl="precondition">
+  </goal>
+  <goal name="VC def.7" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__get__4__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="postcondition">
+  </goal>
+  <goal name="VC def.2" expl="precondition">
+  <proof prover="0"><result status="unknown" steps="94"/></proof>
+  <proof prover="1"><result status="unknown" steps="100"/></proof>
+  </goal>
+  <goal name="VC def.3" expl="postcondition">
+  </goal>
+  <goal name="VC def.4" expl="precondition">
+  <proof prover="0"><result status="unknown" steps="94"/></proof>
+  <proof prover="1"><result status="unknown" steps="100"/></proof>
+  </goal>
+  <goal name="VC def.5" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__put__3__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="precondition">
+  </goal>
+  <goal name="VC def.2" expl="postcondition">
+  </goal>
+  <goal name="VC def.3" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.4" expl="postcondition">
+  </goal>
+  <goal name="VC def.5" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.6" expl="postcondition">
+  </goal>
+  <goal name="VC def.7" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="87"/></proof>
+  </goal>
+  <goal name="VC def.8" expl="postcondition">
+  </goal>
+  <goal name="VC def.9" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="87"/></proof>
+  </goal>
+  <goal name="VC def.10" expl="postcondition">
+  </goal>
+  <goal name="VC def.11" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="87"/></proof>
+  </goal>
+  <goal name="VC def.12" expl="postcondition">
+  </goal>
+  <goal name="VC def.13" expl="precondition">
+  </goal>
+  <goal name="VC def.14" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__put__4__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="postcondition">
+  </goal>
+  <goal name="VC def.2" expl="precondition">
+  <proof prover="0"><result status="unknown" steps="167"/></proof>
+  <proof prover="1"><result status="unknown" steps="184"/></proof>
+  </goal>
+  <goal name="VC def.3" expl="postcondition">
+  </goal>
+  <goal name="VC def.4" expl="precondition">
+  <proof prover="0"><result status="unknown" steps="167"/></proof>
+  <proof prover="1"><result status="unknown" steps="184"/></proof>
+  </goal>
+  <goal name="VC def.5" expl="postcondition">
+  </goal>
+  <goal name="VC def.6" expl="precondition">
+  <proof prover="0"><result status="unknown" steps="128"/></proof>
+  <proof prover="1"><result status="unknown" steps="131"/></proof>
+  </goal>
+  <goal name="VC def.7" expl="postcondition">
+  </goal>
+  <goal name="VC def.8" expl="precondition">
+  <proof prover="0"><result status="unknown" steps="128"/></proof>
+  <proof prover="1"><result status="unknown" steps="131"/></proof>
+  </goal>
+  <goal name="VC def.9" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__get_line__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="postcondition">
+  </goal>
+  <goal name="VC def.2" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="53"/></proof>
+  </goal>
+  <goal name="VC def.3" expl="postcondition">
+  </goal>
+  <goal name="VC def.4" expl="precondition">
+  </goal>
+  <goal name="VC def.5" expl="postcondition">
+  </goal>
+  <goal name="VC def.6" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="53"/></proof>
+  </goal>
+  <goal name="VC def.7" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__get_line__2__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="postcondition">
+  </goal>
+  <goal name="VC def.1" expl="precondition">
+  <proof prover="0"><result status="unknown" steps="92"/></proof>
+  <proof prover="1"><result status="unknown" steps="94"/></proof>
+  </goal>
+  <goal name="VC def.2" expl="postcondition">
+  </goal>
+  <goal name="VC def.3" expl="precondition">
+  <proof prover="0"><result status="unknown" steps="92"/></proof>
+  <proof prover="1"><result status="unknown" steps="94"/></proof>
+  </goal>
+  <goal name="VC def.4" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__put_line__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="precondition">
+  </goal>
+  <goal name="VC def.2" expl="postcondition">
+  </goal>
+  <goal name="VC def.3" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="87"/></proof>
+  </goal>
+  <goal name="VC def.4" expl="postcondition">
+  </goal>
+  <goal name="VC def.5" expl="precondition">
+  </goal>
+  <goal name="VC def.6" expl="postcondition">
+  </goal>
+  <goal name="VC def.7" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.8" expl="postcondition">
+  </goal>
+  <goal name="VC def.9" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.10" expl="postcondition">
+  </goal>
+  <goal name="VC def.11" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="87"/></proof>
+  </goal>
+  <goal name="VC def.12" expl="postcondition">
+  </goal>
+  <goal name="VC def.13" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="87"/></proof>
+  </goal>
+  <goal name="VC def.14" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Spark__text_io__put_line__2__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="postcondition">
+  </goal>
+  <goal name="VC def.2" expl="precondition">
+  <proof prover="0"><result status="unknown" steps="128"/></proof>
+  <proof prover="1"><result status="unknown" steps="131"/></proof>
+  </goal>
+  <goal name="VC def.3" expl="postcondition">
+  </goal>
+  <goal name="VC def.4" expl="precondition">
+  <proof prover="0"><result status="unknown" steps="167"/></proof>
+  <proof prover="1"><result status="unknown" steps="184"/></proof>
+  </goal>
+  <goal name="VC def.5" expl="postcondition">
+  </goal>
+  <goal name="VC def.6" expl="precondition">
+  <proof prover="0"><result status="unknown" steps="167"/></proof>
+  <proof prover="1"><result status="unknown" steps="184"/></proof>
+  </goal>
+  <goal name="VC def.7" expl="postcondition">
+  </goal>
+  <goal name="VC def.8" expl="precondition">
+  <proof prover="0"><result status="unknown" steps="128"/></proof>
+  <proof prover="1"><result status="unknown" steps="131"/></proof>
+  </goal>
+  <goal name="VC def.9" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+</file>
+</why3session>

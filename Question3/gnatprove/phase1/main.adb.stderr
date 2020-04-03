@@ -1,0 +1,3 @@
+power_grid_energy_stabilizer.ads:45:31: item must denote parameter, variable, state or current instance of concurrent type
+power_grid_energy_stabilizer.ads:45:56: constant "Maximum_Reserved_Electricity_Possible" cannot appear in dependence relation
+power_grid_energy_stabilizer.ads:45:56: "Maximum_Reserved_Electricity_Possible" is not part of the input or output set of subprogram "Read_Consumption"

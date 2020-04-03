@@ -13,6 +13,87 @@
   ],
   "flow": [
   ],
+  "proof": [
+    {
+      "file": "main.adb",
+      "line": 25,
+      "col": 30,
+      "rule": "VC_LOOP_INVARIANT_INIT",
+      "severity": "info",
+      "entity": {
+        "name": "Main",
+        "sloc": [
+          {
+            "file": "main.ads",
+            "line": 14
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "main.adb",
+      "check_line": 25,
+      "check_col": 30,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "main.adb",
+      "line": 25,
+      "col": 30,
+      "rule": "VC_LOOP_INVARIANT_PRESERV",
+      "severity": "medium",
+      "entity": {
+        "name": "Main",
+        "sloc": [
+          {
+            "file": "main.ads",
+            "line": 14
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 45,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 63,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "main.adb",
+      "check_line": 25,
+      "check_col": 30,
+      "msg_id": 0,
+      "how_proved": "prover"
+    }
+  ],
   "assumptions": [
     {
       "assumptions": [
@@ -23,7 +104,7 @@
             "sloc": [
               {
                 "file": "power_grid_energy_stabilizer.ads",
-                "line": 65
+                "line": 44
               }
             ]
           }
@@ -35,7 +116,7 @@
             "sloc": [
               {
                 "file": "power_grid_energy_stabilizer.ads",
-                "line": 42
+                "line": 23
               }
             ]
           }
@@ -47,7 +128,7 @@
             "sloc": [
               {
                 "file": "power_grid_energy_stabilizer.ads",
-                "line": 47
+                "line": 28
               }
             ]
           }
@@ -59,7 +140,7 @@
             "sloc": [
               {
                 "file": "power_grid_energy_stabilizer.ads",
-                "line": 71
+                "line": 50
               }
             ]
           }
@@ -71,7 +152,7 @@
             "sloc": [
               {
                 "file": "power_grid_energy_stabilizer.ads",
-                "line": 51
+                "line": 32
               }
             ]
           }
@@ -83,7 +164,7 @@
             "sloc": [
               {
                 "file": "power_grid_energy_stabilizer.ads",
-                "line": 58
+                "line": 38
               }
             ]
           }
@@ -95,7 +176,7 @@
             "sloc": [
               {
                 "file": "power_grid_energy_stabilizer.ads",
-                "line": 76
+                "line": 55
               }
             ]
           }
@@ -116,9 +197,14 @@
     }
   ],
   "timings": {
-    "marking": 2.24400009028614E-03,
-    "globals (basic)": 7.91900046169758E-03,
-    "globals/properties (advanced)": 1.99749991297722E-02,
-    "flow analysis": 1.22079998254776E-02
+    "marking": 1.95499998517334E-03,
+    "globals (basic)": 6.47199992090464E-03,
+    "globals/properties (advanced)": 1.27710001543164E-02,
+    "flow analysis": 6.32299995049834E-03,
+    "codepeer results": 7.00000009601354E-06,
+    "init_why_sections": 5.31999976374209E-04,
+    "translation of standard": 3.59299988485873E-03,
+    "translation of compilation unit": 5.36199985072017E-03,
+    "proof": 1.09663498401642E+00
   }
 }

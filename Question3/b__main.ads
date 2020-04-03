@@ -37,7 +37,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#9e5c87ea#;
+   u00001 : constant Version_32 := 16#d7f9e2e6#;
    pragma Export (C, u00001, "mainB");
    u00002 : constant Version_32 := 16#cd1c0576#;
    pragma Export (C, u00002, "mainS");
@@ -45,9 +45,9 @@ package ada_main is
    pragma Export (C, u00003, "system__standard_libraryB");
    u00004 : constant Version_32 := 16#0f7d71d4#;
    pragma Export (C, u00004, "system__standard_libraryS");
-   u00005 : constant Version_32 := 16#d9888229#;
+   u00005 : constant Version_32 := 16#06adcc34#;
    pragma Export (C, u00005, "power_grid_energy_stabilizerB");
-   u00006 : constant Version_32 := 16#f9f2403a#;
+   u00006 : constant Version_32 := 16#8dfb3b8c#;
    pragma Export (C, u00006, "power_grid_energy_stabilizerS");
    u00007 : constant Version_32 := 16#d398a95f#;
    pragma Export (C, u00007, "ada__tagsB");
@@ -259,10 +259,12 @@ package ada_main is
    pragma Export (C, u00110, "system__val_lliB");
    u00111 : constant Version_32 := 16#6435fd0b#;
    pragma Export (C, u00111, "system__val_lliS");
-   u00112 : constant Version_32 := 16#e31b7c4e#;
-   pragma Export (C, u00112, "system__memoryB");
-   u00113 : constant Version_32 := 16#512609cf#;
-   pragma Export (C, u00113, "system__memoryS");
+   u00112 : constant Version_32 := 16#3dac1eba#;
+   pragma Export (C, u00112, "global_variablesS");
+   u00113 : constant Version_32 := 16#e31b7c4e#;
+   pragma Export (C, u00113, "system__memoryB");
+   u00114 : constant Version_32 := 16#512609cf#;
+   pragma Export (C, u00114, "system__memoryS");
 
    --  BEGIN ELABORATION ORDER
    --  ada%s
@@ -367,6 +369,7 @@ package ada_main is
    --  ada.text_io.generic_aux%b
    --  ada.text_io.integer_aux%s
    --  ada.text_io.integer_aux%b
+   --  global_variables%s
    --  spark%s
    --  spark.text_io%s
    --  spark.text_io%b

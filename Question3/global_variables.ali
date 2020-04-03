@@ -1,0 +1,35 @@
+V "GNAT Lib v2019"
+A -gnatA
+A -gnatwa
+A -mtune=core2
+A -mmacosx-version-min=10.14.0
+A -fPIC
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U global_variables%s	global_variables.ads	fa82fa2a NE OO PK
+
+D global_variables.ads	20200403111421 fa82fa2a global_variables%s
+D system.ads		20190518041255 085b6ffb system%s
+G a e
+G c Z s s [status_system_typeIP global_variables 31 9 none]
+X 1 global_variables.ads
+3K9*Global_Variables 42l6 42e22
+10i4*Maximum_Electricity_Possible{integer} 26r52
+11i4*Maximum_Reserved_Electricity_Possible{integer} 27r60
+12i4*Critical_Reserve_level{integer}
+26I12*Electricity_Range{integer} 33r33 34r30
+27I12*Reserve_Electricity_Range{integer} 35r30
+29E9*Status_Reserved_Electricity_Type 29e71 36r40 39r34
+29n46*Activated{29E9}
+29n57*Not_Activated{29E9}
+31R9*Status_System_Type 37e17 40r20
+33i10*Consumption_Measured{26I12}
+34i10*Supplied_Measured{26I12}
+35i10*Reserved_Measured{27I12}
+36e10*Status_Reserved_Electricity{29E9}
+39e4*Status_Reserved_Electricity{29E9}
+40r4*Status_System{31R9}
+

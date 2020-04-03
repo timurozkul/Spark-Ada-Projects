@@ -1,0 +1,22 @@
+[MAPPING FILE]
+/private/var/folders/m2/724mhvfd4859w1hgnbbg1b0c0000gn/T/GNAT-TEMP-000003.TMP
+[TOOLCHAIN VERSION]
+ada
+GNAT 2019
+[MAIN BASE NAME]
+power_grid_energy_stabilizer
+[COMPILER PATH]
+/users/timurozkul/opt/gps/bin/gcc
+[COMPILER LEADING SWITCHES]
+-c
+-x
+ada
+-gnatA
+[MAIN DEPENDENCY FILE]
+/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/power_grid_energy_stabilizer.ali
+[DEPENDENCY FILES]
+[BINDING OPTIONS]
+gnatbind_prefix=
+[PROJECT FILES]
+/Users/timurozkul/Documents/Repo/Code/SparkAda/Question3/main.gpr
+20200214112854

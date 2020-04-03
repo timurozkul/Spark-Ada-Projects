@@ -2,7 +2,6 @@ pragma SPARK_Mode (On);
 
 with AS_IO_Wrapper;  use AS_IO_Wrapper; 
 
-
 package body Power_Grid_Energy_Stabilizer is
    
    procedure Init is
@@ -16,11 +15,11 @@ package body Power_Grid_Energy_Stabilizer is
 			Status_Reserved_Electricity => Not_Activated);
    end Init;
    
-   function Is_Safe (Status : Status_System_Type) return Boolean is
+   function Is_Safe return Boolean is
       begin
           -- This system has two critical points one if consumptionn becomes greater than
           -- supply & when the reserve levels drop below 5000 watts
-         if(Integer(Status.Consumption_Measured) > Integer(Status.Supplied_Measured) 
+         if(Integer(Status.Consumption_Measured) >= Integer(Status.Supplied_Measured) 
                        AND Integer(Status.Reserved_Measured) > Critical_Reserve_level) 
            then return true;
            else return false;
@@ -55,7 +54,7 @@ package body Power_Grid_Energy_Stabilizer is
       Status_System.Supplied_Measured := Electricity_Range(Electricity);
    end Read_Supply;
    
-   function Status_Electricity_System_To_String (Status_Reserved_Electricity : Status_Reserved_Electricity_Type) return String is
+   function Status_Electricity_System_To_String return String is
       begin
          case Status_Reserved_Electricity = Activated is
             when true => return "Activated";

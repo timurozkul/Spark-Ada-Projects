@@ -1,0 +1,14 @@
+global_variable.adb:3:01: spec of this package does not allow a body
+global_variable.adb:3:14: warning: file name does not match unit name, should be "global_variables.adb"
+global_variable.adb:5:03: "Maximum_Electricity_Possible" conflicts with declaration at global_variables.ads:10
+global_variable.adb:5:34: object "Maximum_Electricity_Possible" cannot be used before end of its declaration
+global_variable.adb:6:04: "Maximum_Reserved_Electricity_Possible" conflicts with declaration at global_variables.ads:11
+global_variable.adb:6:44: object "Maximum_Reserved_Electricity_Possible" cannot be used before end of its declaration
+global_variable.adb:7:04: "Critical_Reserve_level" conflicts with declaration at global_variables.ads:12
+global_variable.adb:7:29: object "Critical_Reserve_level" cannot be used before end of its declaration
+global_variable.adb:9:04: "Electricity_Range" conflicts with declaration at global_variables.ads:14
+global_variable.adb:9:24: object "Electricity_Range" cannot be used before end of its declaration
+global_variable.adb:10:04: "Reserve_Electricity_Range" conflicts with declaration at global_variables.ads:15
+global_variable.adb:10:32: object "Reserve_Electricity_Range" cannot be used before end of its declaration
+global_variable.adb:12:04: "Status_Reserved_Electricity_Type" conflicts with declaration at global_variables.ads:17
+global_variable.adb:12:39: object "Status_Reserved_Electricity_Type" cannot be used before end of its declaration

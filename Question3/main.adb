@@ -16,13 +16,12 @@ with Power_Grid_Energy_Stabilizer;
 use Power_Grid_Energy_Stabilizer;
 
 
-
 procedure Main
 is
 begin
    Init;
    loop
-      pragma Loop_Invariant (Is_Safe(Status_System));
+      pragma Loop_Invariant (Is_Safe);
       Read_Consumption;
       Read_Supply;
       Energy_Stabilizerg_System;

@@ -8,7 +8,7 @@
 pragma SPARK_Mode (On);
 
 with SPARK.Text_IO;use  SPARK.Text_IO;
-
+with Global_Variables; use Global_Variables;
 
 package Power_Grid_Energy_Stabilizer is
    
@@ -17,61 +17,50 @@ package Power_Grid_Energy_Stabilizer is
    -- Power grid system supplies 3.2 million homes in Wales 
    -- with an average energy consumption of 416,000 watts (416 kw) per second
    
-   Maximum_Electricity_Possible : constant Integer := 10000000;--in watts or 10,000kw
-   Maximum_Reserved_Electricity_Possible : constant Integer := 1000000;--in watts or 1000kw
-   Critical_Reserve_level : constant Integer := 5000;
    
-   subtype Electricity_Range is Integer range 0 .. Maximum_Electricity_Possible;
-   subtype Reserve_Electricity_Range is Integer range 0 .. Maximum_Reserved_Electricity_Possible;
-     
-   type Status_Reserved_Electricity_Type is (Activated, Not_Activated);  
-   
-   type Status_System_Type  is 
-      record
-         Consumption_Measured : Electricity_Range;
-         Supplied_Measured : Electricity_Range;
-         Reserved_Measured : Reserve_Electricity_Range;
-	 Status_Reserved_Electricity : Status_Reserved_Electricity_Type;
-      end record;
-   
-   Status_System : Status_System_Type;
-   
+   --Maximum_Electricity_Possible : Maximum_Electricity_Possible;
+   --Maximum_Reserved_Electricity_Possible : Maximum_Reserved_Electricity_Possible;
+   --Critical_Reserve_level : Critical_Reserve_level;
 
-   
+   --Electricity_Range : Electricity_Range;
+   --Reserve_Electricity_Range : Reserve_Electricity_Range;
+
+   --Status_Reserved_Electricity_Type : Status_Reserved_Electricity_Type;
+
+   --Status_System : Status_System_Type;
    
    procedure Init with
      Global => (Output => (Standard_Output,Standard_Input,Status_System)),
      Depends => ((Standard_Output,Standard_Input,Status_System) => null),
-     Post    => Is_Safe(Status_System);
+     Post    => Is_Safe;
  
-   function Is_Safe (Status : Status_System_Type) return Boolean;
+   function Is_Safe return Boolean;
   
-   function Status_Electricity_System_To_String (Status_Reserved_Electricity : Status_Reserved_Electricity_Type) return String;
+   function Status_Electricity_System_To_String return String;
      
    procedure Read_Consumption with
-     Global => (In_Out => (Standard_Output, Standard_Input,Status_System),
-                Input => Maximum_Reserved_Electricity_Possible),
+     Global => (In_Out => (Standard_Output, Standard_Input,Status_System)),
      Depends => (Standard_Output => (Standard_Output,Standard_Input),
-		 Standard_Input  => (Standard_Input, Maximum_Reserved_Electricity_Possible),
-                 Status_System   => (Status_System, Standard_Input));
+                 Standard_Input  => Standard_Input,
+                 Status_System.Consumption_Measured => null,
+		 Status_System   => (Status_System, Standard_Input));
    
     procedure Read_Supply with
-     Global => (In_Out => (Standard_Output, Standard_Input,Status_System),
-                Input => Maximum_Reserved_Electricity_Possible),
+     Global => (In_Out => (Standard_Output, Standard_Input,Status_System)),
      Depends => (Standard_Output => (Standard_Output,Standard_Input),
-		  Standard_Input  => (Standard_Input, Maximum_Reserved_Electricity_Possible),
-                 Status_System   => (Status_System, Standard_Input));
+		 Standard_Input  => Standard_Input,
+		 Status_System   => (Status_System, Standard_Input));
    
     procedure Energy_Stabilizerg_System  with
      Global  => (In_Out => Status_System),
      Depends => (Status_System => Status_System),
-     Post    => Is_Safe(Status_System);
+     Post    => Is_Safe;
    
    -- Print Status prints out the status of the system on console
    procedure Print_Status with
      Global => (In_Out => Standard_Output, 
-		Input  => (Status_System, Critical_Reserve_level)),
-     Depends => (Standard_Output => (Standard_Output,Status_System, Critical_Reserve_level));
+		Input  => Status_System),
+     Depends => (Standard_Output => (Standard_Output,Status_System));
 
    procedure Refill_Reserve with
      Global  => (In_Out => Status_System),
