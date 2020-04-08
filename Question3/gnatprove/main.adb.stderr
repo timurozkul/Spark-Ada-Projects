@@ -1,1 +1,1 @@
-main.adb:25:30: medium: loop invariant might fail after first iteration, cannot prove Is_Safe(Status_System)[#0]
+main.ads:14:11: medium: "Status_System" might not be initialized after elaboration of main program "Main"[#0]

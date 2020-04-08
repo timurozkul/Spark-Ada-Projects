@@ -12,17 +12,6 @@ package Global_Variables is
    Critical_Reserve_level : constant Integer := 5000;
 
 
-   --Maximum_Electricity_Possible : Integer;
-  -- Maximum_Reserved_Electricity_Possible : Integer;
-   --Critical_Reserve_level : Integer;
-
-  -- Electricity_Range : Integer;
-   --Reserve_Electricity_Range : Integer;
-
-
-
-
-
    subtype Electricity_Range is Integer range 0 .. Maximum_Electricity_Possible;
    subtype Reserve_Electricity_Range is Integer range 0 .. Maximum_Reserved_Electricity_Possible;
 

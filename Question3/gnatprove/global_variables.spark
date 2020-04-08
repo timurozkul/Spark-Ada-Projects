@@ -1,7 +1,7 @@
 {
   "spark": [
     {
-      "name": "global_variables",
+      "name": "Global_Variables",
       "sloc": [
         {
           "file": "global_variables.ads",
@@ -13,19 +13,12 @@
   ],
   "flow": [
   ],
-  "proof": [
-  ],
   "assumptions": [
   ],
   "timings": {
-    "marking": 1.74000000697561E-04,
-    "globals (basic)": 3.00000014249235E-04,
-    "globals/properties (advanced)": 3.67000000551343E-04,
-    "flow analysis": 1.38799997512251E-03,
-    "codepeer results": 1.59000002895482E-04,
-    "init_why_sections": 7.01999990269542E-04,
-    "translation of standard": 2.78420001268387E-02,
-    "translation of compilation unit": 3.20799998007715E-03,
-    "proof": 6.00000021222513E-06
+    "marking": 2.03000003239140E-04,
+    "globals (basic)": 6.58000004477799E-04,
+    "globals/properties (advanced)": 1.16729997098446E-02,
+    "flow analysis": 3.51599999703467E-03
   }
 }

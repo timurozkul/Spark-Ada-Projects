@@ -28,7 +28,8 @@ package Power_Grid_Energy_Stabilizer is
    --Status_Reserved_Electricity_Type : Status_Reserved_Electricity_Type;
 
    --Status_System : Status_System_Type;
-   
+   procedure Print_Welcome with
+      Global => (In_Out => Standard_Output);
    procedure Init with
      Global => (Output => (Standard_Output,Standard_Input,Status_System)),
      Depends => ((Standard_Output,Standard_Input,Status_System) => null),
@@ -42,7 +43,6 @@ package Power_Grid_Energy_Stabilizer is
      Global => (In_Out => (Standard_Output, Standard_Input,Status_System)),
      Depends => (Standard_Output => (Standard_Output,Standard_Input),
                  Standard_Input  => Standard_Input,
-                 Status_System.Consumption_Measured => null,
 		 Status_System   => (Status_System, Standard_Input));
    
     procedure Read_Supply with
@@ -55,6 +55,7 @@ package Power_Grid_Energy_Stabilizer is
      Global  => (In_Out => Status_System),
      Depends => (Status_System => Status_System),
      Post    => Is_Safe;
+   
    
    -- Print Status prints out the status of the system on console
    procedure Print_Status with

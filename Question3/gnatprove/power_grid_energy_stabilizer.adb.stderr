@@ -1,3 +1,0 @@
-power_grid_energy_stabilizer.adb:106:74: medium: range check might fail (e.g. when Reserve_Total = 1000001)[#2]
-power_grid_energy_stabilizer.ads:26:17: medium: postcondition might fail, cannot prove Is_Safe(Status_System) (e.g. when Status_System = (Consumption_Measured => 0, Supplied_Measured => 0, Reserved_Measured => 0, Status_Reserved_Electricity => Not_Activated))[#0]
-power_grid_energy_stabilizer.ads:47:17: medium: postcondition might fail, cannot prove Is_Safe(Status_System) (e.g. when Status_System = (Consumption_Measured => 1, Supplied_Measured => 0, Reserved_Measured => 1, Status_Reserved_Electricity => Activated))[#1]
