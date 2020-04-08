@@ -1,0 +1,4 @@
+power_grid_energy_stabilizer.adb:88:13: high: "Standard_Output" must be listed in the Global aspect of "Energy_Stabilizerg_System" (SPARK RM 6.1.4(13))[#0]
+power_grid_energy_stabilizer.adb:153:13: high: "Standard_Output" must be listed in the Global aspect of "Refill_Reserve" (SPARK RM 6.1.4(13))[#1]
+power_grid_energy_stabilizer.adb:157:13: high: "Standard_Input" must be listed in the Global aspect of "Refill_Reserve" (SPARK RM 6.1.4(13))[#2]
+power_grid_energy_stabilizer.adb:173:07: high: "Standard_Output" must be listed in the Global aspect of "Print_Reserve_levels" (SPARK RM 6.1.4(13))[#3]

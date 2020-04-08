@@ -1,1 +1,7 @@
-main.ads:14:11: medium: "Status_System" might not be initialized after elaboration of main program "Main"[#0]
+main.adb:24:04: warning: statement has no effect[#0]
+main.adb:24:04: warning: unused assignment to "Standard_Output"[#1]
+main.adb:25:04: warning: statement has no effect[#2]
+main.adb:25:04: warning: unused assignment to "Standard_Input"[#3]
+main.adb:26:04: warning: statement has no effect[#4]
+main.adb:26:04: warning: unused assignment to "Standard_Output"[#5]
+main.ads:14:11: medium: "Status_System" might not be initialized after elaboration of main program "Main"[#6]

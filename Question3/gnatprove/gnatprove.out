@@ -4,8 +4,8 @@ Summary of SPARK analysis
 ------------------------------------------------------------------------------------------------------
 SPARK Analysis results        Total        Flow   Interval   CodePeer   Provers   Justified   Unproved
 ------------------------------------------------------------------------------------------------------
-Data Dependencies                10          10          .          .         .           .          .
-Flow Dependencies                 7           7          .          .         .           .          .
+Data Dependencies                12          12          .          .         .           .          .
+Flow Dependencies                 8           8          .          .         .           .          .
 Initialization                   14           7          .          .         .           .          7
 Non-Aliasing                      .           .          .          .         .           .          .
 Run-time Checks                   .           .          .          .         .           .          .
@@ -13,7 +13,7 @@ Assertions                        .           .          .          .         . 
 Functional Contracts              .           .          .          .         .           .          .
 LSP Verification                  .           .          .          .         .           .          .
 ------------------------------------------------------------------------------------------------------
-Total                            31    24 (77%)          .          .         .           .    7 (23%)
+Total                            34    27 (79%)          .          .         .           .    7 (21%)
 
 
 max steps used for successful proof: 0
@@ -36,17 +36,19 @@ in unit as_io_wrapper, 0 subprograms and packages out of 13 analyzed
 in unit global_variables, 1 subprograms and packages out of 1 analyzed
   Global_Variables at global_variables.ads:3 flow analyzed (0 errors, 0 checks and 0 warnings)
 in unit main, 1 subprograms and packages out of 1 analyzed
-  Main at main.ads:14 flow analyzed (0 errors, 1 checks and 0 warnings)
-in unit power_grid_energy_stabilizer, 9 subprograms and packages out of 9 analyzed
+  Main at main.ads:14 flow analyzed (0 errors, 1 checks and 6 warnings)
+in unit power_grid_energy_stabilizer, 11 subprograms and packages out of 11 analyzed
   Power_Grid_Energy_Stabilizer at power_grid_energy_stabilizer.ads:13 flow analyzed (0 errors, 0 checks and 0 warnings)
-  Power_Grid_Energy_Stabilizer.Energy_Stabilizerg_System at power_grid_energy_stabilizer.ads:53 flow analyzed (0 errors, 0 checks and 0 warnings)
-  Power_Grid_Energy_Stabilizer.Init at power_grid_energy_stabilizer.ads:32 flow analyzed (0 errors, 0 checks and 0 warnings)
-  Power_Grid_Energy_Stabilizer.Is_Safe at power_grid_energy_stabilizer.ads:37 flow analyzed (0 errors, 0 checks and 0 warnings)
-  Power_Grid_Energy_Stabilizer.Print_Status at power_grid_energy_stabilizer.ads:59 flow analyzed (0 errors, 0 checks and 0 warnings)
-  Power_Grid_Energy_Stabilizer.Read_Consumption at power_grid_energy_stabilizer.ads:41 flow analyzed (0 errors, 0 checks and 0 warnings)
-  Power_Grid_Energy_Stabilizer.Read_Supply at power_grid_energy_stabilizer.ads:47 flow analyzed (0 errors, 0 checks and 0 warnings)
-  Power_Grid_Energy_Stabilizer.Refill_Reserve at power_grid_energy_stabilizer.ads:64 flow analyzed (0 errors, 0 checks and 0 warnings)
-  Power_Grid_Energy_Stabilizer.Status_Electricity_System_To_String at power_grid_energy_stabilizer.ads:39 flow analyzed (0 errors, 0 checks and 0 warnings)
+  Power_Grid_Energy_Stabilizer.Energy_Stabilizerg_System at power_grid_energy_stabilizer.ads:54 flow analyzed (0 errors, 1 checks and 0 warnings)
+  Power_Grid_Energy_Stabilizer.Init at power_grid_energy_stabilizer.ads:33 flow analyzed (0 errors, 0 checks and 0 warnings)
+  Power_Grid_Energy_Stabilizer.Is_Safe at power_grid_energy_stabilizer.ads:38 flow analyzed (0 errors, 0 checks and 0 warnings)
+  Power_Grid_Energy_Stabilizer.Print_Reserve_levels at power_grid_energy_stabilizer.ads:70 flow analyzed (0 errors, 1 checks and 0 warnings)
+  Power_Grid_Energy_Stabilizer.Print_Status at power_grid_energy_stabilizer.ads:61 flow analyzed (0 errors, 0 checks and 0 warnings)
+  Power_Grid_Energy_Stabilizer.Print_Welcome at power_grid_energy_stabilizer.ads:31 flow analyzed (0 errors, 0 checks and 0 warnings)
+  Power_Grid_Energy_Stabilizer.Read_Consumption at power_grid_energy_stabilizer.ads:42 flow analyzed (0 errors, 0 checks and 0 warnings)
+  Power_Grid_Energy_Stabilizer.Read_Supply at power_grid_energy_stabilizer.ads:48 flow analyzed (0 errors, 0 checks and 0 warnings)
+  Power_Grid_Energy_Stabilizer.Refill_Reserve at power_grid_energy_stabilizer.ads:66 flow analyzed (0 errors, 2 checks and 0 warnings)
+  Power_Grid_Energy_Stabilizer.Status_Electricity_System_To_String at power_grid_energy_stabilizer.ads:40 flow analyzed (0 errors, 0 checks and 0 warnings)
 in unit spark, 1 subprograms and packages out of 2 analyzed
   SPARK at spark.ads:37 flow analyzed (0 errors, 0 checks and 0 warnings)
   SPARK.Text_IO_File_Type at spark.ads:61 skipped

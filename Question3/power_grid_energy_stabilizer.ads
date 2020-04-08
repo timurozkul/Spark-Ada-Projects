@@ -67,6 +67,10 @@ package Power_Grid_Energy_Stabilizer is
      Global  => (In_Out => Status_System),
      Depends => (Status_System => Status_System);
    
+   procedure Print_Reserve_levels with
+    Global  => (In_Out => Status_System),
+    Depends => (Status_System => Status_System);
+   
 end  Power_Grid_Energy_Stabilizer;
 
 
