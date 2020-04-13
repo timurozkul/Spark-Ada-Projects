@@ -1,23 +1,22 @@
 [GENERATED OBJECT FILE]
 b__main.o
 [PROJECT FILES]
-/home/students/999072/sparkadacoursework/question1/default.gpr
+/Users/timurozkul/Documents/Repo/Code/SparkAda/Question1/default.gpr
 20171018134607
 [BOUND OBJECT FILES]
-/home/students/999072/sparkadacoursework/question1/angles.o
-/home/students/999072/sparkadacoursework/question1/spark.o
-/home/students/999072/sparkadacoursework/question1/spark-text_io.o
-/home/students/999072/sparkadacoursework/question1/main.o
-/home/students/999072/sparkadacoursework/question1/spark-text_io-integer_io.o
-/home/students/999072/sparkadacoursework/question1/as_io_wrapper.o
+/Users/timurozkul/Documents/Repo/Code/SparkAda/Question1/angles.o
+/Users/timurozkul/Documents/Repo/Code/SparkAda/Question1/spark.o
+/Users/timurozkul/Documents/Repo/Code/SparkAda/Question1/spark-text_io.o
+/Users/timurozkul/Documents/Repo/Code/SparkAda/Question1/spark-text_io-integer_io.o
+/Users/timurozkul/Documents/Repo/Code/SparkAda/Question1/as_io_wrapper.o
+/Users/timurozkul/Documents/Repo/Code/SparkAda/Question1/main.o
 [GENERATED SOURCE FILES]
 b__main.ads
 b__main.adb
 b__main.ali
 [RESULTING OPTIONS]
--L/home/students/999072/sparkadacoursework/question1/
--L/home/students/999072/sparkadacoursework/question1/
--L/usr/gnat/lib/gcc/x86_64-pc-linux-gnu/4.9.3/adalib/
+-L/Users/timurozkul/Documents/Repo/Code/SparkAda/Question1/
+-L/Users/timurozkul/Documents/Repo/Code/SparkAda/Question1/
+-L/users/timurozkul/opt/gps/lib/gcc/x86_64-apple-darwin17.7.0/8.3.1/adalib/
 -static
--static-libgcc
-/usr/gnat/lib/gcc/x86_64-pc-linux-gnu/4.9.3/adalib/libgnat.a
+/users/timurozkul/opt/gps/lib/gcc/x86_64-apple-darwin17.7.0/8.3.1/adalib/libgnat.a

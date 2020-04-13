@@ -23,7 +23,7 @@ package body ada_main is
    E087 : Short_Integer; pragma Import (Ada, E087, "spark__text_io_E");
    E089 : Short_Integer; pragma Import (Ada, E089, "spark__text_io__integer_io_E");
    E006 : Short_Integer; pragma Import (Ada, E006, "as_io_wrapper_E");
-   E111 : Short_Integer; pragma Import (Ada, E111, "power_grid_energy_stabilizer_E");
+   E112 : Short_Integer; pragma Import (Ada, E112, "power_grid_energy_stabilizer_E");
    E002 : Short_Integer; pragma Import (Ada, E002, "main_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
@@ -185,7 +185,7 @@ package body ada_main is
       E087 := E087 + 1;
       E089 := E089 + 1;
       E006 := E006 + 1;
-      E111 := E111 + 1;
+      E112 := E112 + 1;
       E002 := E002 + 1;
    end adainit;
 

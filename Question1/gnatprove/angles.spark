@@ -1,11 +1,11 @@
 {
   "spark": [
     {
-      "name": "Angles.AddAngles2",
+      "name": "Angles",
       "sloc": [
         {
           "file": "angles.ads",
-          "line": 6
+          "line": 3
         }
       ],
       "spark": "all"
@@ -15,17 +15,17 @@
       "sloc": [
         {
           "file": "angles.ads",
-          "line": 9
+          "line": 6
         }
       ],
       "spark": "all"
     },
     {
-      "name": "Angles",
+      "name": "Angles.AddAngles2",
       "sloc": [
         {
           "file": "angles.ads",
-          "line": 3
+          "line": 11
         }
       ],
       "spark": "all"
@@ -33,105 +33,66 @@
   ],
   "flow": [
     {
-      "file": "angles.ads",
-      "line": 9,
-      "col": 40,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Angles.AddAngles",
-        "sloc": [
-          {
-            "file": "angles.ads",
-            "line": 9
-          }
-        ]
-      }
-    },
-    {
-      "file": "angles.ads",
-      "line": 11,
-      "col": 23,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Angles.AddAngles",
-        "sloc": [
-          {
-            "file": "angles.ads",
-            "line": 9
-          }
-        ]
-      }
-    },
-    {
-      "file": "angles.adb",
-      "line": 20,
-      "col": 10,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Angles.AddAngles",
-        "sloc": [
-          {
-            "file": "angles.ads",
-            "line": 9
-          }
-        ]
-      }
-    },
-    {
-      "file": "angles.adb",
-      "line": 20,
-      "col": 37,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Angles.AddAngles",
-        "sloc": [
-          {
-            "file": "angles.ads",
-            "line": 9
-          }
-        ]
-      }
-    },
-    {
-      "file": "angles.adb",
-      "line": 21,
-      "col": 23,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Angles.AddAngles",
-        "sloc": [
-          {
-            "file": "angles.ads",
-            "line": 9
-          }
-        ]
-      }
-    },
-    {
       "file": "angles.adb",
       "line": 10,
-      "col": 10,
+      "col": 7,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
-        "name": "Angles.AddAngles2",
+        "name": "Angles.AddAngles",
         "sloc": [
           {
             "file": "angles.ads",
             "line": 6
           }
         ]
-      }
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "angles.ads",
+      "line": 6,
+      "col": 41,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Angles.AddAngles",
+        "sloc": [
+          {
+            "file": "angles.ads",
+            "line": 6
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "angles.ads",
+      "line": 7,
+      "col": 11,
+      "rule": "DEPENDS_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "Angles.AddAngles",
+        "sloc": [
+          {
+            "file": "angles.ads",
+            "line": 6
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
     },
     {
       "file": "angles.adb",
-      "line": 10,
-      "col": 39,
+      "line": 25,
+      "col": 7,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -139,123 +100,254 @@
         "sloc": [
           {
             "file": "angles.ads",
-            "line": 6
+            "line": 11
           }
         ]
-      }
-    },
-    {
-      "file": "angles.adb",
-      "line": 11,
-      "col": 25,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Angles.AddAngles2",
-        "sloc": [
-          {
-            "file": "angles.ads",
-            "line": 6
-          }
-        ]
-      }
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
     }
   ],
   "proof": [
     {
-      "file": "angles.ads",
-      "line": 7,
-      "col": 14,
-      "rule": "postcondition",
-      "severity": "info",
-      "entity": {
-        "name": "Angles.AddAngles2",
-        "sloc": [
-          {
-            "file": "angles.ads",
-            "line": 6
-          }
-        ]
-      }
-    },
-    {
       "file": "angles.adb",
-      "line": 10,
-      "col": 43,
-      "rule": "division_check",
-      "severity": "info",
-      "entity": {
-        "name": "Angles.AddAngles2",
-        "sloc": [
-          {
-            "file": "angles.ads",
-            "line": 6
-          }
-        ]
-      }
-    },
-    {
-      "file": "angles.adb",
-      "line": 20,
+      "line": 15,
       "col": 41,
-      "rule": "division_check",
+      "rule": "VC_DIVISION_CHECK",
       "severity": "info",
       "entity": {
         "name": "Angles.AddAngles",
-        "sloc": [
-          {
-            "file": "angles.ads",
-            "line": 9
-          }
-        ]
-      }
-    },
-    {
-      "file": "angles.ads",
-      "line": 11,
-      "col": 14,
-      "rule": "postcondition",
-      "severity": "info",
-      "entity": {
-        "name": "Angles.AddAngles",
-        "sloc": [
-          {
-            "file": "angles.ads",
-            "line": 9
-          }
-        ]
-      }
-    },
-    {
-      "file": "angles.adb",
-      "line": 11,
-      "col": 25,
-      "rule": "range_check",
-      "severity": "info",
-      "entity": {
-        "name": "Angles.AddAngles2",
         "sloc": [
           {
             "file": "angles.ads",
             "line": 6
           }
         ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "angles.adb",
+      "check_line": 15,
+      "check_col": 41,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.99999995529652E-02
+        }
       }
     },
     {
       "file": "angles.adb",
-      "line": 21,
+      "line": 16,
       "col": 23,
-      "rule": "range_check",
+      "rule": "VC_RANGE_CHECK",
       "severity": "info",
       "entity": {
         "name": "Angles.AddAngles",
         "sloc": [
           {
             "file": "angles.ads",
-            "line": 9
+            "line": 6
           }
         ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 13,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "angles.adb",
+      "check_line": 16,
+      "check_col": 23,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "angles.ads",
+      "line": 8,
+      "col": 14,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "Angles.AddAngles",
+        "sloc": [
+          {
+            "file": "angles.ads",
+            "line": 6
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 280,
+              "time": 5.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "angles.ads",
+      "check_line": 8,
+      "check_col": 14,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 5.00000007450581E-02
+        }
+      }
+    },
+    {
+      "file": "angles.adb",
+      "line": 30,
+      "col": 43,
+      "rule": "VC_DIVISION_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Angles.AddAngles2",
+        "sloc": [
+          {
+            "file": "angles.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "angles.adb",
+      "check_line": 30,
+      "check_col": 43,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.99999995529652E-02
+        }
+      }
+    },
+    {
+      "file": "angles.adb",
+      "line": 31,
+      "col": 25,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Angles.AddAngles2",
+        "sloc": [
+          {
+            "file": "angles.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 13,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "angles.adb",
+      "check_line": 31,
+      "check_col": 25,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "angles.ads",
+      "line": 12,
+      "col": 14,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "Angles.AddAngles2",
+        "sloc": [
+          {
+            "file": "angles.ads",
+            "line": 11
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 270,
+              "time": 5.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "angles.ads",
+      "check_line": 12,
+      "check_col": 14,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 5.00000007450581E-02
+        }
       }
     }
   ],
@@ -266,7 +358,7 @@
       "claim": {
         "predicate": "CLAIM_POST",
         "arg": {
-          "name": "Angles.AddAngles2",
+          "name": "Angles.AddAngles",
           "sloc": [
             {
               "file": "angles.ads",
@@ -282,7 +374,7 @@
       "claim": {
         "predicate": "CLAIM_EFFECTS",
         "arg": {
-          "name": "Angles.AddAngles2",
+          "name": "Angles.AddAngles",
           "sloc": [
             {
               "file": "angles.ads",
@@ -298,11 +390,27 @@
       "claim": {
         "predicate": "CLAIM_AORTE",
         "arg": {
-          "name": "Angles.AddAngles2",
+          "name": "Angles.AddAngles",
           "sloc": [
             {
               "file": "angles.ads",
               "line": 6
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "Angles",
+          "sloc": [
+            {
+              "file": "angles.ads",
+              "line": 3
             }
           ]
         }
@@ -314,11 +422,11 @@
       "claim": {
         "predicate": "CLAIM_POST",
         "arg": {
-          "name": "Angles.AddAngles",
+          "name": "Angles.AddAngles2",
           "sloc": [
             {
               "file": "angles.ads",
-              "line": 9
+              "line": 11
             }
           ]
         }
@@ -330,11 +438,11 @@
       "claim": {
         "predicate": "CLAIM_EFFECTS",
         "arg": {
-          "name": "Angles.AddAngles",
+          "name": "Angles.AddAngles2",
           "sloc": [
             {
               "file": "angles.ads",
-              "line": 9
+              "line": 11
             }
           ]
         }
@@ -346,15 +454,26 @@
       "claim": {
         "predicate": "CLAIM_AORTE",
         "arg": {
-          "name": "Angles.AddAngles",
+          "name": "Angles.AddAngles2",
           "sloc": [
             {
               "file": "angles.ads",
-              "line": 9
+              "line": 11
             }
           ]
         }
       }
     }
-  ]
+  ],
+  "timings": {
+    "marking": 3.37000004947186E-04,
+    "globals (basic)": 3.48000001395121E-04,
+    "globals/properties (advanced)": 4.55000001238659E-04,
+    "flow analysis": 4.21100016683340E-03,
+    "codepeer results": 9.00000031833770E-06,
+    "init_why_sections": 7.77999986894429E-04,
+    "translation of standard": 5.22800022736192E-03,
+    "translation of compilation unit": 3.19999991916120E-03,
+    "proof": 1.04635000228882E+00
+  }
 }

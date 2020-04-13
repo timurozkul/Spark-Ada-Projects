@@ -1,6 +1,16 @@
 {
   "spark": [
     {
+      "name": "AS_Io_Wrapper",
+      "sloc": [
+        {
+          "file": "as_io_wrapper.ads",
+          "line": 21
+        }
+      ],
+      "spark": "spec"
+    },
+    {
       "name": "AS_Io_Wrapper.AS_Init_Standard_Input",
       "sloc": [
         {
@@ -119,16 +129,6 @@
         }
       ],
       "spark": "spec"
-    },
-    {
-      "name": "AS_Io_Wrapper",
-      "sloc": [
-        {
-          "file": "as_io_wrapper.ads",
-          "line": 21
-        }
-      ],
-      "spark": "spec"
     }
   ],
   "flow": [
@@ -136,5 +136,16 @@
   "proof": [
   ],
   "assumptions": [
-  ]
+  ],
+  "timings": {
+    "marking": 2.29900004342198E-03,
+    "globals (basic)": 5.75000001117587E-03,
+    "globals/properties (advanced)": 1.45619995892048E-02,
+    "flow analysis": 3.40000004507601E-03,
+    "codepeer results": 9.00000031833770E-06,
+    "init_why_sections": 8.68999981321394E-04,
+    "translation of standard": 5.28200017288327E-03,
+    "translation of compilation unit": 2.89999991655350E-02,
+    "proof": 1.99999999495049E-06
+  }
 }

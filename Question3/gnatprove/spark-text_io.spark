@@ -964,7 +964,6037 @@
       "how_proved": "flow"
     }
   ],
+  "proof": [
+    {
+      "file": "spark-text_io.ads",
+      "line": 51,
+      "col": 8,
+      "rule": "VC_INITIAL_CONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "SPARK.Text_IO",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 49
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 108,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 186,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 133,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 133,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 96,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 51,
+      "check_col": 8,
+      "msg_id": 6,
+      "how_proved": "prover"
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 181,
+      "col": 31,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Is_Readable",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 180
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 181,
+      "check_col": 31,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 186,
+      "col": 12,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Is_Writable",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 184
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 186,
+      "check_col": 12,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 186,
+      "col": 43,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Is_Writable",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 184
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 186,
+      "check_col": 43,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 248,
+      "col": 31,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Reset",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 241
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 248,
+      "check_col": 31,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 249,
+      "col": 31,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Reset",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 241
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 249,
+      "check_col": 31,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 257,
+      "col": 30,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Reset",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 252
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 257,
+      "check_col": 30,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 258,
+      "col": 30,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Reset",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 252
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 258,
+      "check_col": 30,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 259,
+      "col": 30,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Reset",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 252
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 259,
+      "check_col": 30,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 278,
+      "col": 33,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Flush",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 272
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 29,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 278,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 279,
+      "col": 40,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Flush",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 272
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 279,
+      "check_col": 40,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 280,
+      "col": 40,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Flush",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 272
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 280,
+      "check_col": 40,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 276,
+      "col": 33,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Flush",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 272
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 29,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 276,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 277,
+      "col": 33,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Flush",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 272
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 29,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 277,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 288,
+      "col": 24,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "SPARK.Text_IO.Flush",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 283
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 38,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 51,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 288,
+      "check_col": 24,
+      "msg_id": 7,
+      "how_proved": "prover"
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 290,
+      "col": 24,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "SPARK.Text_IO.Flush",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 283
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 38,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 51,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 290,
+      "check_col": 24,
+      "msg_id": 8,
+      "how_proved": "prover"
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 292,
+      "col": 24,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "SPARK.Text_IO.Flush",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 283
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 74,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 87,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 292,
+      "check_col": 24,
+      "msg_id": 9,
+      "how_proved": "prover"
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 294,
+      "col": 24,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "SPARK.Text_IO.Flush",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 283
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 74,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 87,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 294,
+      "check_col": 24,
+      "msg_id": 10,
+      "how_proved": "prover"
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 304,
+      "col": 34,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Set_Line_Length",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 299
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 29,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 304,
+      "check_col": 34,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 305,
+      "col": 34,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Set_Line_Length",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 299
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 29,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 305,
+      "check_col": 34,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 306,
+      "col": 34,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Set_Line_Length",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 299
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 29,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 306,
+      "check_col": 34,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 307,
+      "col": 41,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Set_Line_Length",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 299
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 307,
+      "check_col": 41,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 316,
+      "col": 46,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "SPARK.Text_IO.Set_Line_Length",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 310
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 38,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 51,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 316,
+      "check_col": 46,
+      "msg_id": 11,
+      "how_proved": "prover"
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 317,
+      "col": 46,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "SPARK.Text_IO.Set_Line_Length",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 310
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 38,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 51,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 317,
+      "check_col": 46,
+      "msg_id": 12,
+      "how_proved": "prover"
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 319,
+      "col": 21,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "SPARK.Text_IO.Set_Line_Length",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 310
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 74,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 87,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 319,
+      "check_col": 21,
+      "msg_id": 13,
+      "how_proved": "prover"
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 329,
+      "col": 33,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Set_Page_Length",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 323
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 29,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 329,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 330,
+      "col": 40,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Set_Page_Length",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 323
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 330,
+      "check_col": 40,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 327,
+      "col": 52,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Set_Page_Length",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 323
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 29,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 327,
+      "check_col": 52,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 328,
+      "col": 33,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Set_Page_Length",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 323
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 29,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 328,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 339,
+      "col": 46,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "SPARK.Text_IO.Set_Page_Length",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 333
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 38,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 51,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 339,
+      "check_col": 46,
+      "msg_id": 14,
+      "how_proved": "prover"
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 340,
+      "col": 46,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "SPARK.Text_IO.Set_Page_Length",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 333
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 38,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 51,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 340,
+      "check_col": 46,
+      "msg_id": 15,
+      "how_proved": "prover"
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 342,
+      "col": 24,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "SPARK.Text_IO.Set_Page_Length",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 333
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 74,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 87,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 342,
+      "check_col": 24,
+      "msg_id": 16,
+      "how_proved": "prover"
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 367,
+      "col": 33,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.New_Line",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 361
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 29,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 367,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 368,
+      "col": 40,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.New_Line",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 361
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 368,
+      "check_col": 40,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 369,
+      "col": 40,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.New_Line",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 361
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 369,
+      "check_col": 40,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 365,
+      "col": 52,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.New_Line",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 361
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 29,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 365,
+      "check_col": 52,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 366,
+      "col": 33,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.New_Line",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 361
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 29,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 366,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 383,
+      "col": 24,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "SPARK.Text_IO.New_Line",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 372
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 74,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 87,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 383,
+      "check_col": 24,
+      "cntexmp": {
+        "spark-text_io.ads": {
+          "372": [
+            {
+              "name": "Spacing",
+              "value": "1",
+              "kind": "variable"
+            }
+          ]
+        }
+      },
+      "msg_id": 17,
+      "how_proved": "prover"
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 377,
+      "col": 24,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "SPARK.Text_IO.New_Line",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 372
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 38,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 51,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 377,
+      "check_col": 24,
+      "cntexmp": {
+        "spark-text_io.ads": {
+          "372": [
+            {
+              "name": "Spacing",
+              "value": "1",
+              "kind": "variable"
+            }
+          ]
+        }
+      },
+      "msg_id": 18,
+      "how_proved": "prover"
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 379,
+      "col": 24,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "SPARK.Text_IO.New_Line",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 372
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 38,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 51,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 379,
+      "check_col": 24,
+      "cntexmp": {
+        "spark-text_io.ads": {
+          "372": [
+            {
+              "name": "Spacing",
+              "value": "1",
+              "kind": "variable"
+            }
+          ]
+        }
+      },
+      "msg_id": 19,
+      "how_proved": "prover"
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 381,
+      "col": 24,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "SPARK.Text_IO.New_Line",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 372
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 74,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 87,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 381,
+      "check_col": 24,
+      "cntexmp": {
+        "spark-text_io.ads": {
+          "372": [
+            {
+              "name": "Spacing",
+              "value": "1",
+              "kind": "variable"
+            }
+          ]
+        }
+      },
+      "msg_id": 20,
+      "how_proved": "prover"
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 391,
+      "col": 33,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Skip_Line",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 386
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 30,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 391,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 392,
+      "col": 33,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Skip_Line",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 386
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 30,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 392,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 389,
+      "col": 51,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Skip_Line",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 386
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 389,
+      "check_col": 51,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 400,
+      "col": 45,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Skip_Line",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 395
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 30,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 400,
+      "check_col": 45,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 401,
+      "col": 45,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Skip_Line",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 395
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 30,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 401,
+      "check_col": 45,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 417,
+      "col": 40,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.New_Page",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 411
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 417,
+      "check_col": 40,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 418,
+      "col": 40,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.New_Page",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 411
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 418,
+      "check_col": 40,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 414,
+      "col": 52,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.New_Page",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 411
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 29,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 414,
+      "check_col": 52,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 415,
+      "col": 33,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.New_Page",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 411
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 29,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 415,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 416,
+      "col": 33,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.New_Page",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 411
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 29,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 416,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 426,
+      "col": 24,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "SPARK.Text_IO.New_Page",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 421
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 38,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 51,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 426,
+      "check_col": 24,
+      "msg_id": 21,
+      "how_proved": "prover"
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 428,
+      "col": 24,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "SPARK.Text_IO.New_Page",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 421
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 38,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 51,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 428,
+      "check_col": 24,
+      "msg_id": 22,
+      "how_proved": "prover"
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 430,
+      "col": 24,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "SPARK.Text_IO.New_Page",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 421
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 74,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 87,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 430,
+      "check_col": 24,
+      "msg_id": 23,
+      "how_proved": "prover"
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 432,
+      "col": 24,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "SPARK.Text_IO.New_Page",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 421
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 74,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 87,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 432,
+      "check_col": 24,
+      "msg_id": 24,
+      "how_proved": "prover"
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 439,
+      "col": 33,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Skip_Page",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 435
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 30,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 439,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 440,
+      "col": 33,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Skip_Page",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 435
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 30,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 440,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 437,
+      "col": 51,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Skip_Page",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 435
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 437,
+      "check_col": 51,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 449,
+      "col": 45,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Skip_Page",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 443
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 30,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 449,
+      "check_col": 45,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 448,
+      "col": 45,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Skip_Page",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 443
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 30,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 448,
+      "check_col": 45,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 476,
+      "col": 34,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "SPARK.Text_IO.Set_Col",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 467
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 103,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 126,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 476,
+      "check_col": 34,
+      "cntexmp": {
+        "spark-text_io.ads": {
+          "467": [
+            {
+              "name": "To",
+              "value": "1",
+              "kind": "variable"
+            }
+          ]
+        }
+      },
+      "msg_id": 25,
+      "how_proved": "prover"
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 477,
+      "col": 34,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "SPARK.Text_IO.Set_Col",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 467
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 103,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 126,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 477,
+      "check_col": 34,
+      "cntexmp": {
+        "spark-text_io.ads": {
+          "467": [
+            {
+              "name": "To",
+              "value": "1",
+              "kind": "variable"
+            }
+          ]
+        }
+      },
+      "msg_id": 26,
+      "how_proved": "prover"
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 478,
+      "col": 41,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "SPARK.Text_IO.Set_Col",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 467
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 118,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 141,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 478,
+      "check_col": 41,
+      "cntexmp": {
+        "spark-text_io.ads": {
+          "467": [
+            {
+              "name": "To",
+              "value": "1",
+              "kind": "variable"
+            }
+          ]
+        }
+      },
+      "msg_id": 27,
+      "how_proved": "prover"
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 479,
+      "col": 41,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "SPARK.Text_IO.Set_Col",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 467
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 118,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 141,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 479,
+      "check_col": 41,
+      "cntexmp": {
+        "spark-text_io.ads": {
+          "467": [
+            {
+              "name": "To",
+              "value": "1",
+              "kind": "variable"
+            }
+          ]
+        }
+      },
+      "msg_id": 28,
+      "how_proved": "prover"
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 474,
+      "col": 53,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "SPARK.Text_IO.Set_Col",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 467
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 103,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 126,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 474,
+      "check_col": 53,
+      "cntexmp": {
+        "spark-text_io.ads": {
+          "467": [
+            {
+              "name": "To",
+              "value": "1",
+              "kind": "variable"
+            }
+          ]
+        }
+      },
+      "msg_id": 29,
+      "how_proved": "prover"
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 470,
+      "col": 30,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Set_Col",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 467
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 470,
+      "check_col": 30,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 471,
+      "col": 54,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Set_Col",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 467
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 471,
+      "check_col": 54,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 469,
+      "col": 51,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Set_Col",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 467
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 469,
+      "check_col": 51,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 489,
+      "col": 47,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Set_Col",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 482
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 40,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 489,
+      "check_col": 47,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 490,
+      "col": 47,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Set_Col",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 482
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 40,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 490,
+      "check_col": 47,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 494,
+      "col": 25,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Set_Col",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 482
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 494,
+      "check_col": 25,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 496,
+      "col": 25,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Set_Col",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 482
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 496,
+      "check_col": 25,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 486,
+      "col": 31,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Set_Col",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 482
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 486,
+      "check_col": 31,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 485,
+      "col": 25,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Set_Col",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 482
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 485,
+      "check_col": 25,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 510,
+      "col": 41,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Set_Line",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 499
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 510,
+      "check_col": 41,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 511,
+      "col": 41,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Set_Line",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 499
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 511,
+      "check_col": 41,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 507,
+      "col": 53,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Set_Line",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 499
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 37,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 507,
+      "check_col": 53,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 508,
+      "col": 34,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Set_Line",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 499
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 37,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 508,
+      "check_col": 34,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 509,
+      "col": 34,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Set_Line",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 499
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 37,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 509,
+      "check_col": 34,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 503,
+      "col": 30,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Set_Line",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 499
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 503,
+      "check_col": 30,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 504,
+      "col": 54,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Set_Line",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 499
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 504,
+      "check_col": 54,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 502,
+      "col": 25,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Set_Line",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 499
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 502,
+      "check_col": 25,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 524,
+      "col": 45,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Set_Line",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 514
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 36,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 524,
+      "check_col": 45,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 526,
+      "col": 25,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Set_Line",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 514
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 526,
+      "check_col": 25,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 528,
+      "col": 25,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Set_Line",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 514
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 528,
+      "check_col": 25,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 523,
+      "col": 45,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Set_Line",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 514
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 36,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 523,
+      "check_col": 45,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 518,
+      "col": 31,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Set_Line",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 514
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 518,
+      "check_col": 31,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 558,
+      "col": 33,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Get",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 554
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 30,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 558,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 559,
+      "col": 33,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Get",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 554
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 30,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 559,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 556,
+      "col": 51,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Get",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 554
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 556,
+      "check_col": 51,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 570,
+      "col": 45,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "SPARK.Text_IO.Get",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 562
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 88,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 108,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 570,
+      "check_col": 45,
+      "msg_id": 30,
+      "how_proved": "prover"
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 571,
+      "col": 45,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "SPARK.Text_IO.Get",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 562
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 88,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 108,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 571,
+      "check_col": 45,
+      "msg_id": 31,
+      "how_proved": "prover"
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 568,
+      "col": 31,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Get",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 562
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 568,
+      "check_col": 31,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 585,
+      "col": 40,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Put",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 577
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 585,
+      "check_col": 40,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 586,
+      "col": 40,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Put",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 577
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 586,
+      "check_col": 40,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 582,
+      "col": 33,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Put",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 577
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 31,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 582,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 583,
+      "col": 33,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Put",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 577
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 31,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 583,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 584,
+      "col": 33,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Put",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 577
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 31,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 584,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 600,
+      "col": 24,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "SPARK.Text_IO.Put",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 589
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 82,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 95,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 600,
+      "check_col": 24,
+      "msg_id": 32,
+      "how_proved": "prover"
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 602,
+      "col": 24,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "SPARK.Text_IO.Put",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 589
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 82,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 95,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 602,
+      "check_col": 24,
+      "msg_id": 33,
+      "how_proved": "prover"
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 596,
+      "col": 23,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "SPARK.Text_IO.Put",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 589
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 44,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 57,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 596,
+      "check_col": 23,
+      "msg_id": 34,
+      "how_proved": "prover"
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 598,
+      "col": 23,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "SPARK.Text_IO.Put",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 589
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 44,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 57,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 598,
+      "check_col": 23,
+      "msg_id": 35,
+      "how_proved": "prover"
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 611,
+      "col": 33,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Look_Ahead",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 605
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 29,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 611,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 612,
+      "col": 33,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Look_Ahead",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 605
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 29,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 612,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 619,
+      "col": 45,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "SPARK.Text_IO.Look_Ahead",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 615
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 38,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 51,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 619,
+      "check_col": 45,
+      "msg_id": 36,
+      "how_proved": "prover"
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 620,
+      "col": 45,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "SPARK.Text_IO.Look_Ahead",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 615
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 38,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 51,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 620,
+      "check_col": 45,
+      "msg_id": 37,
+      "how_proved": "prover"
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 628,
+      "col": 33,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Get_Immediate",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 623
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 30,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 628,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 629,
+      "col": 33,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Get_Immediate",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 623
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 30,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 629,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 626,
+      "col": 51,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Get_Immediate",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 623
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 626,
+      "check_col": 51,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 637,
+      "col": 45,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Get_Immediate",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 632
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 30,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 637,
+      "check_col": 45,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 638,
+      "col": 45,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Get_Immediate",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 632
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 30,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 638,
+      "check_col": 45,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 648,
+      "col": 33,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Get_Immediate",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 641
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 30,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 648,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 647,
+      "col": 33,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Get_Immediate",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 641
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 30,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 647,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 645,
+      "col": 51,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Get_Immediate",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 641
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 645,
+      "check_col": 51,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 657,
+      "col": 45,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Get_Immediate",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 651
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 30,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 657,
+      "check_col": 45,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 658,
+      "col": 45,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Get_Immediate",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 651
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 30,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 658,
+      "check_col": 45,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 668,
+      "col": 33,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Get",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 663
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 51,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 668,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 669,
+      "col": 33,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Get",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 663
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 51,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 669,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 680,
+      "col": 45,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "SPARK.Text_IO.Get",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 674
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 94,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 100,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 680,
+      "check_col": 45,
+      "msg_id": 38,
+      "how_proved": "prover"
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 681,
+      "col": 45,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "SPARK.Text_IO.Get",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 674
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 94,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 100,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 681,
+      "check_col": 45,
+      "msg_id": 39,
+      "how_proved": "prover"
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 691,
+      "col": 33,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Put",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 686
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 87,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 691,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 692,
+      "col": 33,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Put",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 686
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 87,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 692,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 693,
+      "col": 33,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Put",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 686
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 87,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 693,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 694,
+      "col": 40,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Put",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 686
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 694,
+      "check_col": 40,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 695,
+      "col": 40,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Put",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 686
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 695,
+      "check_col": 40,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 704,
+      "col": 46,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "SPARK.Text_IO.Put",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 698
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 128,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 131,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 704,
+      "check_col": 46,
+      "cntexmp": {
+        "spark-text_io.ads": {
+          "698": [
+            {
+              "name": "Item",
+              "value": "(others => 'NUL')",
+              "kind": "variable"
+            },
+            {
+              "name": "Item'First",
+              "value": "1",
+              "kind": "variable"
+            },
+            {
+              "name": "Item'Last",
+              "value": "0",
+              "kind": "variable"
+            }
+          ]
+        }
+      },
+      "msg_id": 40,
+      "how_proved": "prover"
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 705,
+      "col": 46,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "SPARK.Text_IO.Put",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 698
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 128,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 131,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 705,
+      "check_col": 46,
+      "cntexmp": {
+        "spark-text_io.ads": {
+          "698": [
+            {
+              "name": "Item",
+              "value": "(others => 'NUL')",
+              "kind": "variable"
+            },
+            {
+              "name": "Item'First",
+              "value": "1",
+              "kind": "variable"
+            },
+            {
+              "name": "Item'Last",
+              "value": "0",
+              "kind": "variable"
+            }
+          ]
+        }
+      },
+      "msg_id": 41,
+      "how_proved": "prover"
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 707,
+      "col": 23,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "SPARK.Text_IO.Put",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 698
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 167,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 184,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 707,
+      "check_col": 23,
+      "cntexmp": {
+        "spark-text_io.ads": {
+          "698": [
+            {
+              "name": "Item",
+              "value": "(others => 'NUL')",
+              "kind": "variable"
+            },
+            {
+              "name": "Item'First",
+              "value": "1",
+              "kind": "variable"
+            },
+            {
+              "name": "Item'Last",
+              "value": "0",
+              "kind": "variable"
+            }
+          ]
+        }
+      },
+      "msg_id": 42,
+      "how_proved": "prover"
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 709,
+      "col": 23,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "SPARK.Text_IO.Put",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 698
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 167,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 184,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 709,
+      "check_col": 23,
+      "cntexmp": {
+        "spark-text_io.ads": {
+          "698": [
+            {
+              "name": "Item",
+              "value": "(others => 'NUL')",
+              "kind": "variable"
+            },
+            {
+              "name": "Item'First",
+              "value": "1",
+              "kind": "variable"
+            },
+            {
+              "name": "Item'Last",
+              "value": "0",
+              "kind": "variable"
+            }
+          ]
+        }
+      },
+      "msg_id": 43,
+      "how_proved": "prover"
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 724,
+      "col": 33,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Get_Line",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 717
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 53,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 724,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 723,
+      "col": 33,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Get_Line",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 717
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 53,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 723,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 738,
+      "col": 45,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "SPARK.Text_IO.Get_Line",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 732
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 92,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 94,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 738,
+      "check_col": 45,
+      "msg_id": 44,
+      "how_proved": "prover"
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 737,
+      "col": 45,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "SPARK.Text_IO.Get_Line",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 732
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 92,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 94,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 737,
+      "check_col": 45,
+      "msg_id": 45,
+      "how_proved": "prover"
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 751,
+      "col": 33,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Put_Line",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 745
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 87,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 751,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 752,
+      "col": 33,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Put_Line",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 745
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 87,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 752,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 753,
+      "col": 40,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Put_Line",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 745
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 753,
+      "check_col": 40,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 754,
+      "col": 40,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Put_Line",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 745
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 754,
+      "check_col": 40,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 750,
+      "col": 33,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "SPARK.Text_IO.Put_Line",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 745
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 87,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 750,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 767,
+      "col": 24,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "SPARK.Text_IO.Put_Line",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 758
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 128,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 131,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 767,
+      "check_col": 24,
+      "cntexmp": {
+        "spark-text_io.ads": {
+          "758": [
+            {
+              "name": "Item",
+              "value": "(others => 'NUL')",
+              "kind": "variable"
+            },
+            {
+              "name": "Item'First",
+              "value": "1",
+              "kind": "variable"
+            },
+            {
+              "name": "Item'Last",
+              "value": "0",
+              "kind": "variable"
+            }
+          ]
+        }
+      },
+      "msg_id": 46,
+      "how_proved": "prover"
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 769,
+      "col": 24,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "SPARK.Text_IO.Put_Line",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 758
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 167,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 184,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 769,
+      "check_col": 24,
+      "cntexmp": {
+        "spark-text_io.ads": {
+          "758": [
+            {
+              "name": "Item",
+              "value": "(others => 'NUL')",
+              "kind": "variable"
+            },
+            {
+              "name": "Item'First",
+              "value": "1",
+              "kind": "variable"
+            },
+            {
+              "name": "Item'Last",
+              "value": "0",
+              "kind": "variable"
+            }
+          ]
+        }
+      },
+      "msg_id": 47,
+      "how_proved": "prover"
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 771,
+      "col": 24,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "SPARK.Text_IO.Put_Line",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 758
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 167,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 184,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 771,
+      "check_col": 24,
+      "cntexmp": {
+        "spark-text_io.ads": {
+          "758": [
+            {
+              "name": "Item",
+              "value": "(others => 'NUL')",
+              "kind": "variable"
+            },
+            {
+              "name": "Item'First",
+              "value": "1",
+              "kind": "variable"
+            },
+            {
+              "name": "Item'Last",
+              "value": "0",
+              "kind": "variable"
+            }
+          ]
+        }
+      },
+      "msg_id": 48,
+      "how_proved": "prover"
+    },
+    {
+      "file": "spark-text_io.ads",
+      "line": 765,
+      "col": 24,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "SPARK.Text_IO.Put_Line",
+        "sloc": [
+          {
+            "file": "spark-text_io.ads",
+            "line": 758
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 128,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 131,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "spark-text_io.ads",
+      "check_line": 765,
+      "check_col": 24,
+      "cntexmp": {
+        "spark-text_io.ads": {
+          "758": [
+            {
+              "name": "Item",
+              "value": "(others => 'NUL')",
+              "kind": "variable"
+            },
+            {
+              "name": "Item'First",
+              "value": "1",
+              "kind": "variable"
+            },
+            {
+              "name": "Item'Last",
+              "value": "0",
+              "kind": "variable"
+            }
+          ]
+        }
+      },
+      "msg_id": 49,
+      "how_proved": "prover"
+    }
+  ],
   "assumptions": [
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "SPARK.Text_IO.Line",
+          "sloc": [
+            {
+              "file": "spark-text_io.ads",
+              "line": 538
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "SPARK.Text_IO.Status",
+          "sloc": [
+            {
+              "file": "spark-text_io.ads",
+              "line": 133
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "SPARK.Text_IO.End_Of_Page",
+          "sloc": [
+            {
+              "file": "spark-text_io.ads",
+              "line": 452
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "SPARK.Text_IO.Form",
+          "sloc": [
+            {
+              "file": "spark-text_io.ads",
+              "line": 176
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "SPARK.Text_IO.End_Of_Line",
+          "sloc": [
+            {
+              "file": "spark-text_io.ads",
+              "line": 408
+            }
+          ]
+        }
+      }
+    },
     {
       "assumptions": [
         {
@@ -1012,6 +7042,110 @@
             {
               "file": "spark-text_io.ads",
               "line": 156
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "SPARK.Text_IO.Is_Standard_Error",
+            "sloc": [
+              {
+                "file": "spark-text_io.ads",
+                "line": 147
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "SPARK.Text_IO.Is_Standard_Input",
+            "sloc": [
+              {
+                "file": "spark-text_io.ads",
+                "line": 139
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "SPARK.Text_IO.Is_Standard_Output",
+            "sloc": [
+              {
+                "file": "spark-text_io.ads",
+                "line": 143
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "SPARK.Text_IO.Is_Standard_Error",
+            "sloc": [
+              {
+                "file": "spark-text_io.ads",
+                "line": 147
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "SPARK.Text_IO.Is_Standard_Input",
+            "sloc": [
+              {
+                "file": "spark-text_io.ads",
+                "line": 139
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "SPARK.Text_IO.Is_Standard_Output",
+            "sloc": [
+              {
+                "file": "spark-text_io.ads",
+                "line": 143
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "SPARK.Text_IO.Is_Standard_File",
+          "sloc": [
+            {
+              "file": "spark-text_io.ads",
+              "line": 156
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "SPARK.Text_IO.Line",
+          "sloc": [
+            {
+              "file": "spark-text_io.ads",
+              "line": 542
             }
           ]
         }
@@ -1082,6 +7216,262 @@
               }
             ]
           }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "SPARK.Text_IO.Is_Open",
+            "sloc": [
+              {
+                "file": "spark-text_io.ads",
+                "line": 162
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "SPARK.Text_IO.Mode",
+            "sloc": [
+              {
+                "file": "spark-text_io.ads",
+                "line": 165
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "SPARK.Text_IO.Is_Readable",
+          "sloc": [
+            {
+              "file": "spark-text_io.ads",
+              "line": 180
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "SPARK.Text_IO.End_Of_Page",
+          "sloc": [
+            {
+              "file": "spark-text_io.ads",
+              "line": 456
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "SPARK.Text_IO.Delete",
+          "sloc": [
+            {
+              "file": "spark-text_io.ads",
+              "line": 235
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "SPARK.Text_IO.Delete",
+          "sloc": [
+            {
+              "file": "spark-text_io.ads",
+              "line": 235
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "SPARK.Text_IO.Init_Standard_Input",
+          "sloc": [
+            {
+              "file": "spark-text_io.ads",
+              "line": 113
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "SPARK.Text_IO.Init_Standard_Input",
+          "sloc": [
+            {
+              "file": "spark-text_io.ads",
+              "line": 113
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "SPARK.Text_IO.Page",
+          "sloc": [
+            {
+              "file": "spark-text_io.ads",
+              "line": 545
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "SPARK.Text_IO.End_Of_File",
+          "sloc": [
+            {
+              "file": "spark-text_io.ads",
+              "line": 459
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "SPARK.Text_IO.Init_Standard_Error",
+          "sloc": [
+            {
+              "file": "spark-text_io.ads",
+              "line": 125
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "SPARK.Text_IO.Line_Length",
+          "sloc": [
+            {
+              "file": "spark-text_io.ads",
+              "line": 345
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "SPARK.Text_IO.Init_Standard_Error",
+          "sloc": [
+            {
+              "file": "spark-text_io.ads",
+              "line": 125
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "SPARK.Text_IO.Page",
+          "sloc": [
+            {
+              "file": "spark-text_io.ads",
+              "line": 549
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "SPARK.Text_IO.Line_Length",
+          "sloc": [
+            {
+              "file": "spark-text_io.ads",
+              "line": 349
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "SPARK.Text_IO.Is_Open",
+            "sloc": [
+              {
+                "file": "spark-text_io.ads",
+                "line": 162
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "SPARK.Text_IO.Mode",
+            "sloc": [
+              {
+                "file": "spark-text_io.ads",
+                "line": 165
+              }
+            ]
+          }
         }
       ],
       "claim": {
@@ -1092,6 +7482,102 @@
             {
               "file": "spark-text_io.ads",
               "line": 184
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "SPARK.Text_IO.Is_Open",
+            "sloc": [
+              {
+                "file": "spark-text_io.ads",
+                "line": 162
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "SPARK.Text_IO.Mode",
+            "sloc": [
+              {
+                "file": "spark-text_io.ads",
+                "line": 165
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "SPARK.Text_IO.Is_Open",
+            "sloc": [
+              {
+                "file": "spark-text_io.ads",
+                "line": 162
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "SPARK.Text_IO.Mode",
+            "sloc": [
+              {
+                "file": "spark-text_io.ads",
+                "line": 165
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "SPARK.Text_IO.Is_Writable",
+          "sloc": [
+            {
+              "file": "spark-text_io.ads",
+              "line": 184
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "SPARK.Text_IO.Mode",
+          "sloc": [
+            {
+              "file": "spark-text_io.ads",
+              "line": 165
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "SPARK.Text_IO.Col",
+          "sloc": [
+            {
+              "file": "spark-text_io.ads",
+              "line": 531
             }
           ]
         }
@@ -1136,12 +7622,289 @@
           ]
         }
       }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "SPARK.Text_IO.Is_Standard_Error",
+            "sloc": [
+              {
+                "file": "spark-text_io.ads",
+                "line": 147
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "SPARK.Text_IO.Is_Standard_Output",
+            "sloc": [
+              {
+                "file": "spark-text_io.ads",
+                "line": 143
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "SPARK.Text_IO.Is_Standard_Error",
+            "sloc": [
+              {
+                "file": "spark-text_io.ads",
+                "line": 147
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "SPARK.Text_IO.Is_Standard_Output",
+            "sloc": [
+              {
+                "file": "spark-text_io.ads",
+                "line": 143
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "SPARK.Text_IO.Is_Standard_Writable",
+          "sloc": [
+            {
+              "file": "spark-text_io.ads",
+              "line": 151
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "SPARK.Text_IO.Is_Standard_Error",
+          "sloc": [
+            {
+              "file": "spark-text_io.ads",
+              "line": 147
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "SPARK.Text_IO.Page_Length",
+          "sloc": [
+            {
+              "file": "spark-text_io.ads",
+              "line": 352
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "SPARK.Text_IO.Close",
+          "sloc": [
+            {
+              "file": "spark-text_io.ads",
+              "line": 229
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "SPARK.Text_IO.Is_Standard_Output",
+          "sloc": [
+            {
+              "file": "spark-text_io.ads",
+              "line": 143
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "SPARK.Text_IO.Close",
+          "sloc": [
+            {
+              "file": "spark-text_io.ads",
+              "line": 229
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "SPARK.Text_IO.Is_Standard_Input",
+          "sloc": [
+            {
+              "file": "spark-text_io.ads",
+              "line": 139
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "SPARK.Text_IO.Is_Open",
+          "sloc": [
+            {
+              "file": "spark-text_io.ads",
+              "line": 162
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "SPARK.Text_IO.Init_Standard_Output",
+          "sloc": [
+            {
+              "file": "spark-text_io.ads",
+              "line": 119
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "SPARK.Text_IO.Name",
+          "sloc": [
+            {
+              "file": "spark-text_io.ads",
+              "line": 172
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "SPARK.Text_IO.Init_Standard_Output",
+          "sloc": [
+            {
+              "file": "spark-text_io.ads",
+              "line": 119
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "SPARK.Text_IO.Col",
+          "sloc": [
+            {
+              "file": "spark-text_io.ads",
+              "line": 535
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "SPARK.Text_IO.End_Of_Line",
+          "sloc": [
+            {
+              "file": "spark-text_io.ads",
+              "line": 404
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "SPARK.Text_IO.Page_Length",
+          "sloc": [
+            {
+              "file": "spark-text_io.ads",
+              "line": 356
+            }
+          ]
+        }
+      }
     }
   ],
   "timings": {
-    "marking": 4.17400011792779E-03,
-    "globals (basic)": 5.46400016173720E-03,
-    "globals/properties (advanced)": 1.37750003486872E-02,
-    "flow analysis": 9.97309982776642E-02
+    "marking": 3.33500001579523E-03,
+    "globals (basic)": 6.27700006589293E-03,
+    "globals/properties (advanced)": 1.18850003927946E-02,
+    "flow analysis": 9.08439978957176E-02,
+    "codepeer results": 9.00000031833770E-06,
+    "init_why_sections": 7.86999997217208E-04,
+    "translation of standard": 6.13499991595745E-03,
+    "translation of compilation unit": 4.85971987247467E-01,
+    "proof": 3.82962107658386E+00
   }
 }

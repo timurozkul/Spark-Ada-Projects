@@ -6,15 +6,7 @@
       <vfs_project />
       <vfs_file>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question2/main.gpr</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question2/main.gpr</vfs_project>
-      <vfs_file>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question2/nkires.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question2/main.gpr</vfs_project>
-      <vfs_file>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question2/nkires.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
+    <file_marker column=" 23" line=" 4" >
       <vfs_project>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question2/main.gpr</vfs_project>
       <vfs_file>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question2/nkires.adb</vfs_file>
     </file_marker>
@@ -23,8 +15,8 @@
       <vfs_file>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question2/nkires.ads</vfs_file>
     </file_marker>
     <file_marker current="true" column=" 1" line=" 1" >
-      <vfs_project>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question2/main.gpr</vfs_project>
-      <vfs_file>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question2/main.adb</vfs_file>
+      <vfs_project />
+      <vfs_file>/Users/timurozkul/Documents/Repo/Code/SparkAda/Question2/main.gpr</vfs_file>
     </file_marker>
   </Project>
 </Locations>

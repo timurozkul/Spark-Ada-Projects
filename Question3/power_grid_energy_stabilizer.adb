@@ -5,18 +5,6 @@ with AS_IO_Wrapper;  use AS_IO_Wrapper;
 
 package body Power_Grid_Energy_Stabilizer is
    
-   procedure Print_Welcome is
-      -- TODO: innput Critical_Reserve_level & print it 
-   begin
-      AS_Put_Line("=============================================");
-      AS_Put_Line("");
-      AS_Put_Line("Power Grid Energy Stabilizer Setzter System");
-      AS_Put_Line("by Timur Ozkul");
-      AS_Put_Line("");
-      AS_Put_Line("=============================================");
-      AS_Put_Line("");
-   end Print_Welcome;
-   
    procedure Init is
    begin
       AS_Init_Standard_Input; 
@@ -27,22 +15,30 @@ package body Power_Grid_Energy_Stabilizer is
 			Status_Reserved_Electricity => Not_Activated);
    end Init;
    
-   function Is_Safe return Boolean is
+   procedure Print_Welcome is
+   begin
+      AS_Put_Line("=============================================");
+      AS_Put_Line("");
+      AS_Put_Line(" Power Grid Energy Stabilizer Setzter System");
+      AS_Put_Line("");
+      AS_Put_Line("=============================================");
+      AS_Put_Line("");
+   end Print_Welcome;
+   
+   function Is_Critical return Boolean is
       begin
-          -- This system has two critical points one if consumptionn becomes greater than
-          -- supply & when the reserve levels drop below 5000 watts
-         if(Integer(Status_System.Consumption_Measured) >= Integer(Status_System.Supplied_Measured) 
-                       AND Integer(Status_System.Reserved_Measured) > Critical_Reserve_level) 
-           then return true;
-           else return false;
+         if Integer(Status_System.Reserved_Measured) <= Critical_Reserve_level 
+	      then return Status_System.Status_Reserved_Electricity = Activated;
+              else return Status_System.Status_Reserved_Electricity = Not_Activated;
          end if;
-      end Is_Safe;
+      end Is_Critical;
   
   procedure Read_Consumption is
-      Electricity: Integer;
+      Electricity: Integer := 0;
    begin
       AS_Put_Line("Please type in current electricity consumption as read by the sensor (in Watts)");
       loop
+         pragma Loop_Invariant (Electricity in 0 .. Maximum_Reserved_Electricity_Possible);
 	 AS_Get(Electricity,"Please type in an integer");
 	 exit when (Electricity >=0) and (Electricity <= Maximum_Reserved_Electricity_Possible);
 	 AS_Put("Please type in a value between 0 and ");
@@ -53,10 +49,11 @@ package body Power_Grid_Energy_Stabilizer is
    end Read_Consumption;
 
     procedure Read_Supply is
-      Electricity: Integer;
+      Electricity: Integer := 0;
    begin
       AS_Put_Line("Please type in current electricity supplied as read by the sensor (in Watts)");
       loop
+         pragma Loop_Invariant (Electricity in 0 .. Maximum_Reserved_Electricity_Possible);
 	 AS_Get(Electricity,"Please type in an integer: ");
 	 exit when (Electricity >=0) and (Electricity <= Maximum_Reserved_Electricity_Possible);
 	 AS_Put("Please type in a value between 0 and ");
@@ -65,14 +62,6 @@ package body Power_Grid_Energy_Stabilizer is
       end loop;
       Status_System.Supplied_Measured := Electricity_Range(Electricity);
    end Read_Supply;
-   
-   function Status_Electricity_System_To_String return String is
-      begin
-         case Status_System.Status_Reserved_Electricity = Activated is
-            when true => return "Activated";
-            when false => return "Not_Activated";
-         end case;
-   end Status_Electricity_System_To_String;
    
    procedure Energy_Stabilizerg_System is
       Electricity_Required: Integer;
@@ -99,7 +88,6 @@ package body Power_Grid_Energy_Stabilizer is
       end if;
    end Energy_Stabilizerg_System;
    
-      
    procedure Print_Status is
       -- TODO: innput Critical_Reserve_level & print it 
    begin
@@ -130,22 +118,36 @@ package body Power_Grid_Energy_Stabilizer is
      
       AS_Put_Line("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
       AS_Put_Line("");
-      end Print_Status;
+   end Print_Status;
+   
+   function Status_Electricity_System_To_String return String is
+      begin
+         case Status_System.Status_Reserved_Electricity = Activated is
+            when true => return "Activated";
+            when false => return "Not_Activated";
+         end case;
+   end Status_Electricity_System_To_String;
       
+     
    procedure Refill_Reserve is
       Remaining_Supply: Integer;
       Reserve_Total: Integer;
-      Last : Integer;
       User_Input : String(1 .. 20);
    begin
       Remaining_Supply := Integer(Status_System.Supplied_Measured) - Integer(Status_System.Consumption_Measured);
       -- If we have remaining supply after consumption and there is space to fill the energy reserves
       if Remaining_Supply > 0 AND Integer(Status_System.Reserved_Measured) < Maximum_Reserved_Electricity_Possible
          then 
-            -- Refill the battery with the remaining energy
+         -- Refill the battery with the remaining energy
+         
+         if (Remaining_Supply + Integer(Status_System.Reserved_Measured)) > Maximum_Reserved_Electricity_Possible
+           then 
+            Status_System.Reserved_Measured := Maximum_Reserved_Electricity_Possible;
+           else
             Reserve_Total := Remaining_Supply + Integer(Status_System.Reserved_Measured);
-         Status_System.Reserved_Measured := Reserve_Electricity_Range(Reserve_Total);
-         Print_Reserve_levels;
+            Status_System.Reserved_Measured := Reserve_Electricity_Range(Reserve_Total);
+            Print_Reserve_levels;
+        end if;
       end if;
       -- If the battery level is still below critical
       if(Status_System.Reserved_Measured < Critical_Reserve_level)
@@ -154,7 +156,7 @@ package body Power_Grid_Energy_Stabilizer is
             AS_Put_Line("Would you like to buy non renewable energy from another company to refill the battery back above level critical?");
             AS_Put_Line("");
             AS_Put_Line("Please type (y/n)? Please enter a non-empty string");
-            As_Get_Line(User_Input, Last);
+            AS_Get(User_Input);
             AS_Put_Line("");
                if User_Input(1 .. 1) = "y"
                then

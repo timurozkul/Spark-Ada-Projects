@@ -3491,7 +3491,7 @@
 </theory>
 <theory name="Main__axiom" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
 </theory>
-<theory name="Main__subprogram_def" sum="e4c794c593ad6793ccd2f7623875d805" expanded="true">
+<theory name="Main__subprogram_def" sum="dfa12d343430cab07e56b3201383c18e" expanded="true">
  <goal name="WP_parameter def" expl="VC for def" expanded="true">
  <transf name="split_goal_wp" expanded="true">
   <goal name="WP_parameter def.1" expl="1. VC for def">

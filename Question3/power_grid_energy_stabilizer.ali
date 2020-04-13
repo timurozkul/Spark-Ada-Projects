@@ -13,12 +13,12 @@ RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U power_grid_energy_stabilizer%b  power_grid_energy_stabilizer.adb  f660865e NE OO PK
+U power_grid_energy_stabilizer%b  power_grid_energy_stabilizer.adb  038700e4 NE OO PK
 Z ada.tags%s		a-tags.adb		a-tags.ali
 W as_io_wrapper%s	as_io_wrapper.adb	as_io_wrapper.ali
 Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 
-U power_grid_energy_stabilizer%s  power_grid_energy_stabilizer.ads  87f6e34e EE NE OO PK
+U power_grid_energy_stabilizer%s  power_grid_energy_stabilizer.ads  4cb48551 EE NE OO PK
 W global_variables%s	global_variables.ads	global_variables.ali
 W spark%s		spark.ads		spark.ali
 W spark.text_io%s	spark-text_io.adb	spark-text_io.ali
@@ -34,8 +34,8 @@ D as_io_wrapper.ads	20200214112854 000fc6dc as_io_wrapper%s
 D global_variables.ads	20200408132711 fa82fa2a global_variables%s
 D interfac.ads		20190518041254 5ab55268 interfaces%s
 D i-cstrea.ads		20190518041254 e53d8b8e interfaces.c_streams%s
-D power_grid_energy_stabilizer.ads  20200408160050 42217600 power_grid_energy_stabilizer%s
-D power_grid_energy_stabilizer.adb  20200408162500 b44e3682 power_grid_energy_stabilizer%b
+D power_grid_energy_stabilizer.ads  20200413130146 8963101f power_grid_energy_stabilizer%s
+D power_grid_energy_stabilizer.adb  20200413132432 8aebd627 power_grid_energy_stabilizer%b
 D spark.ads		20200214112854 86380d85 spark%s
 D spark-text_io.ads	20200214112854 3f556f64 spark.text_io%s
 D system.ads		20190518041255 085b6ffb system%s
@@ -52,99 +52,102 @@ D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20190518041255 1b7d22d2 system.wch_con%s
 G a e
-G c Z s b [print_welcome power_grid_energy_stabilizer 31 14 none]
-G c Z s b [init power_grid_energy_stabilizer 33 14 none]
-G c Z s b [is_safe power_grid_energy_stabilizer 38 13 none]
-G c Z s b [status_electricity_system_to_string power_grid_energy_stabilizer 40 13 none]
-G c Z s b [read_consumption power_grid_energy_stabilizer 42 14 none]
-G c Z s b [read_supply power_grid_energy_stabilizer 48 15 none]
-G c Z s b [energy_stabilizerg_system power_grid_energy_stabilizer 54 15 none]
-G c Z s b [print_status power_grid_energy_stabilizer 61 14 none]
-G c Z s b [refill_reserve power_grid_energy_stabilizer 66 14 none]
-G c Z s b [print_reserve_levels power_grid_energy_stabilizer 70 14 none]
-G r c none [print_welcome power_grid_energy_stabilizer 31 14 none] [as_put_line as_io_wrapper 83 14 none]
-G r c none [init power_grid_energy_stabilizer 33 14 none] [as_init_standard_input as_io_wrapper 25 14 none]
-G r c none [init power_grid_energy_stabilizer 33 14 none] [as_init_standard_output as_io_wrapper 32 14 none]
-G r c none [read_consumption power_grid_energy_stabilizer 42 14 none] [as_put_line as_io_wrapper 83 14 none]
-G r c none [read_consumption power_grid_energy_stabilizer 42 14 none] [as_get as_io_wrapper 106 14 none]
-G r c none [read_consumption power_grid_energy_stabilizer 42 14 none] [as_put as_io_wrapper 59 14 none]
-G r c none [read_consumption power_grid_energy_stabilizer 42 14 none] [as_put as_io_wrapper 114 14 none]
-G r c none [read_supply power_grid_energy_stabilizer 48 15 none] [as_put_line as_io_wrapper 83 14 none]
-G r c none [read_supply power_grid_energy_stabilizer 48 15 none] [as_get as_io_wrapper 106 14 none]
-G r c none [read_supply power_grid_energy_stabilizer 48 15 none] [as_put as_io_wrapper 59 14 none]
-G r c none [read_supply power_grid_energy_stabilizer 48 15 none] [as_put as_io_wrapper 114 14 none]
-G r c none [energy_stabilizerg_system power_grid_energy_stabilizer 54 15 none] [as_put_line as_io_wrapper 83 14 none]
-G r c none [print_status power_grid_energy_stabilizer 61 14 none] [as_put_line as_io_wrapper 83 14 none]
-G r c none [print_status power_grid_energy_stabilizer 61 14 none] [as_put as_io_wrapper 59 14 none]
-G r c none [print_status power_grid_energy_stabilizer 61 14 none] [as_put as_io_wrapper 114 14 none]
-G r c none [refill_reserve power_grid_energy_stabilizer 66 14 none] [as_put_line as_io_wrapper 83 14 none]
-G r c none [refill_reserve power_grid_energy_stabilizer 66 14 none] [as_put as_io_wrapper 59 14 none]
-G r c none [refill_reserve power_grid_energy_stabilizer 66 14 none] [as_put as_io_wrapper 114 14 none]
-G r c none [refill_reserve power_grid_energy_stabilizer 66 14 none] [as_get_line as_io_wrapper 76 14 none]
-G r c none [print_reserve_levels power_grid_energy_stabilizer 70 14 none] [as_put_line as_io_wrapper 83 14 none]
-G r c none [print_reserve_levels power_grid_energy_stabilizer 70 14 none] [as_put as_io_wrapper 59 14 none]
-G r c none [print_reserve_levels power_grid_energy_stabilizer 70 14 none] [as_put as_io_wrapper 114 14 none]
+G c Z s b [init power_grid_energy_stabilizer 32 14 none]
+G c Z s b [print_welcome power_grid_energy_stabilizer 36 15 none]
+G c Z s b [is_critical power_grid_energy_stabilizer 40 13 none]
+G c Z s b [read_consumption power_grid_energy_stabilizer 44 14 none]
+G c Z s b [read_supply power_grid_energy_stabilizer 50 15 none]
+G c Z s b [energy_stabilizerg_system power_grid_energy_stabilizer 56 15 none]
+G c Z s b [print_status power_grid_energy_stabilizer 64 14 none]
+G c Z s b [status_electricity_system_to_string power_grid_energy_stabilizer 69 14 none]
+G c Z s b [refill_reserve power_grid_energy_stabilizer 72 14 none]
+G c Z s b [print_reserve_levels power_grid_energy_stabilizer 79 14 none]
+G r c none [init power_grid_energy_stabilizer 32 14 none] [as_init_standard_input as_io_wrapper 25 14 none]
+G r c none [init power_grid_energy_stabilizer 32 14 none] [as_init_standard_output as_io_wrapper 32 14 none]
+G r c none [print_welcome power_grid_energy_stabilizer 36 15 none] [as_put_line as_io_wrapper 83 14 none]
+G r c none [read_consumption power_grid_energy_stabilizer 44 14 none] [as_put_line as_io_wrapper 83 14 none]
+G r c none [read_consumption power_grid_energy_stabilizer 44 14 none] [as_get as_io_wrapper 106 14 none]
+G r c none [read_consumption power_grid_energy_stabilizer 44 14 none] [as_put as_io_wrapper 59 14 none]
+G r c none [read_consumption power_grid_energy_stabilizer 44 14 none] [as_put as_io_wrapper 114 14 none]
+G r c none [read_supply power_grid_energy_stabilizer 50 15 none] [as_put_line as_io_wrapper 83 14 none]
+G r c none [read_supply power_grid_energy_stabilizer 50 15 none] [as_get as_io_wrapper 106 14 none]
+G r c none [read_supply power_grid_energy_stabilizer 50 15 none] [as_put as_io_wrapper 59 14 none]
+G r c none [read_supply power_grid_energy_stabilizer 50 15 none] [as_put as_io_wrapper 114 14 none]
+G r c none [energy_stabilizerg_system power_grid_energy_stabilizer 56 15 none] [as_put_line as_io_wrapper 83 14 none]
+G r c none [print_status power_grid_energy_stabilizer 64 14 none] [as_put_line as_io_wrapper 83 14 none]
+G r c none [print_status power_grid_energy_stabilizer 64 14 none] [as_put as_io_wrapper 59 14 none]
+G r c none [print_status power_grid_energy_stabilizer 64 14 none] [as_put as_io_wrapper 114 14 none]
+G r c none [refill_reserve power_grid_energy_stabilizer 72 14 none] [as_put_line as_io_wrapper 83 14 none]
+G r c none [refill_reserve power_grid_energy_stabilizer 72 14 none] [as_put as_io_wrapper 59 14 none]
+G r c none [refill_reserve power_grid_energy_stabilizer 72 14 none] [as_put as_io_wrapper 114 14 none]
+G r c none [refill_reserve power_grid_energy_stabilizer 72 14 none] [as_get as_io_wrapper 53 14 none]
+G r c none [print_reserve_levels power_grid_energy_stabilizer 79 14 none] [as_put_line as_io_wrapper 83 14 none]
+G r c none [print_reserve_levels power_grid_energy_stabilizer 79 14 none] [as_put as_io_wrapper 59 14 none]
+G r c none [print_reserve_levels power_grid_energy_stabilizer 79 14 none] [as_put as_io_wrapper 114 14 none]
 X 8 as_io_wrapper.ads
 21K9*AS_Io_Wrapper 124e18 13|3w6 3r26
-25U14*AS_Init_Standard_Input 13|22s7
-32U14*AS_Init_Standard_Output 13|23s7
-59U14*AS_Put 13|48s10 62s10 108s7 111s7 115s15 117s7 118s7 120s7 123s7 176s7
-76U14*AS_Get_Line 13|157s13
-83U14*AS_Put_Line 13|11s7 12s7 13s7 14s7 15s7 16s7 17s7 44s7 50s10 58s7 64s10
-. 88s13 89s13 90s13 91s13 92s13 93s13 96s13 106s7 107s7 110s7 113s7 119s7
-. 122s7 127s10 128s15 131s7 132s7 153s13 154s13 155s13 156s13 158s13 173s7
-. 174s7 175s7 178s7 179s7 180s7
-106U14*AS_Get 13|46s10 60s10
-114U14*AS_Put 13|49s10 63s10 109s7 112s7 121s7 126s10 177s7
+25U14*AS_Init_Standard_Input 13|10s7
+32U14*AS_Init_Standard_Output 13|11s7
+53U14*AS_Get 13|159s13
+59U14*AS_Put 13|44s10 59s10 96s7 99s7 103s15 105s7 106s7 108s7 111s7 178s7
+83U14*AS_Put_Line 13|20s7 21s7 22s7 23s7 24s7 25s7 39s7 46s10 54s7 61s10
+. 77s13 78s13 79s13 80s13 81s13 82s13 85s13 94s7 95s7 98s7 101s7 107s7 110s7
+. 115s10 116s15 119s7 120s7 155s13 156s13 157s13 158s13 160s13 175s7 176s7
+. 177s7 180s7 181s7 182s7
+106U14*AS_Get 13|42s10 57s10
+114U14*AS_Put 13|45s10 60s10 97s7 100s7 109s7 114s10 179s7
 X 9 global_variables.ads
 3K9*Global_Variables 31e22 12|11w6 11r28
-10i4*Maximum_Electricity_Possible{integer} 13|49r17 63r17
-11i4*Maximum_Reserved_Electricity_Possible{integer} 13|26r46 47r58 61r58
-. 143r78
-12i4*Critical_Reserve_level{integer} 13|35r71 114r54 151r44 162r52
-15I12*Electricity_Range{integer} 13|52r45 66r42
-16I12*Reserve_Electricity_Range{integer} 13|147r45
-18n46*Activated{18E9} 13|71r59 85r58
-18n57*Not_Activated{18E9} 13|27r56 98r57
-22i10*Consumption_Measured{15I12} 13|24m25 34r35 52m21 80r32 82r56 95r62
-. 109r28 124r77 126r82 141r92
-23i10*Supplied_Measured{15I12} 13|25m25 34r82 66m21 80r78 82r102 95m27 112r28
-. 124r34 126r39 141r49
-24i10*Reserved_Measured{16I12} 13|26m25 35r50 83r51 83r87 86m27 86r62 94m27
-. 114r33 121r28 143r57 146r71 147m24 151r24 162m31 177r28
-25e10*Status_Reserved_Electricity{18E9} 13|27m25 71r29 85m27 98m26
-29r4*Status_System{20R9} 12|34r59 35r50 43r60 46r18 46r38 49r60 52r18 52r38
-. 55r28 56r18 56r35 63r27 64r54 67r28 68r18 68r35 71r27 72r17 72r34 13|24m7
-. 34r21 34r68 35r36 52m7 66m7 71r15 80r18 80r64 82r42 82r88 83r37 83r73 85m13
-. 86m13 86r48 94m13 95m13 95r48 98m12 109r14 112r14 114r19 121r14 124r20
-. 124r63 126r25 126r68 141r35 141r78 143r43 146r57 147m10 151r10 162m17 177r14
+10i4*Maximum_Electricity_Possible{integer} 13|45r17 60r17
+11i4*Maximum_Reserved_Electricity_Possible{integer} 13|14r46 41r53 43r58
+. 56r53 58r58 139r78 143r77 145r48
+12i4*Critical_Reserve_level{integer} 13|30r57 102r54 153r44 164r52
+15I12*Electricity_Range{integer} 13|48r45 63r42
+16I12*Reserve_Electricity_Range{integer} 13|148r48
+18n46*Activated{18E9} 13|31r71 74r58 125r59
+18n57*Not_Activated{18E9} 13|15r56 32r71 87r57
+22i10*Consumption_Measured{15I12} 13|12m25 48m21 69r32 71r56 84r62 97r28
+. 112r77 114r82 137r92
+23i10*Supplied_Measured{15I12} 13|13m25 63m21 69r78 71r102 84m27 100r28 112r34
+. 114r39 137r49
+24i10*Reserved_Measured{16I12} 13|14m25 30r35 72r51 72r87 75m27 75r62 83m27
+. 102r33 109r28 139r57 143r55 145m27 147r71 148m27 153r24 164m31 179r28
+25e10*Status_Reserved_Electricity{18E9} 13|15m25 31r41 32r41 74m27 87m26
+. 125r29
+29r4*Status_System{20R9} 12|33r59 34r50 41r26 45r60 48r18 48r38 51r60 54r18
+. 54r38 57r28 58r18 58r36 59r55 66r26 67r55 73r61 74r18 74r36 75r53 76r71
+. 81r26 82r55 13|12m7 30r21 31r27 32r27 48m7 63m7 69r18 69r64 71r42 71r88
+. 72r37 72r73 74m13 75m13 75r48 83m13 84m13 84r48 87m12 97r14 100r14 102r19
+. 109r14 112r20 112r63 114r25 114r68 125r15 137r35 137r78 139r43 143r41 145m13
+. 147r57 148m13 153r10 164m17 179r14
 X 12 power_grid_energy_stabilizer.ads
-13K9*Power_Grid_Energy_Stabilizer 74l6 74e34 13|6b14 185l5 185t33
-31U14*Print_Welcome 13|8b14 18l8 18t21
-33U14*Init 13|20b14 28l8 28t12
-38V13*Is_Safe{boolean} 36s17 57s17 13|30b13 39l11 39t18
-40V13*Status_Electricity_System_To_String{string} 13|69b13 75l8 75t43 118s14
-42U14*Read_Consumption 13|41b13 53l8 53t24
-48U15*Read_Supply 13|55b15 67l8 67t19
-54U15*Energy_Stabilizerg_System 13|77b14 100l8 100t33
-61U14*Print_Status 13|103b14 133l11 133t23
-66U14*Refill_Reserve 13|135b14 167l8 167t22
-70U14*Print_Reserve_levels 13|148s10 163s17 171b14 181l7 181t27
+13K9*Power_Grid_Energy_Stabilizer 84l6 84e34 13|6b14 187l5 187t33
+32U14*Init 13|8b14 16l8 16t12
+36U15*Print_Welcome 13|18b14 26l8 26t21
+40V13*Is_Critical{boolean} 13|28b13 34l11 34t22
+44U14*Read_Consumption 13|36b13 49l8 49t24
+50U15*Read_Supply 13|51b15 64l8 64t19
+56U15*Energy_Stabilizerg_System 13|66b14 89l8 89t33
+64U14*Print_Status 13|91b14 121l8 121t20
+69V14*Status_Electricity_System_To_String{string} 13|106s14 123b13 129l8
+. 129t43
+72U14*Refill_Reserve 13|132b14 169l8 169t22
+79U14*Print_Reserve_levels 13|149s13 165s17 173b14 183l7 183t27
 X 13 power_grid_energy_stabilizer.adb
-42i7 Electricity{integer} 46m17 47r21 47r43 52r63
-56i7 Electricity{integer} 60m17 61r21 61r43 66r60
-78i7 Electricity_Required{integer} 82m10 83r13 86r82
-136i7 Remaining_Supply{integer} 141m7 143r10 146r30
-137i7 Reserve_Total{integer} 146m13 147r71
-138i7 Last{integer} 157m37
-139a7 User_Input{string} 157m25 159r19
+37i7 Electricity{integer} 41r33 42m17 43r21 43r43 48r63
+52i7 Electricity{integer} 56r33 57m17 58r21 58r43 63r60
+67i7 Electricity_Required{integer} 71m10 72r13 75r82
+133i7 Remaining_Supply{integer} 137m7 139r10 143r14 147r30
+134i7 Reserve_Total{integer} 147m13 148r74
+135a7 User_Input{string} 159m20 161r19
 X 14 spark.ads
 37K9*SPARK 12|10r6 10r25 14|74e10
 X 15 spark-text_io.ads
 49K15*Text_IO 12|10w12 10r31 15|774e18
 58R9*File_Type<14|61R9>
-102r4*Standard_Input{58R9} 12|34r44 35r35 43r45 44r54 45r18 45r37 46r53 49r45
-. 50r54 51r18 51r37 52r53
-103r4*Standard_Output{58R9} 12|32r28 34r28 35r19 43r28 44r18 44r38 49r28
-. 50r18 50r38 62r27 64r18 64r38
+102r4*Standard_Input{58R9} 12|33r44 34r35 45r45 46r55 47r18 47r37 48r53 51r45
+. 52r55 53r18 53r37 54r53 73r28 74r51 75r18 75r37 76r55
+103r4*Standard_Output{58R9} 12|33r28 34r19 37r27 38r18 38r37 45r28 46r18
+. 46r38 51r28 52r18 52r38 57r43 59r18 59r38 65r28 67r18 67r39 73r44 76r18
+. 76r38 80r27 82r18 82r38
 

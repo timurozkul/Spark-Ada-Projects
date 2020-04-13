@@ -1,10 +1,12 @@
-V "GNAT Lib v2015"
+V "GNAT Lib v2019"
 A -O2
 A -gnatA
 A -g
-A -mtune=generic
-A -march=x86-64
-P SS ZX
+A -mtune=core2
+A -mmacosx-version-min=10.14.0
+A -fPIC
+A -feliminate-unused-debug-symbols
+P ZX
 
 RN
 RV NO_DIRECT_BOOLEAN_OPERATORS
@@ -15,49 +17,128 @@ RV NO_IMPLICIT_CONDITIONALS
 RV NO_SECONDARY_STACK
 RV NO_STANDARD_STORAGE_POOLS
 RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 RV SPARK_05
 
 U spark.text_io%b	spark-text_io.adb	440739da OO PK IU
-W ada.tags%s		a-tags.adb		a-tags.ali
-W interfaces%s		interfac.ads		interfac.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z interfaces%s		interfac.ads		interfac.ali
 W spark%s		spark.ads		spark.ali
-W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 
 U spark.text_io%s	spark-text_io.ads	b96d62e1 BD EE OO PK IU
-W ada.tags%s		a-tags.adb		a-tags.ali
 W spark%s		spark.ads		spark.ali
-W system.unsigned_types%s  s-unstyp.ads		s-unstyp.ali
+Z system.unsigned_types%s  s-unstyp.ads		s-unstyp.ali
 
-D ada.ads		20171018134701 3ffc8e18 ada%s
-D a-except.ads		20171018134659 5250cb69 ada.exceptions%s
-D a-ioexce.ads		20171018134701 e4a01f64 ada.io_exceptions%s
-D a-stream.ads		20171018134700 119b8fb3 ada.streams%s
-D a-tags.ads		20171018134659 dc4d0634 ada.tags%s
-D a-textio.ads		20171018134659 386df5d4 ada.text_io%s
-D a-unccon.ads		20171018134700 f9eb8f06 ada.unchecked_conversion%s
-D interfac.ads		20171018134659 6033a23f interfaces%s
-D i-cstrea.ads		20171018134659 e53d8b8e interfaces.c_streams%s
+D ada.ads		20190518041255 76789da1 ada%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-ioexce.ads		20190518041254 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-textio.ads		20190518041256 aef4d56d ada.text_io%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D i-cstrea.ads		20190518041254 e53d8b8e interfaces.c_streams%s
 D spark.ads		20200214095545 86380d85 spark%s
 D spark-text_io.ads	20200214095545 3f556f64 spark.text_io%s
 D spark-text_io.adb	20200214095545 7b5256be spark.text_io%b
-D system.ads		20171018134659 1d274481 system%s
-D s-crtl.ads		20171018134659 0ebbdb71 system.crtl%s
-D s-exctab.ads		20171018134700 54135002 system.exception_table%s
-D s-ficobl.ads		20171018134700 078245e4 system.file_control_block%s
-D s-parame.ads		20171018134658 7e2a0d7f system.parameters%s
-D s-secsta.ads		20171018134700 86a2856d system.secondary_stack%s
-D s-soflin.ads		20171018134659 aa763b52 system.soft_links%s
-D s-stache.ads		20171018134700 a37c21ec system.stack_checking%s
-D s-stalib.ads		20171018134659 fa0a3617 system.standard_library%s
-D s-stoele.ads		20171018134701 2dc34a04 system.storage_elements%s
-D s-traent.ads		20171018134700 005bf670 system.traceback_entries%s
-D s-unstyp.ads		20171018134700 9d58a4c0 system.unsigned_types%s
-D s-wchcon.ads		20171018134701 1b7d22d2 system.wch_con%s
+D system.ads		20190518041255 085b6ffb system%s
+D s-crtl.ads		20190518041254 0ebbdb71 system.crtl%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-ficobl.ads		20190518041256 078245e4 system.file_control_block%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20190518041255 1b7d22d2 system.wch_con%s
+G a e
+G c s s s [s spark__text_io 49 1 none]
+G c Z s b [init_standard_input spark__text_io 113 14 none]
+G c Z s b [init_standard_output spark__text_io 119 14 none]
+G c Z s b [init_standard_error spark__text_io 125 14 none]
+G c Z s b [status spark__text_io 133 13 none]
+G c Z s b [is_standard_input spark__text_io 139 13 none]
+G c Z s b [is_standard_output spark__text_io 143 13 none]
+G c Z s b [is_standard_error spark__text_io 147 13 none]
+G c Z s s [is_standard_writable spark__text_io 151 13 none]
+G c Z s s [is_standard_file spark__text_io 156 13 none]
+G c Z s b [is_open spark__text_io 162 13 none]
+G c Z s b [mode spark__text_io 165 13 none]
+G c Z s b [name spark__text_io 172 13 none]
+G c Z s b [form spark__text_io 176 13 none]
+G c Z s s [is_readable spark__text_io 180 13 none]
+G c Z s s [is_writable spark__text_io 184 13 none]
+G c Z s b [create spark__text_io 191 14 none]
+G c Z s b [open spark__text_io 211 14 none]
+G c Z s b [close spark__text_io 229 14 none]
+G c Z s b [delete spark__text_io 235 14 none]
+G c Z s b [reset spark__text_io 241 14 none]
+G c Z s b [reset spark__text_io 252 14 none]
+G c Z s b [flush spark__text_io 272 14 none]
+G c Z s b [flush spark__text_io 283 14 none]
+G c Z s b [set_line_length spark__text_io 299 14 none]
+G c Z s b [set_line_length spark__text_io 310 14 none]
+G c Z s b [set_page_length spark__text_io 323 14 none]
+G c Z s b [set_page_length spark__text_io 333 14 none]
+G c Z s b [line_length spark__text_io 345 14 none]
+G c Z s b [line_length spark__text_io 349 14 none]
+G c Z s b [page_length spark__text_io 352 14 none]
+G c Z s b [page_length spark__text_io 356 14 none]
+G c Z s b [new_line spark__text_io 361 14 none]
+G c Z s b [new_line spark__text_io 372 14 none]
+G c Z s b [skip_line spark__text_io 386 14 none]
+G c Z s b [skip_line spark__text_io 395 14 none]
+G c Z s b [end_of_line spark__text_io 404 14 none]
+G c Z s b [end_of_line spark__text_io 408 14 none]
+G c Z s b [new_page spark__text_io 411 14 none]
+G c Z s b [new_page spark__text_io 421 14 none]
+G c Z s b [skip_page spark__text_io 435 14 none]
+G c Z s b [skip_page spark__text_io 443 14 none]
+G c Z s b [end_of_page spark__text_io 452 14 none]
+G c Z s b [end_of_page spark__text_io 456 14 none]
+G c Z s b [end_of_file spark__text_io 459 14 none]
+G c Z s b [end_of_file spark__text_io 463 14 none]
+G c Z s b [set_col spark__text_io 467 14 none]
+G c Z s b [set_col spark__text_io 482 14 none]
+G c Z s b [set_line spark__text_io 499 14 none]
+G c Z s b [set_line spark__text_io 514 14 none]
+G c Z s b [col spark__text_io 531 13 none]
+G c Z s b [col spark__text_io 535 13 none]
+G c Z s b [line spark__text_io 538 13 none]
+G c Z s b [line spark__text_io 542 13 none]
+G c Z s b [page spark__text_io 545 13 none]
+G c Z s b [page spark__text_io 549 13 none]
+G c Z s b [get spark__text_io 554 14 none]
+G c Z s b [get spark__text_io 562 14 none]
+G c Z s b [put spark__text_io 577 14 none]
+G c Z s b [put spark__text_io 589 14 none]
+G c Z s b [look_ahead spark__text_io 605 14 none]
+G c Z s b [look_ahead spark__text_io 615 14 none]
+G c Z s b [get_immediate spark__text_io 623 14 none]
+G c Z s b [get_immediate spark__text_io 632 14 none]
+G c Z s b [get_immediate spark__text_io 641 14 none]
+G c Z s b [get_immediate spark__text_io 651 14 none]
+G c Z s b [get spark__text_io 663 14 none]
+G c Z s b [get spark__text_io 674 14 none]
+G c Z s b [put spark__text_io 686 14 none]
+G c Z s b [put spark__text_io 698 14 none]
+G c Z s b [get_line spark__text_io 717 14 none]
+G c Z s b [get_line spark__text_io 732 14 none]
+G c Z s b [put_line spark__text_io 745 14 none]
+G c Z s b [put_line spark__text_io 758 14 none]
+G c Z s s [count_resultIP spark__text_io 69 9 none]
+G c Z s s [character_resultIP spark__text_io 76 9 none]
+G c Z s s [immediate_resultIP spark__text_io 83 9 none]
+G r s text_io_file_type [s spark__text_io 49 1 none] [text_io_file_typeIP spark 68 9 none]
 X 1 ada.ads
-16K9*Ada 19e8 11|60r28 61r28 64r46 67r25 12|91r36 96r28 96r46 97r28 97r46
+16K9*Ada 20e8 11|60r28 61r28 64r46 67r25 12|91r36 96r28 96r46 97r28 97r46
 . 98r28 98r46 99r25 101r12 102r12 107r25 107r43 108r26 108r44 109r28 109r46
 . 110r25 116r28 132r7 133r27 138r12 139r12 140r12 141r12 150r7 151r25 156r12
 . 157r12 158r12 159r12 167r13 171r12 172r12 181r13 185r12 186r12 187r12 195r13
@@ -95,7 +176,7 @@ X 1 ada.ads
 . 1059r35 1062r13 1062r35 1065r13 1069r12 1070r12 1071r12 1076r7 1076r29
 . 1079r12 1080r12 1081r12
 X 6 a-textio.ads
-49K13*Text_IO 471e16 11|60r32 61r32 64r50 67r29 12|91r40 96r32 96r50 97r32
+57K13*Text_IO 727e16 11|60r32 61r32 64r50 67r29 12|91r40 96r32 96r50 97r32
 . 97r50 98r32 98r50 99r29 101r16 102r16 107r29 107r47 108r30 108r48 109r32
 . 109r50 110r29 116r32 132r11 133r31 138r16 139r16 140r16 141r16 150r11 151r29
 . 156r16 157r16 158r16 159r16 167r17 171r16 172r16 181r17 185r16 186r16 187r16
@@ -132,84 +213,84 @@ X 6 a-textio.ads
 . 1022r16 1025r16 1028r16 1036r11 1036r33 1039r16 1042r16 1045r16 1048r16
 . 1059r17 1059r39 1062r17 1062r39 1065r17 1069r16 1070r16 1071r16 1076r11
 . 1076r33 1079r16 1080r16 1081r16
-52P9*File_Type
-53E9*File_Mode 53e54 11|60r40 12|133r39 151r37 195r55
-53n23*In_File{53E9} 11|181r45 315r46 12|89r25
-53n32*Out_File{53E9} 11|186r26 192r50 286r46 338r46 375r46 424r46 492r47
+64P9*File_Type
+66E9*File_Mode 66e54 11|60r40 12|133r39 151r37 195r55
+66n23*In_File{66E9} 11|181r45 315r46 12|89r25
+66n32*Out_File{66E9} 11|186r26 192r50 286r46 338r46 375r46 424r46 492r47
 . 522r45 594r46 703r46 763r46 12|90r38 127r49
-53n42*Append_File{53E9} 11|186r57
-64I9*Count<integer> 11|61r40 12|254r54 258r54 261r65 274r48 289r54 293r54
+66n42*Append_File{66E9} 11|186r57
+77I9*Count<integer> 11|61r40 12|254r54 258r54 261r65 274r48 289r54 293r54
 . 296r65 310r48 350r47 354r47 357r58 369r41
-68I12*Positive_Count{64I9} 12|384r48 388r48 401r42 503r46 506r46 509r46 512r46
+81I12*Positive_Count{77I9} 12|384r48 388r48 401r42 503r46 506r46 509r46 512r46
 . 525r40 541r46 544r47 547r47 550r47 563r41
-73I12*Field{integer} 11|64r58
-80E9*Type_Set 80e45 11|67r37
-86U14*Create 12|132s19
-92U14*Open 12|150s19
-98U14*Close 12|167s25
-99U14*Delete 12|181s25
-100U14*Reset 12|195s25
-101U14*Reset 12|209s25
-103V13*Mode{53E9} 12|91s48
-104V13*Name{string} 12|96s40 97s40 98s40 99s37
-105V13*Form{string} 12|107s37 108s38 109s40 110s37
-107V13*Is_Open{boolean} 12|116s40
-117V13*Standard_Input{52P9} 12|96s58 107s55 383s48 400s42 412s62 417s45 455s48
+86I12*Field{integer} 11|64r58
+93E9*Type_Set 93e45 11|67r37
+99U14*Create 12|132s19
+114U14*Open 12|150s19
+129U14*Close 12|167s25
+133U14*Delete 12|181s25
+137U14*Reset 12|195s25
+146U14*Reset 12|209s25
+156V13*Mode{66E9} 12|91s48
+159V13*Name{string} 12|96s40 97s40 98s40 99s37
+162V13*Form{string} 12|107s37 108s38 109s40 110s37
+166V13*Is_Open{boolean} 12|116s40
+177V13*Standard_Input{64P9} 12|96s58 107s55 383s48 400s42 412s62 417s45 455s48
 . 470s42 481s62 486s45 490s62 496s45 502s46 540s47 579s61 612s50 646s47 682s42
 . 708s36 769s49 802s43 830s52 856s46 884s52 920s46 946s39 964s36 1013s44
 . 1036s41
-118V13*Standard_Output{52P9} 12|97s58 108s56 223s44 240s38 253s54 273s48
+178V13*Standard_Output{64P9} 12|97s58 108s56 223s44 240s38 253s54 273s48
 . 288s54 309s48 322s57 329s51 334s57 341s51 349s47 368s41 424s47 441s41 505s46
 . 524s40 543s47 562s41 582s61 597s60 616s50 633s61 650s47 667s61 732s42 751s36
 . 983s42 1000s36 1059s47 1076s41
-119V13*Standard_Error{52P9} 12|98s58 109s58 226s44 257s54 292s54 324s57 336s57
+179V13*Standard_Error{64P9} 12|98s58 109s58 226s44 257s54 292s54 324s57 336s57
 . 353s47 427s47 508s46 546s47 585s61 620s50 654s47 735s42 986s42 1062s47
-142U14*Flush 12|223s25 226s25 229s25 240s19
-149U14*Set_Line_Length 12|253s25 257s25 261s25 273s19
-152U14*Set_Page_Length 12|288s25 292s25 296s25 309s19
-155V13*Line_Length{64I9} 12|322s32 324s32 326s32 329s26
-158V13*Page_Length{64I9} 12|334s32 336s32 338s32 341s26
-165U14*New_Line 12|349s25 353s25 357s25 368s19
-168U14*Skip_Line 12|383s25 387s25 400s19
-171V13*End_Of_Line{boolean} 12|412s37 414s25 417s20 481s37 483s25
-174U14*New_Page 12|424s25 427s25 430s25 441s19
-177U14*Skip_Page 12|455s25 458s25 470s19
-180V13*End_Of_Page{boolean} 12|486s20
-183V13*End_Of_File{boolean} 12|490s37 492s25 496s20
-186U14*Set_Col 12|502s25 505s25 508s25 511s25 524s19
-189U14*Set_Line 12|540s25 543s25 546s25 549s25 562s19
-192V13*Col{68I12} 12|579s44 582s44 585s44 587s57 597s43
-195V13*Line{68I12} 12|611s47 615s47 619s47 623s47 633s43
-198V13*Page{68I12} 12|645s44 649s44 653s44 657s44 667s43
-205U14*Get 12|682s25 686s25 708s19
-207U14*Put 12|732s25 735s25 738s25 751s19
-210U14*Look_Ahead 12|769s25 778s25 802s19
-219U14*Get_Immediate 12|830s25 834s25 856s19
-226U14*Get_Immediate 12|884s25 893s25 920s19
-239U14*Get 12|946s22 948s22 964s19
-241U14*Put 12|983s25 986s25 989s25 1000s19
-244U14*Get_Line 12|1013s22 1015s22 1036s19
-259U14*Put_Line 12|1059s25 1062s25 1065s25 1076s19
-292X4*Status_Error 12|138r24 156r24 171r24 185r24 199r24 213r24 233r24 243r24
+202U14*Flush 12|223s25 226s25 229s25 240s19
+218U14*Set_Line_Length 12|253s25 257s25 261s25 273s19
+230U14*Set_Page_Length 12|288s25 292s25 296s25 309s19
+242V13*Line_Length{77I9} 12|322s32 324s32 326s32 329s26
+248V13*Page_Length{77I9} 12|334s32 336s32 338s32 341s26
+258U14*New_Line 12|349s25 353s25 357s25 368s19
+270U14*Skip_Line 12|383s25 387s25 400s19
+279V13*End_Of_Line{boolean} 12|412s37 414s25 417s20 481s37 483s25
+285U14*New_Page 12|424s25 427s25 430s25 441s19
+297U14*Skip_Page 12|455s25 458s25 470s19
+306V13*End_Of_Page{boolean} 12|486s20
+312V13*End_Of_File{boolean} 12|490s37 492s25 496s20
+318U14*Set_Col 12|502s25 505s25 508s25 511s25 524s19
+337U14*Set_Line 12|540s25 543s25 546s25 549s25 562s19
+356V13*Col{81I12} 12|579s44 582s44 585s44 587s57 597s43
+362V13*Line{81I12} 12|611s47 615s47 619s47 623s47 633s43
+368V13*Page{81I12} 12|645s44 649s44 653s44 657s44 667s43
+378U14*Get 12|682s25 686s25 708s19
+386U14*Put 12|732s25 735s25 738s25 751s19
+398U14*Look_Ahead 12|769s25 778s25 802s19
+415U14*Get_Immediate 12|830s25 834s25 856s19
+430U14*Get_Immediate 12|884s25 893s25 920s19
+451U14*Get 12|946s22 948s22 964s19
+459U14*Put 12|983s25 986s25 989s25 1000s19
+471U14*Get_Line 12|1013s22 1015s22 1036s19
+498U14*Put_Line 12|1059s25 1062s25 1065s25 1076s19
+542X4*Status_Error 12|138r24 156r24 171r24 185r24 199r24 213r24 233r24 243r24
 . 265r24 277r24 300r24 313r24 361r24 372r24 392r24 404r24 434r24 444r24 462r24
 . 473r24 516r27 528r24 554r27 566r24 589r27 599r27 625r27 635r27 659r27 669r27
 . 691r24 712r24 742r24 754r24 787r24 810r24 839r24 860r24 902r24 928r24 952r24
 . 967r24 993r24 1003r24 1019r24 1039r24 1069r24 1079r24
-293X4*Mode_Error 12|234r24 244r24 266r24 278r24 301r24 314r24 362r24 373r24
+543X4*Mode_Error 12|234r24 244r24 266r24 278r24 301r24 314r24 362r24 373r24
 . 393r24 405r24 435r24 445r24 463r24 474r24 694r24 715r24 743r24 755r24 790r24
 . 813r24 842r24 863r24 905r24 931r24 954r24 969r24 994r24 1004r24 1022r24
 . 1042r24 1070r24 1080r24
-294X4*Name_Error 12|139r24 157r24
-295X4*Use_Error 12|101r24 140r24 158r24 186r24 200r24 214r24 267r24 279r24
+544X4*Name_Error 12|139r24 157r24
+545X4*Use_Error 12|101r24 140r24 158r24 186r24 200r24 214r24 267r24 279r24
 . 302r24 315r24
-296X4*Device_Error 12|102r24 141r24 159r24 172r24 187r24 201r24 215r24 235r24
+546X4*Device_Error 12|102r24 141r24 159r24 172r24 187r24 201r24 215r24 235r24
 . 245r24 268r24 280r24 303r24 316r24 363r24 374r24 394r24 406r24 436r24 446r24
 . 464r24 475r24 517r27 530r24 555r27 568r24 590r27 600r27 626r27 636r27 660r27
 . 670r27 697r24 718r24 744r24 756r24 793r24 816r24 845r24 866r24 908r24 934r24
 . 956r24 971r24 995r24 1005r24 1025r24 1045r24 1071r24 1081r24
-297X4*End_Error 12|395r24 407r24 465r24 476r24 518r27 556r27 700r24 721r24
+547X4*End_Error 12|395r24 407r24 465r24 476r24 518r27 556r27 700r24 721r24
 . 848r24 869r24 911r24 937r24 958r24 973r24 1028r24 1048r24
-299X4*Layout_Error 12|519r27 532r24 557r27 570r24 591r27 601r27 627r27 637r27
+549X4*Layout_Error 12|519r27 532r24 557r27 570r24 591r27 601r27 627r27 637r27
 . 661r27 671r27
 X 10 spark.ads
 37K9*SPARK 74e10 11|49r9 58r28 59r28 774r5 12|38r14 1091r8
@@ -295,7 +376,7 @@ X 10 spark.ads
 . 114r20 164r17 178r17 192r17 206r17 220r17 250r17 285r17 320r17 332r17 346r17
 . 380r17 411r17 421r17 452r17 480r17 489r17 500r17 538r17 576r25 608r20 642r25
 . 677r17 728r17 764r17 825r17 879r17 945r15 979r17 1012r15 1055r17
-71p7*File{6|52P9} 12|91r59 99r48 110r48 116r54 132m36 150m34 167m37 181m38
+71p7*File{6|64P9} 12|91r59 99r48 110r48 116r54 132m36 150m34 167m37 181m38
 . 195m37 209m37 229r37 261r47 296r47 326r50 338r50 357r40 387r41 414r43 430r40
 . 458r41 483r43 492r43 511r39 549r40 587r67 623r58 657r55 686r35 738r35 778r42
 . 834r45 893r45 948r32 989r35 1015r37 1065r40
@@ -307,9 +388,9 @@ X 11 spark-text_io.ads
 . 452r37 459r37 467r37 499r38 531r28 538r29 545r29 554r33 577r33 605r48 623r48
 . 641r48 663r42 686r33 717r38 745r38
 59E9*File_Status<10|49E9> 69r32 76r36 84r16 133r46 12|75r46 76r7
-60E9*File_Mode<6|53E9> 165r47 192r37 212r35 241r60 12|87r50 91r25 127r36
+60E9*File_Mode<6|66E9> 165r47 192r37 212r35 241r60 12|87r50 91r25 127r36
 . 145r34 190r61
-61I9*Count<6|64I9> 62r30 62r47 71r34 299r64 310r39 323r64 333r39 345r55 349r33
+61I9*Count<6|77I9> 62r30 62r47 71r34 299r64 310r39 323r64 333r39 345r55 349r33
 . 352r55 356r33 12|248r64 271r39 283r64 307r39 319r55 322r13 324r13 326r13
 . 328r33 329r7 331r55 334r13 336r13 338r13 340r33 341r7
 62I12*Positive_Count{61I9} 362r39 372r39 387r39 395r39 467r56 482r33 499r57
@@ -318,7 +399,7 @@ X 11 spark-text_io.ads
 . 652r29 656r29 667r15
 64I12*Field{integer}
 65I12*Number_Base{integer}
-67E9*Type_Set<6|80E9>
+67E9*Type_Set<6|93E9>
 69R9*Count_Result 69d23 74e14 531r46 535r25 538r47 542r25 545r47 549r25 12|574r46
 . 594r25 605r47 630r25 640r47 664r25
 69e23*Status{59E9} 70r12 12|589m51 590m51 591m51 599m51 600m51 601m51 625m51
@@ -373,11 +454,6 @@ X 11 spark-text_io.ads
 . 575s25 579s47 592s21 672s23 678s21 683s25 688s47 701s21 727s23 740s25 747s47
 . 761s21 12|75b13
 133r21 File{58R9} 12|76r20
-139r32 File{58R9} 12|79r8
-143r33 File{58R9} 12|82r8
-147r32 File{58R9} 12|85r8
-151r35 File{58R9} 152r27 152r60
-156r31 File{58R9} 157r26 157r60 158r38
 162V13*Is_Open{boolean} 162>22 167s21 174s21 178s21 181s7 185s7 197s20 202s23
 . 207s24 217s20 222s23 227s25 232s16 233s53 238s16 239s53 244s16 247s19 255s16
 . 256s16 275s19 285s21 303s20 314s21 327s19 337s21 365s19 374s21 414s19 423s21
@@ -453,14 +529,14 @@ X 11 spark-text_io.ads
 . 306r26 306r40 307r33 307r54 308r38 308r64 12|248b31 250r12 251m25 255m13
 . 259m13 261r42 262m13 265m40 266m40 267m40 268m40
 299i56 To{61I9} 302r73 12|248b56 254r61 258r61 261r72
-310U14*Set_Line_Length<6|150p14> 310>31 12|271b14 281l8 281t23
+310U14*Set_Line_Length<6|224p14> 310>31 12|271b14 281l8 281t23
 310i31 To{61I9} 313r57 12|271b31 274r55
 323U14*Set_Page_Length 323=31 323>56 12|283b14 304l8 304t23
 323r31 File{58R9} 325r32 326r31 326r65 327r28 327r44 327r58 328r25 328r39
 . 329r25 329r39 330r32 330r53 331r37 331r63 12|283b31 285r12 286m25 290m13
 . 294m13 296r42 297m13 300m40 301m40 302m40 303m40
 323i56 To{61I9} 326r73 12|283b56 289r61 293r61 296r72
-333U14*Set_Page_Length<6|153p14> 333>31 12|307b14 317l8 317t23
+333U14*Set_Page_Length<6|236p14> 333>31 12|307b14 317l8 317t23
 333i31 To{61I9} 336r56 12|307b31 310r55
 345V14*Line_Length{61I9} 203s23 223s23 279s19 279s40 291s21 292s24 302s52
 . 313s25 330s19 330s40 341s21 342s24 345>27 368s19 368s40 380s21 381s24 417s19
@@ -468,27 +544,27 @@ X 11 spark-text_io.ads
 . 510s20 510s41 525s22 526s25 585s19 585s40 599s21 600s24 694s19 694s40 706s21
 . 707s23 753s19 753s40 768s21 769s24 12|319b14
 345r27 File{58R9} 347r34 12|320r12 326r45
-349V14*Line_Length{61I9}<6|156p13> 12|328b14
+349V14*Line_Length{61I9}<6|245p13> 12|328b14
 352V14*Page_Length{61I9} 204s23 224s23 280s19 280s40 293s21 294s24 307s20
 . 307s41 318s21 319s21 326s52 336s24 352>27 369s19 369s40 382s21 383s24 418s19
 . 418s40 431s21 432s24 479s20 479s41 495s22 496s25 502s25 503s30 511s20 511s41
 . 518s31 527s22 528s25 586s19 586s40 601s21 602s24 695s19 695s40 708s21 709s23
 . 754s19 754s40 770s21 771s24 12|331b14
 352r27 File{58R9} 354r34 12|332r12 338r45
-356V14*Page_Length{61I9}<6|159p13> 517s25 12|340b14
+356V14*Page_Length{61I9}<6|251p13> 517s25 12|340b14
 361U14*New_Line 361=26 362>26 12|343b14 364l8 364t16
 361r26 File{58R9} 364r32 365r28 365r44 365r58 366r25 366r39 367r25 367r39
 . 368r32 368r53 369r32 369r53 370r37 370r63 12|343b26 346r12 347m25 351m13
 . 355m13 357r35 358m13 361m40 362m40 363m40
 362i26 Spacing{62I12} 12|344b26 350r54 354r54 357r65
-372U14*New_Line<6|166p14> 372>26 12|366b14 375l8 375t16
+372U14*New_Line<6|264p14> 372>26 12|366b14 375l8 375t16
 372i26 Spacing{62I12} 12|366b26 369r48
 386U14*Skip_Line 386=26 387>26 12|377b14 396l8 396t17
 386r26 File{58R9} 389r32 389r64 390r32 391r25 391r39 392r25 392r39 393r37
 . 393r63 12|377b26 380r12 381m38 385m13 387r36 389m13 392m40 393m40 394m40
 . 395m40
 387i26 Spacing{62I12} 12|378b26 384r64 388r64
-395U14*Skip_Line<6|169p14> 395>26 12|398b14 408l8 408t17
+395U14*Skip_Line<6|273p14> 395>26 12|398b14 408l8 408t17
 395i26 Spacing{62I12} 12|398b26 401r58
 404V14*End_Of_Line{boolean} 404>27 12|410b14
 404r27 File{58R9} 406r34 12|411r12 414r38
@@ -516,14 +592,14 @@ X 11 spark-text_io.ads
 . 479r54 480r38 480r64 12|498b23 500r12 511r34 514m7 516m43 517m43 518m43
 . 519m43
 467i48 To{62I12} 470r24 473r45 12|498b48 503r62 506r62 509r62 512r62
-482U14*Set_Col<6|187p14> 482>23 12|522b14 534l8 534t15
+482U14*Set_Col<6|330p14> 482>23 12|522b14 534l8 534t15
 482i23 To{62I12} 486r25 488r59 12|522b23 525r56
 499U14*Set_Line 499=24 499>49 12|536b14 558l8 558t16
 499r24 File{58R9} 501r32 502r38 503r43 504r39 504r67 505r31 506r28 507r29
 . 507r45 507r59 508r26 508r40 509r26 509r40 510r33 510r54 511r33 511r54 512r38
 . 512r64 12|536b24 538r12 549r35 552m7 554m43 555m43 556m43 557m43
 499i49 To{62I12} 503r24 506r46 12|536b49 541r62 544r63 547r63 550r63
-514U14*Set_Line<6|190p14> 514>24 12|560b14 572l8 572t16
+514U14*Set_Line<6|349p14> 514>24 12|560b14 572l8 572t16
 514i24 To{62I12} 518r25 520r57 12|560b24 563r57
 531V13*Col{69R9} 473s22 488s25 531>18 12|574b13 592l8 592t11
 531r18 File{58R9} 533r28 12|574b18 576r20 587r62

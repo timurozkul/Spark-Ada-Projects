@@ -8,11 +8,13 @@ A -fPIC
 P ZX
 
 RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U main%b		main.adb		bb7df548 NE OO SU
+U main%b		main.adb		950131b5 NE OO SU
 W as_io_wrapper%s	as_io_wrapper.adb	as_io_wrapper.ali
+W global_variables%s	global_variables.ads	global_variables.ali
 W power_grid_energy_stabilizer%s  power_grid_energy_stabilizer.adb  power_grid_energy_stabilizer.ali
 
 U main%s		main.ads		cd1c0576 EE NE OO SU
@@ -29,8 +31,8 @@ D global_variables.ads	20200408132711 fa82fa2a global_variables%s
 D interfac.ads		20190518041254 5ab55268 interfaces%s
 D i-cstrea.ads		20190518041254 e53d8b8e interfaces.c_streams%s
 D main.ads		20200327134543 cd1c0576 main%s
-D main.adb		20200408132731 344f40e2 main%b
-D power_grid_energy_stabilizer.ads  20200408160050 42217600 power_grid_energy_stabilizer%s
+D main.adb		20200413130216 2bf3182a main%b
+D power_grid_energy_stabilizer.ads  20200413130146 8963101f power_grid_energy_stabilizer%s
 D spark.ads		20200214112854 86380d85 spark%s
 D spark-text_io.ads	20200214112854 3f556f64 spark.text_io%s
 D system.ads		20190518041255 085b6ffb system%s
@@ -48,38 +50,40 @@ D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20190518041255 1b7d22d2 system.wch_con%s
 G a e
 G c Z s b [main standard 14 11 none]
-G r c none [main standard 14 11 none] [as_init_standard_output as_io_wrapper 32 14 none]
-G r c none [main standard 14 11 none] [as_init_standard_input as_io_wrapper 25 14 none]
-G r c none [main standard 14 11 none] [print_welcome power_grid_energy_stabilizer 31 14 none]
-G r c none [main standard 14 11 none] [init power_grid_energy_stabilizer 33 14 none]
-G r c none [main standard 14 11 none] [read_consumption power_grid_energy_stabilizer 42 14 none]
-G r c none [main standard 14 11 none] [read_supply power_grid_energy_stabilizer 48 15 none]
-G r c none [main standard 14 11 none] [energy_stabilizerg_system power_grid_energy_stabilizer 54 15 none]
-G r c none [main standard 14 11 none] [print_status power_grid_energy_stabilizer 61 14 none]
-G r c none [main standard 14 11 none] [refill_reserve power_grid_energy_stabilizer 66 14 none]
+G r c none [main standard 14 11 none] [init power_grid_energy_stabilizer 32 14 none]
+G r c none [main standard 14 11 none] [print_welcome power_grid_energy_stabilizer 36 15 none]
+G r c none [main standard 14 11 none] [read_consumption power_grid_energy_stabilizer 44 14 none]
+G r c none [main standard 14 11 none] [read_supply power_grid_energy_stabilizer 50 15 none]
+G r c none [main standard 14 11 none] [energy_stabilizerg_system power_grid_energy_stabilizer 56 15 none]
+G r c none [main standard 14 11 none] [print_status power_grid_energy_stabilizer 64 14 none]
+G r c none [main standard 14 11 none] [refill_reserve power_grid_energy_stabilizer 72 14 none]
 G r c none [main standard 14 11 none] [as_put as_io_wrapper 59 14 none]
 G r c none [main standard 14 11 none] [as_get_line as_io_wrapper 76 14 none]
 G r c none [main standard 14 11 none] [as_put_line as_io_wrapper 83 14 none]
 X 8 as_io_wrapper.ads
 21K9*AS_Io_Wrapper 124e18 13|15w6 16r5
-25U14*AS_Init_Standard_Input 13|25s4
-32U14*AS_Init_Standard_Output 13|24s4
-59U14*AS_Put 13|36s9
-76U14*AS_Get_Line 13|37s9
-83U14*AS_Put_Line 13|39s9
+59U14*AS_Put 13|38s9
+76U14*AS_Get_Line 13|39s9
+83U14*AS_Put_Line 13|41s9
+X 9 global_variables.ads
+3K9*Global_Variables 31e22 13|19w6 20r5
+15I12*Electricity_Range{integer}
+22i10*Consumption_Measured{15I12} 13|29r52
+23i10*Supplied_Measured{15I12} 13|29r99
+29r4*Status_System{20R9} 13|29r38 29r85
 X 12 main.ads
-14U11*Main 13|20b11 43l5 43t9
+14U11*Main 13|22b11 45l5 45t9
 X 13 main.adb
-21i4 Last{integer} 37m33 38r19
-22a4 User_Input{string} 37m21 41r16
+23i4 Last{integer} 39m33 40r19
+24a4 User_Input{string} 39m21 43r16
 X 14 power_grid_energy_stabilizer.ads
-13K9*Power_Grid_Energy_Stabilizer 13|17w6 18r5 14|74e34
-31U14*Print_Welcome 13|26s4
-33U14*Init 13|27s4
-38V13*Is_Safe{boolean} 13|29s30
-42U14*Read_Consumption 13|30s7
-48U15*Read_Supply 13|31s7
-54U15*Energy_Stabilizerg_System 13|32s7
-61U14*Print_Status 13|33s7
-66U14*Refill_Reserve 13|34s7
+13K9*Power_Grid_Energy_Stabilizer 13|17w6 18r5 14|84e34
+32U14*Init 13|26s4
+36U15*Print_Welcome 13|27s4
+40V13*Is_Critical{boolean} 13|30s34
+44U14*Read_Consumption 13|31s7
+50U15*Read_Supply 13|32s7
+56U15*Energy_Stabilizerg_System 13|33s7
+64U14*Print_Status 13|34s7
+72U14*Refill_Reserve 13|35s7
 

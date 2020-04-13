@@ -1929,7 +1929,7 @@ module System__default_priority
  use        "_gnatprove_standard".Main
  use        "int".Int
 
- val constant default_priority [#"system.ads" 129 0 0][@name:Default_Priority] [@model_trace:7667] 
+ val constant default_priority [#"system.ads" 129 0 0][@name:Default_Priority] [@model_trace:7937] 
    : int
 
  
@@ -2007,7 +2007,103 @@ module System__interrupt_priority__rep
 
 end
 
-(* Module for axiomatizing type "electricity_range" defined at global_variables.ads:14, created in Gnat2Why.Types.Translate_Type *)
+(* Module for axiomatizing type "TTuser_inputSP1" defined at main.adb:24, created in Gnat2Why.Types.Translate_Type *)
+module Main__TTuser_inputSP1
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+
+ type tTuser_inputSP1 =
+  < range 1 20 >
+ 
+ val constant first 
+   : int
+  ensures { result =  (1 : int) }
+ 
+ val constant last 
+   : int
+  ensures { result =  (20 : int) }
+ 
+ predicate in_range 
+   (x : int) =
+  ( (first <= x) /\ (x <= last) )
+ val in_range 
+   (x : int) : bool
+  ensures { result <-> in_range (x : int) }
+ 
+ clone export "ada__model".Static_Discrete with axiom .,
+ type t = tTuser_inputSP1, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type tTuser_inputSP1__ref =
+  { mutable tTuser_inputSP1__content : tTuser_inputSP1 }
+ 
+ function tTuser_inputSP1__ref_tTuser_inputSP1__content__projection 
+   (a : tTuser_inputSP1__ref) : tTuser_inputSP1 =
+  a.tTuser_inputSP1__content
+ 
+ meta "model_projection" function tTuser_inputSP1__ref_tTuser_inputSP1__content__projection
+ 
+ meta "inline:no" function tTuser_inputSP1__ref_tTuser_inputSP1__content__projection
+ 
+ val tTuser_inputSP1__havoc 
+   (x : tTuser_inputSP1__ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_rep/of_rep for type "TTuser_inputSP1" defined at main.adb:24, created in Gnat2Why.Types.Translate_Type *)
+module Main__TTuser_inputSP1__rep
+ use        Main__TTuser_inputSP1 as Main__TTuser_inputSP1
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+ function to_rep 
+   (x : Main__TTuser_inputSP1.tTuser_inputSP1) : int =
+  (Main__TTuser_inputSP1.tTuser_inputSP1'int x)
+ 
+ clone export "ada__model".Rep_Proj_Int with axiom .,
+ type t = Main__TTuser_inputSP1.tTuser_inputSP1, 
+ predicate in_range = Main__TTuser_inputSP1.in_range, 
+ function to_rep = to_rep
+ 
+ meta "model_projection" function to_rep
+ 
+ meta "inline:no" function to_rep
+
+end
+
+(* Module for axiomatizing type "Tuser_inputS" defined at main.adb:24, created in Gnat2Why.Types.Translate_Type *)
+module Main__Tuser_inputS
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Standard__character as Standard__character
+ use        Array__Int__Standard__character as Array__Int__Standard__character
+
+ type component_type =
+  Standard__character.character
+ 
+ val constant first 
+   : int
+  ensures { result =  (1 : int) }
+ 
+ val constant last 
+   : int
+  ensures { result =  (20 : int) }
+ 
+ clone export "ada__model".Constr_Array with axiom .,
+ type map = Array__Int__Standard__character.map, 
+ function array_bool_eq = Array__Int__Standard__character.bool_eq, 
+ function first = first, 
+ function last = last, 
+ type index_rep_type = int
+
+end
+
+(* Module for axiomatizing type "electricity_range" defined at global_variables.ads:15, created in Gnat2Why.Types.Translate_Type *)
 module Global_variables__electricity_range
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -2054,7 +2150,7 @@ module Global_variables__electricity_range
 
 end
 
-(* Module defining to_rep/of_rep for type "electricity_range" defined at global_variables.ads:14, created in Gnat2Why.Types.Translate_Type *)
+(* Module defining to_rep/of_rep for type "electricity_range" defined at global_variables.ads:15, created in Gnat2Why.Types.Translate_Type *)
 module Global_variables__electricity_range__rep
  use        Global_variables__electricity_range as Global_variables__electricity_range
  use        "_gnatprove_standard".Main
@@ -2075,7 +2171,7 @@ module Global_variables__electricity_range__rep
 
 end
 
-(* Module for axiomatizing type "reserve_electricity_range" defined at global_variables.ads:15, created in Gnat2Why.Types.Translate_Type *)
+(* Module for axiomatizing type "reserve_electricity_range" defined at global_variables.ads:16, created in Gnat2Why.Types.Translate_Type *)
 module Global_variables__reserve_electricity_range
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -2122,7 +2218,7 @@ module Global_variables__reserve_electricity_range
 
 end
 
-(* Module defining to_rep/of_rep for type "reserve_electricity_range" defined at global_variables.ads:15, created in Gnat2Why.Types.Translate_Type *)
+(* Module defining to_rep/of_rep for type "reserve_electricity_range" defined at global_variables.ads:16, created in Gnat2Why.Types.Translate_Type *)
 module Global_variables__reserve_electricity_range__rep
  use        Global_variables__reserve_electricity_range as Global_variables__reserve_electricity_range
  use        "_gnatprove_standard".Main
@@ -2143,7 +2239,7 @@ module Global_variables__reserve_electricity_range__rep
 
 end
 
-(* Module for axiomatizing type "status_reserved_electricity_type" defined at global_variables.ads:17, created in Gnat2Why.Types.Translate_Type *)
+(* Module for axiomatizing type "status_reserved_electricity_type" defined at global_variables.ads:18, created in Gnat2Why.Types.Translate_Type *)
 module Global_variables__status_reserved_electricity_type
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -2189,7 +2285,7 @@ module Global_variables__status_reserved_electricity_type
 
 end
 
-(* Module defining to_rep/of_rep for type "status_reserved_electricity_type" defined at global_variables.ads:17, created in Gnat2Why.Types.Translate_Type *)
+(* Module defining to_rep/of_rep for type "status_reserved_electricity_type" defined at global_variables.ads:18, created in Gnat2Why.Types.Translate_Type *)
 module Global_variables__status_reserved_electricity_type__rep
  use        Global_variables__status_reserved_electricity_type as Global_variables__status_reserved_electricity_type
  use        "_gnatprove_standard".Main
@@ -2205,7 +2301,7 @@ module Global_variables__status_reserved_electricity_type__rep
 
 end
 
-(* Module for axiomatizing the record theory associated to type "status_system_type" defined at global_variables.ads:19, created in Why.Gen.Records.Create_Rep_Record_Theory_If_Needed *)
+(* Module for axiomatizing the record theory associated to type "status_system_type" defined at global_variables.ads:20, created in Why.Gen.Records.Create_Rep_Record_Theory_If_Needed *)
 module Global_variables__status_system_type__rep
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -2217,9 +2313,9 @@ module Global_variables__status_system_type__rep
  use        Global_variables__status_reserved_electricity_type__rep as Global_variables__status_reserved_electricity_type__rep
 
  type __split_fields =
-  { rec__global_variables__status_system_type__consumption_measured [@model_trace:.18045] [@name:Consumption_Measured] : Global_variables__electricity_range.electricity_range; rec__global_variables__status_system_type__supplied_measured [@model_trace:.18055] [@name:Supplied_Measured] : Global_variables__electricity_range.electricity_range; rec__global_variables__status_system_type__reserved_measured [@name:Reserved_Measured] [@model_trace:.18065] : Global_variables__reserve_electricity_range.reserve_electricity_range; rec__global_variables__status_system_type__status_reserved_electricity [@name:Status_Reserved_Electricity] [@model_trace:.18075] : Global_variables__status_reserved_electricity_type.status_reserved_electricity_type }
+  { rec__global_variables__status_system_type__consumption_measured [@model_trace:.18631] [@name:Consumption_Measured] : Global_variables__electricity_range.electricity_range; rec__global_variables__status_system_type__supplied_measured [@model_trace:.18641] [@name:Supplied_Measured] : Global_variables__electricity_range.electricity_range; rec__global_variables__status_system_type__reserved_measured [@name:Reserved_Measured] [@model_trace:.18651] : Global_variables__reserve_electricity_range.reserve_electricity_range; rec__global_variables__status_system_type__status_reserved_electricity [@name:Status_Reserved_Electricity] [@model_trace:.18661] : Global_variables__status_reserved_electricity_type.status_reserved_electricity_type }
  
- function __split_fields_rec__global_variables__status_system_type__consumption_measured__projection [@model_trace:.18045] [@name:Consumption_Measured] 
+ function __split_fields_rec__global_variables__status_system_type__consumption_measured__projection [@model_trace:.18631] [@name:Consumption_Measured] 
    (a : __split_fields) : Global_variables__electricity_range.electricity_range =
   a.rec__global_variables__status_system_type__consumption_measured
  
@@ -2227,7 +2323,7 @@ module Global_variables__status_system_type__rep
  
  meta "inline:no" function __split_fields_rec__global_variables__status_system_type__consumption_measured__projection
  
- function __split_fields_rec__global_variables__status_system_type__supplied_measured__projection [@model_trace:.18055] [@name:Supplied_Measured] 
+ function __split_fields_rec__global_variables__status_system_type__supplied_measured__projection [@model_trace:.18641] [@name:Supplied_Measured] 
    (a : __split_fields) : Global_variables__electricity_range.electricity_range =
   a.rec__global_variables__status_system_type__supplied_measured
  
@@ -2235,7 +2331,7 @@ module Global_variables__status_system_type__rep
  
  meta "inline:no" function __split_fields_rec__global_variables__status_system_type__supplied_measured__projection
  
- function __split_fields_rec__global_variables__status_system_type__reserved_measured__projection [@name:Reserved_Measured] [@model_trace:.18065] 
+ function __split_fields_rec__global_variables__status_system_type__reserved_measured__projection [@name:Reserved_Measured] [@model_trace:.18651] 
    (a : __split_fields) : Global_variables__reserve_electricity_range.reserve_electricity_range =
   a.rec__global_variables__status_system_type__reserved_measured
  
@@ -2243,7 +2339,7 @@ module Global_variables__status_system_type__rep
  
  meta "inline:no" function __split_fields_rec__global_variables__status_system_type__reserved_measured__projection
  
- function __split_fields_rec__global_variables__status_system_type__status_reserved_electricity__projection [@name:Status_Reserved_Electricity] [@model_trace:.18075] 
+ function __split_fields_rec__global_variables__status_system_type__status_reserved_electricity__projection [@name:Status_Reserved_Electricity] [@model_trace:.18661] 
    (a : __split_fields) : Global_variables__status_reserved_electricity_type.status_reserved_electricity_type =
   a.rec__global_variables__status_system_type__status_reserved_electricity
  
@@ -2350,7 +2446,7 @@ module Global_variables__status_system_type__rep
 
 end
 
-(* Module for axiomatizing type "status_system_type" defined at global_variables.ads:19, created in Gnat2Why.Types.Translate_Type *)
+(* Module for axiomatizing type "status_system_type" defined at global_variables.ads:20, created in Gnat2Why.Types.Translate_Type *)
 module Global_variables__status_system_type
  use export Global_variables__status_system_type__rep
  use        "_gnatprove_standard".Main
@@ -2489,14 +2585,42 @@ module Global_variables__status_system_type
 
 end
 
-(* Module for defining the constant "status" defined at power_grid_energy_stabilizer.ads:28, created in Gnat2Why.Decls.Translate_Constant *)
-module Power_grid_energy_stabilizer__is_safe__status
+(* Module for axiomatizing type "T1b" defined at main.adb:38, created in Gnat2Why.Types.Translate_Type *)
+module Main__L_2__T1b
  use        "_gnatprove_standard".Main
  use        "int".Int
- use        Global_variables__status_system_type as Global_variables__status_system_type
+ use        "int".Int
+ use        Standard__character as Standard__character
+ use        Array__Int__Standard__character as Array__Int__Standard__character
 
- val constant status [#"power_grid_energy_stabilizer.ads" 28 0 0][@model_projected] [@name:Status] [@model_trace:2452] 
-   : Global_variables__status_system_type.status_system_type
+ type component_type =
+  Standard__character.character
+ 
+ val constant first 
+   : int
+  ensures { result =  (1 : int) }
+ 
+ val constant last 
+   : int
+  ensures { result =  (27 : int) }
+ 
+ clone export "ada__model".Constr_Array with axiom .,
+ type map = Array__Int__Standard__character.map, 
+ function array_bool_eq = Array__Int__Standard__character.bool_eq, 
+ function first = first, 
+ function last = last, 
+ type index_rep_type = int
+
+end
+
+(* Module for defining the constant "item" defined at as_io_wrapper.ads:59, created in Gnat2Why.Decls.Translate_Constant *)
+module As_io_wrapper__as_put__2__item
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        Standard__string as Standard__string
+
+ val constant item [#"as_io_wrapper.ads" 59 0 0][@name:Item] [@model_projected] [@model_trace:2650] 
+   : Standard__string.string
 
  
  val constant attr__ATTRIBUTE_ADDRESS 
@@ -2505,25 +2629,187 @@ module Power_grid_energy_stabilizer__is_safe__status
 
 end
 
-(* Module giving an empty axiom for the entity "status" defined at power_grid_energy_stabilizer.ads:28, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
-module Power_grid_energy_stabilizer__is_safe__status___axiom
+(* Module giving an empty axiom for the entity "item" defined at as_io_wrapper.ads:59, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module As_io_wrapper__as_put__2__item___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
 
 
 end
 
-(* Module for possibly declaring a logic function for "is_safe" defined at power_grid_energy_stabilizer.ads:28, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
-module Power_grid_energy_stabilizer__is_safe
+(* Module for axiomatizing type "T2b" defined at main.adb:41, created in Gnat2Why.Types.Translate_Type *)
+module Main__L_2__T2b
  use        "_gnatprove_standard".Main
  use        "int".Int
- use        Global_variables__status_system_type as Global_variables__status_system_type
+ use        "int".Int
+ use        Standard__character as Standard__character
+ use        Array__Int__Standard__character as Array__Int__Standard__character
 
- val function is_safe 
-   (status : Global_variables__status_system_type.status_system_type) : bool
+ type component_type =
+  Standard__character.character
  
- val predicate is_safe__function_guard 
-   (temp___result_154 : bool) (status : Global_variables__status_system_type.status_system_type)
+ val constant first 
+   : int
+  ensures { result =  (1 : int) }
+ 
+ val constant last 
+   : int
+  ensures { result =  (31 : int) }
+ 
+ clone export "ada__model".Constr_Array with axiom .,
+ type map = Array__Int__Standard__character.map, 
+ function array_bool_eq = Array__Int__Standard__character.bool_eq, 
+ function first = first, 
+ function last = last, 
+ type index_rep_type = int
+
+end
+
+(* Module for defining the constant "item" defined at as_io_wrapper.ads:83, created in Gnat2Why.Decls.Translate_Constant *)
+module As_io_wrapper__as_put_line__item
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        Standard__string as Standard__string
+
+ val constant item [#"as_io_wrapper.ads" 83 0 0][@name:Item] [@model_projected] [@model_trace:2733] 
+   : Standard__string.string
+
+ 
+ val constant attr__ATTRIBUTE_ADDRESS 
+   : int
+
+
+end
+
+(* Module giving an empty axiom for the entity "item" defined at as_io_wrapper.ads:83, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module As_io_wrapper__as_put_line__item___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+
+end
+
+(* Module for axiomatizing type "T3b" defined at main.adb:43, created in Gnat2Why.Types.Translate_Type *)
+module Main__L_1__T3b
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+
+ type t3b =
+  < range 1 1 >
+ 
+ val constant first 
+   : int
+  ensures { result =  (1 : int) }
+ 
+ val constant last 
+   : int
+  ensures { result =  (1 : int) }
+ 
+ predicate in_range 
+   (x : int) =
+  ( (first <= x) /\ (x <= last) )
+ val in_range 
+   (x : int) : bool
+  ensures { result <-> in_range (x : int) }
+ 
+ clone export "ada__model".Static_Discrete with axiom .,
+ type t = t3b, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type t3b__ref =
+  { mutable t3b__content : t3b }
+ 
+ function t3b__ref_t3b__content__projection 
+   (a : t3b__ref) : t3b =
+  a.t3b__content
+ 
+ meta "model_projection" function t3b__ref_t3b__content__projection
+ 
+ meta "inline:no" function t3b__ref_t3b__content__projection
+ 
+ val t3b__havoc 
+   (x : t3b__ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_rep/of_rep for type "T3b" defined at main.adb:43, created in Gnat2Why.Types.Translate_Type *)
+module Main__L_1__T3b__rep
+ use        Main__L_1__T3b as Main__L_1__T3b
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+ function to_rep 
+   (x : Main__L_1__T3b.t3b) : int =
+  (Main__L_1__T3b.t3b'int x)
+ 
+ clone export "ada__model".Rep_Proj_Int with axiom .,
+ type t = Main__L_1__T3b.t3b, 
+ predicate in_range = Main__L_1__T3b.in_range, 
+ function to_rep = to_rep
+ 
+ meta "model_projection" function to_rep
+ 
+ meta "inline:no" function to_rep
+
+end
+
+(* Module for axiomatizing type "T4b" defined at main.adb:43, created in Gnat2Why.Types.Translate_Type *)
+module Main__L_1__T4b
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Standard__character as Standard__character
+ use        Array__Int__Standard__character as Array__Int__Standard__character
+
+ type component_type =
+  Standard__character.character
+ 
+ val constant first 
+   : int
+  ensures { result =  (1 : int) }
+ 
+ val constant last 
+   : int
+  ensures { result =  (1 : int) }
+ 
+ clone export "ada__model".Constr_Array with axiom .,
+ type map = Array__Int__Standard__character.map, 
+ function array_bool_eq = Array__Int__Standard__character.bool_eq, 
+ function first = first, 
+ function last = last, 
+ type index_rep_type = int
+
+end
+
+(* Module for axiomatizing type "T5b" defined at main.adb:43, created in Gnat2Why.Types.Translate_Type *)
+module Main__L_1__T5b
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Standard__character as Standard__character
+ use        Array__Int__Standard__character as Array__Int__Standard__character
+
+ type component_type =
+  Standard__character.character
+ 
+ val constant first 
+   : int
+  ensures { result =  (1 : int) }
+ 
+ val constant last 
+   : int
+  ensures { result =  (1 : int) }
+ 
+ clone export "ada__model".Constr_Array with axiom .,
+ type map = Array__Int__Standard__character.map, 
+ function array_bool_eq = Array__Int__Standard__character.bool_eq, 
+ function first = first, 
+ function last = last, 
+ type index_rep_type = int
 
 end
 
@@ -2667,13 +2953,12 @@ module Spark__text_io__file_type
   writes {x}
 
 end
-(* Module for defining a ref holding the value of variable "status_system" defined at power_grid_energy_stabilizer.ads:21, created in Gnat2Why.Decls.Translate_Variable *)
-module Power_grid_energy_stabilizer__status_system
+(* Module for defining a ref holding the value of variable "last" defined at main.adb:23, created in Gnat2Why.Decls.Translate_Variable *)
+module Main__last
  use        "_gnatprove_standard".Main
  use        "int".Int
- use        Global_variables__status_system_type as Global_variables__status_system_type
 
- val status_system__split_fields [#"power_grid_energy_stabilizer.ads" 21 0 0][@name:Status_System] [@model_trace:2398] [@model_projected]  : Global_variables__status_system_type.__split_fields__ref 
+ val last [#"main.adb" 23 0 0][@model_trace:2325] [@model_projected] [@name:Last]  : int__ref 
  
  val constant attr__ATTRIBUTE_ADDRESS 
    : int
@@ -2681,20 +2966,107 @@ module Power_grid_energy_stabilizer__status_system
 
 end
 
-(* Module giving an empty axiom for the entity "status_system" defined at power_grid_energy_stabilizer.ads:21, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
-module Power_grid_energy_stabilizer__status_system___axiom
+(* Module giving an empty axiom for the entity "last" defined at main.adb:23, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Main__last___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
 
 
 end
 
-(* Module declaring the external object "spark__text_io__standard_output," created in Gnat2Why.Decls.Translate_External_Object *)
-module Spark__text_io__standard_output
+(* Module for defining a ref holding the value of variable "user_input" defined at main.adb:24, created in Gnat2Why.Decls.Translate_Variable *)
+module Main__user_input
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        Array__Int__Standard__character as Array__Int__Standard__character
+
+ val user_input [#"main.adb" 24 0 0][@model_projected] [@name:User_Input] [@model_trace:2334]  : Array__Int__Standard__character.map__ref 
+ 
+ val constant attr__ATTRIBUTE_ADDRESS 
+   : int
+
+
+end
+
+(* Module giving an empty axiom for the entity "user_input" defined at main.adb:24, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Main__user_input___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
 
- val standard_output  : Main.__private__ref 
+
+end
+
+(* Module for defining a ref holding the value of variable "status_system" defined at global_variables.ads:29, created in Gnat2Why.Decls.Translate_Variable *)
+module Global_variables__status_system
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        Global_variables__status_system_type as Global_variables__status_system_type
+
+ val status_system__split_fields [#"global_variables.ads" 29 0 0][@name:Status_System] [@model_projected] [@model_trace:18682]  : Global_variables__status_system_type.__split_fields__ref 
+ 
+ val constant attr__ATTRIBUTE_ADDRESS 
+   : int
+
+
+end
+
+(* Module giving an empty axiom for the entity "status_system" defined at global_variables.ads:29, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Global_variables__status_system___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+
+end
+
+(* Module for defining a ref holding the value of variable "item" defined at as_io_wrapper.ads:76, created in Gnat2Why.Decls.Translate_Variable *)
+module As_io_wrapper__as_get_line__item
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        Standard__integer as Standard__integer
+ use        Array__Int__Standard__character as Array__Int__Standard__character
+
+ val item [#"as_io_wrapper.ads" 76 0 0][@name:Item] [@model_projected] [@model_trace:2684]  : Array__Int__Standard__character.map__ref 
+ 
+ val constant item__first [#"as_io_wrapper.ads" 76 0 0][@name:Item] [@model_projected] [@model_trace:2684'First] 
+   : Standard__integer.integer
+
+ 
+ val constant item__last [#"as_io_wrapper.ads" 76 0 0][@name:Item] [@model_trace:2684'Last] [@model_projected] 
+   : Standard__integer.integer
+
+ 
+ val constant attr__ATTRIBUTE_ADDRESS 
+   : int
+
+
+end
+
+(* Module giving an empty axiom for the entity "item" defined at as_io_wrapper.ads:76, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module As_io_wrapper__as_get_line__item___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+
+end
+
+(* Module for defining a ref holding the value of variable "last" defined at as_io_wrapper.ads:76, created in Gnat2Why.Decls.Translate_Variable *)
+module As_io_wrapper__as_get_line__last
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+ val last [#"as_io_wrapper.ads" 76 0 0][@model_projected] [@model_trace:2693] [@name:Last]  : int__ref 
+ 
+ val constant attr__ATTRIBUTE_ADDRESS 
+   : int
+
+
+end
+
+(* Module giving an empty axiom for the entity "last" defined at as_io_wrapper.ads:76, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module As_io_wrapper__as_get_line__last___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
 
 end
 
@@ -2704,6 +3076,15 @@ module Spark__text_io__standard_input
  use        "int".Int
 
  val standard_input  : Main.__private__ref 
+
+end
+
+(* Module declaring the external object "spark__text_io__standard_output," created in Gnat2Why.Decls.Translate_External_Object *)
+module Spark__text_io__standard_output
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+ val standard_output  : Main.__private__ref 
 
 end
 (* Module giving axioms for type "short_short_integer", created in Gnat2Why.Types.Generate_Type_Completion *)
@@ -3225,7 +3606,7 @@ module Main
 
 end
 
-(* Module for possibly declaring a logic function for "init" defined at power_grid_energy_stabilizer.ads:23, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+(* Module for possibly declaring a logic function for "init" defined at power_grid_energy_stabilizer.ads:32, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
 module Power_grid_energy_stabilizer__init
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -3233,7 +3614,15 @@ module Power_grid_energy_stabilizer__init
 
 end
 
-(* Module for defining the loop exit exception for the loop "L_1" defined at main.adb:24, created in Gnat2Why.Decls.Translate_Loop_Entity *)
+(* Module for possibly declaring a logic function for "print_welcome" defined at power_grid_energy_stabilizer.ads:36, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Power_grid_energy_stabilizer__print_welcome
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+
+end
+
+(* Module for defining the loop exit exception for the loop "L_1" defined at main.adb:28, created in Gnat2Why.Decls.Translate_Loop_Entity *)
 module Main__L_1
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -3242,7 +3631,7 @@ module Main__L_1
 
 end
 
-(* Module giving an empty axiom for the entity "L_1" defined at main.adb:24, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+(* Module giving an empty axiom for the entity "L_1" defined at main.adb:28, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
 module Main__L_1___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -3250,7 +3639,21 @@ module Main__L_1___axiom
 
 end
 
-(* Module for possibly declaring a logic function for "read_consumption" defined at power_grid_energy_stabilizer.ads:32, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+(* Module for possibly declaring a logic function for "is_critical" defined at power_grid_energy_stabilizer.ads:40, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Power_grid_energy_stabilizer__is_critical
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        Global_variables__status_system_type as Global_variables__status_system_type
+
+ val function is_critical 
+   (global_variables__status_system__fields : Global_variables__status_system_type.__split_fields) : bool
+ 
+ val predicate is_critical__function_guard 
+   (temp___result_154 : bool) (global_variables__status_system__fields : Global_variables__status_system_type.__split_fields)
+
+end
+
+(* Module for possibly declaring a logic function for "read_consumption" defined at power_grid_energy_stabilizer.ads:44, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
 module Power_grid_energy_stabilizer__read_consumption
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -3258,7 +3661,7 @@ module Power_grid_energy_stabilizer__read_consumption
 
 end
 
-(* Module for possibly declaring a logic function for "read_supply" defined at power_grid_energy_stabilizer.ads:38, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+(* Module for possibly declaring a logic function for "read_supply" defined at power_grid_energy_stabilizer.ads:50, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
 module Power_grid_energy_stabilizer__read_supply
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -3266,7 +3669,7 @@ module Power_grid_energy_stabilizer__read_supply
 
 end
 
-(* Module for possibly declaring a logic function for "energy_stabilizerg_system" defined at power_grid_energy_stabilizer.ads:44, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+(* Module for possibly declaring a logic function for "energy_stabilizerg_system" defined at power_grid_energy_stabilizer.ads:56, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
 module Power_grid_energy_stabilizer__energy_stabilizerg_system
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -3274,7 +3677,7 @@ module Power_grid_energy_stabilizer__energy_stabilizerg_system
 
 end
 
-(* Module for possibly declaring a logic function for "print_status" defined at power_grid_energy_stabilizer.ads:50, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+(* Module for possibly declaring a logic function for "print_status" defined at power_grid_energy_stabilizer.ads:64, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
 module Power_grid_energy_stabilizer__print_status
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -3282,8 +3685,49 @@ module Power_grid_energy_stabilizer__print_status
 
 end
 
-(* Module for possibly declaring a logic function for "refill_reserve" defined at power_grid_energy_stabilizer.ads:55, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+(* Module for possibly declaring a logic function for "refill_reserve" defined at power_grid_energy_stabilizer.ads:72, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
 module Power_grid_energy_stabilizer__refill_reserve
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+
+end
+
+(* Module for defining the loop exit exception for the loop "L_2" defined at main.adb:36, created in Gnat2Why.Decls.Translate_Loop_Entity *)
+module Main__L_2
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+ exception L_2
+
+end
+
+(* Module giving an empty axiom for the entity "L_2" defined at main.adb:36, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Main__L_2___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+
+end
+
+(* Module for possibly declaring a logic function for "as_put__2" defined at as_io_wrapper.ads:59, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module As_io_wrapper__as_put__2
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+
+end
+
+(* Module for possibly declaring a logic function for "as_get_line" defined at as_io_wrapper.ads:76, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module As_io_wrapper__as_get_line
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+
+end
+
+(* Module for possibly declaring a logic function for "as_put_line" defined at as_io_wrapper.ads:83, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module As_io_wrapper__as_put_line
  use        "_gnatprove_standard".Main
  use        "int".Int
 
@@ -3362,7 +3806,38 @@ module System__interrupt_priority___axiom
 
 end
 
-(* Module giving axioms for type "electricity_range" defined at global_variables.ads:14, created in Gnat2Why.Types.Generate_Type_Completion *)
+(* Module giving axioms for type "TTuser_inputSP1" defined at main.adb:24, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Main__TTuser_inputSP1___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+
+end
+
+(* Module giving axioms for type "Tuser_inputS" defined at main.adb:24, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Main__Tuser_inputS___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        Array__Int__Standard__character as Array__Int__Standard__character
+ use        Array__Int__Standard__character as Array__Int__Standard__character
+
+ predicate dynamic_invariant [@inline] 
+   (temp___expr_180 : Array__Int__Standard__character.map) (temp___is_init_176 : bool) (temp___skip_constant_177 : bool) (temp___do_toplevel_178 : bool) (temp___do_typ_inv_179 : bool) =
+  true
+ val dynamic_invariant [@inline] 
+   (temp___expr_180 : Array__Int__Standard__character.map) (temp___is_init_176 : bool) (temp___skip_constant_177 : bool) (temp___do_toplevel_178 : bool) (temp___do_typ_inv_179 : bool) : bool
+  ensures { result <-> dynamic_invariant (temp___expr_180 : Array__Int__Standard__character.map) (temp___is_init_176 : bool) (temp___skip_constant_177 : bool) (temp___do_toplevel_178 : bool) (temp___do_typ_inv_179 : bool) }
+ 
+ predicate default_initial_assumption [@inline] 
+   (temp___expr_182 : Array__Int__Standard__character.map) (temp___skip_top_level_183 : bool) =
+  true
+ val default_initial_assumption [@inline] 
+   (temp___expr_182 : Array__Int__Standard__character.map) (temp___skip_top_level_183 : bool) : bool
+  ensures { result <-> default_initial_assumption (temp___expr_182 : Array__Int__Standard__character.map) (temp___skip_top_level_183 : bool) }
+
+end
+
+(* Module giving axioms for type "electricity_range" defined at global_variables.ads:15, created in Gnat2Why.Types.Generate_Type_Completion *)
 module Global_variables__electricity_range___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -3370,23 +3845,23 @@ module Global_variables__electricity_range___axiom
  use        Global_variables__electricity_range as Global_variables__electricity_range
 
  predicate dynamic_invariant [@inline] 
-   (temp___expr_180 : int) (temp___is_init_176 : bool) (temp___skip_constant_177 : bool) (temp___do_toplevel_178 : bool) (temp___do_typ_inv_179 : bool) =
-  (if (( temp___is_init_176 \/ (Global_variables__electricity_range.first <= Global_variables__electricity_range.last) )) then (
-   (Global_variables__electricity_range.dynamic_property Global_variables__electricity_range.first Global_variables__electricity_range.last temp___expr_180)) else true)
+   (temp___expr_190 : int) (temp___is_init_186 : bool) (temp___skip_constant_187 : bool) (temp___do_toplevel_188 : bool) (temp___do_typ_inv_189 : bool) =
+  (if (( temp___is_init_186 \/ (Global_variables__electricity_range.first <= Global_variables__electricity_range.last) )) then (
+   (Global_variables__electricity_range.dynamic_property Global_variables__electricity_range.first Global_variables__electricity_range.last temp___expr_190)) else true)
  val dynamic_invariant [@inline] 
-   (temp___expr_180 : int) (temp___is_init_176 : bool) (temp___skip_constant_177 : bool) (temp___do_toplevel_178 : bool) (temp___do_typ_inv_179 : bool) : bool
-  ensures { result <-> dynamic_invariant (temp___expr_180 : int) (temp___is_init_176 : bool) (temp___skip_constant_177 : bool) (temp___do_toplevel_178 : bool) (temp___do_typ_inv_179 : bool) }
+   (temp___expr_190 : int) (temp___is_init_186 : bool) (temp___skip_constant_187 : bool) (temp___do_toplevel_188 : bool) (temp___do_typ_inv_189 : bool) : bool
+  ensures { result <-> dynamic_invariant (temp___expr_190 : int) (temp___is_init_186 : bool) (temp___skip_constant_187 : bool) (temp___do_toplevel_188 : bool) (temp___do_typ_inv_189 : bool) }
  
  predicate default_initial_assumption [@inline] 
-   (temp___expr_181 : int) (temp___skip_top_level_182 : bool) =
+   (temp___expr_191 : int) (temp___skip_top_level_192 : bool) =
   true
  val default_initial_assumption [@inline] 
-   (temp___expr_181 : int) (temp___skip_top_level_182 : bool) : bool
-  ensures { result <-> default_initial_assumption (temp___expr_181 : int) (temp___skip_top_level_182 : bool) }
+   (temp___expr_191 : int) (temp___skip_top_level_192 : bool) : bool
+  ensures { result <-> default_initial_assumption (temp___expr_191 : int) (temp___skip_top_level_192 : bool) }
 
 end
 
-(* Module giving axioms for type "reserve_electricity_range" defined at global_variables.ads:15, created in Gnat2Why.Types.Generate_Type_Completion *)
+(* Module giving axioms for type "reserve_electricity_range" defined at global_variables.ads:16, created in Gnat2Why.Types.Generate_Type_Completion *)
 module Global_variables__reserve_electricity_range___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -3394,23 +3869,23 @@ module Global_variables__reserve_electricity_range___axiom
  use        Global_variables__reserve_electricity_range as Global_variables__reserve_electricity_range
 
  predicate dynamic_invariant [@inline] 
-   (temp___expr_187 : int) (temp___is_init_183 : bool) (temp___skip_constant_184 : bool) (temp___do_toplevel_185 : bool) (temp___do_typ_inv_186 : bool) =
-  (if (( temp___is_init_183 \/ (Global_variables__reserve_electricity_range.first <= Global_variables__reserve_electricity_range.last) )) then (
-   (Global_variables__reserve_electricity_range.dynamic_property Global_variables__reserve_electricity_range.first Global_variables__reserve_electricity_range.last temp___expr_187)) else true)
+   (temp___expr_197 : int) (temp___is_init_193 : bool) (temp___skip_constant_194 : bool) (temp___do_toplevel_195 : bool) (temp___do_typ_inv_196 : bool) =
+  (if (( temp___is_init_193 \/ (Global_variables__reserve_electricity_range.first <= Global_variables__reserve_electricity_range.last) )) then (
+   (Global_variables__reserve_electricity_range.dynamic_property Global_variables__reserve_electricity_range.first Global_variables__reserve_electricity_range.last temp___expr_197)) else true)
  val dynamic_invariant [@inline] 
-   (temp___expr_187 : int) (temp___is_init_183 : bool) (temp___skip_constant_184 : bool) (temp___do_toplevel_185 : bool) (temp___do_typ_inv_186 : bool) : bool
-  ensures { result <-> dynamic_invariant (temp___expr_187 : int) (temp___is_init_183 : bool) (temp___skip_constant_184 : bool) (temp___do_toplevel_185 : bool) (temp___do_typ_inv_186 : bool) }
+   (temp___expr_197 : int) (temp___is_init_193 : bool) (temp___skip_constant_194 : bool) (temp___do_toplevel_195 : bool) (temp___do_typ_inv_196 : bool) : bool
+  ensures { result <-> dynamic_invariant (temp___expr_197 : int) (temp___is_init_193 : bool) (temp___skip_constant_194 : bool) (temp___do_toplevel_195 : bool) (temp___do_typ_inv_196 : bool) }
  
  predicate default_initial_assumption [@inline] 
-   (temp___expr_188 : int) (temp___skip_top_level_189 : bool) =
+   (temp___expr_198 : int) (temp___skip_top_level_199 : bool) =
   true
  val default_initial_assumption [@inline] 
-   (temp___expr_188 : int) (temp___skip_top_level_189 : bool) : bool
-  ensures { result <-> default_initial_assumption (temp___expr_188 : int) (temp___skip_top_level_189 : bool) }
+   (temp___expr_198 : int) (temp___skip_top_level_199 : bool) : bool
+  ensures { result <-> default_initial_assumption (temp___expr_198 : int) (temp___skip_top_level_199 : bool) }
 
 end
 
-(* Module giving axioms for type "status_reserved_electricity_type" defined at global_variables.ads:17, created in Gnat2Why.Types.Generate_Type_Completion *)
+(* Module giving axioms for type "status_reserved_electricity_type" defined at global_variables.ads:18, created in Gnat2Why.Types.Generate_Type_Completion *)
 module Global_variables__status_reserved_electricity_type___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -3418,41 +3893,81 @@ module Global_variables__status_reserved_electricity_type___axiom
  use        Global_variables__status_reserved_electricity_type as Global_variables__status_reserved_electricity_type
 
  predicate dynamic_invariant [@inline] 
-   (temp___expr_194 : int) (temp___is_init_190 : bool) (temp___skip_constant_191 : bool) (temp___do_toplevel_192 : bool) (temp___do_typ_inv_193 : bool) =
-  (if (( temp___is_init_190 \/ (Global_variables__status_reserved_electricity_type.first <= Global_variables__status_reserved_electricity_type.last) )) then (
-   (Global_variables__status_reserved_electricity_type.dynamic_property Global_variables__status_reserved_electricity_type.first Global_variables__status_reserved_electricity_type.last temp___expr_194)) else true)
+   (temp___expr_204 : int) (temp___is_init_200 : bool) (temp___skip_constant_201 : bool) (temp___do_toplevel_202 : bool) (temp___do_typ_inv_203 : bool) =
+  (if (( temp___is_init_200 \/ (Global_variables__status_reserved_electricity_type.first <= Global_variables__status_reserved_electricity_type.last) )) then (
+   (Global_variables__status_reserved_electricity_type.dynamic_property Global_variables__status_reserved_electricity_type.first Global_variables__status_reserved_electricity_type.last temp___expr_204)) else true)
  val dynamic_invariant [@inline] 
-   (temp___expr_194 : int) (temp___is_init_190 : bool) (temp___skip_constant_191 : bool) (temp___do_toplevel_192 : bool) (temp___do_typ_inv_193 : bool) : bool
-  ensures { result <-> dynamic_invariant (temp___expr_194 : int) (temp___is_init_190 : bool) (temp___skip_constant_191 : bool) (temp___do_toplevel_192 : bool) (temp___do_typ_inv_193 : bool) }
+   (temp___expr_204 : int) (temp___is_init_200 : bool) (temp___skip_constant_201 : bool) (temp___do_toplevel_202 : bool) (temp___do_typ_inv_203 : bool) : bool
+  ensures { result <-> dynamic_invariant (temp___expr_204 : int) (temp___is_init_200 : bool) (temp___skip_constant_201 : bool) (temp___do_toplevel_202 : bool) (temp___do_typ_inv_203 : bool) }
  
  predicate default_initial_assumption [@inline] 
-   (temp___expr_195 : int) (temp___skip_top_level_196 : bool) =
+   (temp___expr_205 : int) (temp___skip_top_level_206 : bool) =
   true
  val default_initial_assumption [@inline] 
-   (temp___expr_195 : int) (temp___skip_top_level_196 : bool) : bool
-  ensures { result <-> default_initial_assumption (temp___expr_195 : int) (temp___skip_top_level_196 : bool) }
+   (temp___expr_205 : int) (temp___skip_top_level_206 : bool) : bool
+  ensures { result <-> default_initial_assumption (temp___expr_205 : int) (temp___skip_top_level_206 : bool) }
 
 end
 
-(* Module giving axioms for type "status_system_type" defined at global_variables.ads:19, created in Gnat2Why.Types.Generate_Type_Completion *)
+(* Module giving axioms for type "status_system_type" defined at global_variables.ads:20, created in Gnat2Why.Types.Generate_Type_Completion *)
 module Global_variables__status_system_type___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
  use        Global_variables__status_system_type as Global_variables__status_system_type
 
  predicate dynamic_invariant [@inline] 
-   (temp___expr_201 : Global_variables__status_system_type.status_system_type) (temp___is_init_197 : bool) (temp___skip_constant_198 : bool) (temp___do_toplevel_199 : bool) (temp___do_typ_inv_200 : bool) =
+   (temp___expr_211 : Global_variables__status_system_type.status_system_type) (temp___is_init_207 : bool) (temp___skip_constant_208 : bool) (temp___do_toplevel_209 : bool) (temp___do_typ_inv_210 : bool) =
   true
  val dynamic_invariant [@inline] 
-   (temp___expr_201 : Global_variables__status_system_type.status_system_type) (temp___is_init_197 : bool) (temp___skip_constant_198 : bool) (temp___do_toplevel_199 : bool) (temp___do_typ_inv_200 : bool) : bool
-  ensures { result <-> dynamic_invariant (temp___expr_201 : Global_variables__status_system_type.status_system_type) (temp___is_init_197 : bool) (temp___skip_constant_198 : bool) (temp___do_toplevel_199 : bool) (temp___do_typ_inv_200 : bool) }
+   (temp___expr_211 : Global_variables__status_system_type.status_system_type) (temp___is_init_207 : bool) (temp___skip_constant_208 : bool) (temp___do_toplevel_209 : bool) (temp___do_typ_inv_210 : bool) : bool
+  ensures { result <-> dynamic_invariant (temp___expr_211 : Global_variables__status_system_type.status_system_type) (temp___is_init_207 : bool) (temp___skip_constant_208 : bool) (temp___do_toplevel_209 : bool) (temp___do_typ_inv_210 : bool) }
  
  predicate default_initial_assumption [@inline] 
-   (temp___expr_202 : Global_variables__status_system_type.status_system_type) (temp___skip_top_level_203 : bool) =
+   (temp___expr_212 : Global_variables__status_system_type.status_system_type) (temp___skip_top_level_213 : bool) =
   true
  val default_initial_assumption [@inline] 
-   (temp___expr_202 : Global_variables__status_system_type.status_system_type) (temp___skip_top_level_203 : bool) : bool
-  ensures { result <-> default_initial_assumption (temp___expr_202 : Global_variables__status_system_type.status_system_type) (temp___skip_top_level_203 : bool) }
+   (temp___expr_212 : Global_variables__status_system_type.status_system_type) (temp___skip_top_level_213 : bool) : bool
+  ensures { result <-> default_initial_assumption (temp___expr_212 : Global_variables__status_system_type.status_system_type) (temp___skip_top_level_213 : bool) }
+
+end
+
+(* Module giving axioms for type "T1b" defined at main.adb:38, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Main__L_2__T1b___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+
+end
+
+(* Module giving axioms for type "T2b" defined at main.adb:41, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Main__L_2__T2b___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+
+end
+
+(* Module giving axioms for type "T3b" defined at main.adb:43, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Main__L_1__T3b___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+
+end
+
+(* Module giving axioms for type "T4b" defined at main.adb:43, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Main__L_1__T4b___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+
+end
+
+(* Module giving axioms for type "T5b" defined at main.adb:43, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Main__L_1__T5b___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
 
 end
 
@@ -3463,18 +3978,18 @@ module Spark__text_io_file_type___axiom
  use        Spark__text_io_file_type as Spark__text_io_file_type
 
  predicate dynamic_invariant [@inline] 
-   (temp___expr_214 : Spark__text_io_file_type.text_io_file_type) (temp___is_init_210 : bool) (temp___skip_constant_211 : bool) (temp___do_toplevel_212 : bool) (temp___do_typ_inv_213 : bool) =
+   (temp___expr_226 : Spark__text_io_file_type.text_io_file_type) (temp___is_init_222 : bool) (temp___skip_constant_223 : bool) (temp___do_toplevel_224 : bool) (temp___do_typ_inv_225 : bool) =
   true
  val dynamic_invariant [@inline] 
-   (temp___expr_214 : Spark__text_io_file_type.text_io_file_type) (temp___is_init_210 : bool) (temp___skip_constant_211 : bool) (temp___do_toplevel_212 : bool) (temp___do_typ_inv_213 : bool) : bool
-  ensures { result <-> dynamic_invariant (temp___expr_214 : Spark__text_io_file_type.text_io_file_type) (temp___is_init_210 : bool) (temp___skip_constant_211 : bool) (temp___do_toplevel_212 : bool) (temp___do_typ_inv_213 : bool) }
+   (temp___expr_226 : Spark__text_io_file_type.text_io_file_type) (temp___is_init_222 : bool) (temp___skip_constant_223 : bool) (temp___do_toplevel_224 : bool) (temp___do_typ_inv_225 : bool) : bool
+  ensures { result <-> dynamic_invariant (temp___expr_226 : Spark__text_io_file_type.text_io_file_type) (temp___is_init_222 : bool) (temp___skip_constant_223 : bool) (temp___do_toplevel_224 : bool) (temp___do_typ_inv_225 : bool) }
  
  predicate default_initial_assumption [@inline] 
-   (temp___expr_215 : Spark__text_io_file_type.text_io_file_type) (temp___skip_top_level_216 : bool) =
+   (temp___expr_227 : Spark__text_io_file_type.text_io_file_type) (temp___skip_top_level_228 : bool) =
   true
  val default_initial_assumption [@inline] 
-   (temp___expr_215 : Spark__text_io_file_type.text_io_file_type) (temp___skip_top_level_216 : bool) : bool
-  ensures { result <-> default_initial_assumption (temp___expr_215 : Spark__text_io_file_type.text_io_file_type) (temp___skip_top_level_216 : bool) }
+   (temp___expr_227 : Spark__text_io_file_type.text_io_file_type) (temp___skip_top_level_228 : bool) : bool
+  ensures { result <-> default_initial_assumption (temp___expr_227 : Spark__text_io_file_type.text_io_file_type) (temp___skip_top_level_228 : bool) }
 
 end
 
@@ -3485,18 +4000,75 @@ module Spark__text_io__file_type___axiom
  use        Spark__text_io__file_type as Spark__text_io__file_type
 
  predicate dynamic_invariant [@inline] 
-   (temp___expr_221 : Spark__text_io__file_type.file_type) (temp___is_init_217 : bool) (temp___skip_constant_218 : bool) (temp___do_toplevel_219 : bool) (temp___do_typ_inv_220 : bool) =
+   (temp___expr_233 : Spark__text_io__file_type.file_type) (temp___is_init_229 : bool) (temp___skip_constant_230 : bool) (temp___do_toplevel_231 : bool) (temp___do_typ_inv_232 : bool) =
   true
  val dynamic_invariant [@inline] 
-   (temp___expr_221 : Spark__text_io__file_type.file_type) (temp___is_init_217 : bool) (temp___skip_constant_218 : bool) (temp___do_toplevel_219 : bool) (temp___do_typ_inv_220 : bool) : bool
-  ensures { result <-> dynamic_invariant (temp___expr_221 : Spark__text_io__file_type.file_type) (temp___is_init_217 : bool) (temp___skip_constant_218 : bool) (temp___do_toplevel_219 : bool) (temp___do_typ_inv_220 : bool) }
+   (temp___expr_233 : Spark__text_io__file_type.file_type) (temp___is_init_229 : bool) (temp___skip_constant_230 : bool) (temp___do_toplevel_231 : bool) (temp___do_typ_inv_232 : bool) : bool
+  ensures { result <-> dynamic_invariant (temp___expr_233 : Spark__text_io__file_type.file_type) (temp___is_init_229 : bool) (temp___skip_constant_230 : bool) (temp___do_toplevel_231 : bool) (temp___do_typ_inv_232 : bool) }
  
  predicate default_initial_assumption [@inline] 
-   (temp___expr_222 : Spark__text_io__file_type.file_type) (temp___skip_top_level_223 : bool) =
+   (temp___expr_234 : Spark__text_io__file_type.file_type) (temp___skip_top_level_235 : bool) =
   true
  val default_initial_assumption [@inline] 
-   (temp___expr_222 : Spark__text_io__file_type.file_type) (temp___skip_top_level_223 : bool) : bool
-  ensures { result <-> default_initial_assumption (temp___expr_222 : Spark__text_io__file_type.file_type) (temp___skip_top_level_223 : bool) }
+   (temp___expr_234 : Spark__text_io__file_type.file_type) (temp___skip_top_level_235 : bool) : bool
+  ensures { result <-> default_initial_assumption (temp___expr_234 : Spark__text_io__file_type.file_type) (temp___skip_top_level_235 : bool) }
+
+end
+
+(* Module for defining a value for string literal  defined at main.adb:38, created in Gnat2Why.Expr.Transform_String_Literal *)
+module Temp___String_Literal_236
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Standard__character as Standard__character
+ use        Standard__character__rep as Standard__character__rep
+ use        Array__Int__Standard__character as Array__Int__Standard__character
+ use        Array__Int__Standard__character as Array__Int__Standard__character
+
+ val function temp___String_Literal_236 
+   (__void_param : unit) : Array__Int__Standard__character.map
+ 
+ axiom temp___String_Literal_236__def_axiom :
+  (forall __void_param   : unit [(temp___String_Literal_236 __void_param)].
+   ( ( ((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_236 __void_param) (1 : int))) = (68 : int)) /\ ((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_236 __void_param) (2 : int))) = (111 : int)) )/\( ( ( ( ( ((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_236 __void_param) (3 : int))) = (32 : int))/\((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_236 __void_param) (4 : int))) = (121 : int)) )/\( ((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_236 __void_param) (5 : int))) = (111 : int))/\((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_236 __void_param) (6 : int))) = (117 : int)) ) )/\( ( ((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_236 __void_param) (7 : int))) = (32 : int))/\((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_236 __void_param) (8 : int))) = (119 : int)) )/\((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_236 __void_param) (9 : int))) = (97 : int)) ) )/\( ( ( ((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_236 __void_param) (10 : int))) = (110 : int))/\((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_236 __void_param) (11 : int))) = (116 : int)) )/\((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_236 __void_param) (12 : int))) = (32 : int)) )/\( ( ((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_236 __void_param) (13 : int))) = (116 : int))/\((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_236 __void_param) (14 : int))) = (111 : int)) )/\((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_236 __void_param) (15 : int))) = (32 : int)) ) ) )/\( ( ( ( ((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_236 __void_param) (16 : int))) = (101 : int))/\((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_236 __void_param) (17 : int))) = (120 : int)) )/\((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_236 __void_param) (18 : int))) = (105 : int)) )/\( ( ((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_236 __void_param) (19 : int))) = (116 : int))/\((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_236 __void_param) (20 : int))) = (32 : int)) )/\((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_236 __void_param) (21 : int))) = (40 : int)) ) )/\( ( ( ((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_236 __void_param) (22 : int))) = (121 : int))/\((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_236 __void_param) (23 : int))) = (47 : int)) )/\((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_236 __void_param) (24 : int))) = (110 : int)) )/\( ( ((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_236 __void_param) (25 : int))) = (41 : int))/\((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_236 __void_param) (26 : int))) = (63 : int)) )/\((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_236 __void_param) (27 : int))) = (32 : int)) ) ) ) ) ))
+
+end
+
+(* Module for defining a value for string literal  defined at main.adb:41, created in Gnat2Why.Expr.Transform_String_Literal *)
+module Temp___String_Literal_238
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Standard__character as Standard__character
+ use        Standard__character__rep as Standard__character__rep
+ use        Array__Int__Standard__character as Array__Int__Standard__character
+ use        Array__Int__Standard__character as Array__Int__Standard__character
+
+ val function temp___String_Literal_238 
+   (__void_param : unit) : Array__Int__Standard__character.map
+ 
+ axiom temp___String_Literal_238__def_axiom :
+  (forall __void_param   : unit [(temp___String_Literal_238 __void_param)].
+   ( ( ((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_238 __void_param) (1 : int))) = (80 : int)) /\ ((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_238 __void_param) (2 : int))) = (108 : int)) )/\( ( ( ( ( ((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_238 __void_param) (3 : int))) = (101 : int))/\((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_238 __void_param) (4 : int))) = (97 : int)) )/\( ((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_238 __void_param) (5 : int))) = (115 : int))/\((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_238 __void_param) (6 : int))) = (101 : int)) ) )/\( ( ((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_238 __void_param) (7 : int))) = (32 : int))/\((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_238 __void_param) (8 : int))) = (101 : int)) )/\( ((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_238 __void_param) (9 : int))) = (110 : int))/\((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_238 __void_param) (10 : int))) = (116 : int)) ) ) )/\( ( ( ((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_238 __void_param) (11 : int))) = (101 : int))/\((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_238 __void_param) (12 : int))) = (114 : int)) )/\( ((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_238 __void_param) (13 : int))) = (32 : int))/\((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_238 __void_param) (14 : int))) = (97 : int)) ) )/\( ( ((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_238 __void_param) (15 : int))) = (32 : int))/\((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_238 __void_param) (16 : int))) = (110 : int)) )/\((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_238 __void_param) (17 : int))) = (111 : int)) ) ) )/\( ( ( ( ((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_238 __void_param) (18 : int))) = (110 : int))/\((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_238 __void_param) (19 : int))) = (45 : int)) )/\( ((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_238 __void_param) (20 : int))) = (101 : int))/\((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_238 __void_param) (21 : int))) = (109 : int)) ) )/\( ( ((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_238 __void_param) (22 : int))) = (112 : int))/\((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_238 __void_param) (23 : int))) = (116 : int)) )/\((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_238 __void_param) (24 : int))) = (121 : int)) ) )/\( ( ( ((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_238 __void_param) (25 : int))) = (32 : int))/\((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_238 __void_param) (26 : int))) = (115 : int)) )/\( ((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_238 __void_param) (27 : int))) = (116 : int))/\((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_238 __void_param) (28 : int))) = (114 : int)) ) )/\( ( ((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_238 __void_param) (29 : int))) = (105 : int))/\((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_238 __void_param) (30 : int))) = (110 : int)) )/\((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_238 __void_param) (31 : int))) = (103 : int)) ) ) ) ) ))
+
+end
+
+(* Module for defining a value for string literal  defined at main.adb:43, created in Gnat2Why.Expr.Transform_String_Literal *)
+module Temp___String_Literal_243
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Standard__character as Standard__character
+ use        Standard__character__rep as Standard__character__rep
+ use        Array__Int__Standard__character as Array__Int__Standard__character
+ use        Array__Int__Standard__character as Array__Int__Standard__character
+
+ val function temp___String_Literal_243 
+   (__void_param : unit) : Array__Int__Standard__character.map
+ 
+ axiom temp___String_Literal_243__def_axiom :
+  (forall __void_param   : unit [(temp___String_Literal_243 __void_param)].
+   ((Standard__character__rep.to_rep (Array__Int__Standard__character.get (temp___String_Literal_243 __void_param) (1 : int))) = (121 : int)))
 
 end
 (* Module for defining the value of constant "default_priority" defined at system.ads:129, created in Gnat2Why.Decls.Translate_Constant_Value *)
@@ -3515,128 +4087,144 @@ end
 module Main___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
- use        Power_grid_energy_stabilizer__status_system as Power_grid_energy_stabilizer__status_system
+ use        Global_variables__status_system as Global_variables__status_system
  use        Global_variables__status_system_type as Global_variables__status_system_type
  use        Global_variables__status_system_type___axiom as Global_variables__status_system_type___axiom
- use        Spark__text_io__standard_output as Spark__text_io__standard_output
  use        Spark__text_io__standard_input as Spark__text_io__standard_input
+ use        Spark__text_io__standard_output as Spark__text_io__standard_output
 
  val main 
    (__void_param : unit) : unit
   requires {  true }
-  ensures {  (Global_variables__status_system_type___axiom.dynamic_invariant { Global_variables__status_system_type.__split_fields = Power_grid_energy_stabilizer__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content } True True True True) }
-  writes {Power_grid_energy_stabilizer__status_system.status_system__split_fields, Spark__text_io__standard_output.standard_output, Spark__text_io__standard_input.standard_input}
+  ensures {  (Global_variables__status_system_type___axiom.dynamic_invariant { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content } True True True True) }
+  writes {Global_variables__status_system.status_system__split_fields, Spark__text_io__standard_input.standard_input, Spark__text_io__standard_output.standard_output}
 
 end
 
-(* Module for declaring a program function (and possibly an axiom) for "is_safe" defined at power_grid_energy_stabilizer.ads:28, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
-module Power_grid_energy_stabilizer__is_safe___axiom
+(* Module for declaring a program function (and possibly an axiom) for "init" defined at power_grid_energy_stabilizer.ads:32, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Power_grid_energy_stabilizer__init___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
+ use        Global_variables__status_system as Global_variables__status_system
  use        Global_variables__status_system_type as Global_variables__status_system_type
  use        Global_variables__status_system_type___axiom as Global_variables__status_system_type___axiom
- use        Power_grid_energy_stabilizer__is_safe as Power_grid_energy_stabilizer__is_safe
+ use        Spark__text_io__standard_input as Spark__text_io__standard_input
+ use        Spark__text_io__standard_output as Spark__text_io__standard_output
 
- val is_safe 
-   (status : Global_variables__status_system_type.status_system_type) : bool
+ val init 
+   (__void_param : unit) : unit
   requires {  true }
-  ensures {  ( ( (result = (Power_grid_energy_stabilizer__is_safe.is_safe status)) /\ (Power_grid_energy_stabilizer__is_safe.is_safe__function_guard result status) )/\true ) }
+  ensures {  (Global_variables__status_system_type___axiom.dynamic_invariant { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content } True True True True) }
+  writes {Global_variables__status_system.status_system__split_fields, Spark__text_io__standard_input.standard_input, Spark__text_io__standard_output.standard_output}
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "print_welcome" defined at power_grid_energy_stabilizer.ads:36, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Power_grid_energy_stabilizer__print_welcome___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        Spark__text_io__standard_output as Spark__text_io__standard_output
+ use        Spark__text_io__standard_output as Spark__text_io__standard_output
+
+ val print_welcome 
+   (__void_param : unit) : unit
+  requires {  true }
+  ensures {  true }
+  reads {Spark__text_io__standard_output.standard_output}
+  writes {Spark__text_io__standard_output.standard_output}
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "is_critical" defined at power_grid_energy_stabilizer.ads:40, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Power_grid_energy_stabilizer__is_critical___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        Global_variables__status_system as Global_variables__status_system
+ use        Global_variables__status_system_type as Global_variables__status_system_type
+ use        Global_variables__status_system_type___axiom as Global_variables__status_system_type___axiom
+ use        Power_grid_energy_stabilizer__is_critical as Power_grid_energy_stabilizer__is_critical
+
+ val is_critical 
+   (__void_param : unit) : bool
+  requires {  true }
+  ensures {  ( ( (result = (Power_grid_energy_stabilizer__is_critical.is_critical Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content)) /\ (Power_grid_energy_stabilizer__is_critical.is_critical__function_guard result Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content) )/\true ) }
+  reads {Global_variables__status_system.status_system__split_fields}
  
- axiom is_safe__post_axiom :
-  (forall status   : Global_variables__status_system_type.status_system_type [(Power_grid_energy_stabilizer__is_safe.is_safe status)].
-   ( (Global_variables__status_system_type___axiom.dynamic_invariant status True True True True) -> (let result = (Power_grid_energy_stabilizer__is_safe.is_safe status) in (
-    (if ((Power_grid_energy_stabilizer__is_safe.is_safe__function_guard result status)) then (
+ axiom is_critical__post_axiom :
+  (forall global_variables__status_system__fields   : Global_variables__status_system_type.__split_fields [(Power_grid_energy_stabilizer__is_critical.is_critical global_variables__status_system__fields)].
+   ( (Global_variables__status_system_type___axiom.dynamic_invariant { Global_variables__status_system_type.__split_fields = global_variables__status_system__fields } True True True True) -> (let result = (Power_grid_energy_stabilizer__is_critical.is_critical global_variables__status_system__fields) in (
+    (if ((Power_grid_energy_stabilizer__is_critical.is_critical__function_guard result global_variables__status_system__fields)) then (
      ( ( true /\ true )/\true )) else true)))
     ))
 
 end
 
-(* Module for declaring a program function (and possibly an axiom) for "init" defined at power_grid_energy_stabilizer.ads:23, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
-module Power_grid_energy_stabilizer__init___axiom
- use        "_gnatprove_standard".Main
- use        "int".Int
- use        Power_grid_energy_stabilizer__status_system as Power_grid_energy_stabilizer__status_system
- use        Global_variables__status_system_type as Global_variables__status_system_type
- use        Global_variables__status_system_type___axiom as Global_variables__status_system_type___axiom
- use        Power_grid_energy_stabilizer__is_safe as Power_grid_energy_stabilizer__is_safe
- use        Spark__text_io__standard_output as Spark__text_io__standard_output
- use        Spark__text_io__standard_input as Spark__text_io__standard_input
-
- val init 
-   (__void_param : unit) : unit
-  requires {  true }
-  ensures {  ( ( [@GP_Pretty_Ada:28337] ((epsilon temp___result_208 : bool.
-   ( (temp___result_208 = (Power_grid_energy_stabilizer__is_safe.is_safe { Global_variables__status_system_type.__split_fields = Power_grid_energy_stabilizer__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content })) /\ (Power_grid_energy_stabilizer__is_safe.is_safe__function_guard temp___result_208 { Global_variables__status_system_type.__split_fields = Power_grid_energy_stabilizer__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }) )) = True) ) /\ (Global_variables__status_system_type___axiom.dynamic_invariant { Global_variables__status_system_type.__split_fields = Power_grid_energy_stabilizer__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content } True True True True) ) }
-  writes {Power_grid_energy_stabilizer__status_system.status_system__split_fields, Spark__text_io__standard_output.standard_output, Spark__text_io__standard_input.standard_input}
-
-end
-
-(* Module for declaring a program function (and possibly an axiom) for "read_consumption" defined at power_grid_energy_stabilizer.ads:32, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+(* Module for declaring a program function (and possibly an axiom) for "read_consumption" defined at power_grid_energy_stabilizer.ads:44, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
 module Power_grid_energy_stabilizer__read_consumption___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
- use        Power_grid_energy_stabilizer__status_system as Power_grid_energy_stabilizer__status_system
+ use        Global_variables__status_system as Global_variables__status_system
  use        Global_variables__status_system_type as Global_variables__status_system_type
  use        Global_variables__status_system_type___axiom as Global_variables__status_system_type___axiom
- use        Spark__text_io__standard_output as Spark__text_io__standard_output
  use        Spark__text_io__standard_input as Spark__text_io__standard_input
  use        Spark__text_io__standard_output as Spark__text_io__standard_output
  use        Spark__text_io__standard_input as Spark__text_io__standard_input
+ use        Spark__text_io__standard_output as Spark__text_io__standard_output
 
  val read_consumption 
    (__void_param : unit) : unit
   requires {  true }
-  ensures {  (Global_variables__status_system_type___axiom.dynamic_invariant { Global_variables__status_system_type.__split_fields = Power_grid_energy_stabilizer__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content } True True True True) }
-  reads {Power_grid_energy_stabilizer__status_system.status_system__split_fields, Spark__text_io__standard_output.standard_output, Spark__text_io__standard_input.standard_input}
-  writes {Power_grid_energy_stabilizer__status_system.status_system__split_fields, Spark__text_io__standard_output.standard_output, Spark__text_io__standard_input.standard_input}
+  ensures {  (Global_variables__status_system_type___axiom.dynamic_invariant { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content } True True True True) }
+  reads {Global_variables__status_system.status_system__split_fields, Spark__text_io__standard_input.standard_input, Spark__text_io__standard_output.standard_output}
+  writes {Global_variables__status_system.status_system__split_fields, Spark__text_io__standard_input.standard_input, Spark__text_io__standard_output.standard_output}
 
 end
 
-(* Module for declaring a program function (and possibly an axiom) for "read_supply" defined at power_grid_energy_stabilizer.ads:38, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+(* Module for declaring a program function (and possibly an axiom) for "read_supply" defined at power_grid_energy_stabilizer.ads:50, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
 module Power_grid_energy_stabilizer__read_supply___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
- use        Power_grid_energy_stabilizer__status_system as Power_grid_energy_stabilizer__status_system
+ use        Global_variables__status_system as Global_variables__status_system
  use        Global_variables__status_system_type as Global_variables__status_system_type
  use        Global_variables__status_system_type___axiom as Global_variables__status_system_type___axiom
- use        Spark__text_io__standard_output as Spark__text_io__standard_output
  use        Spark__text_io__standard_input as Spark__text_io__standard_input
  use        Spark__text_io__standard_output as Spark__text_io__standard_output
  use        Spark__text_io__standard_input as Spark__text_io__standard_input
+ use        Spark__text_io__standard_output as Spark__text_io__standard_output
 
  val read_supply 
    (__void_param : unit) : unit
   requires {  true }
-  ensures {  (Global_variables__status_system_type___axiom.dynamic_invariant { Global_variables__status_system_type.__split_fields = Power_grid_energy_stabilizer__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content } True True True True) }
-  reads {Power_grid_energy_stabilizer__status_system.status_system__split_fields, Spark__text_io__standard_output.standard_output, Spark__text_io__standard_input.standard_input}
-  writes {Power_grid_energy_stabilizer__status_system.status_system__split_fields, Spark__text_io__standard_output.standard_output, Spark__text_io__standard_input.standard_input}
+  ensures {  (Global_variables__status_system_type___axiom.dynamic_invariant { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content } True True True True) }
+  reads {Global_variables__status_system.status_system__split_fields, Spark__text_io__standard_input.standard_input, Spark__text_io__standard_output.standard_output}
+  writes {Global_variables__status_system.status_system__split_fields, Spark__text_io__standard_input.standard_input, Spark__text_io__standard_output.standard_output}
 
 end
 
-(* Module for declaring a program function (and possibly an axiom) for "energy_stabilizerg_system" defined at power_grid_energy_stabilizer.ads:44, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+(* Module for declaring a program function (and possibly an axiom) for "energy_stabilizerg_system" defined at power_grid_energy_stabilizer.ads:56, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
 module Power_grid_energy_stabilizer__energy_stabilizerg_system___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
- use        Power_grid_energy_stabilizer__status_system as Power_grid_energy_stabilizer__status_system
+ use        Global_variables__status_system as Global_variables__status_system
  use        Global_variables__status_system_type as Global_variables__status_system_type
  use        Global_variables__status_system_type___axiom as Global_variables__status_system_type___axiom
- use        Power_grid_energy_stabilizer__is_safe as Power_grid_energy_stabilizer__is_safe
+ use        Spark__text_io__standard_output as Spark__text_io__standard_output
+ use        Spark__text_io__standard_output as Spark__text_io__standard_output
 
  val energy_stabilizerg_system 
    (__void_param : unit) : unit
   requires {  true }
-  ensures {  ( ( [@GP_Pretty_Ada:28437] ((epsilon temp___result_209 : bool.
-   ( (temp___result_209 = (Power_grid_energy_stabilizer__is_safe.is_safe { Global_variables__status_system_type.__split_fields = Power_grid_energy_stabilizer__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content })) /\ (Power_grid_energy_stabilizer__is_safe.is_safe__function_guard temp___result_209 { Global_variables__status_system_type.__split_fields = Power_grid_energy_stabilizer__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }) )) = True) ) /\ (Global_variables__status_system_type___axiom.dynamic_invariant { Global_variables__status_system_type.__split_fields = Power_grid_energy_stabilizer__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content } True True True True) ) }
-  reads {Power_grid_energy_stabilizer__status_system.status_system__split_fields}
-  writes {Power_grid_energy_stabilizer__status_system.status_system__split_fields}
+  ensures {  (Global_variables__status_system_type___axiom.dynamic_invariant { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content } True True True True) }
+  reads {Global_variables__status_system.status_system__split_fields, Spark__text_io__standard_output.standard_output}
+  writes {Global_variables__status_system.status_system__split_fields, Spark__text_io__standard_output.standard_output}
 
 end
 
-(* Module for declaring a program function (and possibly an axiom) for "print_status" defined at power_grid_energy_stabilizer.ads:50, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+(* Module for declaring a program function (and possibly an axiom) for "print_status" defined at power_grid_energy_stabilizer.ads:64, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
 module Power_grid_energy_stabilizer__print_status___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
- use        Power_grid_energy_stabilizer__status_system as Power_grid_energy_stabilizer__status_system
+ use        Global_variables__status_system as Global_variables__status_system
  use        Spark__text_io__standard_output as Spark__text_io__standard_output
  use        Spark__text_io__standard_output as Spark__text_io__standard_output
 
@@ -3644,25 +4232,87 @@ module Power_grid_energy_stabilizer__print_status___axiom
    (__void_param : unit) : unit
   requires {  true }
   ensures {  true }
-  reads {Power_grid_energy_stabilizer__status_system.status_system__split_fields, Spark__text_io__standard_output.standard_output}
+  reads {Global_variables__status_system.status_system__split_fields, Spark__text_io__standard_output.standard_output}
   writes {Spark__text_io__standard_output.standard_output}
 
 end
 
-(* Module for declaring a program function (and possibly an axiom) for "refill_reserve" defined at power_grid_energy_stabilizer.ads:55, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+(* Module for declaring a program function (and possibly an axiom) for "refill_reserve" defined at power_grid_energy_stabilizer.ads:72, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
 module Power_grid_energy_stabilizer__refill_reserve___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
- use        Power_grid_energy_stabilizer__status_system as Power_grid_energy_stabilizer__status_system
+ use        Global_variables__status_system as Global_variables__status_system
  use        Global_variables__status_system_type as Global_variables__status_system_type
  use        Global_variables__status_system_type___axiom as Global_variables__status_system_type___axiom
+ use        Spark__text_io__standard_input as Spark__text_io__standard_input
+ use        Spark__text_io__standard_output as Spark__text_io__standard_output
+ use        Spark__text_io__standard_input as Spark__text_io__standard_input
+ use        Spark__text_io__standard_output as Spark__text_io__standard_output
 
  val refill_reserve 
    (__void_param : unit) : unit
   requires {  true }
-  ensures {  (Global_variables__status_system_type___axiom.dynamic_invariant { Global_variables__status_system_type.__split_fields = Power_grid_energy_stabilizer__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content } True True True True) }
-  reads {Power_grid_energy_stabilizer__status_system.status_system__split_fields}
-  writes {Power_grid_energy_stabilizer__status_system.status_system__split_fields}
+  ensures {  (Global_variables__status_system_type___axiom.dynamic_invariant { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content } True True True True) }
+  reads {Global_variables__status_system.status_system__split_fields, Spark__text_io__standard_input.standard_input, Spark__text_io__standard_output.standard_output}
+  writes {Global_variables__status_system.status_system__split_fields, Spark__text_io__standard_input.standard_input, Spark__text_io__standard_output.standard_output}
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "as_put__2" defined at as_io_wrapper.ads:59, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module As_io_wrapper__as_put__2___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        Standard__string as Standard__string
+ use        Spark__text_io__standard_output as Spark__text_io__standard_output
+ use        Spark__text_io__standard_output as Spark__text_io__standard_output
+
+ val as_put__2 
+   (item : Standard__string.string) : unit
+  requires {  true }
+  ensures {  true }
+  reads {Spark__text_io__standard_output.standard_output}
+  writes {Spark__text_io__standard_output.standard_output}
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "as_get_line" defined at as_io_wrapper.ads:76, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module As_io_wrapper__as_get_line___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        Standard__integer as Standard__integer
+ use        Standard__natural___axiom as Standard__natural___axiom
+ use        Standard__positive as Standard__positive
+ use        Standard__string as Standard__string
+ use        Standard__integer__rep as Standard__integer__rep
+ use        Array__Int__Standard__character as Array__Int__Standard__character
+ use        Spark__text_io__standard_input as Spark__text_io__standard_input
+ use        Spark__text_io__standard_input as Spark__text_io__standard_input
+
+ val as_get_line 
+   (item : Array__Int__Standard__character.map__ref) (item__first : Standard__integer.integer) (item__last : Standard__integer.integer) (last : int__ref) : unit
+  requires {  true }
+  ensures {  ( (if (True) then (
+   true) else (
+   (Standard__string.dynamic_property Standard__positive.first Standard__positive.last (Standard__integer__rep.to_rep item__first) (Standard__integer__rep.to_rep item__last)))) /\ (Standard__natural___axiom.dynamic_invariant last.int__content True True True True) ) }
+  reads {Spark__text_io__standard_input.standard_input}
+  writes {Spark__text_io__standard_input.standard_input, item, last}
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "as_put_line" defined at as_io_wrapper.ads:83, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module As_io_wrapper__as_put_line___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        Standard__string as Standard__string
+ use        Spark__text_io__standard_output as Spark__text_io__standard_output
+ use        Spark__text_io__standard_output as Spark__text_io__standard_output
+
+ val as_put_line 
+   (item : Standard__string.string) : unit
+  requires {  true }
+  ensures {  true }
+  reads {Spark__text_io__standard_output.standard_output}
+  writes {Spark__text_io__standard_output.standard_output}
 
 end
 
@@ -3670,22 +4320,66 @@ end
 module Main__subprogram_def
  use        "_gnatprove_standard".Main
  use        "int".Int
- use        Power_grid_energy_stabilizer__status_system as Power_grid_energy_stabilizer__status_system
+ use        "int".Int
+ use        "_gnatprove_standard".Boolean as Boolean
+ use        Standard__integer as Standard__integer
+ use        Standard__integer___axiom as Standard__integer___axiom
+ use        Array__Int__Standard__character as Array__Int__Standard__character
+ use        Standard__string as Standard__string
+ use        Standard__integer__rep as Standard__integer__rep
+ use        Main__last as Main__last
+ use        Array__Int__Standard__character as Array__Int__Standard__character
+ use        Main__user_input as Main__user_input
+ use        Power_grid_energy_stabilizer__init___axiom as Power_grid_energy_stabilizer__init___axiom
+ use        Power_grid_energy_stabilizer__print_welcome___axiom as Power_grid_energy_stabilizer__print_welcome___axiom
+ use        Global_variables__status_system as Global_variables__status_system
  use        Global_variables__status_system_type as Global_variables__status_system_type
  use        Global_variables__status_system_type___axiom as Global_variables__status_system_type___axiom
- use        Power_grid_energy_stabilizer__is_safe as Power_grid_energy_stabilizer__is_safe
- use        Power_grid_energy_stabilizer__is_safe___axiom as Power_grid_energy_stabilizer__is_safe___axiom
- use        Power_grid_energy_stabilizer__init___axiom as Power_grid_energy_stabilizer__init___axiom
+ use        Power_grid_energy_stabilizer__is_critical as Power_grid_energy_stabilizer__is_critical
+ use        Power_grid_energy_stabilizer__is_critical___axiom as Power_grid_energy_stabilizer__is_critical___axiom
  use        Power_grid_energy_stabilizer__read_consumption___axiom as Power_grid_energy_stabilizer__read_consumption___axiom
  use        Power_grid_energy_stabilizer__read_supply___axiom as Power_grid_energy_stabilizer__read_supply___axiom
  use        Power_grid_energy_stabilizer__energy_stabilizerg_system___axiom as Power_grid_energy_stabilizer__energy_stabilizerg_system___axiom
  use        Power_grid_energy_stabilizer__print_status___axiom as Power_grid_energy_stabilizer__print_status___axiom
  use        Power_grid_energy_stabilizer__refill_reserve___axiom as Power_grid_energy_stabilizer__refill_reserve___axiom
+ use        As_io_wrapper__as_put__2___axiom as As_io_wrapper__as_put__2___axiom
+ use        As_io_wrapper__as_get_line___axiom as As_io_wrapper__as_get_line___axiom
+ use        As_io_wrapper__as_put_line___axiom as As_io_wrapper__as_put_line___axiom
+ use        Main__TTuser_inputSP1 as Main__TTuser_inputSP1
+ use        Main__Tuser_inputS___axiom as Main__Tuser_inputS___axiom
  use        Main__L_1 as Main__L_1
+ use        Global_variables__electricity_range as Global_variables__electricity_range
+ use        Global_variables__electricity_range__rep as Global_variables__electricity_range__rep
+ use        Main__L_2 as Main__L_2
+ use        Main__L_1__T3b as Main__L_1__T3b
+ use        Temp___String_Literal_236 as Temp___String_Literal_236
+ use        Array__Int__Standard__character as Array__Int__Standard__character
+ use        Array__Int__Standard__character as Array__Int__Standard__character
+ use        Array__Int__Standard__character as Array__Int__Standard__character
+ use        Array__Int__Standard__character as Array__Int__Standard__character
+ use        Array__Int__Standard__character as Array__Int__Standard__character
+ use        Temp___String_Literal_238 as Temp___String_Literal_238
+ use        Array__Int__Standard__character as Array__Int__Standard__character
+ use        Array__Int__Standard__character as Array__Int__Standard__character
+ use        Array__Int__Standard__character as Array__Int__Standard__character
+ use        Temp___String_Literal_243 as Temp___String_Literal_243
+ use        Array__Int__Standard__character as Array__Int__Standard__character
+ use        Standard__integer___axiom as Standard__integer___axiom
+ use        Standard__natural___axiom as Standard__natural___axiom
+ use        Standard__positive___axiom as Standard__positive___axiom
+ use        Standard__character___axiom as Standard__character___axiom
+ use        Standard__string___axiom as Standard__string___axiom
+ use        Standard__integer___axiom as Standard__integer___axiom
+ use        Main__last___axiom as Main__last___axiom
+ use        Main__user_input___axiom as Main__user_input___axiom
  use        Main__L_1___axiom as Main__L_1___axiom
- use        Power_grid_energy_stabilizer__status_system___axiom as Power_grid_energy_stabilizer__status_system___axiom
+ use        Main__L_2___axiom as Main__L_2___axiom
+ use        As_io_wrapper__as_put__2___axiom as As_io_wrapper__as_put__2___axiom
+ use        As_io_wrapper__as_get_line___axiom as As_io_wrapper__as_get_line___axiom
+ use        As_io_wrapper__as_put_line___axiom as As_io_wrapper__as_put_line___axiom
  use        Power_grid_energy_stabilizer__init___axiom as Power_grid_energy_stabilizer__init___axiom
- use        Power_grid_energy_stabilizer__is_safe___axiom as Power_grid_energy_stabilizer__is_safe___axiom
+ use        Power_grid_energy_stabilizer__print_welcome___axiom as Power_grid_energy_stabilizer__print_welcome___axiom
+ use        Power_grid_energy_stabilizer__is_critical___axiom as Power_grid_energy_stabilizer__is_critical___axiom
  use        Power_grid_energy_stabilizer__read_consumption___axiom as Power_grid_energy_stabilizer__read_consumption___axiom
  use        Power_grid_energy_stabilizer__read_supply___axiom as Power_grid_energy_stabilizer__read_supply___axiom
  use        Power_grid_energy_stabilizer__energy_stabilizerg_system___axiom as Power_grid_energy_stabilizer__energy_stabilizerg_system___axiom
@@ -3695,6 +4389,10 @@ module Main__subprogram_def
  use        Global_variables__reserve_electricity_range___axiom as Global_variables__reserve_electricity_range___axiom
  use        Global_variables__status_reserved_electricity_type___axiom as Global_variables__status_reserved_electricity_type___axiom
  use        Global_variables__status_system_type___axiom as Global_variables__status_system_type___axiom
+ use        Global_variables__status_system___axiom as Global_variables__status_system___axiom
+ use        Main__Tuser_inputS___axiom as Main__Tuser_inputS___axiom
+ use        Main__TTuser_inputSP1___axiom as Main__TTuser_inputSP1___axiom
+ use        Main__L_1__T3b___axiom as Main__L_1__T3b___axiom
 
  let def [#"main.ads" 14 0 0][@GP_Subp:main.ads:14] 
    (__void_param : unit)
@@ -3702,7 +4400,7 @@ module Main__subprogram_def
    = [@vc:divergent]
   ( () (* Assume dynamic invariants of inputs of the subprogram main.ads:14 *)
   ;
-  [#"main.ads" 14 0 0] assume { [#"main.ads" 14 0 0] (Global_variables__status_system_type___axiom.dynamic_invariant { Global_variables__status_system_type.__split_fields = Power_grid_energy_stabilizer__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content } False False True True) };
+  [#"main.ads" 14 0 0] assume { [#"main.ads" 14 0 0] (Global_variables__status_system_type___axiom.dynamic_invariant { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content } False False True True) };
   () (* Declarations introduced by the compiler at the beginning of the subprogram main.ads:14 *)
   ;
   () (* Check for RTE in the Pre of the subprogram main.ads:14 *)
@@ -3714,66 +4412,158 @@ module Main__subprogram_def
   ;
   [#"main.ads" 14 0 0] try
    ( ();
+   ([#"main.adb" 23 0 0] ( [#"main.adb" 23 0 0] assume { [#"main.adb" 23 0 0] (Standard__integer___axiom.default_initial_assumption Main__last.last.int__content False) };
+   [#"main.adb" 23 0 0] assume { [#"main.adb" 23 0 0] (Standard__integer___axiom.dynamic_invariant Main__last.last.int__content False False True True) } ));
    ([#"main.adb" 24 0 0] ());
+   ([#"main.adb" 24 0 0] ( [#"main.adb" 24 0 0] assume { [#"main.adb" 24 0 0] (Main__Tuser_inputS___axiom.default_initial_assumption Main__user_input.user_input.Array__Int__Standard__character.map__content False) };
+   [#"main.adb" 24 0 0] assume { [#"main.adb" 24 0 0] (Main__Tuser_inputS___axiom.dynamic_invariant Main__user_input.user_input.Array__Int__Standard__character.map__content False False True True) } ));
+   ([#"main.adb" 28 0 0] ());
+   ([#"main.adb" 36 0 0] ());
    ();
-   ( [@GP_Sloc:main.adb:23:4] ([#"main.adb" 23 0 0] ()) );
-   ( [@GP_Sloc:main.adb:23:4] ([#"main.adb" 23 0 0] ( (Power_grid_energy_stabilizer__init___axiom.init(())) )) );
-   ( [@GP_Sloc:main.adb:24:4] ([#"main.adb" 24 0 0] ( () (* Translation of an Ada loop from main.adb:24 *)
+   ( [@GP_Sloc:main.adb:26:4] ([#"main.adb" 26 0 0] ()) );
+   ( [@GP_Sloc:main.adb:26:4] ([#"main.adb" 26 0 0] ( (Power_grid_energy_stabilizer__init___axiom.init(())) )) );
+   ( [@GP_Sloc:main.adb:27:4] ([#"main.adb" 27 0 0] ()) );
+   ( [@GP_Sloc:main.adb:27:4] ([#"main.adb" 27 0 0] ( (Power_grid_energy_stabilizer__print_welcome___axiom.print_welcome(())) )) );
+   ( [@GP_Sloc:main.adb:28:4] ([#"main.adb" 28 0 0] ( () (* Translation of an Ada loop from main.adb:28 *)
    ;
    (if (True) then (
-    [#"main.adb" 24 0 0] try
-     ( [#"main.adb" 24 0 0] begin ensures {true} let _ = (let _ = { Global_variables__status_system_type.__split_fields = Power_grid_energy_stabilizer__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content } in (
+    [#"main.adb" 28 0 0] try
+     ( [#"main.adb" 28 0 0] begin ensures {true} let _ = (let _ = Main__last.last.int__content in (
       ()))
       in () end ;
-     (let temp___224 [@mlw:proxy_symbol] [@introduced] = [#"main.adb" 24 0 0] (val _f : Global_variables__status_system_type.status_system_type
-     ensures {[#"main.adb" 24 0 0] (result = { Global_variables__status_system_type.__split_fields = Power_grid_energy_stabilizer__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content })} 
+     (let temp___250 [@mlw:proxy_symbol] [@introduced] = [#"main.adb" 28 0 0] (val _f : int
+     ensures {[#"main.adb" 28 0 0] (result = Main__last.last.int__content)} 
      in _f) in (
-      ( () (* First unroling of the loop statements appearing before the loop invariant of loop main.adb:24 *)
-      ;
-      ();
-      ( [@GP_Sloc:main.adb:25:30] ([#"main.adb" 25 0 0] ()) );
-      () (* While loop translating the Ada loop from main.adb:24 *)
-      ;
-      (let temp___inv_225 [@mlw:proxy_symbol] [@introduced] = (Power_grid_energy_stabilizer__is_safe___axiom.is_safe({ Global_variables__status_system_type.__split_fields = Power_grid_energy_stabilizer__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content })) in (
-        begin ensures {true} let _ = (let _ = () in (
+      ( [#"main.adb" 28 0 0] begin ensures {true} let _ = (let _ = { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content } in (
+       ()))
+       in () end ;
+      (let temp___249 [@mlw:proxy_symbol] [@introduced] = [#"main.adb" 28 0 0] (val _f : Global_variables__status_system_type.status_system_type
+      ensures {[#"main.adb" 28 0 0] (result = { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content })} 
+      in _f) in (
+       ( [#"main.adb" 28 0 0] begin ensures {true} let _ = (let _ = Main__user_input.user_input.Array__Int__Standard__character.map__content in (
         ()))
-        in () end ))
-      ;
-       while True do
-       invariant { 
-        ([#"main.adb" 25 0 0] ( [@GP_Reason:VC_LOOP_INVARIANT] [@comment:      pragma Loop_Invariant (Is_Safe(Status_System));                              ^ main.adb:25:30:VC_LOOP_INVARIANT] [@vc:annotation] [@GP_Sloc:main.adb:25:30] [@GP_Id:0] [@GP_Shape:L_1_loop__pragargs__call_is_safe] ( [@GP_Pretty_Ada:2325] [@GP_Sloc:main.adb:25:30] ((epsilon temp___result_226 : bool.
-         ( (temp___result_226 = (Power_grid_energy_stabilizer__is_safe.is_safe { Global_variables__status_system_type.__split_fields = Power_grid_energy_stabilizer__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content })) /\ (Power_grid_energy_stabilizer__is_safe.is_safe__function_guard temp___result_226 { Global_variables__status_system_type.__split_fields = Power_grid_energy_stabilizer__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }) )) = True) ) ))
-        }
-       ( () (* Assume implicit invariants from the loop main.adb:24 *)
-       ;
-        assume {  ( ( true /\ (Global_variables__status_system_type___axiom.dynamic_invariant { Global_variables__status_system_type.__split_fields = Power_grid_energy_stabilizer__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content } False True True True) )/\true ) };
-       () (* Check for absence of RTE in the invariant of loop main.adb:24 *)
-       ;
-       () (* Loop statements appearing after the loop invariant of loop main.adb:24 *)
-       ;
-       ();
-       ( [@GP_Sloc:main.adb:26:7] ([#"main.adb" 26 0 0] ()) );
-       ( [@GP_Sloc:main.adb:26:7] ([#"main.adb" 26 0 0] ( (Power_grid_energy_stabilizer__read_consumption___axiom.read_consumption(())) )) );
-       ( [@GP_Sloc:main.adb:27:7] ([#"main.adb" 27 0 0] ()) );
-       ( [@GP_Sloc:main.adb:27:7] ([#"main.adb" 27 0 0] ( (Power_grid_energy_stabilizer__read_supply___axiom.read_supply(())) )) );
-       ( [@GP_Sloc:main.adb:28:7] ([#"main.adb" 28 0 0] ()) );
-       ( [@GP_Sloc:main.adb:28:7] ([#"main.adb" 28 0 0] ( (Power_grid_energy_stabilizer__energy_stabilizerg_system___axiom.energy_stabilizerg_system(())) )) );
-       ( [@GP_Sloc:main.adb:29:7] ([#"main.adb" 29 0 0] ()) );
-       ( [@GP_Sloc:main.adb:29:7] ([#"main.adb" 29 0 0] ( (Power_grid_energy_stabilizer__print_status___axiom.print_status(())) )) );
-       ( [@GP_Sloc:main.adb:30:7] ([#"main.adb" 30 0 0] ()) );
-       ( [@GP_Sloc:main.adb:30:7] ([#"main.adb" 30 0 0] ( (Power_grid_energy_stabilizer__refill_reserve___axiom.refill_reserve(())) )) );
-       () (* Check for the exit condition and loop statements appearing before the loop invariant of loop main.adb:24 *)
-       ;
-       (if (False) then (
-         raise Main__L_1.L_1));
-       ();
-       ( [@GP_Sloc:main.adb:25:30] ([#"main.adb" 25 0 0] ()) );
-       (let temp___inv_225 [@mlw:proxy_symbol] [@introduced] = (Power_grid_energy_stabilizer__is_safe___axiom.is_safe({ Global_variables__status_system_type.__split_fields = Power_grid_energy_stabilizer__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content })) in (
-         begin ensures {true} let _ = (let _ = () in (
-         ()))
-         in () end ))
-        )
-      done )))
+        in () end ;
+       (let temp___248 [@mlw:proxy_symbol] [@introduced] = [#"main.adb" 28 0 0] (val _f : Array__Int__Standard__character.map
+       ensures {[#"main.adb" 28 0 0] (result = Main__user_input.user_input.Array__Int__Standard__character.map__content)} 
+       in _f) in (
+        ( () (* First unroling of the loop statements appearing before the loop invariant of loop main.adb:28 *)
+        ;
+        ();
+        ( [@GP_Sloc:main.adb:30:34] ([#"main.adb" 30 0 0] ()) );
+        () (* While loop translating the Ada loop from main.adb:28 *)
+        ;
+        (let temp___inv_251 [@mlw:proxy_symbol] [@introduced] = (Boolean.andb(((Global_variables__electricity_range__rep.to_rep({ Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__consumption_measured)) <= (Global_variables__electricity_range__rep.to_rep({ Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__supplied_measured)))) ((Power_grid_energy_stabilizer__is_critical___axiom.is_critical(())))) in (
+          begin ensures {true} let _ = (let _ = () in (
+          ()))
+          in () end ))
+        ;
+         while True do
+         invariant { 
+          ([#"main.adb" 29 0 0] ( [@GP_Sloc:main.adb:29:30] [@GP_Reason:VC_LOOP_INVARIANT] [@GP_Shape:L_1_loop__pragargs__and] [@comment:      pragma Loop_Invariant (Integer(Status_System.Consumption_Measured) <= Integer(Status_System.Supplied_Measured)                               ^ main.adb:29:30:VC_LOOP_INVARIANT] [@vc:annotation] [@GP_Id:1] ( ( [@GP_Sloc:main.adb:29:30] [@GP_Pretty_Ada:2364] ((Global_variables__electricity_range__rep.to_rep { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__consumption_measured) <= (Global_variables__electricity_range__rep.to_rep { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__supplied_measured)) ) /\ ( [@GP_Pretty_Ada:2369] [@GP_Sloc:main.adb:30:34] ((epsilon temp___result_252 : bool.
+           ( (temp___result_252 = (Power_grid_energy_stabilizer__is_critical.is_critical Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content)) /\ (Power_grid_energy_stabilizer__is_critical.is_critical__function_guard temp___result_252 Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content) )) = True) ) ) ))
+          }
+         ( () (* Assume implicit invariants from the loop main.adb:28 *)
+         ;
+          assume {  ( ( ( ( ( ( true /\ (Main__Tuser_inputS___axiom.dynamic_invariant Main__user_input.user_input.Array__Int__Standard__character.map__content False True True True) )/\true ) /\ (Global_variables__status_system_type___axiom.dynamic_invariant { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content } False True True True) )/\true ) /\ (Standard__integer___axiom.dynamic_invariant Main__last.last.int__content False True True True) )/\true ) };
+         () (* Check for absence of RTE in the invariant of loop main.adb:28 *)
+         ;
+         () (* Loop statements appearing after the loop invariant of loop main.adb:28 *)
+         ;
+         ();
+         ( [@GP_Sloc:main.adb:31:7] ([#"main.adb" 31 0 0] ()) );
+         ( [@GP_Sloc:main.adb:31:7] ([#"main.adb" 31 0 0] ( (Power_grid_energy_stabilizer__read_consumption___axiom.read_consumption(())) )) );
+         ( [@GP_Sloc:main.adb:32:7] ([#"main.adb" 32 0 0] ()) );
+         ( [@GP_Sloc:main.adb:32:7] ([#"main.adb" 32 0 0] ( (Power_grid_energy_stabilizer__read_supply___axiom.read_supply(())) )) );
+         ( [@GP_Sloc:main.adb:33:7] ([#"main.adb" 33 0 0] ()) );
+         ( [@GP_Sloc:main.adb:33:7] ([#"main.adb" 33 0 0] ( (Power_grid_energy_stabilizer__energy_stabilizerg_system___axiom.energy_stabilizerg_system(())) )) );
+         ( [@GP_Sloc:main.adb:34:7] ([#"main.adb" 34 0 0] ()) );
+         ( [@GP_Sloc:main.adb:34:7] ([#"main.adb" 34 0 0] ( (Power_grid_energy_stabilizer__print_status___axiom.print_status(())) )) );
+         ( [@GP_Sloc:main.adb:35:7] ([#"main.adb" 35 0 0] ()) );
+         ( [@GP_Sloc:main.adb:35:7] ([#"main.adb" 35 0 0] ( (Power_grid_energy_stabilizer__refill_reserve___axiom.refill_reserve(())) )) );
+         ( [@GP_Sloc:main.adb:36:7] ([#"main.adb" 36 0 0] ( () (* Translation of an Ada loop from main.adb:36 *)
+         ;
+         (if (True) then (
+          [#"main.adb" 36 0 0] try
+           ( [#"main.adb" 36 0 0] begin ensures {true} let _ = (let _ = Main__last.last.int__content in (
+            ()))
+            in () end ;
+           (let temp___240 [@mlw:proxy_symbol] [@introduced] = [#"main.adb" 36 0 0] (val _f : int
+           ensures {[#"main.adb" 36 0 0] (result = Main__last.last.int__content)} 
+           in _f) in (
+            ( [#"main.adb" 36 0 0] begin ensures {true} let _ = (let _ = Main__user_input.user_input.Array__Int__Standard__character.map__content in (
+             ()))
+             in () end ;
+            (let temp___239 [@mlw:proxy_symbol] [@introduced] = [#"main.adb" 36 0 0] (val _f : Array__Int__Standard__character.map
+            ensures {[#"main.adb" 36 0 0] (result = Main__user_input.user_input.Array__Int__Standard__character.map__content)} 
+            in _f) in (
+             ( () (* First unroling of the loop statements appearing before the loop invariant of loop main.adb:36 *)
+             ;
+             () (* While loop translating the Ada loop from main.adb:36 *)
+             ;
+             [#"main.adb" 36 0 0] while True do
+              ( () (* Assume implicit invariants from the loop main.adb:36 *)
+              ;
+              [#"main.adb" 36 0 0] assume { [#"main.adb" 36 0 0] ( ( ( ( true /\ (Main__Tuser_inputS___axiom.dynamic_invariant Main__user_input.user_input.Array__Int__Standard__character.map__content False True True True) )/\true ) /\ (Standard__integer___axiom.dynamic_invariant Main__last.last.int__content False True True True) )/\true ) };
+              () (* Check for absence of RTE in the invariant of loop main.adb:36 *)
+              ;
+              () (* Loop statements appearing after the loop invariant of loop main.adb:36 *)
+              ;
+              ();
+              ( [@GP_Sloc:main.adb:38:9] ([#"main.adb" 38 0 0] ()) );
+              ( [@GP_Sloc:main.adb:38:9] ([#"main.adb" 38 0 0] ( (As_io_wrapper__as_put__2___axiom.as_put__2((Standard__string.of_array((Temp___String_Literal_236.temp___String_Literal_236(()))) ((1 : int)) ((27 : int))))) )) );
+              ( [@GP_Sloc:main.adb:39:21] ([#"main.adb" 39 0 0] ()) );
+              ( [@GP_Sloc:main.adb:39:33] ([#"main.adb" 39 0 0] ()) );
+              ( [@GP_Sloc:main.adb:39:9] ([#"main.adb" 39 0 0] ()) );
+              ( [@GP_Sloc:main.adb:39:9] ([#"main.adb" 39 0 0] (let as_io_wrapper__as_get_line__item__compl = Main__user_input.user_input.Array__Int__Standard__character.map__content in (
+               [#"main.adb" 39 0 0] let as_io_wrapper__as_get_line__last = { int__content = Main__last.last.int__content } in 
+               [#"main.adb" 39 0 0] let as_io_wrapper__as_get_line__item = { Array__Int__Standard__character.map__content = as_io_wrapper__as_get_line__item__compl } in 
+                ( (As_io_wrapper__as_get_line___axiom.as_get_line(as_io_wrapper__as_get_line__item) ((Standard__integer__rep.of_rep(Main__TTuser_inputSP1.first))) ((Standard__integer__rep.of_rep(Main__TTuser_inputSP1.last))) (as_io_wrapper__as_get_line__last));
+                [#"main.adb" 39 0 0] (Main__user_input.user_input.Array__Int__Standard__character.map__content <- ( (let temp___237 [@mlw:proxy_symbol] [@introduced] = (Standard__string.of_array(as_io_wrapper__as_get_line__item.Array__Int__Standard__character.map__content) (Main__TTuser_inputSP1.first) (Main__TTuser_inputSP1.last)) in (
+                 (Array__Int__Standard__character.slide (Standard__string.to_array temp___237) (Standard__string.first temp___237) Main__TTuser_inputSP1.first)))
+                 ));
+                [#"main.adb" 39 0 0] (Main__last.last.int__content <- ( as_io_wrapper__as_get_line__last.int__content )) )))
+              ) );
+              ( [@GP_Sloc:main.adb:40:19] ([#"main.adb" 40 0 0] ()) );
+              ( [@GP_Sloc:main.adb:40:9] ([#"main.adb" 40 0 0] (if ((Main__last.last.int__content > (0 : int))) then (
+               [#"main.adb" 40 0 0] raise Main__L_2.L_2))) );
+              ( [@GP_Sloc:main.adb:41:9] ([#"main.adb" 41 0 0] ()) );
+              ( [@GP_Sloc:main.adb:41:9] ([#"main.adb" 41 0 0] ( (As_io_wrapper__as_put_line___axiom.as_put_line((Standard__string.of_array((Temp___String_Literal_238.temp___String_Literal_238(()))) ((1 : int)) ((31 : int))))) )) );
+              () (* Check for the exit condition and loop statements appearing before the loop invariant of loop main.adb:36 *)
+              ;
+              (if (False) then (
+                raise Main__L_2.L_2)) )
+             done )))
+             )))
+            )
+          with
+           Main__L_2.L_2 -> ()
+          end)) )) );
+         ( [@GP_Sloc:main.adb:43:16] ([#"main.adb" 43 0 0] ()) );
+         ( [@GP_Sloc:main.adb:43:6] ([#"main.adb" 43 0 0] (if ((let temp___247 [@mlw:proxy_symbol] [@introduced] = (Temp___String_Literal_243.temp___String_Literal_243(())) in (
+         (let temp___246 [@mlw:proxy_symbol] [@introduced] = (let temp___242 [@mlw:proxy_symbol] [@introduced] = (1 : int) in (
+         (let temp___241 [@mlw:proxy_symbol] [@introduced] = (1 : int) in (
+          ( [#"main.adb" 43 0 0] assert { [#"main.adb" 43 0 0] ([#"main.adb" 43 0 0] ( [@comment:     exit when User_Input(1 .. 1) = "y";                ^ main.adb:43:16:VC_RANGE_CHECK] [@GP_Shape:L_1_loop__exit__cmp__slice] [@vc:annotation] [@GP_Sloc:main.adb:43:16] [@GP_Reason:VC_RANGE_CHECK] [@GP_Id:0] ( (temp___241 <= temp___242) -> ( ( (Main__TTuser_inputSP1.first <= temp___241) /\ (temp___241 <= Main__TTuser_inputSP1.last) ) /\ ( (Main__TTuser_inputSP1.first <= temp___242) /\ (temp___242 <= Main__TTuser_inputSP1.last) ) ) ) )) };
+          Main__user_input.user_input.Array__Int__Standard__character.map__content )))
+         ))
+          in (
+          (Array__Int__Standard__character.bool_eq(temp___246) (Main__L_1__T3b.first) (Main__L_1__T3b.last) (temp___247) ((1 : int)) ((1 : int)))))
+         ))
+         ) then (
+           raise Main__L_1.L_1))) );
+         () (* Check for the exit condition and loop statements appearing before the loop invariant of loop main.adb:28 *)
+         ;
+         (if (False) then (
+           raise Main__L_1.L_1));
+         ();
+         ( [@GP_Sloc:main.adb:30:34] ([#"main.adb" 30 0 0] ()) );
+         (let temp___inv_251 [@mlw:proxy_symbol] [@introduced] = (Boolean.andb(((Global_variables__electricity_range__rep.to_rep({ Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__consumption_measured)) <= (Global_variables__electricity_range__rep.to_rep({ Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__supplied_measured)))) ((Power_grid_energy_stabilizer__is_critical___axiom.is_critical(())))) in (
+           begin ensures {true} let _ = (let _ = () in (
+           ()))
+           in () end ))
+          )
+        done )))
+        )))
+       )))
       )
     with
      Main__L_1.L_1 -> ()

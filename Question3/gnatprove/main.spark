@@ -16,129 +16,6 @@
       "file": "main.adb",
       "line": 24,
       "col": 4,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Main",
-        "sloc": [
-          {
-            "file": "main.ads",
-            "line": 14
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "msg_id": 0,
-      "how_proved": "flow"
-    },
-    {
-      "file": "main.adb",
-      "line": 24,
-      "col": 4,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Main",
-        "sloc": [
-          {
-            "file": "main.ads",
-            "line": 14
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "main__flow__0.trace",
-      "msg_id": 1,
-      "how_proved": "flow"
-    },
-    {
-      "file": "main.adb",
-      "line": 25,
-      "col": 4,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Main",
-        "sloc": [
-          {
-            "file": "main.ads",
-            "line": 14
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "msg_id": 2,
-      "how_proved": "flow"
-    },
-    {
-      "file": "main.adb",
-      "line": 25,
-      "col": 4,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Main",
-        "sloc": [
-          {
-            "file": "main.ads",
-            "line": 14
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "main__flow__1.trace",
-      "msg_id": 3,
-      "how_proved": "flow"
-    },
-    {
-      "file": "main.adb",
-      "line": 26,
-      "col": 4,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Main",
-        "sloc": [
-          {
-            "file": "main.ads",
-            "line": 14
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "msg_id": 4,
-      "how_proved": "flow"
-    },
-    {
-      "file": "main.adb",
-      "line": 26,
-      "col": 4,
-      "rule": "INEFFECTIVE",
-      "severity": "warning",
-      "entity": {
-        "name": "Main",
-        "sloc": [
-          {
-            "file": "main.ads",
-            "line": 14
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "tracefile": "main__flow__2.trace",
-      "msg_id": 5,
-      "how_proved": "flow"
-    },
-    {
-      "file": "main.adb",
-      "line": 21,
-      "col": 4,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -156,7 +33,7 @@
     },
     {
       "file": "main.adb",
-      "line": 22,
+      "line": 23,
       "col": 4,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -172,12 +49,87 @@
       "check_tree": {
       },
       "how_proved": "flow"
+    }
+  ],
+  "proof": [
+    {
+      "file": "main.adb",
+      "line": 43,
+      "col": 16,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Main",
+        "sloc": [
+          {
+            "file": "main.ads",
+            "line": 14
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "main.adb",
+      "check_line": 43,
+      "check_col": 16,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 4,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
     },
     {
-      "file": "main.ads",
-      "line": 14,
-      "col": 11,
-      "rule": "UNINITIALIZED",
+      "file": "main.adb",
+      "line": 30,
+      "col": 34,
+      "rule": "VC_LOOP_INVARIANT_PRESERV",
       "severity": "medium",
       "entity": {
         "name": "Main",
@@ -188,18 +140,307 @@
           }
         ]
       },
-      "check_tree": {
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Timeout",
+              "steps": 13157,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Timeout",
+              "steps": 12362,
+              "time": 1
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Timeout",
+              "steps": 14543,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "main.adb",
+      "check_line": 29,
+      "check_col": 30,
+      "cntexmp": {
+        "main.adb": {
+          "26": [
+            {
+              "name": "Status_System",
+              "value": "(Consumption_Measured => 0, Supplied_Measured => 0, Reserved_Measured => 0, Status_Reserved_Electricity => Activated)",
+              "kind": "variable"
+            }
+          ],
+          "28": [
+            {
+              "name": "Last",
+              "value": "0",
+              "kind": "variable"
+            },
+            {
+              "name": "Status_System",
+              "value": "(Consumption_Measured => 0, Supplied_Measured => 0, Reserved_Measured => 0, Status_Reserved_Electricity => Activated)",
+              "kind": "variable"
+            }
+          ],
+          "30": [
+            {
+              "name": "Status_System",
+              "value": "(Consumption_Measured => 0, Supplied_Measured => 0, Reserved_Measured => 0, Status_Reserved_Electricity => Activated)",
+              "kind": "variable"
+            }
+          ],
+          "35": [
+            {
+              "name": "Status_System",
+              "value": "(Consumption_Measured => 0, Supplied_Measured => 0, Reserved_Measured => 0, Status_Reserved_Electricity => Activated)",
+              "kind": "variable"
+            }
+          ],
+          "36": [
+            {
+              "name": "Last",
+              "value": "0",
+              "kind": "variable"
+            }
+          ],
+          "39": [
+            {
+              "name": "Last",
+              "value": "1",
+              "kind": "variable"
+            },
+            {
+              "name": "User_Input",
+              "value": "(1 => 'z', others => 'z')",
+              "kind": "variable"
+            }
+          ]
+        }
       },
-      "msg_id": 6,
-      "how_proved": "flow"
+      "msg_id": 0,
+      "how_proved": "prover"
+    },
+    {
+      "file": "main.adb",
+      "line": 30,
+      "col": 34,
+      "rule": "VC_LOOP_INVARIANT_INIT",
+      "severity": "medium",
+      "entity": {
+        "name": "Main",
+        "sloc": [
+          {
+            "file": "main.ads",
+            "line": 14
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 25,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 38,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 110,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "main.adb",
+      "check_line": 29,
+      "check_col": 30,
+      "msg_id": 1,
+      "how_proved": "prover"
     }
   ],
   "assumptions": [
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Get_Line",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 76
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Put",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 59
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Put_Line",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 83
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Energy_Stabilizerg_System",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 56
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Init",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 32
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Is_Critical",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 40
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Print_Status",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 64
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Print_Welcome",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 36
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Read_Consumption",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 44
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Read_Supply",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 50
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Refill_Reserve",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 72
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Main",
+          "sloc": [
+            {
+              "file": "main.ads",
+              "line": 14
+            }
+          ]
+        }
+      }
+    }
   ],
   "timings": {
-    "marking": 1.74700003117323E-03,
-    "globals (basic)": 8.65000020712614E-03,
-    "globals/properties (advanced)": 1.43569996580482E-02,
-    "flow analysis": 1.60610005259514E-02
+    "marking": 2.07699998281896E-03,
+    "globals (basic)": 6.32600020617247E-03,
+    "globals/properties (advanced)": 1.69050004333258E-02,
+    "flow analysis": 2.23329998552799E-02,
+    "codepeer results": 7.99999997980194E-06,
+    "init_why_sections": 7.94999999925494E-04,
+    "translation of standard": 7.54699995741248E-03,
+    "translation of compilation unit": 1.54790002852678E-02,
+    "proof": 2.26669502258301E+00
   }
 }

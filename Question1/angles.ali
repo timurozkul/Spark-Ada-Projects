@@ -1,9 +1,11 @@
-V "GNAT Lib v2015"
+V "GNAT Lib v2019"
 A -O2
 A -gnatA
 A -g
-A -mtune=generic
-A -march=x86-64
+A -mtune=core2
+A -mmacosx-version-min=10.14.0
+A -fPIC
+A -feliminate-unused-debug-symbols
 P ZX
 
 RN
@@ -12,27 +14,30 @@ RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U angles%b		angles.adb		94f0c49f NE OO PK
+U angles%b		angles.adb		1b476e0d NE OO PK
 
-U angles%s		angles.ads		2ff68156 EE NE OO PK
+U angles%s		angles.ads		04c18b06 EE NE OO PK
 
-D angles.ads		20200306105614 2ff68156 angles%s
-D angles.adb		20200306105314 bb0645c9 angles%b
-D system.ads		20171018134659 1d274481 system%s
+D angles.ads		20200413153038 04c18b06 angles%s
+D angles.adb		20200413153031 1f86e50b angles%b
+D system.ads		20190518041255 085b6ffb system%s
+G a e
+G c Z s b [addangles angles 6 14 none]
+G c Z s b [addangles2 angles 11 13 none]
 X 1 angles.ads
-3K9*Angles 13l5 13e11 2|3b14 25l5 25t11
-4I12*angle{integer} 6r34 6r48 9r33 9r47 2|5r35 5r49 10r33 11r19 15r35 15r49
-. 20r31 21r17
-6V13*AddAngles2{4I12} 6>24 6>27 7r23 7r60 2|5b13 13l8 13t18
-6i24 X{4I12} 7r15 7r46 2|5b25 9r22
-6i27 Y{4I12} 7r19 7r50 2|5b28 9r35
-9U13*AddAngles 9>23 9>26 9<40 2|15b14 23l8 23t17
-9i23 X{4I12} 10r29 11r15 11r30 2|15b25 19r22
-9i26 Y{4I12} 10r32 11r19 11r34 2|15b28 19r35
-9i40 U{4I12} 10r23 11r23 11r44 2|15b42 20m26 21m12
+3K9*Angles 14l5 14e11 2|3b14 35l5 35t11
+4I12*angle{integer} 6r34 6r48 11r34 11r48 2|6r35 6r49 15r31 16r17 21r35 21r49
+. 30r33 31r19
+6U14*AddAngles 6>24 6>27 6<41 2|6b14 18l8 18t17
+6i24 X{4I12} 7r29 8r15 8r30 2|6b25 12r22
+6i27 Y{4I12} 7r32 8r19 8r34 2|6b28 12r35
+6i41 U{4I12} 7r23 8r23 8r44 2|6b42 15m26 16m12
+11V13*AddAngles2{4I12} 11>24 11>27 12r23 12r60 2|21b13 33l8 33t18
+11i24 X{4I12} 12r15 12r46 2|21b25 27r22
+11i27 Y{4I12} 12r19 12r50 2|21b28 27r35
 X 2 angles.adb
-6i7 maxAngleValue{integer} 10r47
-7i7 aux{integer} 9m7 10r10 10r39 11r25
-16i7 maxAngleValue{integer} 20r45
-17i7 aux{integer} 19m7 20r10 20r37 21r23
+8i7 maxAngleValue{integer} 15r45
+10i7 aux{integer} 12m7 15r10 15r37 16r23
+23i7 maxAngleValue{integer} 30r47
+25i7 aux{integer} 27m7 30r10 30r39 31r25
 

@@ -1,0 +1,9 @@
+20200413153059
+-c
+-x
+ada
+-gnatA
+-g
+-O2
+-gnatc
+-gnates=/Users/timurozkul/Documents/Repo/Code/SparkAda/Question1/gnatprove/85a74aac.tmp

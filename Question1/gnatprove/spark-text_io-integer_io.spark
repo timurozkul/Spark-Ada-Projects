@@ -1,16 +1,6 @@
 {
   "spark": [
     {
-      "name": "SPARK.Text_IO.Integer_IO.Ada_Integer_IO",
-      "sloc": [
-        {
-          "file": "spark-text_io-integer_io.adb",
-          "line": 43
-        }
-      ],
-      "spark": "no"
-    },
-    {
       "name": "SPARK.Text_IO.Integer_IO.Get",
       "sloc": [
         {
@@ -71,10 +61,84 @@
       "spark": "no"
     },
     {
-      "name": "SPARK.Text_IO.Integer_IO",
+      "name": "SPARK.Text_IO.Integer_IO.Ada_Integer_IO.Get",
       "sloc": [
         {
-          "file": "spark-text_io-integer_io.ads",
+          "file": "a-tiinio.ads",
+          "line": 51
+        },
+        {
+          "file": "spark-text_io-integer_io.adb",
+          "line": 43
+        }
+      ],
+      "spark": "no"
+    },
+    {
+      "name": "SPARK.Text_IO.Integer_IO.Ada_Integer_IO.Get",
+      "sloc": [
+        {
+          "file": "a-tiinio.ads",
+          "line": 59
+        },
+        {
+          "file": "spark-text_io-integer_io.adb",
+          "line": 43
+        }
+      ],
+      "spark": "no"
+    },
+    {
+      "name": "SPARK.Text_IO.Integer_IO.Ada_Integer_IO.Put",
+      "sloc": [
+        {
+          "file": "a-tiinio.ads",
+          "line": 68
+        },
+        {
+          "file": "spark-text_io-integer_io.adb",
+          "line": 43
+        }
+      ],
+      "spark": "no"
+    },
+    {
+      "name": "SPARK.Text_IO.Integer_IO.Ada_Integer_IO.Put",
+      "sloc": [
+        {
+          "file": "a-tiinio.ads",
+          "line": 80
+        },
+        {
+          "file": "spark-text_io-integer_io.adb",
+          "line": 43
+        }
+      ],
+      "spark": "no"
+    },
+    {
+      "name": "SPARK.Text_IO.Integer_IO.Ada_Integer_IO.Get",
+      "sloc": [
+        {
+          "file": "a-tiinio.ads",
+          "line": 90
+        },
+        {
+          "file": "spark-text_io-integer_io.adb",
+          "line": 43
+        }
+      ],
+      "spark": "no"
+    },
+    {
+      "name": "SPARK.Text_IO.Integer_IO.Ada_Integer_IO.Put",
+      "sloc": [
+        {
+          "file": "a-tiinio.ads",
+          "line": 97
+        },
+        {
+          "file": "spark-text_io-integer_io.adb",
           "line": 43
         }
       ],
@@ -86,5 +150,16 @@
   "proof": [
   ],
   "assumptions": [
-  ]
+  ],
+  "timings": {
+    "marking": 2.45800008997321E-03,
+    "globals (basic)": 5.93400001525879E-03,
+    "globals/properties (advanced)": 1.25280003994703E-02,
+    "flow analysis": 1.10010001808405E-02,
+    "codepeer results": 9.00000031833770E-06,
+    "init_why_sections": 8.12000012956560E-04,
+    "translation of standard": 6.02299999445677E-03,
+    "translation of compilation unit": 1.24522998929024E-01,
+    "proof": 1.99999999495049E-06
+  }
 }

@@ -1,5 +1,9 @@
-20200313095145
+20200413153116
+-c
+-x
+ada
+-gnatA
 -g
 -O2
 -gnatc
--gnates=/home/students/999072/sparkadacoursework/question1/gnatprove//8b125448.tmp
+-gnates=/Users/timurozkul/Documents/Repo/Code/SparkAda/Question1/gnatprove/e21d4382.tmp
