@@ -257,25 +257,6 @@
     {
       "file": "power_grid_energy_stabilizer.ads",
       "line": 33,
-      "col": 59,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Power_Grid_Energy_Stabilizer.Init",
-        "sloc": [
-          {
-            "file": "power_grid_energy_stabilizer.ads",
-            "line": 32
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "how_proved": "flow"
-    },
-    {
-      "file": "power_grid_energy_stabilizer.ads",
-      "line": 33,
       "col": 44,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -296,6 +277,25 @@
       "file": "power_grid_energy_stabilizer.ads",
       "line": 33,
       "col": 28,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Power_Grid_Energy_Stabilizer.Init",
+        "sloc": [
+          {
+            "file": "power_grid_energy_stabilizer.ads",
+            "line": 32
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "power_grid_energy_stabilizer.ads",
+      "line": 33,
+      "col": 59,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -1065,7 +1065,7 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 21,
+              "steps": 203,
               "time": 0
             }
           },
@@ -1087,574 +1087,6 @@
     }
   ],
   "assumptions": [
-    {
-      "assumptions": [
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Get",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 106
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 59
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 114
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put_Line",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 83
-              }
-            ]
-          }
-        }
-      ],
-      "claim": {
-        "predicate": "CLAIM_EFFECTS",
-        "arg": {
-          "name": "Power_Grid_Energy_Stabilizer.Read_Supply",
-          "sloc": [
-            {
-              "file": "power_grid_energy_stabilizer.ads",
-              "line": 56
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Get",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 106
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 59
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 114
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put_Line",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 83
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Get",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 106
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 59
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 114
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put_Line",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 83
-              }
-            ]
-          }
-        }
-      ],
-      "claim": {
-        "predicate": "CLAIM_AORTE",
-        "arg": {
-          "name": "Power_Grid_Energy_Stabilizer.Read_Supply",
-          "sloc": [
-            {
-              "file": "power_grid_energy_stabilizer.ads",
-              "line": 56
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-        {
-          "predicate": "CLAIM_POST",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Init_Standard_Input",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 25
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_POST",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Init_Standard_Output",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 32
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Init_Standard_Input",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 25
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Init_Standard_Output",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 32
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Init_Standard_Input",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 25
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Init_Standard_Output",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 32
-              }
-            ]
-          }
-        }
-      ],
-      "claim": {
-        "predicate": "CLAIM_POST",
-        "arg": {
-          "name": "Power_Grid_Energy_Stabilizer.Init",
-          "sloc": [
-            {
-              "file": "power_grid_energy_stabilizer.ads",
-              "line": 32
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Init_Standard_Input",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 25
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Init_Standard_Output",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 32
-              }
-            ]
-          }
-        }
-      ],
-      "claim": {
-        "predicate": "CLAIM_EFFECTS",
-        "arg": {
-          "name": "Power_Grid_Energy_Stabilizer.Init",
-          "sloc": [
-            {
-              "file": "power_grid_energy_stabilizer.ads",
-              "line": 32
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-        {
-          "predicate": "CLAIM_POST",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Init_Standard_Input",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 25
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_POST",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Init_Standard_Output",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 32
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Init_Standard_Input",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 25
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Init_Standard_Output",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 32
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Init_Standard_Input",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 25
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Init_Standard_Output",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 32
-              }
-            ]
-          }
-        }
-      ],
-      "claim": {
-        "predicate": "CLAIM_AORTE",
-        "arg": {
-          "name": "Power_Grid_Energy_Stabilizer.Init",
-          "sloc": [
-            {
-              "file": "power_grid_energy_stabilizer.ads",
-              "line": 32
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Get",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 106
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 59
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 114
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put_Line",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 83
-              }
-            ]
-          }
-        }
-      ],
-      "claim": {
-        "predicate": "CLAIM_EFFECTS",
-        "arg": {
-          "name": "Power_Grid_Energy_Stabilizer.Read_Consumption",
-          "sloc": [
-            {
-              "file": "power_grid_energy_stabilizer.ads",
-              "line": 49
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Get",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 106
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 59
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 114
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put_Line",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 83
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Get",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 106
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 59
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 114
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put_Line",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 83
-              }
-            ]
-          }
-        }
-      ],
-      "claim": {
-        "predicate": "CLAIM_AORTE",
-        "arg": {
-          "name": "Power_Grid_Energy_Stabilizer.Read_Consumption",
-          "sloc": [
-            {
-              "file": "power_grid_energy_stabilizer.ads",
-              "line": 49
-            }
-          ]
-        }
-      }
-    },
     {
       "assumptions": [
         {
@@ -2422,17 +1854,585 @@
           ]
         }
       }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Get",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 106
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Put",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 59
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Put",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 114
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Put_Line",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 83
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Power_Grid_Energy_Stabilizer.Read_Supply",
+          "sloc": [
+            {
+              "file": "power_grid_energy_stabilizer.ads",
+              "line": 56
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Get",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 106
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Put",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 59
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Put",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 114
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Put_Line",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 83
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Get",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 106
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Put",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 59
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Put",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 114
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Put_Line",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 83
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "Power_Grid_Energy_Stabilizer.Read_Supply",
+          "sloc": [
+            {
+              "file": "power_grid_energy_stabilizer.ads",
+              "line": 56
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Init_Standard_Input",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 25
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Init_Standard_Output",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 32
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Init_Standard_Input",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 25
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Init_Standard_Output",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 32
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Init_Standard_Input",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 25
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Init_Standard_Output",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 32
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "Power_Grid_Energy_Stabilizer.Init",
+          "sloc": [
+            {
+              "file": "power_grid_energy_stabilizer.ads",
+              "line": 32
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Init_Standard_Input",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 25
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Init_Standard_Output",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 32
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Power_Grid_Energy_Stabilizer.Init",
+          "sloc": [
+            {
+              "file": "power_grid_energy_stabilizer.ads",
+              "line": 32
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Init_Standard_Input",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 25
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Init_Standard_Output",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 32
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Init_Standard_Input",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 25
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Init_Standard_Output",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 32
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Init_Standard_Input",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 25
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Init_Standard_Output",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 32
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "Power_Grid_Energy_Stabilizer.Init",
+          "sloc": [
+            {
+              "file": "power_grid_energy_stabilizer.ads",
+              "line": 32
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Get",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 106
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Put",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 59
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Put",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 114
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Put_Line",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 83
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Power_Grid_Energy_Stabilizer.Read_Consumption",
+          "sloc": [
+            {
+              "file": "power_grid_energy_stabilizer.ads",
+              "line": 49
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Get",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 106
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Put",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 59
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Put",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 114
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Put_Line",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 83
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Get",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 106
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Put",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 59
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Put",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 114
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Put_Line",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 83
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "Power_Grid_Energy_Stabilizer.Read_Consumption",
+          "sloc": [
+            {
+              "file": "power_grid_energy_stabilizer.ads",
+              "line": 49
+            }
+          ]
+        }
+      }
     }
   ],
   "timings": {
-    "marking": 1.80700002238154E-03,
-    "globals (basic)": 1.66359990835190E-02,
-    "globals/properties (advanced)": 1.62269994616508E-02,
-    "flow analysis": 7.72520005702972E-02,
+    "marking": 2.86699994467199E-03,
+    "globals (basic)": 6.41999999061227E-03,
+    "globals/properties (advanced)": 1.38419996947050E-02,
+    "flow analysis": 9.13740023970604E-02,
     "codepeer results": 9.99999974737875E-06,
-    "init_why_sections": 8.09999997727573E-04,
-    "translation of standard": 6.39000022783875E-03,
-    "translation of compilation unit": 1.09842002391815E-01,
-    "proof": 1.21366500854492E+00
+    "init_why_sections": 2.49299989081919E-03,
+    "translation of standard": 8.34899954497814E-03,
+    "translation of compilation unit": 1.52731999754906E-01,
+    "proof": 1.28614699840546E+00
   }
 }

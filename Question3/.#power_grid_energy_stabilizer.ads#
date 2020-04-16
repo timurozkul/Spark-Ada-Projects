@@ -17,18 +17,9 @@ package Power_Grid_Energy_Stabilizer is
    -- Power grid system supplies 3.2 million homes in Wales 
    -- with an average energy consumption of 416,000 watts (416 kw) per second
    
-   
-   --Maximum_Electricity_Possible : Maximum_Electricity_Possible;
-   --Maximum_Reserved_Electricity_Possible : Maximum_Reserved_Electricity_Possible;
-   --Critical_Reserve_level : Critical_Reserve_level;
 
-   --Electricity_Range : Electricity_Range;
-   --Reserve_Electricity_Range : Reserve_Electricity_Range;
-
-   --Status_Reserved_Electricity_Type : Status_Reserved_Electricity_Type;
-
-   --Status_System : Status_System_Type;
-  
+   -- The Init procedure is used to initialise the program. It sets the Input/Ouput library
+   -- and sets the global veriables to their starting values.
    procedure Init with
      Global => (Output => (Standard_Output,Standard_Input,Status_System)),
      Depends => ((Standard_Output,Standard_Input,Status_System) => null),
@@ -37,49 +28,63 @@ package Power_Grid_Energy_Stabilizer is
      (Status_System.Reserved_Measured = Maximum_Reserved_Electricity_Possible) AND
      (Status_System.Status_Reserved_Electricity = Not_Activated));
    
+    -- Print_Welcome prints out a welcome message.
     procedure Print_Welcome with
      Global => (In_Out => Standard_Output),
      Depends => (Standard_Output => Standard_Output);
+   
+   -- TODO **********
+   -- reset status
    
    -- function Is_Safe return Boolean is
    --   (if Integer(Status_System.Reserved_Measured) > Critical_Reserve_level 
 	--      then Status_System.Status_Reserved_Electricity = Activated
    --           else Status_System.Status_Reserved_Electricity = Not_Activated);
    
+   -- Read_Consumption reads the electrical consumption from the user input.
    procedure Read_Consumption with
      Global => (In_Out => (Standard_Output, Standard_Input,Status_System)),
      Depends => (Standard_Output => (Standard_Output, Standard_Input),
                  Standard_Input  => Standard_Input,
                  Status_System   => (Status_System, Standard_Input));
    
-   
+    -- Read_Supply reads the electrical supply from the user input.
     procedure Read_Supply with
      Global => (In_Out => (Standard_Output, Standard_Input,Status_System)),
      Depends => (Standard_Output => (Standard_Output, Standard_Input),
 		 Standard_Input  => Standard_Input,
                  Status_System   => (Status_System, Standard_Input));
    
+   -- Energy_Stabilizerg_System makes certain that the energy supplied is equal to the energy consumption.
    procedure Energy_Stabilizerg_System  with
      Global => (In_Out => (Status_System, Standard_Output)),              
      Depends => (Status_System => (Status_System),
                  Standard_Output => (Standard_Output, Status_System)),
      Post => (Status_System.Consumption_Measured <= Status_System.Supplied_Measured); 
    
-   -- Print Status prints out the status of the system on console
+   -- Print_Status prints out the status of the system.
    procedure Print_Status with
      Global => (In_Out => (Standard_Output),
                 Input => Status_System),
      Depends => (Standard_Output => ( Standard_Output,Status_System));
     -- Post => (Status_System.Consumption_Measured <= Status_System.Supplied_Measured);
    
+   -- This function converts a value into Status_Reserved_Electricity_Type
+   -- into a string which can be printed to console.
     function Status_Electricity_System_To_String return String;
    -- Global => (Input => Status_System);
    
+   -- This procedure prints the reserve levels after refilling either from its 
+   -- own supply leftover or from buying it from another non renewable energy 
+   -- company. Its ony called from the Refill_Reserve procedure.
    procedure Print_Reserve_levels with
      Global => (In_Out => Standard_Output,
                 Input => Status_System),
      Depends => (Standard_Output => (Standard_Output, Status_System));
    
+   -- Refill_Reserve refills the resereves of the battery if there is extra supply 
+   -- left or if its under the critical reserve level then it will give the option
+   -- to the user if they want to purchase from non-renewable energy company.
    procedure Refill_Reserve with
      Global => (In_Out => (Standard_Input, Standard_Output, Status_System)),
      Depends => (Status_System => (Status_System, Standard_Input),

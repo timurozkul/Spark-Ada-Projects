@@ -13,7 +13,7 @@ RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U power_grid_energy_stabilizer%b  power_grid_energy_stabilizer.adb  09ff9e64 NE OO PK
+U power_grid_energy_stabilizer%b  power_grid_energy_stabilizer.adb  f746c276 NE OO PK
 W as_io_wrapper%s	as_io_wrapper.adb	as_io_wrapper.ali
 Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 
@@ -34,7 +34,7 @@ D global_variables.ads	20200413171754 fa82fa2a global_variables%s
 D interfac.ads		20190518041254 5ab55268 interfaces%s
 D i-cstrea.ads		20190518041254 e53d8b8e interfaces.c_streams%s
 D power_grid_energy_stabilizer.ads  20200416120432 08267a69 power_grid_energy_stabilizer%s
-D power_grid_energy_stabilizer.adb  20200416120110 01d622d1 power_grid_energy_stabilizer%b
+D power_grid_energy_stabilizer.adb  20200416120923 ff6f7ec3 power_grid_energy_stabilizer%b
 D spark.ads		20200214112854 86380d85 spark%s
 D spark-text_io.ads	20200214112854 3f556f64 spark.text_io%s
 D system.ads		20190518041255 085b6ffb system%s
@@ -105,9 +105,9 @@ X 9 global_variables.ads
 24n46*Activated{24E9} 13|73r58 126r59
 24n57*Not_Activated{24E9} 12|38r51 13|18r52 85r58
 34i10*Consumption_Measured{18I12} 12|35r30 66r29 88r28 89r29 13|15m21 48m21
-. 68r30 70r56 75r62 84r62 98r28 113r77 115r82 138r92 169r57
+. 68r30 70r56 75r62 84r62 98r28 113r77 115r82 138r92
 35i10*Supplied_Measured{18I12} 12|36r21 66r67 88r66 89r67 13|16m21 62m21
-. 68r76 70r102 75m27 84m27 101r28 113r34 115r39 138r49 169m22
+. 68r76 70r102 75m27 84m27 101r28 113r34 115r39 138r49
 36i10*Reserved_Measured{19I12} 12|37r21 13|17m21 71r51 74m27 74r62 83m27
 . 103r33 110r28 140r57 144r55 146m27 148r71 149m27 154r24 165m31 180r28
 37e10*Status_Reserved_Electricity{24E9} 12|38r21 13|18m21 73m27 85m27 126r29
@@ -117,7 +117,7 @@ X 9 global_variables.ads
 . 16m7 17m7 18m7 48m7 62m7 68r16 68r62 70r42 70r88 71r37 73m13 74m13 74r48
 . 75m13 75r48 83m13 84m13 84r48 85m13 98r14 101r14 103r19 110r14 113r20 113r63
 . 115r25 115r68 126r15 138r35 138r78 140r43 144r41 146m13 148r57 149m13 154r10
-. 165m17 169m8 169r43 180r14
+. 165m17 180r14
 X 12 power_grid_energy_stabilizer.ads
 13K9*Power_Grid_Energy_Stabilizer 93l6 93e34 13|7b14 189l5 189t33
 32U14*Init 13|11b14 24l8 24t12

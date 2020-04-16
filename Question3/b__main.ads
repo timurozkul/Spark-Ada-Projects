@@ -47,7 +47,7 @@ package ada_main is
    pragma Export (C, u00004, "system__standard_libraryS");
    u00005 : constant Version_32 := 16#fa82fa2a#;
    pragma Export (C, u00005, "global_variablesS");
-   u00006 : constant Version_32 := 16#09ff9e64#;
+   u00006 : constant Version_32 := 16#f746c276#;
    pragma Export (C, u00006, "power_grid_energy_stabilizerB");
    u00007 : constant Version_32 := 16#cdf1ef27#;
    pragma Export (C, u00007, "power_grid_energy_stabilizerS");
