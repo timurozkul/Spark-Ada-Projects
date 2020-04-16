@@ -22,64 +22,67 @@
   </goal>
   <goal name="VC def.5" expl="loop invariant init" proved="true">
   <proof prover="0"><result status="valid" steps="20"/></proof>
-  <proof prover="1" obsolete="true"><result status="unknown" steps="197"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="167"/></proof>
   </goal>
-  <goal name="VC def.6" expl="precondition">
+  <goal name="VC def.6" expl="loop invariant init" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="124"/></proof>
   </goal>
-  <goal name="VC def.7" expl="precondition">
+  <goal name="VC def.7" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="173"/></proof>
   </goal>
   <goal name="VC def.8" expl="precondition">
   </goal>
   <goal name="VC def.9" expl="precondition">
   </goal>
-  <goal name="VC def.10" expl="precondition" proved="true">
+  <goal name="VC def.10" expl="precondition">
+  </goal>
+  <goal name="VC def.11" expl="precondition" proved="true">
   <proof prover="0"><result status="valid" steps="5"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="267"/></proof>
   </goal>
-  <goal name="VC def.11" expl="postcondition">
+  <goal name="VC def.12" expl="postcondition">
   </goal>
-  <goal name="VC def.12" expl="loop invariant preservation" proved="true">
+  <goal name="VC def.13" expl="loop invariant preservation" proved="true">
   <proof prover="0"><result status="valid" steps="5"/></proof>
-  <proof prover="1" obsolete="true"><result status="unknown" steps="261"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="269"/></proof>
   </goal>
-  <goal name="VC def.13" expl="postcondition">
+  <goal name="VC def.14" expl="loop invariant preservation" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="239"/></proof>
   </goal>
-  <goal name="VC def.5" expl="precondition">
+  <goal name="VC def.15" expl="postcondition">
   </goal>
   <goal name="VC def.14" expl="precondition">
   </goal>
+  <goal name="VC def.7" expl="precondition">
+  </goal>
   <goal name="VC def.13" expl="precondition">
+  <proof prover="0"><result status="valid" steps="13"/></proof>
   </goal>
-  <goal name="VC def.15" expl="precondition">
-  <proof prover="0"><result status="valid" steps="5"/></proof>
-  </goal>
-  <goal name="VC def.3" expl="postcondition">
+  <goal name="VC def.5" expl="postcondition">
   </goal>
   <goal name="VC def.4" expl="postcondition">
   </goal>
-  <goal name="VC def.5" expl="postcondition">
+  <goal name="VC def.3" expl="postcondition">
+  </goal>
+  <goal name="VC def.3" expl="postcondition">
   </goal>
   <goal name="VC def.3" expl="postcondition">
   </goal>
   <goal name="VC def.13" expl="postcondition">
-  </goal>
-  <goal name="VC def.12" expl="loop invariant preservation">
-  <proof prover="0"><result status="unknown" steps="171"/></proof>
-  <proof prover="1"><result status="unknown" steps="259"/></proof>
-  </goal>
-  <goal name="VC def.5" expl="loop invariant init">
-  <proof prover="0"><result status="valid" steps="18"/></proof>
-  <proof prover="1" obsolete="true"><result status="unknown" steps="124"/></proof>
-  </goal>
-  <goal name="VC def.19" expl="assertion">
-  <proof prover="0"><result status="valid" steps="5"/></proof>
   </goal>
   <goal name="VC def.21" expl="assertion">
   <proof prover="0"><result status="valid" steps="5"/></proof>
   </goal>
-  <goal name="VC def.18" expl="assertion">
+  <goal name="VC def.19" expl="assertion">
   <proof prover="0"><result status="valid" steps="5"/></proof>
   </goal>
   <goal name="VC def.20" expl="assertion">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.18" expl="assertion">
   <proof prover="0"><result status="valid" steps="5"/></proof>
   </goal>
  </transf>

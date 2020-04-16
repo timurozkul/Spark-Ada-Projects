@@ -10,10 +10,10 @@ Initialization                   15           9          .          .           
 Non-Aliasing                      .           .          .          .             .           .           .
 Run-time Checks                   8           .          .          .      8 (CVC4)           .           .
 Assertions                        2           .          .          .      2 (CVC4)           .           .
-Functional Contracts            146           .          .          .    102 (CVC4)           .          44
+Functional Contracts            147           .          .          .    103 (CVC4)           .          44
 LSP Verification                  .           .          .          .             .           .           .
 -----------------------------------------------------------------------------------------------------------
-Total                           192    30 (16%)          .          .     112 (58%)           .    50 (26%)
+Total                           193    30 (16%)          .          .     113 (59%)           .    50 (26%)
 
 
 max steps used for successful proof: 1
@@ -36,18 +36,18 @@ in unit as_io_wrapper, 0 subprograms and packages out of 13 analyzed
 in unit global_variables, 1 subprograms and packages out of 1 analyzed
   Global_Variables at global_variables.ads:3 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
 in unit main, 1 subprograms and packages out of 1 analyzed
-  Main at main.ads:14 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (3 checks)
+  Main at main.ads:14 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (4 checks)
 in unit power_grid_energy_stabilizer, 10 subprograms and packages out of 10 analyzed
   Power_Grid_Energy_Stabilizer at power_grid_energy_stabilizer.ads:13 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  Power_Grid_Energy_Stabilizer.Energy_Stabilizerg_System at power_grid_energy_stabilizer.ads:62 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (3 checks)
-  Power_Grid_Energy_Stabilizer.Init at power_grid_energy_stabilizer.ads:32 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (1 checks)
-  Power_Grid_Energy_Stabilizer.Print_Reserve_levels at power_grid_energy_stabilizer.ads:78 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  Power_Grid_Energy_Stabilizer.Print_Status at power_grid_energy_stabilizer.ads:69 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  Power_Grid_Energy_Stabilizer.Print_Welcome at power_grid_energy_stabilizer.ads:40 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  Power_Grid_Energy_Stabilizer.Read_Consumption at power_grid_energy_stabilizer.ads:49 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (1 checks)
-  Power_Grid_Energy_Stabilizer.Read_Supply at power_grid_energy_stabilizer.ads:56 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (1 checks)
-  Power_Grid_Energy_Stabilizer.Refill_Reserve at power_grid_energy_stabilizer.ads:83 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (5 checks)
-  Power_Grid_Energy_Stabilizer.Status_Electricity_System_To_String at power_grid_energy_stabilizer.ads:75 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Power_Grid_Energy_Stabilizer.Energy_Stabilizerg_System at power_grid_energy_stabilizer.ads:52 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (3 checks)
+  Power_Grid_Energy_Stabilizer.Init at power_grid_energy_stabilizer.ads:23 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (1 checks)
+  Power_Grid_Energy_Stabilizer.Print_Reserve_levels at power_grid_energy_stabilizer.ads:73 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Power_Grid_Energy_Stabilizer.Print_Status at power_grid_energy_stabilizer.ads:59 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Power_Grid_Energy_Stabilizer.Print_Welcome at power_grid_energy_stabilizer.ads:32 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Power_Grid_Energy_Stabilizer.Read_Consumption at power_grid_energy_stabilizer.ads:37 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (1 checks)
+  Power_Grid_Energy_Stabilizer.Read_Supply at power_grid_energy_stabilizer.ads:45 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (1 checks)
+  Power_Grid_Energy_Stabilizer.Refill_Reserve at power_grid_energy_stabilizer.ads:81 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (5 checks)
+  Power_Grid_Energy_Stabilizer.Status_Electricity_System_To_String at power_grid_energy_stabilizer.ads:67 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
 in unit spark, 1 subprograms and packages out of 2 analyzed
   SPARK at spark.ads:37 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
   SPARK.Text_IO_File_Type at spark.ads:61 skipped

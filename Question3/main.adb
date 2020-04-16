@@ -28,8 +28,9 @@ begin
     -- This is simply a welcome print out
    Print_Welcome;
    loop
-      pragma Loop_Invariant (Status_System.Consumption_Measured <= Status_System.Supplied_Measured);
---                AND Is_Safe             );
+      pragma Loop_Invariant (Status_System.Consumption_Measured <= Status_System.Supplied_Measured 
+                             AND Status_System.Status_Reserved_Electricity = Not_Activated);
+
       -- Takes in an input for the  consumption of energy
       Read_Consumption;
       -- Takes in an input for the current supply of energy
@@ -40,7 +41,6 @@ begin
       Print_Status;
       -- Refills the battery reserve if necessary
       Refill_Reserve;
-      
       -- This loop is used to exit the program
      -- loop
         --Loop_Invariant ()

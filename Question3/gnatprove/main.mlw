@@ -1929,7 +1929,7 @@ module System__default_priority
  use        "_gnatprove_standard".Main
  use        "int".Int
 
- val constant default_priority [#"system.ads" 129 0 0][@model_trace:7755] [@name:Default_Priority] 
+ val constant default_priority [#"system.ads" 129 0 0][@name:Default_Priority] [@model_trace:7774] 
    : int
 
  
@@ -2217,9 +2217,9 @@ module Global_variables__status_system_type__rep
  use        Global_variables__status_reserved_electricity_type__rep as Global_variables__status_reserved_electricity_type__rep
 
  type __split_fields =
-  { rec__global_variables__status_system_type__consumption_measured [@model_trace:.18133] [@name:Consumption_Measured] : Global_variables__electricity_range.electricity_range; rec__global_variables__status_system_type__supplied_measured [@model_trace:.18143] [@name:Supplied_Measured] : Global_variables__electricity_range.electricity_range; rec__global_variables__status_system_type__reserved_measured [@name:Reserved_Measured] [@model_trace:.18153] : Global_variables__reserve_electricity_range.reserve_electricity_range; rec__global_variables__status_system_type__status_reserved_electricity [@name:Status_Reserved_Electricity] [@model_trace:.18163] : Global_variables__status_reserved_electricity_type.status_reserved_electricity_type }
+  { rec__global_variables__status_system_type__consumption_measured [@model_trace:.18152] [@name:Consumption_Measured] : Global_variables__electricity_range.electricity_range; rec__global_variables__status_system_type__supplied_measured [@model_trace:.18162] [@name:Supplied_Measured] : Global_variables__electricity_range.electricity_range; rec__global_variables__status_system_type__reserved_measured [@name:Reserved_Measured] [@model_trace:.18172] : Global_variables__reserve_electricity_range.reserve_electricity_range; rec__global_variables__status_system_type__status_reserved_electricity [@name:Status_Reserved_Electricity] [@model_trace:.18182] : Global_variables__status_reserved_electricity_type.status_reserved_electricity_type }
  
- function __split_fields_rec__global_variables__status_system_type__consumption_measured__projection [@model_trace:.18133] [@name:Consumption_Measured] 
+ function __split_fields_rec__global_variables__status_system_type__consumption_measured__projection [@model_trace:.18152] [@name:Consumption_Measured] 
    (a : __split_fields) : Global_variables__electricity_range.electricity_range =
   a.rec__global_variables__status_system_type__consumption_measured
  
@@ -2227,7 +2227,7 @@ module Global_variables__status_system_type__rep
  
  meta "inline:no" function __split_fields_rec__global_variables__status_system_type__consumption_measured__projection
  
- function __split_fields_rec__global_variables__status_system_type__supplied_measured__projection [@model_trace:.18143] [@name:Supplied_Measured] 
+ function __split_fields_rec__global_variables__status_system_type__supplied_measured__projection [@model_trace:.18162] [@name:Supplied_Measured] 
    (a : __split_fields) : Global_variables__electricity_range.electricity_range =
   a.rec__global_variables__status_system_type__supplied_measured
  
@@ -2235,7 +2235,7 @@ module Global_variables__status_system_type__rep
  
  meta "inline:no" function __split_fields_rec__global_variables__status_system_type__supplied_measured__projection
  
- function __split_fields_rec__global_variables__status_system_type__reserved_measured__projection [@name:Reserved_Measured] [@model_trace:.18153] 
+ function __split_fields_rec__global_variables__status_system_type__reserved_measured__projection [@name:Reserved_Measured] [@model_trace:.18172] 
    (a : __split_fields) : Global_variables__reserve_electricity_range.reserve_electricity_range =
   a.rec__global_variables__status_system_type__reserved_measured
  
@@ -2243,7 +2243,7 @@ module Global_variables__status_system_type__rep
  
  meta "inline:no" function __split_fields_rec__global_variables__status_system_type__reserved_measured__projection
  
- function __split_fields_rec__global_variables__status_system_type__status_reserved_electricity__projection [@name:Status_Reserved_Electricity] [@model_trace:.18163] 
+ function __split_fields_rec__global_variables__status_system_type__status_reserved_electricity__projection [@name:Status_Reserved_Electricity] [@model_trace:.18182] 
    (a : __split_fields) : Global_variables__status_reserved_electricity_type.status_reserved_electricity_type =
   a.rec__global_variables__status_system_type__status_reserved_electricity
  
@@ -2494,7 +2494,7 @@ module Global_variables__maximum_reserved_electricity_possible
  use        "_gnatprove_standard".Main
  use        "int".Int
 
- val constant maximum_reserved_electricity_possible [#"global_variables.ads" 13 0 0][@name:Maximum_Reserved_Electricity_Possible] [@model_trace:18051] 
+ val constant maximum_reserved_electricity_possible [#"global_variables.ads" 13 0 0][@model_trace:18070] [@name:Maximum_Reserved_Electricity_Possible] 
    : int
 
  
@@ -2650,7 +2650,7 @@ module Global_variables__status_system
  use        "int".Int
  use        Global_variables__status_system_type as Global_variables__status_system_type
 
- val status_system__split_fields [#"global_variables.ads" 41 0 0][@name:Status_System] [@model_trace:18184] [@model_projected]  : Global_variables__status_system_type.__split_fields__ref 
+ val status_system__split_fields [#"global_variables.ads" 41 0 0][@name:Status_System] [@model_projected] [@model_trace:18203]  : Global_variables__status_system_type.__split_fields__ref 
  
  val constant attr__ATTRIBUTE_ADDRESS 
    : int
@@ -3202,7 +3202,7 @@ module Main
 
 end
 
-(* Module for possibly declaring a logic function for "init" defined at power_grid_energy_stabilizer.ads:32, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+(* Module for possibly declaring a logic function for "init" defined at power_grid_energy_stabilizer.ads:23, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
 module Power_grid_energy_stabilizer__init
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -3210,7 +3210,7 @@ module Power_grid_energy_stabilizer__init
 
 end
 
-(* Module for possibly declaring a logic function for "print_welcome" defined at power_grid_energy_stabilizer.ads:40, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+(* Module for possibly declaring a logic function for "print_welcome" defined at power_grid_energy_stabilizer.ads:32, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
 module Power_grid_energy_stabilizer__print_welcome
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -3235,7 +3235,7 @@ module Main__L_1___axiom
 
 end
 
-(* Module for possibly declaring a logic function for "read_consumption" defined at power_grid_energy_stabilizer.ads:49, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+(* Module for possibly declaring a logic function for "read_consumption" defined at power_grid_energy_stabilizer.ads:37, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
 module Power_grid_energy_stabilizer__read_consumption
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -3243,7 +3243,7 @@ module Power_grid_energy_stabilizer__read_consumption
 
 end
 
-(* Module for possibly declaring a logic function for "read_supply" defined at power_grid_energy_stabilizer.ads:56, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+(* Module for possibly declaring a logic function for "read_supply" defined at power_grid_energy_stabilizer.ads:45, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
 module Power_grid_energy_stabilizer__read_supply
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -3251,7 +3251,7 @@ module Power_grid_energy_stabilizer__read_supply
 
 end
 
-(* Module for possibly declaring a logic function for "energy_stabilizerg_system" defined at power_grid_energy_stabilizer.ads:62, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+(* Module for possibly declaring a logic function for "energy_stabilizerg_system" defined at power_grid_energy_stabilizer.ads:52, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
 module Power_grid_energy_stabilizer__energy_stabilizerg_system
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -3259,7 +3259,7 @@ module Power_grid_energy_stabilizer__energy_stabilizerg_system
 
 end
 
-(* Module for possibly declaring a logic function for "print_status" defined at power_grid_energy_stabilizer.ads:69, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+(* Module for possibly declaring a logic function for "print_status" defined at power_grid_energy_stabilizer.ads:59, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
 module Power_grid_energy_stabilizer__print_status
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -3267,7 +3267,7 @@ module Power_grid_energy_stabilizer__print_status
 
 end
 
-(* Module for possibly declaring a logic function for "refill_reserve" defined at power_grid_energy_stabilizer.ads:83, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+(* Module for possibly declaring a logic function for "refill_reserve" defined at power_grid_energy_stabilizer.ads:81, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
 module Power_grid_energy_stabilizer__refill_reserve
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -3526,7 +3526,7 @@ module Main___axiom
 
 end
 
-(* Module for declaring a program function (and possibly an axiom) for "init" defined at power_grid_energy_stabilizer.ads:32, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+(* Module for declaring a program function (and possibly an axiom) for "init" defined at power_grid_energy_stabilizer.ads:23, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
 module Power_grid_energy_stabilizer__init___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -3546,12 +3546,12 @@ module Power_grid_energy_stabilizer__init___axiom
  val init 
    (__void_param : unit) : unit
   requires {  true }
-  ensures {  ( ( ( ( ( [@GP_Pretty_Ada:2446] ((Global_variables__electricity_range__rep.to_rep { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__consumption_measured) = (0 : int)) ) /\ ( [@GP_Pretty_Ada:2452] ((Global_variables__electricity_range__rep.to_rep { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__supplied_measured) = (0 : int)) ) ) /\ ( [@GP_Pretty_Ada:2458] ((Global_variables__reserve_electricity_range__rep.to_rep { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__reserved_measured) = (1000000 : int)) ) ) /\ ( [@GP_Pretty_Ada:2464] ((Global_variables__status_reserved_electricity_type__rep.to_rep { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__status_reserved_electricity) = (1 : int)) ) ) /\ (Global_variables__status_system_type___axiom.dynamic_invariant { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content } True True True True) ) }
+  ensures {  ( ( ( ( ( [@GP_Pretty_Ada:2452] ((Global_variables__electricity_range__rep.to_rep { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__consumption_measured) = (0 : int)) ) /\ ( [@GP_Pretty_Ada:2458] ((Global_variables__electricity_range__rep.to_rep { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__supplied_measured) = (0 : int)) ) ) /\ ( [@GP_Pretty_Ada:2464] ((Global_variables__reserve_electricity_range__rep.to_rep { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__reserved_measured) = (1000000 : int)) ) ) /\ ( [@GP_Pretty_Ada:2470] ((Global_variables__status_reserved_electricity_type__rep.to_rep { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__status_reserved_electricity) = (1 : int)) ) ) /\ (Global_variables__status_system_type___axiom.dynamic_invariant { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content } True True True True) ) }
   writes {Global_variables__status_system.status_system__split_fields, Spark__text_io__standard_output.standard_output, Spark__text_io__standard_input.standard_input}
 
 end
 
-(* Module for declaring a program function (and possibly an axiom) for "print_welcome" defined at power_grid_energy_stabilizer.ads:40, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+(* Module for declaring a program function (and possibly an axiom) for "print_welcome" defined at power_grid_energy_stabilizer.ads:32, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
 module Power_grid_energy_stabilizer__print_welcome___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -3567,13 +3567,16 @@ module Power_grid_energy_stabilizer__print_welcome___axiom
 
 end
 
-(* Module for declaring a program function (and possibly an axiom) for "read_consumption" defined at power_grid_energy_stabilizer.ads:49, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+(* Module for declaring a program function (and possibly an axiom) for "read_consumption" defined at power_grid_energy_stabilizer.ads:37, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
 module Power_grid_energy_stabilizer__read_consumption___axiom
  use        "_gnatprove_standard".Main
+ use        "int".Int
  use        "int".Int
  use        Global_variables__status_system as Global_variables__status_system
  use        Global_variables__status_system_type as Global_variables__status_system_type
  use        Global_variables__status_system_type___axiom as Global_variables__status_system_type___axiom
+ use        Global_variables__status_reserved_electricity_type as Global_variables__status_reserved_electricity_type
+ use        Global_variables__status_reserved_electricity_type__rep as Global_variables__status_reserved_electricity_type__rep
  use        Spark__text_io__standard_output as Spark__text_io__standard_output
  use        Spark__text_io__standard_input as Spark__text_io__standard_input
  use        Spark__text_io__standard_output as Spark__text_io__standard_output
@@ -3581,14 +3584,14 @@ module Power_grid_energy_stabilizer__read_consumption___axiom
 
  val read_consumption 
    (__void_param : unit) : unit
-  requires {  true }
+  requires {  ( [@GP_Pretty_Ada:28552] ((Global_variables__status_reserved_electricity_type__rep.to_rep { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__status_reserved_electricity) = (1 : int)) ) }
   ensures {  (Global_variables__status_system_type___axiom.dynamic_invariant { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content } True True True True) }
   reads {Global_variables__status_system.status_system__split_fields, Spark__text_io__standard_output.standard_output, Spark__text_io__standard_input.standard_input}
   writes {Global_variables__status_system.status_system__split_fields, Spark__text_io__standard_output.standard_output, Spark__text_io__standard_input.standard_input}
 
 end
 
-(* Module for declaring a program function (and possibly an axiom) for "read_supply" defined at power_grid_energy_stabilizer.ads:56, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+(* Module for declaring a program function (and possibly an axiom) for "read_supply" defined at power_grid_energy_stabilizer.ads:45, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
 module Power_grid_energy_stabilizer__read_supply___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -3609,7 +3612,7 @@ module Power_grid_energy_stabilizer__read_supply___axiom
 
 end
 
-(* Module for declaring a program function (and possibly an axiom) for "energy_stabilizerg_system" defined at power_grid_energy_stabilizer.ads:62, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+(* Module for declaring a program function (and possibly an axiom) for "energy_stabilizerg_system" defined at power_grid_energy_stabilizer.ads:52, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
 module Power_grid_energy_stabilizer__energy_stabilizerg_system___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -3625,13 +3628,13 @@ module Power_grid_energy_stabilizer__energy_stabilizerg_system___axiom
  val energy_stabilizerg_system 
    (__void_param : unit) : unit
   requires {  true }
-  ensures {  ( ( [@GP_Pretty_Ada:28593] ((Global_variables__electricity_range__rep.to_rep { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__consumption_measured) <= (Global_variables__electricity_range__rep.to_rep { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__supplied_measured)) ) /\ (Global_variables__status_system_type___axiom.dynamic_invariant { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content } True True True True) ) }
+  ensures {  ( ( [@GP_Pretty_Ada:28631] ((Global_variables__electricity_range__rep.to_rep { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__consumption_measured) <= (Global_variables__electricity_range__rep.to_rep { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__supplied_measured)) ) /\ (Global_variables__status_system_type___axiom.dynamic_invariant { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content } True True True True) ) }
   reads {Global_variables__status_system.status_system__split_fields, Spark__text_io__standard_output.standard_output}
   writes {Global_variables__status_system.status_system__split_fields, Spark__text_io__standard_output.standard_output}
 
 end
 
-(* Module for declaring a program function (and possibly an axiom) for "print_status" defined at power_grid_energy_stabilizer.ads:69, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+(* Module for declaring a program function (and possibly an axiom) for "print_status" defined at power_grid_energy_stabilizer.ads:59, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
 module Power_grid_energy_stabilizer__print_status___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -3648,7 +3651,7 @@ module Power_grid_energy_stabilizer__print_status___axiom
 
 end
 
-(* Module for declaring a program function (and possibly an axiom) for "refill_reserve" defined at power_grid_energy_stabilizer.ads:83, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+(* Module for declaring a program function (and possibly an axiom) for "refill_reserve" defined at power_grid_energy_stabilizer.ads:81, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
 module Power_grid_energy_stabilizer__refill_reserve___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -3658,6 +3661,8 @@ module Power_grid_energy_stabilizer__refill_reserve___axiom
  use        Global_variables__status_system_type___axiom as Global_variables__status_system_type___axiom
  use        Global_variables__electricity_range as Global_variables__electricity_range
  use        Global_variables__electricity_range__rep as Global_variables__electricity_range__rep
+ use        Global_variables__status_reserved_electricity_type as Global_variables__status_reserved_electricity_type
+ use        Global_variables__status_reserved_electricity_type__rep as Global_variables__status_reserved_electricity_type__rep
  use        Spark__text_io__standard_output as Spark__text_io__standard_output
  use        Spark__text_io__standard_input as Spark__text_io__standard_input
  use        Spark__text_io__standard_output as Spark__text_io__standard_output
@@ -3665,8 +3670,8 @@ module Power_grid_energy_stabilizer__refill_reserve___axiom
 
  val refill_reserve 
    (__void_param : unit) : unit
-  requires {  ( [@GP_Pretty_Ada:28697] ((Global_variables__electricity_range__rep.to_rep { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__consumption_measured) <= (Global_variables__electricity_range__rep.to_rep { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__supplied_measured)) ) }
-  ensures {  ( ( [@GP_Pretty_Ada:28711] ((Global_variables__electricity_range__rep.to_rep { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__consumption_measured) <= (Global_variables__electricity_range__rep.to_rep { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__supplied_measured)) ) /\ (Global_variables__status_system_type___axiom.dynamic_invariant { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content } True True True True) ) }
+  requires {  ( [@GP_Pretty_Ada:28735] ((Global_variables__electricity_range__rep.to_rep { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__consumption_measured) <= (Global_variables__electricity_range__rep.to_rep { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__supplied_measured)) ) }
+  ensures {  ( ( ( [@GP_Pretty_Ada:2732] ((Global_variables__electricity_range__rep.to_rep { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__consumption_measured) <= (Global_variables__electricity_range__rep.to_rep { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__supplied_measured)) ) /\ ( [@GP_Pretty_Ada:2740] ((Global_variables__status_reserved_electricity_type__rep.to_rep { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__status_reserved_electricity) = (1 : int)) ) ) /\ (Global_variables__status_system_type___axiom.dynamic_invariant { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content } True True True True) ) }
   reads {Global_variables__status_system.status_system__split_fields, Spark__text_io__standard_output.standard_output, Spark__text_io__standard_input.standard_input}
   writes {Global_variables__status_system.status_system__split_fields, Spark__text_io__standard_output.standard_output, Spark__text_io__standard_input.standard_input}
 
@@ -3677,6 +3682,7 @@ module Main__subprogram_def
  use        "_gnatprove_standard".Main
  use        "int".Int
  use        "int".Int
+ use        "_gnatprove_standard".Boolean as Boolean
  use        Global_variables__status_system as Global_variables__status_system
  use        Global_variables__status_system_type as Global_variables__status_system_type
  use        Global_variables__status_system_type___axiom as Global_variables__status_system_type___axiom
@@ -3689,6 +3695,8 @@ module Main__subprogram_def
  use        Power_grid_energy_stabilizer__refill_reserve___axiom as Power_grid_energy_stabilizer__refill_reserve___axiom
  use        Global_variables__electricity_range as Global_variables__electricity_range
  use        Global_variables__electricity_range__rep as Global_variables__electricity_range__rep
+ use        Global_variables__status_reserved_electricity_type as Global_variables__status_reserved_electricity_type
+ use        Global_variables__status_reserved_electricity_type__rep as Global_variables__status_reserved_electricity_type__rep
  use        Main__L_1 as Main__L_1
  use        Main__L_1___axiom as Main__L_1___axiom
  use        Power_grid_energy_stabilizer__init___axiom as Power_grid_energy_stabilizer__init___axiom
@@ -3742,14 +3750,14 @@ module Main__subprogram_def
       ;
       () (* While loop translating the Ada loop from main.adb:30 *)
       ;
-      (let temp___inv_222 [@mlw:proxy_symbol] [@introduced] = ((Global_variables__electricity_range__rep.to_rep({ Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__consumption_measured)) <= (Global_variables__electricity_range__rep.to_rep({ Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__supplied_measured))) in (
+      (let temp___inv_222 [@mlw:proxy_symbol] [@introduced] = (Boolean.andb(((Global_variables__electricity_range__rep.to_rep({ Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__consumption_measured)) <= (Global_variables__electricity_range__rep.to_rep({ Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__supplied_measured)))) (((Global_variables__status_reserved_electricity_type__rep.to_rep({ Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__status_reserved_electricity)) = (1 : int)))) in (
        [#"main.adb" 30 0 0] begin ensures {true} let _ = (let _ = () in (
         ()))
         in () end ))
       ;
       [#"main.adb" 30 0 0] while True do
        invariant { 
-        ([#"main.adb" 31 0 0] ( [@comment:      pragma Loop_Invariant (Status_System.Consumption_Measured <= Status_System.Supplied_Measured);                              ^ main.adb:31:30:VC_LOOP_INVARIANT] [@GP_Reason:VC_LOOP_INVARIANT] [@vc:annotation] [@GP_Shape:L_1_loop__pragargs__cmp] [@GP_Sloc:main.adb:31:30] [@GP_Id:1] ( [@GP_Pretty_Ada:2333] [@GP_Sloc:main.adb:31:30] ((Global_variables__electricity_range__rep.to_rep { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__consumption_measured) <= (Global_variables__electricity_range__rep.to_rep { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__supplied_measured)) ) ))
+        ([#"main.adb" 32 0 0] ( [@GP_Reason:VC_LOOP_INVARIANT] [@GP_Shape:L_1_loop__pragargs__and] [@vc:annotation] [@GP_Sloc:main.adb:32:30] [@comment:      pragma Loop_Invariant (Status_System.Consumption_Measured <= Status_System.Supplied_Measured                               ^ main.adb:32:30:VC_LOOP_INVARIANT] [@GP_Id:2] ( ( [@GP_Pretty_Ada:2333] [@GP_Sloc:main.adb:32:30] ((Global_variables__electricity_range__rep.to_rep { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__consumption_measured) <= (Global_variables__electricity_range__rep.to_rep { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__supplied_measured)) ) /\ ( [@GP_Pretty_Ada:2341] [@GP_Sloc:main.adb:33:34] ((Global_variables__status_reserved_electricity_type__rep.to_rep { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__status_reserved_electricity) = (1 : int)) ) ) ))
         }
        ( () (* Assume implicit invariants from the loop main.adb:30 *)
        ;
@@ -3759,21 +3767,21 @@ module Main__subprogram_def
        () (* Loop statements appearing after the loop invariant of loop main.adb:30 *)
        ;
        ();
-       ( [@GP_Sloc:main.adb:34:7] ([#"main.adb" 34 0 0] ()) );
-       ( [@GP_Sloc:main.adb:34:7] ([#"main.adb" 34 0 0] ( (Power_grid_energy_stabilizer__read_consumption___axiom.read_consumption(())) )) );
        ( [@GP_Sloc:main.adb:36:7] ([#"main.adb" 36 0 0] ()) );
-       ( [@GP_Sloc:main.adb:36:7] ([#"main.adb" 36 0 0] ( (Power_grid_energy_stabilizer__read_supply___axiom.read_supply(())) )) );
+       ( [@GP_Sloc:main.adb:36:7] ([#"main.adb" 36 0 0] ( ([#"main.adb" 36 0 0] ( [@GP_Reason:VC_PRECONDITION] [@GP_Sloc:main.adb:36:7] [@GP_Shape:L_1_loop__call_read_consumption] [@comment:      Read_Consumption;       ^ main.adb:36:7:VC_PRECONDITION] [@vc:annotation] [@GP_Id:0] (Power_grid_energy_stabilizer__read_consumption___axiom.read_consumption(())) )) )) );
        ( [@GP_Sloc:main.adb:38:7] ([#"main.adb" 38 0 0] ()) );
-       ( [@GP_Sloc:main.adb:38:7] ([#"main.adb" 38 0 0] ( (Power_grid_energy_stabilizer__energy_stabilizerg_system___axiom.energy_stabilizerg_system(())) )) );
+       ( [@GP_Sloc:main.adb:38:7] ([#"main.adb" 38 0 0] ( (Power_grid_energy_stabilizer__read_supply___axiom.read_supply(())) )) );
        ( [@GP_Sloc:main.adb:40:7] ([#"main.adb" 40 0 0] ()) );
-       ( [@GP_Sloc:main.adb:40:7] ([#"main.adb" 40 0 0] ( (Power_grid_energy_stabilizer__print_status___axiom.print_status(())) )) );
+       ( [@GP_Sloc:main.adb:40:7] ([#"main.adb" 40 0 0] ( (Power_grid_energy_stabilizer__energy_stabilizerg_system___axiom.energy_stabilizerg_system(())) )) );
        ( [@GP_Sloc:main.adb:42:7] ([#"main.adb" 42 0 0] ()) );
-       ( [@GP_Sloc:main.adb:42:7] ([#"main.adb" 42 0 0] ( ([#"main.adb" 42 0 0] ( [@GP_Reason:VC_PRECONDITION] [@vc:annotation] [@GP_Sloc:main.adb:42:7] [@comment:      Refill_Reserve;       ^ main.adb:42:7:VC_PRECONDITION] [@GP_Id:0] [@GP_Shape:L_1_loop__call_refill_reserve] (Power_grid_energy_stabilizer__refill_reserve___axiom.refill_reserve(())) )) )) );
+       ( [@GP_Sloc:main.adb:42:7] ([#"main.adb" 42 0 0] ( (Power_grid_energy_stabilizer__print_status___axiom.print_status(())) )) );
+       ( [@GP_Sloc:main.adb:44:7] ([#"main.adb" 44 0 0] ()) );
+       ( [@GP_Sloc:main.adb:44:7] ([#"main.adb" 44 0 0] ( ([#"main.adb" 44 0 0] ( [@GP_Reason:VC_PRECONDITION] [@vc:annotation] [@GP_Sloc:main.adb:44:7] [@comment:      Refill_Reserve;       ^ main.adb:44:7:VC_PRECONDITION] [@GP_Id:1] [@GP_Shape:L_1_loop__call_refill_reserve] (Power_grid_energy_stabilizer__refill_reserve___axiom.refill_reserve(())) )) )) );
        () (* Check for the exit condition and loop statements appearing before the loop invariant of loop main.adb:30 *)
        ;
        (if (False) then (
          raise Main__L_1.L_1));
-       (let temp___inv_222 [@mlw:proxy_symbol] [@introduced] = ((Global_variables__electricity_range__rep.to_rep({ Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__consumption_measured)) <= (Global_variables__electricity_range__rep.to_rep({ Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__supplied_measured))) in (
+       (let temp___inv_222 [@mlw:proxy_symbol] [@introduced] = (Boolean.andb(((Global_variables__electricity_range__rep.to_rep({ Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__consumption_measured)) <= (Global_variables__electricity_range__rep.to_rep({ Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__supplied_measured)))) (((Global_variables__status_reserved_electricity_type__rep.to_rep({ Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__status_reserved_electricity)) = (1 : int)))) in (
          begin ensures {true} let _ = (let _ = () in (
          ()))
          in () end ))

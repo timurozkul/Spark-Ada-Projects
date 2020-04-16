@@ -89,6 +89,7 @@ package body Power_Grid_Energy_Stabilizer is
             Status_System.Reserved_Measured := 0;
             -- The remainder of the needed ennergy will be bought from another company and added to the supply
             Status_System.Supplied_Measured := Status_System.Consumption_Measured;
+            Status_System.Status_Reserved_Electricity := Activated;
             AS_Put_Line("Supply increased to = Status_System.Supplied_Measured");
          end if;
         
@@ -137,6 +138,19 @@ package body Power_Grid_Energy_Stabilizer is
             when false => return "Not_Activated";
          end case;
    end Status_Electricity_System_To_String; 
+   
+   procedure Print_Reserve_levels is
+   begin
+      AS_Put_Line("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+      AS_Put_Line(" - After Refilling Reserves - ");
+      AS_Put_Line("");
+      AS_Put("Electricity remaining = ");
+      AS_Put(Status_System.Reserved_Measured);
+      AS_Put_Line(" watts");
+      AS_Put_Line("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+      AS_Put_Line("");
+     
+   end Print_Reserve_levels;
      
    procedure Refill_Reserve is
       -- Remaining_Supply is the remaining energy supply once the ennergy comsumption is subtracted.
@@ -179,20 +193,14 @@ package body Power_Grid_Energy_Stabilizer is
                 Print_Reserve_levels;
                end if;
       end if;
+      Status_System.Status_Reserved_Electricity := Not_Activated;
    end Refill_Reserve;
    
-   procedure Print_Reserve_levels is
-   begin
-      AS_Put_Line("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-      AS_Put_Line(" - After Refilling Reserves - ");
-      AS_Put_Line("");
-      AS_Put("Electricity remaining = ");
-      AS_Put(Status_System.Reserved_Measured);
-      AS_Put_Line(" watts");
-      AS_Put_Line("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-      AS_Put_Line("");
-     
-  end Print_Reserve_levels;
+ --  procedure Reset_Reserve_Statues is
+  -- begin
+      -- Every iteration of the loop inn main.adb the status of the battery is set to not active.
+    --  Status_System.Status_Reserved_Electricity := Not_Activated;
+   -- end Reset_Reserve_Statues;
    
 end Power_Grid_Energy_Stabilizer;
 	
