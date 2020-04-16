@@ -12,51 +12,13 @@
     }
   ],
   "flow": [
-    {
-      "file": "main.adb",
-      "line": 24,
-      "col": 4,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Main",
-        "sloc": [
-          {
-            "file": "main.ads",
-            "line": 14
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "how_proved": "flow"
-    },
-    {
-      "file": "main.adb",
-      "line": 23,
-      "col": 4,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Main",
-        "sloc": [
-          {
-            "file": "main.ads",
-            "line": 14
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "how_proved": "flow"
-    }
   ],
   "proof": [
     {
       "file": "main.adb",
-      "line": 43,
-      "col": 16,
-      "rule": "VC_RANGE_CHECK",
+      "line": 42,
+      "col": 7,
+      "rule": "VC_PRECONDITION",
       "severity": "info",
       "entity": {
         "name": "Main",
@@ -78,48 +40,15 @@
           },
           "transformations": {
           }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
         }
       ],
       "check_file": "main.adb",
-      "check_line": 43,
-      "check_col": 16,
+      "check_line": 42,
+      "check_col": 7,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
-          "count": 4,
+          "count": 1,
           "max_steps": 1,
           "max_time": 0.00000000000000E+00
         }
@@ -127,10 +56,10 @@
     },
     {
       "file": "main.adb",
-      "line": 30,
-      "col": 34,
+      "line": 31,
+      "col": 30,
       "rule": "VC_LOOP_INVARIANT_PRESERV",
-      "severity": "medium",
+      "severity": "info",
       "entity": {
         "name": "Main",
         "sloc": [
@@ -144,24 +73,8 @@
         {
           "proof_attempts": {
             "CVC4": {
-              "result": "Timeout",
-              "steps": 13157,
-              "time": 0
-            },
-            "CVC4_CE": {
-              "result": "Timeout",
-              "steps": 12362,
-              "time": 1
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Timeout",
-              "steps": 14543,
+              "result": "Valid",
+              "steps": 5,
               "time": 0
             }
           },
@@ -170,73 +83,23 @@
         }
       ],
       "check_file": "main.adb",
-      "check_line": 29,
+      "check_line": 31,
       "check_col": 30,
-      "cntexmp": {
-        "main.adb": {
-          "26": [
-            {
-              "name": "Status_System",
-              "value": "(Consumption_Measured => 0, Supplied_Measured => 0, Reserved_Measured => 0, Status_Reserved_Electricity => Activated)",
-              "kind": "variable"
-            }
-          ],
-          "28": [
-            {
-              "name": "Last",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Status_System",
-              "value": "(Consumption_Measured => 0, Supplied_Measured => 0, Reserved_Measured => 0, Status_Reserved_Electricity => Activated)",
-              "kind": "variable"
-            }
-          ],
-          "30": [
-            {
-              "name": "Status_System",
-              "value": "(Consumption_Measured => 0, Supplied_Measured => 0, Reserved_Measured => 0, Status_Reserved_Electricity => Activated)",
-              "kind": "variable"
-            }
-          ],
-          "35": [
-            {
-              "name": "Status_System",
-              "value": "(Consumption_Measured => 0, Supplied_Measured => 0, Reserved_Measured => 0, Status_Reserved_Electricity => Activated)",
-              "kind": "variable"
-            }
-          ],
-          "36": [
-            {
-              "name": "Last",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "39": [
-            {
-              "name": "Last",
-              "value": "1",
-              "kind": "variable"
-            },
-            {
-              "name": "User_Input",
-              "value": "(1 => 'z', others => 'z')",
-              "kind": "variable"
-            }
-          ]
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
         }
-      },
-      "msg_id": 0,
-      "how_proved": "prover"
+      }
     },
     {
       "file": "main.adb",
-      "line": 30,
-      "col": 34,
+      "line": 31,
+      "col": 30,
       "rule": "VC_LOOP_INVARIANT_INIT",
-      "severity": "medium",
+      "severity": "info",
       "entity": {
         "name": "Main",
         "sloc": [
@@ -250,24 +113,8 @@
         {
           "proof_attempts": {
             "CVC4": {
-              "result": "Unknown ()",
-              "steps": 25,
-              "time": 0
-            },
-            "CVC4_CE": {
-              "result": "Unknown (unknown)",
-              "steps": 38,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Unknown ()",
-              "steps": 110,
+              "result": "Valid",
+              "steps": 20,
               "time": 0
             }
           },
@@ -276,10 +123,16 @@
         }
       ],
       "check_file": "main.adb",
-      "check_line": 29,
+      "check_line": 31,
       "check_col": 30,
-      "msg_id": 1,
-      "how_proved": "prover"
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
     }
   ],
   "assumptions": [
@@ -288,47 +141,11 @@
         {
           "predicate": "CLAIM_EFFECTS",
           "arg": {
-            "name": "AS_Io_Wrapper.AS_Get_Line",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 76
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 59
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put_Line",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 83
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
             "name": "Power_Grid_Energy_Stabilizer.Energy_Stabilizerg_System",
             "sloc": [
               {
                 "file": "power_grid_energy_stabilizer.ads",
-                "line": 56
+                "line": 62
               }
             ]
           }
@@ -348,23 +165,11 @@
         {
           "predicate": "CLAIM_EFFECTS",
           "arg": {
-            "name": "Power_Grid_Energy_Stabilizer.Is_Critical",
-            "sloc": [
-              {
-                "file": "power_grid_energy_stabilizer.ads",
-                "line": 40
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
             "name": "Power_Grid_Energy_Stabilizer.Print_Status",
             "sloc": [
               {
                 "file": "power_grid_energy_stabilizer.ads",
-                "line": 64
+                "line": 69
               }
             ]
           }
@@ -376,7 +181,7 @@
             "sloc": [
               {
                 "file": "power_grid_energy_stabilizer.ads",
-                "line": 36
+                "line": 40
               }
             ]
           }
@@ -388,7 +193,7 @@
             "sloc": [
               {
                 "file": "power_grid_energy_stabilizer.ads",
-                "line": 44
+                "line": 49
               }
             ]
           }
@@ -400,7 +205,7 @@
             "sloc": [
               {
                 "file": "power_grid_energy_stabilizer.ads",
-                "line": 50
+                "line": 56
               }
             ]
           }
@@ -412,7 +217,7 @@
             "sloc": [
               {
                 "file": "power_grid_energy_stabilizer.ads",
-                "line": 72
+                "line": 83
               }
             ]
           }
@@ -430,17 +235,237 @@
           ]
         }
       }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Energy_Stabilizerg_System",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 62
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Init",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 32
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Refill_Reserve",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 83
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Energy_Stabilizerg_System",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 62
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Init",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 32
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Print_Status",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 69
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Print_Welcome",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 40
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Read_Consumption",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 49
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Read_Supply",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 56
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Refill_Reserve",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 83
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Energy_Stabilizerg_System",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 62
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Init",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 32
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Print_Status",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 69
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Print_Welcome",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 40
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Read_Consumption",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 49
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Read_Supply",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 56
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Refill_Reserve",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 83
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "Main",
+          "sloc": [
+            {
+              "file": "main.ads",
+              "line": 14
+            }
+          ]
+        }
+      }
     }
   ],
   "timings": {
-    "marking": 2.07699998281896E-03,
-    "globals (basic)": 6.32600020617247E-03,
-    "globals/properties (advanced)": 1.69050004333258E-02,
-    "flow analysis": 2.23329998552799E-02,
-    "codepeer results": 7.99999997980194E-06,
-    "init_why_sections": 7.94999999925494E-04,
-    "translation of standard": 7.54699995741248E-03,
-    "translation of compilation unit": 1.54790002852678E-02,
-    "proof": 2.26669502258301E+00
+    "marking": 2.38900003023446E-03,
+    "globals (basic)": 7.45599996298552E-03,
+    "globals/properties (advanced)": 1.71039998531342E-02,
+    "flow analysis": 9.88900009542704E-03,
+    "codepeer results": 9.00000031833770E-06,
+    "init_why_sections": 1.17299996782094E-03,
+    "translation of standard": 5.72599982842803E-03,
+    "translation of compilation unit": 8.72499961405993E-03,
+    "proof": 9.04151022434235E-01
   }
 }

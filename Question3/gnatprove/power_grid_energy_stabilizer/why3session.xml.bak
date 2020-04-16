@@ -25,14 +25,28 @@
   <goal name="VC def.2" expl="precondition">
   </goal>
   <goal name="VC def.3" expl="postcondition">
+  <proof prover="0" obsolete="true"><result status="unknown" steps="163"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="175"/></proof>
   </goal>
-  <goal name="VC def.4" expl="precondition">
+  <goal name="VC def.4" expl="postcondition">
   </goal>
-  <goal name="VC def.1" expl="precondition">
+  <goal name="VC def.5" expl="postcondition">
   </goal>
   <goal name="VC def.6" expl="postcondition">
-  <proof prover="0"><result status="unknown" steps="163"/></proof>
-  <proof prover="1"><result status="unknown" steps="175"/></proof>
+  </goal>
+  <goal name="VC def.7" expl="postcondition">
+  </goal>
+  <goal name="VC def.8" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.9" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.10" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.11" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
   </goal>
  </transf>
  </goal>
@@ -59,16 +73,6 @@
  </transf>
  </goal>
 </theory>
-<theory name="Power_grid_energy_stabilizer__is_critical__subprogram_def">
- <goal name="VC def" expl="VC for def">
- <transf name="split_goal_wp_conj" >
-  <goal name="VC def.0" expl="postcondition">
-  </goal>
-  <goal name="VC def.1" expl="postcondition">
-  </goal>
- </transf>
- </goal>
-</theory>
 <theory name="Power_grid_energy_stabilizer__read_consumption__subprogram_def">
  <goal name="VC def" expl="VC for def">
  <transf name="split_goal_wp_conj" >
@@ -82,23 +86,26 @@
   </goal>
   <goal name="VC def.4" expl="postcondition">
   </goal>
-  <goal name="VC def.5" expl="postcondition">
+  <goal name="VC def.5" expl="precondition">
   </goal>
-  <goal name="VC def.6" expl="loop invariant init" proved="true">
-  <proof prover="0"><result status="valid" steps="5"/></proof>
+  <goal name="VC def.6" expl="precondition">
   </goal>
-  <goal name="VC def.7" expl="loop invariant init" proved="true">
-  <proof prover="0"><result status="valid" steps="5"/></proof>
+  <goal name="VC def.7" expl="precondition">
   </goal>
   <goal name="VC def.8" expl="precondition">
   </goal>
-  <goal name="VC def.9" expl="precondition">
+  <goal name="VC def.9" expl="postcondition">
   </goal>
-  <goal name="VC def.10" expl="precondition">
+  <goal name="VC def.10" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="19"/></proof>
   </goal>
-  <goal name="VC def.11" expl="precondition">
+  <goal name="VC def.11" expl="postcondition">
   </goal>
   <goal name="VC def.12" expl="postcondition">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.13" expl="postcondition">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
   </goal>
   <goal name="VC def.13" expl="loop invariant preservation">
   <proof prover="0"><result status="unknown" steps="25"/></proof>
@@ -106,14 +113,13 @@
   </goal>
   <goal name="VC def.14" expl="loop invariant preservation">
   <proof prover="0"><result status="unknown" steps="25"/></proof>
-  <proof prover="1"><result status="unknown" steps="38"/></proof>
+  <proof prover="1"><result status="unknown" steps="39"/></proof>
   </goal>
-  <goal name="VC def.15" expl="postcondition">
+  <goal name="VC def.6" expl="loop invariant init">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
   </goal>
-  <goal name="VC def.16" expl="precondition" proved="true">
-  <proof prover="0"><result status="valid" steps="19"/></proof>
-  </goal>
-  <goal name="VC def.17" expl="postcondition">
+  <goal name="VC def.7" expl="loop invariant init">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
   </goal>
  </transf>
  </goal>
@@ -131,23 +137,27 @@
   </goal>
   <goal name="VC def.4" expl="postcondition">
   </goal>
-  <goal name="VC def.5" expl="postcondition">
+  <goal name="VC def.5" expl="precondition">
   </goal>
-  <goal name="VC def.6" expl="loop invariant init" proved="true">
-  <proof prover="0"><result status="valid" steps="5"/></proof>
+  <goal name="VC def.6" expl="precondition">
   </goal>
-  <goal name="VC def.7" expl="loop invariant init" proved="true">
-  <proof prover="0"><result status="valid" steps="5"/></proof>
+  <goal name="VC def.7" expl="precondition">
   </goal>
   <goal name="VC def.8" expl="precondition">
   </goal>
-  <goal name="VC def.9" expl="precondition">
+  <goal name="VC def.9" expl="postcondition">
   </goal>
-  <goal name="VC def.10" expl="precondition">
+  <goal name="VC def.10" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="19"/></proof>
   </goal>
-  <goal name="VC def.11" expl="precondition">
+  <goal name="VC def.11" expl="postcondition">
   </goal>
   <goal name="VC def.12" expl="postcondition">
+  <proof prover="0"><result status="valid" steps="62"/></proof>
+  </goal>
+  <goal name="VC def.13" expl="postcondition">
+  <proof prover="0"><result status="valid" steps="62"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="104"/></proof>
   </goal>
   <goal name="VC def.13" expl="loop invariant preservation">
   <proof prover="0"><result status="unknown" steps="25"/></proof>
@@ -157,12 +167,11 @@
   <proof prover="0"><result status="unknown" steps="25"/></proof>
   <proof prover="1" obsolete="true"><result status="unknown" steps="39"/></proof>
   </goal>
-  <goal name="VC def.15" expl="postcondition">
+  <goal name="VC def.6" expl="loop invariant init">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
   </goal>
-  <goal name="VC def.16" expl="precondition" proved="true">
-  <proof prover="0"><result status="valid" steps="19"/></proof>
-  </goal>
-  <goal name="VC def.17" expl="postcondition">
+  <goal name="VC def.7" expl="loop invariant init">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
   </goal>
  </transf>
  </goal>
@@ -182,7 +191,9 @@
   <goal name="VC def.4" expl="precondition" proved="true">
   <proof prover="0"><result status="valid" steps="78"/></proof>
   </goal>
-  <goal name="VC def.5" expl="precondition">
+  <goal name="VC def.5" expl="postcondition">
+  <proof prover="0" obsolete="true"><result status="unknown" steps="261"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="383"/></proof>
   </goal>
   <goal name="VC def.6" expl="precondition">
   </goal>
@@ -194,23 +205,29 @@
   </goal>
   <goal name="VC def.10" expl="precondition">
   </goal>
-  <goal name="VC def.11" expl="postcondition">
-  <proof prover="0" obsolete="true"><result status="unknown" steps="156"/></proof>
-  <proof prover="1" obsolete="true"><result status="unknown" steps="184"/></proof>
+  <goal name="VC def.11" expl="precondition">
   </goal>
   <goal name="VC def.12" expl="postcondition">
   </goal>
-  <goal name="VC def.13" expl="precondition">
+  <goal name="VC def.13" expl="postcondition">
+  <proof prover="0" obsolete="true"><result status="valid" steps="190"/></proof>
   </goal>
   <goal name="VC def.14" expl="postcondition">
   </goal>
-  <goal name="VC def.15" expl="postcondition">
-  </goal>
   <goal name="VC def.15" expl="precondition">
   </goal>
-  <goal name="VC def.17" expl="postcondition">
-  <proof prover="0"><result status="unknown" steps="220"/></proof>
-  <proof prover="1"><result status="unknown" steps="287"/></proof>
+  <goal name="VC def.16" expl="postcondition">
+  <proof prover="0" obsolete="true"><result status="unknown" steps="156"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="184"/></proof>
+  </goal>
+  <goal name="VC def.17" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" steps="93"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="330"/></proof>
+  </goal>
+  <goal name="VC def.13" expl="postcondition">
+  </goal>
+  <goal name="VC def.19" expl="postcondition">
+  <proof prover="0"><result status="valid" steps="206"/></proof>
   </goal>
  </transf>
  </goal>
@@ -266,6 +283,10 @@
   </goal>
   <goal name="VC def.23" expl="postcondition">
   </goal>
+  <goal name="VC def.24" expl="postcondition">
+  <proof prover="0"><result status="unknown" steps="159"/></proof>
+  <proof prover="1"><result status="unknown" steps="211"/></proof>
+  </goal>
  </transf>
  </goal>
 </theory>
@@ -275,6 +296,38 @@
   <goal name="VC def.0" expl="postcondition">
   </goal>
   <goal name="VC def.1" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Power_grid_energy_stabilizer__print_reserve_levels__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="postcondition">
+  </goal>
+  <goal name="VC def.1" expl="precondition">
+  </goal>
+  <goal name="VC def.2" expl="precondition">
+  </goal>
+  <goal name="VC def.3" expl="precondition">
+  </goal>
+  <goal name="VC def.4" expl="precondition">
+  </goal>
+  <goal name="VC def.5" expl="precondition">
+  </goal>
+  <goal name="VC def.6" expl="precondition">
+  </goal>
+  <goal name="VC def.7" expl="precondition">
+  </goal>
+  <goal name="VC def.8" expl="precondition">
+  </goal>
+  <goal name="VC def.9" expl="postcondition">
+  </goal>
+  <goal name="VC def.10" expl="postcondition">
+  </goal>
+  <goal name="VC def.11" expl="postcondition">
+  <proof prover="0"><result status="valid" steps="20"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="87"/></proof>
   </goal>
  </transf>
  </goal>
@@ -300,6 +353,7 @@
   <proof prover="1" obsolete="true"><result status="unknown" steps="133"/></proof>
   </goal>
   <goal name="VC def.6" expl="precondition">
+  <proof prover="0" obsolete="true"><result status="valid" steps="211"/></proof>
   </goal>
   <goal name="VC def.7" expl="precondition">
   </goal>
@@ -328,45 +382,44 @@
   <goal name="VC def.17" expl="postcondition">
   </goal>
   <goal name="VC def.18" expl="precondition">
+  <proof prover="0" obsolete="true"><result status="valid" steps="72"/></proof>
   </goal>
   <goal name="VC def.19" expl="postcondition">
   </goal>
-  <goal name="VC def.19" expl="precondition">
+  <goal name="VC def.20" expl="postcondition">
+  <proof prover="0" obsolete="true"><result status="unknown" steps="242"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="268"/></proof>
   </goal>
-  <goal name="VC def.21" expl="postcondition">
-  <proof prover="0"><result status="unknown" steps="275"/></proof>
-  <proof prover="1"><result status="timeout" steps="17761"/></proof>
+  <goal name="VC def.21" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" steps="21"/></proof>
+  <proof prover="1" obsolete="true"><result status="timeout" steps="15349"/></proof>
   </goal>
- </transf>
- </goal>
-</theory>
-<theory name="Power_grid_energy_stabilizer__print_reserve_levels__subprogram_def">
- <goal name="VC def" expl="VC for def">
- <transf name="split_goal_wp_conj" >
-  <goal name="VC def.0" expl="postcondition">
-  </goal>
-  <goal name="VC def.1" expl="precondition">
-  </goal>
-  <goal name="VC def.2" expl="precondition">
-  </goal>
-  <goal name="VC def.3" expl="precondition">
-  </goal>
-  <goal name="VC def.4" expl="precondition">
-  </goal>
-  <goal name="VC def.5" expl="precondition">
+  <goal name="VC def.21" expl="precondition">
+  <proof prover="0"><result status="valid" steps="204"/></proof>
   </goal>
   <goal name="VC def.6" expl="precondition">
+  <proof prover="0"><result status="valid" steps="72"/></proof>
   </goal>
-  <goal name="VC def.7" expl="precondition">
+  <goal name="VC def.24" expl="precondition">
+  <proof prover="0"><result status="valid" steps="204"/></proof>
   </goal>
-  <goal name="VC def.8" expl="precondition">
-  </goal>
-  <goal name="VC def.9" expl="postcondition">
+  <goal name="VC def.9" expl="precondition">
+  <proof prover="0"><result status="valid" steps="72"/></proof>
   </goal>
  </transf>
  </goal>
 </theory>
 <theory name="Power_grid_energy_stabilizer__is_safe__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="postcondition">
+  </goal>
+  <goal name="VC def.1" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Power_grid_energy_stabilizer__is_critical__subprogram_def">
  <goal name="VC def" expl="VC for def">
  <transf name="split_goal_wp_conj" >
   <goal name="VC def.0" expl="postcondition">

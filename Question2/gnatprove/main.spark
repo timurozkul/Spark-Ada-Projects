@@ -15,7 +15,7 @@
     {
       "file": "main.adb",
       "line": 11,
-      "col": 4,
+      "col": 3,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -34,7 +34,7 @@
     {
       "file": "main.adb",
       "line": 11,
-      "col": 9,
+      "col": 8,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -53,7 +53,7 @@
     {
       "file": "main.adb",
       "line": 11,
-      "col": 12,
+      "col": 11,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -91,7 +91,7 @@
     {
       "file": "main.adb",
       "line": 10,
-      "col": 4,
+      "col": 3,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -110,7 +110,7 @@
     {
       "file": "main.adb",
       "line": 10,
-      "col": 7,
+      "col": 6,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -125,154 +125,6 @@
       "check_tree": {
       },
       "how_proved": "flow"
-    }
-  ],
-  "proof": [
-    {
-      "file": "main.adb",
-      "line": 34,
-      "col": 7,
-      "rule": "VC_PRECONDITION",
-      "severity": "info",
-      "entity": {
-        "name": "Main",
-        "sloc": [
-          {
-            "file": "main.ads",
-            "line": 3
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "main.adb",
-      "check_line": 34,
-      "check_col": 7,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 4,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "main.adb",
-      "line": 47,
-      "col": 17,
-      "rule": "VC_RANGE_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Main",
-        "sloc": [
-          {
-            "file": "main.ads",
-            "line": 3
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "main.adb",
-      "check_line": 47,
-      "check_col": 17,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 4,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
     }
   ],
   "assumptions": [
@@ -387,261 +239,12 @@
           ]
         }
       }
-    },
-    {
-      "assumptions": [
-        {
-          "predicate": "CLAIM_POST",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Init_Standard_Input",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 25
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_POST",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Init_Standard_Output",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 32
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_POST",
-          "arg": {
-            "name": "Nkires.NkiresProc",
-            "sloc": [
-              {
-                "file": "nkires.ads",
-                "line": 6
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Get",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 106
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Get_Line",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 76
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Init_Standard_Input",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 25
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Init_Standard_Output",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 32
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 59
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put_Line",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 83
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put_Line",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 119
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Nkires.NkiresProc",
-            "sloc": [
-              {
-                "file": "nkires.ads",
-                "line": 6
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Get",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 106
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Get_Line",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 76
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Init_Standard_Input",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 25
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Init_Standard_Output",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 32
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 59
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put_Line",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 83
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put_Line",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 119
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "Nkires.NkiresProc",
-            "sloc": [
-              {
-                "file": "nkires.ads",
-                "line": 6
-              }
-            ]
-          }
-        }
-      ],
-      "claim": {
-        "predicate": "CLAIM_AORTE",
-        "arg": {
-          "name": "Main",
-          "sloc": [
-            {
-              "file": "main.ads",
-              "line": 3
-            }
-          ]
-        }
-      }
     }
   ],
   "timings": {
-    "marking": 2.12899991311133E-03,
-    "globals (basic)": 6.05499977245927E-03,
-    "globals/properties (advanced)": 1.46500002592802E-02,
-    "flow analysis": 1.22250001877546E-02,
-    "codepeer results": 7.99999997980194E-06,
-    "init_why_sections": 7.92999984696507E-04,
-    "translation of standard": 4.80399979278445E-03,
-    "translation of compilation unit": 2.22679991275072E-02,
-    "proof": 1.16299295425415E+00
+    "marking": 2.14500003494322E-03,
+    "globals (basic)": 6.18099980056286E-03,
+    "globals/properties (advanced)": 1.01429997012019E-02,
+    "flow analysis": 7.99200031906366E-03
   }
 }

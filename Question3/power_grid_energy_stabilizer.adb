@@ -1,20 +1,29 @@
 pragma SPARK_Mode (On);
 
-with AS_IO_Wrapper;  use AS_IO_Wrapper; 
+with AS_IO_Wrapper;  
+use AS_IO_Wrapper; 
 
 
 package body Power_Grid_Energy_Stabilizer is
    
+   -- The Init procedure is used to initialise the program. It sets the Input/Ouput library
+   -- and sets the global veriables to their starting values.
    procedure Init is
    begin
       AS_Init_Standard_Input; 
       AS_Init_Standard_Output;
-      Status_System := (Consumption_Measured  => 0,
-                        Supplied_Measured => 0,
-                        Reserved_Measured => Maximum_Reserved_Electricity_Possible,
-			Status_Reserved_Electricity => Not_Activated);
+      Status_System.Consumption_Measured := 0;
+      Status_System.Supplied_Measured := 0;
+      Status_System.Reserved_Measured := Maximum_Reserved_Electricity_Possible;
+      Status_System.Status_Reserved_Electricity := Not_Activated;
+      
+     -- Status_System := (Consumption_Measured := 0,
+       --                 Supplied_Measured := 0,
+         --               Reserved_Measured => Maximum_Reserved_Electricity_Possible,
+		-- 	Status_Reserved_Electricity => Not_Activated);
    end Init;
    
+   -- This is simply a welcome print out
    procedure Print_Welcome is
    begin
       AS_Put_Line("=============================================");
@@ -24,21 +33,12 @@ package body Power_Grid_Energy_Stabilizer is
       AS_Put_Line("=============================================");
       AS_Put_Line("");
    end Print_Welcome;
-   
-   function Is_Critical return Boolean is
-      begin
-         if Integer(Status_System.Reserved_Measured) <= Critical_Reserve_level 
-	      then return Status_System.Status_Reserved_Electricity = Activated;
-              else return Status_System.Status_Reserved_Electricity = Not_Activated;
-         end if;
-      end Is_Critical;
   
   procedure Read_Consumption is
-      Electricity: Integer := 0;
+      Electricity: Integer;
    begin
       AS_Put_Line("Please type in current electricity consumption as read by the sensor (in Watts)");
       loop
-         pragma Loop_Invariant (Electricity in 0 .. Maximum_Reserved_Electricity_Possible);
 	 AS_Get(Electricity,"Please type in an integer");
 	 exit when (Electricity >=0) and (Electricity <= Maximum_Reserved_Electricity_Possible);
 	 AS_Put("Please type in a value between 0 and ");
@@ -49,11 +49,10 @@ package body Power_Grid_Energy_Stabilizer is
    end Read_Consumption;
 
     procedure Read_Supply is
-      Electricity: Integer := 0;
+      Electricity: Integer;
    begin
       AS_Put_Line("Please type in current electricity supplied as read by the sensor (in Watts)");
       loop
-         pragma Loop_Invariant (Electricity in 0 .. Maximum_Reserved_Electricity_Possible);
 	 AS_Get(Electricity,"Please type in an integer: ");
 	 exit when (Electricity >=0) and (Electricity <= Maximum_Reserved_Electricity_Possible);
 	 AS_Put("Please type in a value between 0 and ");
@@ -66,13 +65,14 @@ package body Power_Grid_Energy_Stabilizer is
    procedure Energy_Stabilizerg_System is
       Electricity_Required: Integer;
    begin
-      if Integer(Status_System.Consumption_Measured) > Integer(Status_System.Supplied_Measured)
+    if Integer(Status_System.Consumption_Measured) > Integer(Status_System.Supplied_Measured)
       then 
          Electricity_Required := Integer(Status_System.Consumption_Measured) - Integer(Status_System.Supplied_Measured);
-         if Electricity_Required <= Status_System.Reserved_Measured AND Status_System.Reserved_Measured > 0
+         if Electricity_Required <= Status_System.Reserved_Measured 
            then
             Status_System.Status_Reserved_Electricity := Activated;
             Status_System.Reserved_Measured := Status_System.Reserved_Measured - Electricity_Required;
+            Status_System.Supplied_Measured := Status_System.Consumption_Measured;
            else 
             AS_Put_Line("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             AS_Put_Line("");
@@ -82,9 +82,10 @@ package body Power_Grid_Energy_Stabilizer is
             AS_Put_Line("Automatic purchase of energy from non renewable energy company");
             Status_System.Reserved_Measured := 0;
             Status_System.Supplied_Measured := Status_System.Consumption_Measured;
+            Status_System.Status_Reserved_Electricity := Not_Activated;
             AS_Put_Line("Supply increased to = Status_System.Supplied_Measured");
          end if;
-      else Status_System.Status_Reserved_Electricity := Not_Activated;
+        
       end if;
    end Energy_Stabilizerg_System;
    
@@ -160,12 +161,12 @@ package body Power_Grid_Energy_Stabilizer is
             AS_Put_Line("");
                if User_Input(1 .. 1) = "y"
                then
-                  -- Fill the battery from non renewable sources
-                Status_System.Reserved_Measured := Critical_Reserve_level;
+                -- Fill the battery from non renewable sources back above critical reserve level
+                Status_System.Reserved_Measured := Critical_Reserve_level + 1; 
                 Print_Reserve_levels;
                end if;
       end if;
-      
+       Status_System.Supplied_Measured := Status_System.Consumption_Measured;
    end Refill_Reserve;
    
    -- This procedure prints the reserve levels after refilling either from its own supply leftover or 
@@ -180,6 +181,7 @@ package body Power_Grid_Energy_Stabilizer is
       AS_Put_Line(" watts");
       AS_Put_Line("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
       AS_Put_Line("");
+     
   end Print_Reserve_levels;
 
     

@@ -11,7 +11,7 @@ RN
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U main%b		main.adb		12dd0291 NE OO SU
+U main%b		main.adb		1f4bbfa0 NE OO SU
 W as_io_wrapper%s	as_io_wrapper.adb	as_io_wrapper.ali
 W nkires%s		nkires.adb		nkires.ali
 
@@ -28,8 +28,8 @@ D as_io_wrapper.ads	20200214112854 000fc6dc as_io_wrapper%s
 D interfac.ads		20190518041254 5ab55268 interfaces%s
 D i-cstrea.ads		20190518041254 e53d8b8e interfaces.c_streams%s
 D main.ads		20200224161800 cd1c0576 main%s
-D main.adb		20200313113718 50bf0560 main%b
-D nkires.ads		20200313113921 8f71c45b nkires%s
+D main.adb		20200413154510 5d29b851 main%b
+D nkires.ads		20200413155444 8f71c45b nkires%s
 D spark.ads		20200214112854 86380d85 spark%s
 D spark-text_io.ads	20200214112854 3f556f64 spark.text_io%s
 D system.ads		20190518041255 085b6ffb system%s
@@ -57,23 +57,23 @@ G r c none [main standard 3 11 none] [as_put_line as_io_wrapper 119 14 none]
 G r c none [main standard 3 11 none] [as_get_line as_io_wrapper 76 14 none]
 X 8 as_io_wrapper.ads
 21K9*AS_Io_Wrapper 124e18 12|3w6 4r5
-25U14*AS_Init_Standard_Input 12|16s4
-32U14*AS_Init_Standard_Output 12|15s4
-59U14*AS_Put 12|20s10 27s10 36s6 38s6 42s9
-76U14*AS_Get_Line 12|43s9
-83U14*AS_Put_Line 12|18s7 23s9 30s9 45s9
-106U14*AS_Get 12|21s10 28s10
-119U14*AS_Put_Line 12|37s6 39s7
+25U14*AS_Init_Standard_Input 12|19s4
+32U14*AS_Init_Standard_Output 12|18s4
+59U14*AS_Put 12|25s10 33s10 43s7 45s7 49s9
+76U14*AS_Get_Line 12|50s9
+83U14*AS_Put_Line 12|22s7 29s9 37s9 52s9
+106U14*AS_Get 12|26s10 34s10
+119U14*AS_Put_Line 12|44s7 46s7
 X 11 main.ads
-3U11*Main 12|9b11 67l5 67t9
+3U11*Main 12|11b11 57l5 57t9
 X 12 main.adb
-10i4 N{integer} 28m17 29r19 34r18
-10i7 K{integer} 21m17 22r19 34r21
-11i4 Res{integer} 34m27 39r19
-11i9 I{integer} 34m24 37r18
-11i12 Last{integer} 43m33 44r19
-12a3 User_Input{string} 43m21 47r17
+13i3 N{integer} 34m17 36r19 41r18
+13i6 K{integer} 26m17 28r19 41r21
+14i3 Res{integer} 41m27 46r19
+14i8 I{integer} 41m24 44r19
+14i11 Last{integer} 50m33 51r19
+15a3 User_Input{string} 50m21 54r17
 X 13 nkires.ads
-2K9*Nkires 12|5w6 6r5 13|11e11
-6U14*NkiresProc 12|34s7
+2K9*Nkires 12|5w6 6r5 13|17e11
+6U14*NkiresProc 12|41s7
 

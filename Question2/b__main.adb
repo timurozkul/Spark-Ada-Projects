@@ -222,14 +222,14 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   /Users/timurozkul/criticalhighintegritysystems/timur/nkires.o
-   --   /Users/timurozkul/criticalhighintegritysystems/timur/spark.o
-   --   /Users/timurozkul/criticalhighintegritysystems/timur/spark-text_io.o
-   --   /Users/timurozkul/criticalhighintegritysystems/timur/spark-text_io-integer_io.o
-   --   /Users/timurozkul/criticalhighintegritysystems/timur/as_io_wrapper.o
-   --   /Users/timurozkul/criticalhighintegritysystems/timur/main.o
-   --   -L/Users/timurozkul/criticalhighintegritysystems/timur/
-   --   -L/Users/timurozkul/criticalhighintegritysystems/timur/
+   --   /Users/timurozkul/Documents/Repo/Code/SparkAda/Question2/nkires.o
+   --   /Users/timurozkul/Documents/Repo/Code/SparkAda/Question2/spark.o
+   --   /Users/timurozkul/Documents/Repo/Code/SparkAda/Question2/spark-text_io.o
+   --   /Users/timurozkul/Documents/Repo/Code/SparkAda/Question2/spark-text_io-integer_io.o
+   --   /Users/timurozkul/Documents/Repo/Code/SparkAda/Question2/as_io_wrapper.o
+   --   /Users/timurozkul/Documents/Repo/Code/SparkAda/Question2/main.o
+   --   -L/Users/timurozkul/Documents/Repo/Code/SparkAda/Question2/
+   --   -L/Users/timurozkul/Documents/Repo/Code/SparkAda/Question2/
    --   -L/users/timurozkul/opt/gps/lib/gcc/x86_64-apple-darwin17.7.0/8.3.1/adalib/
    --   -static
    --   -lgnat

@@ -1,8 +1,8 @@
-20200313113947
+20200413155550
 -c
 -x
 ada
 -gnatA
 -gnatwa
 -gnatc
--gnates=/Users/timurozkul/criticalhighintegritysystems/timur/gnatprove/8fb7b3ae.tmp
+-gnates=/Users/timurozkul/Documents/Repo/Code/SparkAda/Question2/gnatprove/0f7b7191.tmp

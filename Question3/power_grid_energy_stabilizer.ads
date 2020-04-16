@@ -31,55 +31,64 @@ package Power_Grid_Energy_Stabilizer is
   
    procedure Init with
      Global => (Output => (Standard_Output,Standard_Input,Status_System)),
-     Depends => ((Standard_Output,Standard_Input,Status_System) => null);
+     Depends => ((Standard_Output,Standard_Input,Status_System) => null),
+     Post => ((Status_System.Consumption_Measured = 0) AND
+     (Status_System.Supplied_Measured = 0) AND
+     (Status_System.Reserved_Measured = Maximum_Reserved_Electricity_Possible) AND
+     (Status_System.Status_Reserved_Electricity = Not_Activated));
    
     procedure Print_Welcome with
      Global => (In_Out => Standard_Output),
      Depends => (Standard_Output => Standard_Output);
- 
-   function Is_Critical return Boolean with
-     Global => (Input => Status_System);
-     --Depends => (Status_System => Status_System);
+   
+   -- function Is_Safe return Boolean is
+   --   (if Integer(Status_System.Reserved_Measured) > Critical_Reserve_level 
+	--      then Status_System.Status_Reserved_Electricity = Activated
+   --           else Status_System.Status_Reserved_Electricity = Not_Activated);
    
    procedure Read_Consumption with
      Global => (In_Out => (Standard_Output, Standard_Input,Status_System)),
      Depends => (Standard_Output => (Standard_Output, Standard_Input),
                  Standard_Input  => Standard_Input,
-		 Status_System   => (Status_System, Standard_Input));
+                 Status_System   => (Status_System, Standard_Input));
+   
    
     procedure Read_Supply with
      Global => (In_Out => (Standard_Output, Standard_Input,Status_System)),
      Depends => (Standard_Output => (Standard_Output, Standard_Input),
 		 Standard_Input  => Standard_Input,
-		 Status_System   => (Status_System, Standard_Input));
+                 Status_System   => (Status_System, Standard_Input));
    
-    procedure Energy_Stabilizerg_System  with
+   procedure Energy_Stabilizerg_System  with
      Global => (In_Out => (Status_System, Standard_Output)),              
      Depends => (Status_System => (Status_System),
-                 Standard_Output => (Standard_Output, Status_System));
-     --Post => (Is_Safe);
-   
+                 Standard_Output => (Standard_Output, Status_System)),
+     Post => (Status_System.Consumption_Measured <= Status_System.Supplied_Measured); 
    
    -- Print Status prints out the status of the system on console
    procedure Print_Status with
      Global => (In_Out => (Standard_Output),
                 Input => Status_System),
      Depends => (Standard_Output => ( Standard_Output,Status_System));
+    -- Post => (Status_System.Consumption_Measured <= Status_System.Supplied_Measured);
    
     function Status_Electricity_System_To_String return String;
-    --Global => (Input => Status_System);
-
-   procedure Refill_Reserve with
-     Global => (In_Out => (Standard_Input, Standard_Output, Status_System)),
-     Depends => (Status_System => (Status_System, Standard_Input),
-                 Standard_Input => (Standard_Input, Status_System),
-                 Standard_Output => (Standard_Output, Standard_Input, Status_System));
-     --Post => (Is_Safe);
+   -- Global => (Input => Status_System);
    
    procedure Print_Reserve_levels with
      Global => (In_Out => Standard_Output,
                 Input => Status_System),
      Depends => (Standard_Output => (Standard_Output, Status_System));
+   
+   procedure Refill_Reserve with
+     Global => (In_Out => (Standard_Input, Standard_Output, Status_System)),
+     Depends => (Status_System => (Status_System, Standard_Input),
+                 Standard_Input => (Standard_Input, Status_System),
+                 Standard_Output => (Standard_Output, Standard_Input, Status_System)),
+     Pre => (Status_System.Consumption_Measured <= Status_System.Supplied_Measured),
+     Post => (Status_System.Consumption_Measured <= Status_System.Supplied_Measured);
+   
+   
    
 end  Power_Grid_Energy_Stabilizer;
 

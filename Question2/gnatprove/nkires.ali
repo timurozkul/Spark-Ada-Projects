@@ -16,17 +16,17 @@ U nkires%b		nkires.adb		1728bfbc OO PK
 
 U nkires%s		nkires.ads		8f71c45b OO PK
 
-D nkires.ads		20200313113921 8f71c45b nkires%s
-D nkires.adb		20200313113527 98597be7 nkires%b
+D nkires.ads		20200413155444 8f71c45b nkires%s
+D nkires.adb		20200413155450 98597be7 nkires%b
 D system.ads		20190518041255 085b6ffb system%s
 G a Z
 X 1 nkires.ads
-2K9*Nkires 11l5 11e11 2|4b14 28l5 28t11
-6U14*NkiresProc 6>25 6>28 6<43 6<46 2|14b14 25l8 25t18
-6i25 N{integer} 7r34 7r43 8r19 9r20 9r36 2|14b26 20r59 20r68 23r27
-6i28 K{integer} 7r31 8r38 9r24 2|14b29 20r43 22r26
-6i43 I{integer} 7r38 9r40 2|14b44 17m7 20r39 20r49 21m13 21r18 23r23
-6i46 Res{integer} 7r23 9r28 2|14b47 18m7 20r33 22m13 22r20
+2K9*Nkires 17l5 17e11 2|4b14 27l5 27t11
+6U14*NkiresProc 6>25 6>28 6<43 6<46 2|8b14 25l8 25t18
+6i25 N{integer} 13r34 13r43 14r19 15r20 15r36 2|8b26 17r59 17r68 23r27
+6i28 K{integer} 13r31 14r38 15r24 2|8b29 17r43 21r26
+6i43 I{integer} 13r38 15r40 2|8b44 11m7 17r39 17r49 19m13 19r18 23r23
+6i46 Res{integer} 13r23 15r28 2|8b47 12m7 17r33 21m13 21r20
 
 QQ SPARKVERSION 2019 (20190517)
 GG EK_DIRECT_CALLS nkires__nkiresproc 0

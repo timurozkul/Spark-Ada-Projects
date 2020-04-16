@@ -1,2 +1,0 @@
-power_grid_energy_stabilizer.adb:41:33: medium: loop invariant might fail after first iteration, cannot prove Electricity in 0 .. Maximum_Reserved_Electricity_Possible (e.g. when Electricity = 1000001)[#0]
-power_grid_energy_stabilizer.adb:56:33: medium: loop invariant might fail after first iteration, cannot prove Electricity in 0 .. Maximum_Reserved_Electricity_Possible (e.g. when Electricity = -1)[#1]

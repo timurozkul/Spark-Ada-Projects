@@ -1,2 +1,0 @@
-main.adb:30:34: medium: loop invariant might fail after first iteration, cannot prove (Is_Critical) (e.g. when Status_System = (Consumption_Measured => 0, Supplied_Measured => 0, Reserved_Measured => 0, Status_Reserved_Electricity => Activated))[#0]
-main.adb:30:34: medium: loop invariant might fail in first iteration, cannot prove (Is_Critical)[#1]

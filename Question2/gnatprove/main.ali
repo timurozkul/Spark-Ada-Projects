@@ -12,7 +12,7 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 RV SPARK_05
 
-U main%b		main.adb		12dd0291 OO SU
+U main%b		main.adb		1f4bbfa0 OO SU
 W as_io_wrapper%s	as_io_wrapper.adb	as_io_wrapper.ali
 W nkires%s		nkires.adb		nkires.ali
 Z system%s		system.ads		system.ali
@@ -27,8 +27,8 @@ D as_io_wrapper.ads	20200214112854 000fc6dc as_io_wrapper%s
 D interfac.ads		20190518041254 5ab55268 interfaces%s
 D i-cstrea.ads		20190518041254 e53d8b8e interfaces.c_streams%s
 D main.ads		20200224161800 cd1c0576 main%s
-D main.adb		20200313113718 50bf0560 main%b
-D nkires.ads		20200313113921 8f71c45b nkires%s
+D main.adb		20200413155549 5d29b851 main%b
+D nkires.ads		20200413155444 8f71c45b nkires%s
 D spark.ads		20200214112854 86380d85 spark%s
 D spark-text_io.ads	20200214112854 3f556f64 spark.text_io%s
 D system.ads		20190518041255 085b6ffb system%s
@@ -41,23 +41,23 @@ X 5 as_io_wrapper.ads
 21K9*AS_Io_Wrapper 124e18 9|3w6 4r5
 25U14*AS_Init_Standard_Input 9|16s4
 32U14*AS_Init_Standard_Output 9|15s4
-59U14*AS_Put 9|20s10 27s10 36s6 38s6 42s9
-76U14*AS_Get_Line 9|43s9
-83U14*AS_Put_Line 9|18s7 23s9 30s9 45s9
-106U14*AS_Get 9|21s10 28s10
-119U14*AS_Put_Line 9|37s6 39s7
+59U14*AS_Put 9|22s10 30s10 40s7 42s7 46s9
+76U14*AS_Get_Line 9|47s9
+83U14*AS_Put_Line 9|19s7 26s9 34s9 49s9
+106U14*AS_Get 9|23s10 31s10
+119U14*AS_Put_Line 9|41s7 43s7
 X 8 main.ads
-3U11*Main 9|9b11 67l5 67t9
+3U11*Main 9|8b11 54l5 54t9
 X 9 main.adb
-10i4 N{integer} 28m17 29r19 34r18
-10i7 K{integer} 21m17 22r19 34r21
-11i4 Res{integer} 34m27 39r19
-11i9 I{integer} 34m24 37r18
-11i12 Last{integer} 43m33 44r19
-12a3 User_Input{string} 43m21 47r17
+10i3 N{integer} 31m17 33r19 38r18
+10i6 K{integer} 23m17 25r19 38r21
+11i3 Res{integer} 38m27 43r19
+11i8 I{integer} 38m24 41r19
+11i11 Last{integer} 47m33 48r19
+12a3 User_Input{string} 47m21 51r17
 X 10 nkires.ads
-2K9*Nkires 9|5w6 6r5 10|11e11
-6U14*NkiresProc 9|34s7
+2K9*Nkires 9|5w6 6r5 10|17e11
+6U14*NkiresProc 9|38s7
 
 QQ SPARKVERSION 2019 (20190517)
 GG EK_DIRECT_CALLS main 8 as_io_wrapper__as_init_standard_input as_io_wrapper__as_init_standard_output as_io_wrapper__as_put__2 as_io_wrapper__as_get_line as_io_wrapper__as_put_line as_io_wrapper__as_get__3 as_io_wrapper__as_put_line__3 nkires__nkiresproc

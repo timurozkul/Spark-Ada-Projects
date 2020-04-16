@@ -1,22 +1,22 @@
 Summary of SPARK analysis
 =========================
 
-----------------------------------------------------------------------------------------------------------
-SPARK Analysis results        Total       Flow   Interval   CodePeer       Provers   Justified    Unproved
-----------------------------------------------------------------------------------------------------------
-Data Dependencies                 4          4          .          .             .           .           .
-Flow Dependencies                 2          2          .          .             .           .           .
-Initialization                   14          8          .          .             .           .           6
-Non-Aliasing                      .          .          .          .             .           .           .
-Run-time Checks                   6          .          .          .      6 (CVC4)           .           .
-Assertions                        2          .          .          .      2 (CVC4)           .           .
-Functional Contracts            144          .          .          .    100 (CVC4)           .          44
-LSP Verification                  .          .          .          .             .           .           .
-----------------------------------------------------------------------------------------------------------
-Total                           172    14 (8%)          .          .     108 (63%)           .    50 (29%)
+------------------------------------------------------------------------------------------------------
+SPARK Analysis results        Total        Flow   Interval   CodePeer   Provers   Justified   Unproved
+------------------------------------------------------------------------------------------------------
+Data Dependencies                 4           4          .          .         .           .          .
+Flow Dependencies                 2           2          .          .         .           .          .
+Initialization                   14           8          .          .         .           .          6
+Non-Aliasing                      .           .          .          .         .           .          .
+Run-time Checks                   .           .          .          .         .           .          .
+Assertions                        .           .          .          .         .           .          .
+Functional Contracts              .           .          .          .         .           .          .
+LSP Verification                  .           .          .          .         .           .          .
+------------------------------------------------------------------------------------------------------
+Total                            20    14 (70%)          .          .         .           .    6 (30%)
 
 
-max steps used for successful proof: 1
+max steps used for successful proof: 0
 
 Analyzed 6 units
 in unit as_io_wrapper, 0 subprograms and packages out of 13 analyzed
@@ -34,12 +34,12 @@ in unit as_io_wrapper, 0 subprograms and packages out of 13 analyzed
   AS_Io_Wrapper.AS_Put_Line at as_io_wrapper.ads:88 skipped
   AS_Io_Wrapper.AS_Put_Line at as_io_wrapper.ads:119 skipped
 in unit main, 1 subprograms and packages out of 1 analyzed
-  Main at main.ads:3 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (2 checks)
+  Main at main.ads:3 flow analyzed (0 errors, 0 checks and 0 warnings)
 in unit nkires, 2 subprograms and packages out of 2 analyzed
-  Nkires at nkires.ads:2 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  Nkires.NkiresProc at nkires.ads:6 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (8 checks)
+  Nkires at nkires.ads:2 flow analyzed (0 errors, 0 checks and 0 warnings)
+  Nkires.NkiresProc at nkires.ads:6 flow analyzed (0 errors, 0 checks and 0 warnings)
 in unit spark, 1 subprograms and packages out of 2 analyzed
-  SPARK at spark.ads:37 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  SPARK at spark.ads:37 flow analyzed (0 errors, 0 checks and 0 warnings)
   SPARK.Text_IO_File_Type at spark.ads:61 skipped
 in unit spark-text_io, 4 subprograms and packages out of 74 analyzed
   SPARK.Text_IO at spark-text_io.ads:49 skipped
@@ -71,13 +71,13 @@ in unit spark-text_io, 4 subprograms and packages out of 74 analyzed
   SPARK.Text_IO.Init_Standard_Input at spark-text_io.ads:113 skipped
   SPARK.Text_IO.Init_Standard_Output at spark-text_io.ads:119 skipped
   SPARK.Text_IO.Is_Open at spark-text_io.ads:162 skipped
-  SPARK.Text_IO.Is_Readable at spark-text_io.ads:180 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (1 checks)
+  SPARK.Text_IO.Is_Readable at spark-text_io.ads:180 flow analyzed (0 errors, 0 checks and 0 warnings)
   SPARK.Text_IO.Is_Standard_Error at spark-text_io.ads:147 skipped
-  SPARK.Text_IO.Is_Standard_File at spark-text_io.ads:156 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  SPARK.Text_IO.Is_Standard_File at spark-text_io.ads:156 flow analyzed (0 errors, 0 checks and 0 warnings)
   SPARK.Text_IO.Is_Standard_Input at spark-text_io.ads:139 skipped
   SPARK.Text_IO.Is_Standard_Output at spark-text_io.ads:143 skipped
-  SPARK.Text_IO.Is_Standard_Writable at spark-text_io.ads:151 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  SPARK.Text_IO.Is_Writable at spark-text_io.ads:184 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (2 checks)
+  SPARK.Text_IO.Is_Standard_Writable at spark-text_io.ads:151 flow analyzed (0 errors, 0 checks and 0 warnings)
+  SPARK.Text_IO.Is_Writable at spark-text_io.ads:184 flow analyzed (0 errors, 0 checks and 0 warnings)
   SPARK.Text_IO.Line at spark-text_io.ads:538 skipped
   SPARK.Text_IO.Line at spark-text_io.ads:542 skipped
   SPARK.Text_IO.Line_Length at spark-text_io.ads:345 skipped
