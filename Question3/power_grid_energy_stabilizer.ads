@@ -83,20 +83,9 @@ package Power_Grid_Energy_Stabilizer is
      Depends => (Status_System => (Status_System, Standard_Input),
                  Standard_Input => (Standard_Input, Status_System),
                  Standard_Output => (Standard_Output, Standard_Input, Status_System)),
-       Pre => (Status_System.Consumption_Measured <= Status_System.Supplied_Measured),
-      Post => ((Status_System.Consumption_Measured <= Status_System.Supplied_Measured) AND  
+     Pre => (Status_System.Consumption_Measured <= Status_System.Supplied_Measured),
+     Post => ((Status_System.Consumption_Measured <= Status_System.Supplied_Measured) AND  
                 (Status_System.Status_Reserved_Electricity = Not_Activated));
-   
-   -- 
-  -- procedure Reset_Reserve_Statues with
-    -- Global => (In_Out => Status_System),
-     --Depends => (Status_System => Status_System),
-     -- Pre => ((Status_System.Consumption_Measured <= Status_System.Supplied_Measured) AND
-        --       ((Status_System.Status_Reserved_Electricity = Not_Activated) OR 
-          --  (Status_System.Status_Reserved_Electricity = Activated))),
-     -- Post => ((Status_System.Consumption_Measured <= Status_System.Supplied_Measured) AND
-       --      (Status_System.Status_Reserved_Electricity = Not_Activated));
-   
 
 end  Power_Grid_Energy_Stabilizer;
 
