@@ -347,13 +347,13 @@
   <proof prover="0"><result status="valid" steps="13"/></proof>
   </goal>
   <goal name="VC def.4" expl="postcondition">
+  <proof prover="0" obsolete="true"><result status="valid" steps="211"/></proof>
   </goal>
   <goal name="VC def.5" expl="precondition" proved="true">
   <proof prover="0"><result status="valid" steps="75"/></proof>
   <proof prover="1" obsolete="true"><result status="unknown" steps="133"/></proof>
   </goal>
   <goal name="VC def.6" expl="precondition">
-  <proof prover="0" obsolete="true"><result status="valid" steps="211"/></proof>
   </goal>
   <goal name="VC def.7" expl="precondition">
   </goal>
@@ -380,9 +380,9 @@
   <proof prover="0"><result status="valid" steps="5"/></proof>
   </goal>
   <goal name="VC def.17" expl="postcondition">
+  <proof prover="0" obsolete="true"><result status="valid" steps="72"/></proof>
   </goal>
   <goal name="VC def.18" expl="precondition">
-  <proof prover="0" obsolete="true"><result status="valid" steps="72"/></proof>
   </goal>
   <goal name="VC def.19" expl="postcondition">
   </goal>

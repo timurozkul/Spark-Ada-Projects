@@ -5,7 +5,7 @@
       "sloc": [
         {
           "file": "power_grid_energy_stabilizer.ads",
-          "line": 13
+          "line": 10
         }
       ],
       "spark": "all"
@@ -15,7 +15,7 @@
       "sloc": [
         {
           "file": "power_grid_energy_stabilizer.ads",
-          "line": 23
+          "line": 13
         }
       ],
       "spark": "all"
@@ -25,7 +25,7 @@
       "sloc": [
         {
           "file": "power_grid_energy_stabilizer.ads",
-          "line": 32
+          "line": 22
         }
       ],
       "spark": "all"
@@ -35,7 +35,7 @@
       "sloc": [
         {
           "file": "power_grid_energy_stabilizer.ads",
-          "line": 37
+          "line": 27
         }
       ],
       "spark": "all"
@@ -45,7 +45,7 @@
       "sloc": [
         {
           "file": "power_grid_energy_stabilizer.ads",
-          "line": 45
+          "line": 35
         }
       ],
       "spark": "all"
@@ -55,7 +55,7 @@
       "sloc": [
         {
           "file": "power_grid_energy_stabilizer.ads",
-          "line": 52
+          "line": 42
         }
       ],
       "spark": "all"
@@ -65,7 +65,7 @@
       "sloc": [
         {
           "file": "power_grid_energy_stabilizer.ads",
-          "line": 59
+          "line": 49
         }
       ],
       "spark": "all"
@@ -75,7 +75,7 @@
       "sloc": [
         {
           "file": "power_grid_energy_stabilizer.ads",
-          "line": 67
+          "line": 57
         }
       ],
       "spark": "all"
@@ -85,7 +85,7 @@
       "sloc": [
         {
           "file": "power_grid_energy_stabilizer.ads",
-          "line": 73
+          "line": 63
         }
       ],
       "spark": "all"
@@ -95,7 +95,7 @@
       "sloc": [
         {
           "file": "power_grid_energy_stabilizer.ads",
-          "line": 81
+          "line": 71
         }
       ],
       "spark": "all"
@@ -103,8 +103,160 @@
   ],
   "flow": [
     {
+      "file": "power_grid_energy_stabilizer.adb",
+      "line": 50,
+      "col": 7,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Power_Grid_Energy_Stabilizer.Read_Supply",
+        "sloc": [
+          {
+            "file": "power_grid_energy_stabilizer.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
       "file": "power_grid_energy_stabilizer.ads",
-      "line": 60,
+      "line": 36,
+      "col": 6,
+      "rule": "GLOBAL_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "Power_Grid_Energy_Stabilizer.Read_Supply",
+        "sloc": [
+          {
+            "file": "power_grid_energy_stabilizer.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "power_grid_energy_stabilizer.ads",
+      "line": 37,
+      "col": 6,
+      "rule": "DEPENDS_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "Power_Grid_Energy_Stabilizer.Read_Supply",
+        "sloc": [
+          {
+            "file": "power_grid_energy_stabilizer.ads",
+            "line": 35
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "power_grid_energy_stabilizer.ads",
+      "line": 64,
+      "col": 6,
+      "rule": "GLOBAL_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "Power_Grid_Energy_Stabilizer.Print_Reserve_levels",
+        "sloc": [
+          {
+            "file": "power_grid_energy_stabilizer.ads",
+            "line": 63
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "power_grid_energy_stabilizer.ads",
+      "line": 66,
+      "col": 6,
+      "rule": "DEPENDS_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "Power_Grid_Energy_Stabilizer.Print_Reserve_levels",
+        "sloc": [
+          {
+            "file": "power_grid_energy_stabilizer.ads",
+            "line": 63
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "power_grid_energy_stabilizer.adb",
+      "line": 34,
+      "col": 7,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Power_Grid_Energy_Stabilizer.Read_Consumption",
+        "sloc": [
+          {
+            "file": "power_grid_energy_stabilizer.ads",
+            "line": 27
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "power_grid_energy_stabilizer.ads",
+      "line": 28,
+      "col": 6,
+      "rule": "GLOBAL_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "Power_Grid_Energy_Stabilizer.Read_Consumption",
+        "sloc": [
+          {
+            "file": "power_grid_energy_stabilizer.ads",
+            "line": 27
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "power_grid_energy_stabilizer.ads",
+      "line": 29,
+      "col": 6,
+      "rule": "DEPENDS_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "Power_Grid_Energy_Stabilizer.Read_Consumption",
+        "sloc": [
+          {
+            "file": "power_grid_energy_stabilizer.ads",
+            "line": 27
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "power_grid_energy_stabilizer.ads",
+      "line": 50,
       "col": 6,
       "rule": "GLOBAL_WRONG",
       "severity": "info",
@@ -113,7 +265,7 @@
         "sloc": [
           {
             "file": "power_grid_energy_stabilizer.ads",
-            "line": 59
+            "line": 49
           }
         ]
       },
@@ -123,7 +275,7 @@
     },
     {
       "file": "power_grid_energy_stabilizer.ads",
-      "line": 62,
+      "line": 52,
       "col": 6,
       "rule": "DEPENDS_WRONG",
       "severity": "info",
@@ -132,7 +284,7 @@
         "sloc": [
           {
             "file": "power_grid_energy_stabilizer.ads",
-            "line": 59
+            "line": 49
           }
         ]
       },
@@ -142,7 +294,7 @@
     },
     {
       "file": "power_grid_energy_stabilizer.adb",
-      "line": 160,
+      "line": 162,
       "col": 7,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -151,7 +303,7 @@
         "sloc": [
           {
             "file": "power_grid_energy_stabilizer.ads",
-            "line": 81
+            "line": 71
           }
         ]
       },
@@ -161,7 +313,7 @@
     },
     {
       "file": "power_grid_energy_stabilizer.adb",
-      "line": 157,
+      "line": 164,
       "col": 7,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -170,7 +322,7 @@
         "sloc": [
           {
             "file": "power_grid_energy_stabilizer.ads",
-            "line": 81
+            "line": 71
           }
         ]
       },
@@ -180,7 +332,7 @@
     },
     {
       "file": "power_grid_energy_stabilizer.adb",
-      "line": 159,
+      "line": 165,
       "col": 7,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -189,7 +341,7 @@
         "sloc": [
           {
             "file": "power_grid_energy_stabilizer.ads",
-            "line": 81
+            "line": 71
           }
         ]
       },
@@ -199,7 +351,7 @@
     },
     {
       "file": "power_grid_energy_stabilizer.ads",
-      "line": 82,
+      "line": 72,
       "col": 6,
       "rule": "GLOBAL_WRONG",
       "severity": "info",
@@ -208,7 +360,7 @@
         "sloc": [
           {
             "file": "power_grid_energy_stabilizer.ads",
-            "line": 81
+            "line": 71
           }
         ]
       },
@@ -218,7 +370,7 @@
     },
     {
       "file": "power_grid_energy_stabilizer.ads",
-      "line": 83,
+      "line": 73,
       "col": 6,
       "rule": "DEPENDS_WRONG",
       "severity": "info",
@@ -227,7 +379,7 @@
         "sloc": [
           {
             "file": "power_grid_energy_stabilizer.ads",
-            "line": 81
+            "line": 71
           }
         ]
       },
@@ -237,7 +389,7 @@
     },
     {
       "file": "power_grid_energy_stabilizer.ads",
-      "line": 24,
+      "line": 14,
       "col": 59,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -246,7 +398,7 @@
         "sloc": [
           {
             "file": "power_grid_energy_stabilizer.ads",
-            "line": 23
+            "line": 13
           }
         ]
       },
@@ -256,7 +408,7 @@
     },
     {
       "file": "power_grid_energy_stabilizer.ads",
-      "line": 24,
+      "line": 14,
       "col": 44,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -265,7 +417,7 @@
         "sloc": [
           {
             "file": "power_grid_energy_stabilizer.ads",
-            "line": 23
+            "line": 13
           }
         ]
       },
@@ -275,7 +427,7 @@
     },
     {
       "file": "power_grid_energy_stabilizer.ads",
-      "line": 24,
+      "line": 14,
       "col": 28,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -284,7 +436,121 @@
         "sloc": [
           {
             "file": "power_grid_energy_stabilizer.ads",
-            "line": 23
+            "line": 13
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "power_grid_energy_stabilizer.ads",
+      "line": 14,
+      "col": 6,
+      "rule": "GLOBAL_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "Power_Grid_Energy_Stabilizer.Init",
+        "sloc": [
+          {
+            "file": "power_grid_energy_stabilizer.ads",
+            "line": 13
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "power_grid_energy_stabilizer.ads",
+      "line": 15,
+      "col": 6,
+      "rule": "DEPENDS_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "Power_Grid_Energy_Stabilizer.Init",
+        "sloc": [
+          {
+            "file": "power_grid_energy_stabilizer.ads",
+            "line": 13
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "power_grid_energy_stabilizer.adb",
+      "line": 67,
+      "col": 7,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Power_Grid_Energy_Stabilizer.Energy_Stabilizerg_System",
+        "sloc": [
+          {
+            "file": "power_grid_energy_stabilizer.ads",
+            "line": 42
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "power_grid_energy_stabilizer.ads",
+      "line": 43,
+      "col": 6,
+      "rule": "GLOBAL_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "Power_Grid_Energy_Stabilizer.Energy_Stabilizerg_System",
+        "sloc": [
+          {
+            "file": "power_grid_energy_stabilizer.ads",
+            "line": 42
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "power_grid_energy_stabilizer.ads",
+      "line": 44,
+      "col": 6,
+      "rule": "DEPENDS_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "Power_Grid_Energy_Stabilizer.Energy_Stabilizerg_System",
+        "sloc": [
+          {
+            "file": "power_grid_energy_stabilizer.ads",
+            "line": 42
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "power_grid_energy_stabilizer.ads",
+      "line": 23,
+      "col": 6,
+      "rule": "GLOBAL_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "Power_Grid_Energy_Stabilizer.Print_Welcome",
+        "sloc": [
+          {
+            "file": "power_grid_energy_stabilizer.ads",
+            "line": 22
           }
         ]
       },
@@ -296,120 +562,6 @@
       "file": "power_grid_energy_stabilizer.ads",
       "line": 24,
       "col": 6,
-      "rule": "GLOBAL_WRONG",
-      "severity": "info",
-      "entity": {
-        "name": "Power_Grid_Energy_Stabilizer.Init",
-        "sloc": [
-          {
-            "file": "power_grid_energy_stabilizer.ads",
-            "line": 23
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "how_proved": "flow"
-    },
-    {
-      "file": "power_grid_energy_stabilizer.ads",
-      "line": 25,
-      "col": 6,
-      "rule": "DEPENDS_WRONG",
-      "severity": "info",
-      "entity": {
-        "name": "Power_Grid_Energy_Stabilizer.Init",
-        "sloc": [
-          {
-            "file": "power_grid_energy_stabilizer.ads",
-            "line": 23
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "how_proved": "flow"
-    },
-    {
-      "file": "power_grid_energy_stabilizer.adb",
-      "line": 65,
-      "col": 7,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Power_Grid_Energy_Stabilizer.Energy_Stabilizerg_System",
-        "sloc": [
-          {
-            "file": "power_grid_energy_stabilizer.ads",
-            "line": 52
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "how_proved": "flow"
-    },
-    {
-      "file": "power_grid_energy_stabilizer.ads",
-      "line": 53,
-      "col": 6,
-      "rule": "GLOBAL_WRONG",
-      "severity": "info",
-      "entity": {
-        "name": "Power_Grid_Energy_Stabilizer.Energy_Stabilizerg_System",
-        "sloc": [
-          {
-            "file": "power_grid_energy_stabilizer.ads",
-            "line": 52
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "how_proved": "flow"
-    },
-    {
-      "file": "power_grid_energy_stabilizer.ads",
-      "line": 54,
-      "col": 6,
-      "rule": "DEPENDS_WRONG",
-      "severity": "info",
-      "entity": {
-        "name": "Power_Grid_Energy_Stabilizer.Energy_Stabilizerg_System",
-        "sloc": [
-          {
-            "file": "power_grid_energy_stabilizer.ads",
-            "line": 52
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "how_proved": "flow"
-    },
-    {
-      "file": "power_grid_energy_stabilizer.ads",
-      "line": 33,
-      "col": 6,
-      "rule": "GLOBAL_WRONG",
-      "severity": "info",
-      "entity": {
-        "name": "Power_Grid_Energy_Stabilizer.Print_Welcome",
-        "sloc": [
-          {
-            "file": "power_grid_energy_stabilizer.ads",
-            "line": 32
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "how_proved": "flow"
-    },
-    {
-      "file": "power_grid_energy_stabilizer.ads",
-      "line": 34,
-      "col": 6,
       "rule": "DEPENDS_WRONG",
       "severity": "info",
       "entity": {
@@ -417,159 +569,7 @@
         "sloc": [
           {
             "file": "power_grid_energy_stabilizer.ads",
-            "line": 32
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "how_proved": "flow"
-    },
-    {
-      "file": "power_grid_energy_stabilizer.adb",
-      "line": 49,
-      "col": 7,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Power_Grid_Energy_Stabilizer.Read_Supply",
-        "sloc": [
-          {
-            "file": "power_grid_energy_stabilizer.ads",
-            "line": 45
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "how_proved": "flow"
-    },
-    {
-      "file": "power_grid_energy_stabilizer.ads",
-      "line": 46,
-      "col": 6,
-      "rule": "GLOBAL_WRONG",
-      "severity": "info",
-      "entity": {
-        "name": "Power_Grid_Energy_Stabilizer.Read_Supply",
-        "sloc": [
-          {
-            "file": "power_grid_energy_stabilizer.ads",
-            "line": 45
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "how_proved": "flow"
-    },
-    {
-      "file": "power_grid_energy_stabilizer.ads",
-      "line": 47,
-      "col": 6,
-      "rule": "DEPENDS_WRONG",
-      "severity": "info",
-      "entity": {
-        "name": "Power_Grid_Energy_Stabilizer.Read_Supply",
-        "sloc": [
-          {
-            "file": "power_grid_energy_stabilizer.ads",
-            "line": 45
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "how_proved": "flow"
-    },
-    {
-      "file": "power_grid_energy_stabilizer.ads",
-      "line": 74,
-      "col": 6,
-      "rule": "GLOBAL_WRONG",
-      "severity": "info",
-      "entity": {
-        "name": "Power_Grid_Energy_Stabilizer.Print_Reserve_levels",
-        "sloc": [
-          {
-            "file": "power_grid_energy_stabilizer.ads",
-            "line": 73
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "how_proved": "flow"
-    },
-    {
-      "file": "power_grid_energy_stabilizer.ads",
-      "line": 76,
-      "col": 6,
-      "rule": "DEPENDS_WRONG",
-      "severity": "info",
-      "entity": {
-        "name": "Power_Grid_Energy_Stabilizer.Print_Reserve_levels",
-        "sloc": [
-          {
-            "file": "power_grid_energy_stabilizer.ads",
-            "line": 73
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "how_proved": "flow"
-    },
-    {
-      "file": "power_grid_energy_stabilizer.adb",
-      "line": 33,
-      "col": 7,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "Power_Grid_Energy_Stabilizer.Read_Consumption",
-        "sloc": [
-          {
-            "file": "power_grid_energy_stabilizer.ads",
-            "line": 37
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "how_proved": "flow"
-    },
-    {
-      "file": "power_grid_energy_stabilizer.ads",
-      "line": 38,
-      "col": 6,
-      "rule": "GLOBAL_WRONG",
-      "severity": "info",
-      "entity": {
-        "name": "Power_Grid_Energy_Stabilizer.Read_Consumption",
-        "sloc": [
-          {
-            "file": "power_grid_energy_stabilizer.ads",
-            "line": 37
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "how_proved": "flow"
-    },
-    {
-      "file": "power_grid_energy_stabilizer.ads",
-      "line": 39,
-      "col": 6,
-      "rule": "DEPENDS_WRONG",
-      "severity": "info",
-      "entity": {
-        "name": "Power_Grid_Energy_Stabilizer.Read_Consumption",
-        "sloc": [
-          {
-            "file": "power_grid_energy_stabilizer.ads",
-            "line": 37
+            "line": 22
           }
         ]
       },
@@ -581,7 +581,7 @@
   "proof": [
     {
       "file": "power_grid_energy_stabilizer.ads",
-      "line": 26,
+      "line": 16,
       "col": 14,
       "rule": "VC_POSTCONDITION",
       "severity": "info",
@@ -590,7 +590,7 @@
         "sloc": [
           {
             "file": "power_grid_energy_stabilizer.ads",
-            "line": 23
+            "line": 13
           }
         ]
       },
@@ -641,7 +641,7 @@
         }
       ],
       "check_file": "power_grid_energy_stabilizer.ads",
-      "check_line": 26,
+      "check_line": 16,
       "check_col": 14,
       "how_proved": "prover",
       "stats": {
@@ -654,7 +654,7 @@
     },
     {
       "file": "power_grid_energy_stabilizer.adb",
-      "line": 45,
+      "line": 46,
       "col": 63,
       "rule": "VC_RANGE_CHECK",
       "severity": "info",
@@ -663,7 +663,7 @@
         "sloc": [
           {
             "file": "power_grid_energy_stabilizer.ads",
-            "line": 37
+            "line": 27
           }
         ]
       },
@@ -681,7 +681,7 @@
         }
       ],
       "check_file": "power_grid_energy_stabilizer.adb",
-      "check_line": 45,
+      "check_line": 46,
       "check_col": 63,
       "how_proved": "prover",
       "stats": {
@@ -694,8 +694,8 @@
     },
     {
       "file": "power_grid_energy_stabilizer.adb",
-      "line": 61,
-      "col": 60,
+      "line": 62,
+      "col": 65,
       "rule": "VC_RANGE_CHECK",
       "severity": "info",
       "entity": {
@@ -703,7 +703,7 @@
         "sloc": [
           {
             "file": "power_grid_energy_stabilizer.ads",
-            "line": 45
+            "line": 35
           }
         ]
       },
@@ -721,8 +721,8 @@
         }
       ],
       "check_file": "power_grid_energy_stabilizer.adb",
-      "check_line": 61,
-      "check_col": 60,
+      "check_line": 62,
+      "check_col": 65,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -734,136 +734,16 @@
     },
     {
       "file": "power_grid_energy_stabilizer.adb",
-      "line": 77,
-      "col": 80,
-      "rule": "VC_OVERFLOW_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Power_Grid_Energy_Stabilizer.Energy_Stabilizerg_System",
-        "sloc": [
-          {
-            "file": "power_grid_energy_stabilizer.ads",
-            "line": 52
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 79,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "power_grid_energy_stabilizer.adb",
-      "check_line": 77,
-      "check_col": 80,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "power_grid_energy_stabilizer.adb",
-      "line": 77,
-      "col": 80,
+      "line": 63,
+      "col": 60,
       "rule": "VC_RANGE_CHECK",
       "severity": "info",
       "entity": {
-        "name": "Power_Grid_Energy_Stabilizer.Energy_Stabilizerg_System",
+        "name": "Power_Grid_Energy_Stabilizer.Read_Supply",
         "sloc": [
           {
             "file": "power_grid_energy_stabilizer.ads",
-            "line": 52
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 78,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "power_grid_energy_stabilizer.adb",
-      "check_line": 77,
-      "check_col": 80,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "power_grid_energy_stabilizer.ads",
-      "line": 56,
-      "col": 14,
-      "rule": "VC_POSTCONDITION",
-      "severity": "info",
-      "entity": {
-        "name": "Power_Grid_Energy_Stabilizer.Energy_Stabilizerg_System",
-        "sloc": [
-          {
-            "file": "power_grid_energy_stabilizer.ads",
-            "line": 52
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 93,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "power_grid_energy_stabilizer.ads",
-      "check_line": 56,
-      "check_col": 14,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "power_grid_energy_stabilizer.adb",
-      "line": 174,
-      "col": 47,
-      "rule": "VC_OVERFLOW_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Power_Grid_Energy_Stabilizer.Refill_Reserve",
-        "sloc": [
-          {
-            "file": "power_grid_energy_stabilizer.ads",
-            "line": 81
+            "line": 35
           }
         ]
       },
@@ -881,7 +761,167 @@
         }
       ],
       "check_file": "power_grid_energy_stabilizer.adb",
-      "check_line": 174,
+      "check_line": 63,
+      "check_col": 60,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "power_grid_energy_stabilizer.adb",
+      "line": 79,
+      "col": 80,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Power_Grid_Energy_Stabilizer.Energy_Stabilizerg_System",
+        "sloc": [
+          {
+            "file": "power_grid_energy_stabilizer.ads",
+            "line": 42
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 79,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "power_grid_energy_stabilizer.adb",
+      "check_line": 79,
+      "check_col": 80,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "power_grid_energy_stabilizer.adb",
+      "line": 79,
+      "col": 80,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Power_Grid_Energy_Stabilizer.Energy_Stabilizerg_System",
+        "sloc": [
+          {
+            "file": "power_grid_energy_stabilizer.ads",
+            "line": 42
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 78,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "power_grid_energy_stabilizer.adb",
+      "check_line": 79,
+      "check_col": 80,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "power_grid_energy_stabilizer.ads",
+      "line": 46,
+      "col": 14,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "Power_Grid_Energy_Stabilizer.Energy_Stabilizerg_System",
+        "sloc": [
+          {
+            "file": "power_grid_energy_stabilizer.ads",
+            "line": 42
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 93,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "power_grid_energy_stabilizer.ads",
+      "check_line": 46,
+      "check_col": 14,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "power_grid_energy_stabilizer.adb",
+      "line": 179,
+      "col": 47,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Power_Grid_Energy_Stabilizer.Refill_Reserve",
+        "sloc": [
+          {
+            "file": "power_grid_energy_stabilizer.ads",
+            "line": 71
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 13,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "power_grid_energy_stabilizer.adb",
+      "check_line": 179,
       "check_col": 47,
       "how_proved": "prover",
       "stats": {
@@ -894,7 +934,7 @@
     },
     {
       "file": "power_grid_energy_stabilizer.adb",
-      "line": 175,
+      "line": 180,
       "col": 74,
       "rule": "VC_RANGE_CHECK",
       "severity": "info",
@@ -903,7 +943,7 @@
         "sloc": [
           {
             "file": "power_grid_energy_stabilizer.ads",
-            "line": 81
+            "line": 71
           }
         ]
       },
@@ -921,7 +961,7 @@
         }
       ],
       "check_file": "power_grid_energy_stabilizer.adb",
-      "check_line": 175,
+      "check_line": 180,
       "check_col": 74,
       "how_proved": "prover",
       "stats": {
@@ -934,7 +974,7 @@
     },
     {
       "file": "power_grid_energy_stabilizer.adb",
-      "line": 168,
+      "line": 173,
       "col": 31,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -943,7 +983,7 @@
         "sloc": [
           {
             "file": "power_grid_energy_stabilizer.ads",
-            "line": 81
+            "line": 71
           }
         ]
       },
@@ -961,7 +1001,7 @@
         }
       ],
       "check_file": "power_grid_energy_stabilizer.adb",
-      "check_line": 168,
+      "check_line": 173,
       "check_col": 31,
       "how_proved": "prover",
       "stats": {
@@ -974,7 +1014,7 @@
     },
     {
       "file": "power_grid_energy_stabilizer.adb",
-      "line": 189,
+      "line": 194,
       "col": 19,
       "rule": "VC_RANGE_CHECK",
       "severity": "info",
@@ -983,7 +1023,7 @@
         "sloc": [
           {
             "file": "power_grid_energy_stabilizer.ads",
-            "line": 81
+            "line": 71
           }
         ]
       },
@@ -1034,7 +1074,7 @@
         }
       ],
       "check_file": "power_grid_energy_stabilizer.adb",
-      "check_line": 189,
+      "check_line": 194,
       "check_col": 19,
       "how_proved": "prover",
       "stats": {
@@ -1047,8 +1087,8 @@
     },
     {
       "file": "power_grid_energy_stabilizer.ads",
-      "line": 87,
-      "col": 15,
+      "line": 77,
+      "col": 14,
       "rule": "VC_POSTCONDITION",
       "severity": "info",
       "entity": {
@@ -1056,7 +1096,7 @@
         "sloc": [
           {
             "file": "power_grid_energy_stabilizer.ads",
-            "line": 81
+            "line": 71
           }
         ]
       },
@@ -1085,8 +1125,8 @@
         }
       ],
       "check_file": "power_grid_energy_stabilizer.ads",
-      "check_line": 87,
-      "check_col": 15,
+      "check_line": 77,
+      "check_col": 14,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -1103,806 +1143,6 @@
         {
           "predicate": "CLAIM_EFFECTS",
           "arg": {
-            "name": "AS_Io_Wrapper.AS_Put",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 59
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 114
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put_Line",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 83
-              }
-            ]
-          }
-        }
-      ],
-      "claim": {
-        "predicate": "CLAIM_EFFECTS",
-        "arg": {
-          "name": "Power_Grid_Energy_Stabilizer.Print_Reserve_levels",
-          "sloc": [
-            {
-              "file": "power_grid_energy_stabilizer.ads",
-              "line": 73
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 59
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 114
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put_Line",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 83
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 59
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 114
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put_Line",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 83
-              }
-            ]
-          }
-        }
-      ],
-      "claim": {
-        "predicate": "CLAIM_AORTE",
-        "arg": {
-          "name": "Power_Grid_Energy_Stabilizer.Print_Reserve_levels",
-          "sloc": [
-            {
-              "file": "power_grid_energy_stabilizer.ads",
-              "line": 73
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Get",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 53
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put_Line",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 83
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Power_Grid_Energy_Stabilizer.Print_Reserve_levels",
-            "sloc": [
-              {
-                "file": "power_grid_energy_stabilizer.ads",
-                "line": 73
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Get",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 53
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put_Line",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 83
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "Power_Grid_Energy_Stabilizer.Print_Reserve_levels",
-            "sloc": [
-              {
-                "file": "power_grid_energy_stabilizer.ads",
-                "line": 73
-              }
-            ]
-          }
-        }
-      ],
-      "claim": {
-        "predicate": "CLAIM_POST",
-        "arg": {
-          "name": "Power_Grid_Energy_Stabilizer.Refill_Reserve",
-          "sloc": [
-            {
-              "file": "power_grid_energy_stabilizer.ads",
-              "line": 81
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-        {
-          "predicate": "CLAIM_POST",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Init_Standard_Input",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 25
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_POST",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Init_Standard_Output",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 32
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Init_Standard_Input",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 25
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Init_Standard_Output",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 32
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Init_Standard_Input",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 25
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Init_Standard_Output",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 32
-              }
-            ]
-          }
-        }
-      ],
-      "claim": {
-        "predicate": "CLAIM_POST",
-        "arg": {
-          "name": "Power_Grid_Energy_Stabilizer.Init",
-          "sloc": [
-            {
-              "file": "power_grid_energy_stabilizer.ads",
-              "line": 23
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Init_Standard_Input",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 25
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Init_Standard_Output",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 32
-              }
-            ]
-          }
-        }
-      ],
-      "claim": {
-        "predicate": "CLAIM_EFFECTS",
-        "arg": {
-          "name": "Power_Grid_Energy_Stabilizer.Init",
-          "sloc": [
-            {
-              "file": "power_grid_energy_stabilizer.ads",
-              "line": 23
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Get",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 53
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put_Line",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 83
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Power_Grid_Energy_Stabilizer.Print_Reserve_levels",
-            "sloc": [
-              {
-                "file": "power_grid_energy_stabilizer.ads",
-                "line": 73
-              }
-            ]
-          }
-        }
-      ],
-      "claim": {
-        "predicate": "CLAIM_EFFECTS",
-        "arg": {
-          "name": "Power_Grid_Energy_Stabilizer.Refill_Reserve",
-          "sloc": [
-            {
-              "file": "power_grid_energy_stabilizer.ads",
-              "line": 81
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Get",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 53
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put_Line",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 83
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Power_Grid_Energy_Stabilizer.Print_Reserve_levels",
-            "sloc": [
-              {
-                "file": "power_grid_energy_stabilizer.ads",
-                "line": 73
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Get",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 53
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put_Line",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 83
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "Power_Grid_Energy_Stabilizer.Print_Reserve_levels",
-            "sloc": [
-              {
-                "file": "power_grid_energy_stabilizer.ads",
-                "line": 73
-              }
-            ]
-          }
-        }
-      ],
-      "claim": {
-        "predicate": "CLAIM_AORTE",
-        "arg": {
-          "name": "Power_Grid_Energy_Stabilizer.Refill_Reserve",
-          "sloc": [
-            {
-              "file": "power_grid_energy_stabilizer.ads",
-              "line": 81
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-        {
-          "predicate": "CLAIM_POST",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Init_Standard_Input",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 25
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_POST",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Init_Standard_Output",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 32
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Init_Standard_Input",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 25
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Init_Standard_Output",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 32
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Init_Standard_Input",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 25
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Init_Standard_Output",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 32
-              }
-            ]
-          }
-        }
-      ],
-      "claim": {
-        "predicate": "CLAIM_AORTE",
-        "arg": {
-          "name": "Power_Grid_Energy_Stabilizer.Init",
-          "sloc": [
-            {
-              "file": "power_grid_energy_stabilizer.ads",
-              "line": 23
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 59
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 114
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put_Line",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 83
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Power_Grid_Energy_Stabilizer.Status_Electricity_System_To_String",
-            "sloc": [
-              {
-                "file": "power_grid_energy_stabilizer.ads",
-                "line": 67
-              }
-            ]
-          }
-        }
-      ],
-      "claim": {
-        "predicate": "CLAIM_EFFECTS",
-        "arg": {
-          "name": "Power_Grid_Energy_Stabilizer.Print_Status",
-          "sloc": [
-            {
-              "file": "power_grid_energy_stabilizer.ads",
-              "line": 59
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 59
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 114
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put_Line",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 83
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Power_Grid_Energy_Stabilizer.Status_Electricity_System_To_String",
-            "sloc": [
-              {
-                "file": "power_grid_energy_stabilizer.ads",
-                "line": 67
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 59
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 114
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put_Line",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 83
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "Power_Grid_Energy_Stabilizer.Status_Electricity_System_To_String",
-            "sloc": [
-              {
-                "file": "power_grid_energy_stabilizer.ads",
-                "line": 67
-              }
-            ]
-          }
-        }
-      ],
-      "claim": {
-        "predicate": "CLAIM_AORTE",
-        "arg": {
-          "name": "Power_Grid_Energy_Stabilizer.Print_Status",
-          "sloc": [
-            {
-              "file": "power_grid_energy_stabilizer.ads",
-              "line": 59
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put_Line",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 83
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "AS_Io_Wrapper.AS_Put_Line",
-            "sloc": [
-              {
-                "file": "as_io_wrapper.ads",
-                "line": 83
-              }
-            ]
-          }
-        }
-      ],
-      "claim": {
-        "predicate": "CLAIM_POST",
-        "arg": {
-          "name": "Power_Grid_Energy_Stabilizer.Energy_Stabilizerg_System",
-          "sloc": [
-            {
-              "file": "power_grid_energy_stabilizer.ads",
-              "line": 52
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
             "name": "AS_Io_Wrapper.AS_Put_Line",
             "sloc": [
               {
@@ -1920,7 +1160,7 @@
           "sloc": [
             {
               "file": "power_grid_energy_stabilizer.ads",
-              "line": 52
+              "line": 42
             }
           ]
         }
@@ -1960,7 +1200,7 @@
           "sloc": [
             {
               "file": "power_grid_energy_stabilizer.ads",
-              "line": 52
+              "line": 42
             }
           ]
         }
@@ -2024,7 +1264,7 @@
           "sloc": [
             {
               "file": "power_grid_energy_stabilizer.ads",
-              "line": 37
+              "line": 27
             }
           ]
         }
@@ -2136,7 +1376,7 @@
           "sloc": [
             {
               "file": "power_grid_energy_stabilizer.ads",
-              "line": 37
+              "line": 27
             }
           ]
         }
@@ -2152,7 +1392,7 @@
           "sloc": [
             {
               "file": "power_grid_energy_stabilizer.ads",
-              "line": 67
+              "line": 57
             }
           ]
         }
@@ -2168,7 +1408,7 @@
           "sloc": [
             {
               "file": "power_grid_energy_stabilizer.ads",
-              "line": 67
+              "line": 57
             }
           ]
         }
@@ -2232,7 +1472,7 @@
           "sloc": [
             {
               "file": "power_grid_energy_stabilizer.ads",
-              "line": 45
+              "line": 35
             }
           ]
         }
@@ -2344,7 +1584,7 @@
           "sloc": [
             {
               "file": "power_grid_energy_stabilizer.ads",
-              "line": 45
+              "line": 35
             }
           ]
         }
@@ -2372,7 +1612,7 @@
           "sloc": [
             {
               "file": "power_grid_energy_stabilizer.ads",
-              "line": 32
+              "line": 22
             }
           ]
         }
@@ -2412,7 +1652,7 @@
           "sloc": [
             {
               "file": "power_grid_energy_stabilizer.ads",
-              "line": 32
+              "line": 22
             }
           ]
         }
@@ -2428,7 +1668,807 @@
           "sloc": [
             {
               "file": "power_grid_energy_stabilizer.ads",
+              "line": 10
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Put",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 59
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Put",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 114
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Put_Line",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 83
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Power_Grid_Energy_Stabilizer.Print_Reserve_levels",
+          "sloc": [
+            {
+              "file": "power_grid_energy_stabilizer.ads",
+              "line": 63
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Put",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 59
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Put",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 114
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Put_Line",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 83
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Put",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 59
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Put",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 114
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Put_Line",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 83
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "Power_Grid_Energy_Stabilizer.Print_Reserve_levels",
+          "sloc": [
+            {
+              "file": "power_grid_energy_stabilizer.ads",
+              "line": 63
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Get",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 53
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Put_Line",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 83
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Print_Reserve_levels",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 63
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Get",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 53
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Put_Line",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 83
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Print_Reserve_levels",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 63
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "Power_Grid_Energy_Stabilizer.Refill_Reserve",
+          "sloc": [
+            {
+              "file": "power_grid_energy_stabilizer.ads",
+              "line": 71
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Init_Standard_Input",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 25
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Init_Standard_Output",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 32
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Init_Standard_Input",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 25
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Init_Standard_Output",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 32
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Init_Standard_Input",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 25
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Init_Standard_Output",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 32
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "Power_Grid_Energy_Stabilizer.Init",
+          "sloc": [
+            {
+              "file": "power_grid_energy_stabilizer.ads",
               "line": 13
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Init_Standard_Input",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 25
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Init_Standard_Output",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 32
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Power_Grid_Energy_Stabilizer.Init",
+          "sloc": [
+            {
+              "file": "power_grid_energy_stabilizer.ads",
+              "line": 13
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Get",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 53
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Put_Line",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 83
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Print_Reserve_levels",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 63
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Power_Grid_Energy_Stabilizer.Refill_Reserve",
+          "sloc": [
+            {
+              "file": "power_grid_energy_stabilizer.ads",
+              "line": 71
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Get",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 53
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Put_Line",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 83
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Print_Reserve_levels",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 63
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Get",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 53
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Put_Line",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 83
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Print_Reserve_levels",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 63
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "Power_Grid_Energy_Stabilizer.Refill_Reserve",
+          "sloc": [
+            {
+              "file": "power_grid_energy_stabilizer.ads",
+              "line": 71
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Init_Standard_Input",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 25
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Init_Standard_Output",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 32
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Init_Standard_Input",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 25
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Init_Standard_Output",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 32
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Init_Standard_Input",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 25
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Init_Standard_Output",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 32
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "Power_Grid_Energy_Stabilizer.Init",
+          "sloc": [
+            {
+              "file": "power_grid_energy_stabilizer.ads",
+              "line": 13
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Put",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 59
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Put",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 114
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Put_Line",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 83
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Status_Electricity_System_To_String",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 57
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Power_Grid_Energy_Stabilizer.Print_Status",
+          "sloc": [
+            {
+              "file": "power_grid_energy_stabilizer.ads",
+              "line": 49
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Put",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 59
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Put",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 114
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Put_Line",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 83
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Status_Electricity_System_To_String",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 57
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Put",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 59
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Put",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 114
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Put_Line",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 83
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Status_Electricity_System_To_String",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 57
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "Power_Grid_Energy_Stabilizer.Print_Status",
+          "sloc": [
+            {
+              "file": "power_grid_energy_stabilizer.ads",
+              "line": 49
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Put_Line",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 83
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "AS_Io_Wrapper.AS_Put_Line",
+            "sloc": [
+              {
+                "file": "as_io_wrapper.ads",
+                "line": 83
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "Power_Grid_Energy_Stabilizer.Energy_Stabilizerg_System",
+          "sloc": [
+            {
+              "file": "power_grid_energy_stabilizer.ads",
+              "line": 42
             }
           ]
         }
@@ -2436,14 +2476,14 @@
     }
   ],
   "timings": {
-    "marking": 4.04600007459521E-03,
-    "globals (basic)": 6.02700002491474E-03,
-    "globals/properties (advanced)": 1.53959998860955E-02,
-    "flow analysis": 8.81899967789650E-02,
-    "codepeer results": 9.99999974737875E-06,
-    "init_why_sections": 9.97000024653971E-04,
-    "translation of standard": 5.92399993911386E-03,
-    "translation of compilation unit": 9.30159986019135E-02,
-    "proof": 1.13884902000427E+00
+    "marking": 2.56799999624491E-03,
+    "globals (basic)": 6.34399987757206E-03,
+    "globals/properties (advanced)": 1.46040003746748E-02,
+    "flow analysis": 8.69460031390190E-02,
+    "codepeer results": 7.99999997980194E-06,
+    "init_why_sections": 1.00100005511194E-03,
+    "translation of standard": 5.19599998369813E-03,
+    "translation of compilation unit": 8.91479998826981E-02,
+    "proof": 2.08590507507324E+00
   }
 }

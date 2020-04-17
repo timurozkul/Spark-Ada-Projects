@@ -37,7 +37,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#a9caf3f4#;
+   u00001 : constant Version_32 := 16#a30a9d44#;
    pragma Export (C, u00001, "mainB");
    u00002 : constant Version_32 := 16#cd1c0576#;
    pragma Export (C, u00002, "mainS");
@@ -45,11 +45,11 @@ package ada_main is
    pragma Export (C, u00003, "system__standard_libraryB");
    u00004 : constant Version_32 := 16#0f7d71d4#;
    pragma Export (C, u00004, "system__standard_libraryS");
-   u00005 : constant Version_32 := 16#fa82fa2a#;
+   u00005 : constant Version_32 := 16#f042949a#;
    pragma Export (C, u00005, "global_variablesS");
-   u00006 : constant Version_32 := 16#f15080ce#;
+   u00006 : constant Version_32 := 16#4d2bb56a#;
    pragma Export (C, u00006, "power_grid_energy_stabilizerB");
-   u00007 : constant Version_32 := 16#7189b5a5#;
+   u00007 : constant Version_32 := 16#7b49db15#;
    pragma Export (C, u00007, "power_grid_energy_stabilizerS");
    u00008 : constant Version_32 := 16#a72e2afe#;
    pragma Export (C, u00008, "as_io_wrapperB");

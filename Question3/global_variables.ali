@@ -9,27 +9,28 @@ P ZX
 RN
 RV NO_IMPLEMENTATION_PRAGMAS
 
-U global_variables%s	global_variables.ads	fa82fa2a NE OO PK
+U global_variables%s	global_variables.ads	f042949a NE OO PK
 
-D global_variables.ads	20200413171754 fa82fa2a global_variables%s
+D global_variables.ads	20200417154209 f042949a global_variables%s
 D system.ads		20190518041255 085b6ffb system%s
 G a e
-G c Z s s [status_system_typeIP global_variables 32 9 none]
+G c Z s s [status_system_typeIP global_variables 26 9 none]
 X 1 global_variables.ads
-3K9*Global_Variables 43l6 43e22
-11i4*Maximum_Electricity_Possible{integer} 18r52
-13i4*Maximum_Reserved_Electricity_Possible{integer} 19r60
-16i4*Critical_Reserve_level{integer}
-18I12*Electricity_Range{integer} 34r33 35r30
-19I12*Reserve_Electricity_Range{integer} 36r30
-24E9*Status_Reserved_Electricity_Type 24e71 37r40 40r34
-24n46*Activated{24E9}
-24n57*Not_Activated{24E9}
-32R9*Status_System_Type 38e17 41r20
-34i10*Consumption_Measured{18I12}
-35i10*Supplied_Measured{18I12}
-36i10*Reserved_Measured{19I12}
-37e10*Status_Reserved_Electricity{24E9}
-40e4*Status_Reserved_Electricity{24E9}
-41r4*Status_System{32R9}
+3K9*Global_Variables 38l6 38e22
+5i4*Maximum_Electricity_Possible{integer} 12r52
+7i4*Maximum_Reserved_Electricity_Possible{integer} 13r60
+10i4*Critical_Reserve_level{integer}
+12I12*Electricity_Range{integer} 28r33 29r35 30r30
+13I12*Reserve_Electricity_Range{integer} 31r30
+18E9*Status_Reserved_Electricity_Type 18e71 32r40 35r34
+18n46*Activated{18E9}
+18n57*Not_Activated{18E9}
+26R9*Status_System_Type 33e17 36r20
+28i10*Consumption_Measured{12I12}
+29i10*Init_Supplied_Measured{12I12}
+30i10*Supplied_Measured{12I12}
+31i10*Reserved_Measured{13I12}
+32e10*Status_Reserved_Electricity{18E9}
+35e4*Status_Reserved_Electricity{18E9}
+36r4*Status_System{26R9}
 

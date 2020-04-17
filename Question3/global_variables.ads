@@ -7,7 +7,7 @@ package Global_Variables is
    Maximum_Reserved_Electricity_Possible : constant Integer := 1000000;--in watts or 1000kw
    -- The critical level of reserve is set to 5000 watts. One can always purchase
    -- more from a non renewable company.
-   Critical_Reserve_level : constant Integer := 5000;-- watts
+   Critical_Reserve_level : constant Integer := 50000;-- watts
 
    subtype Electricity_Range is Integer range 0 .. Maximum_Electricity_Possible;
    subtype Reserve_Electricity_Range is Integer range 0 .. Maximum_Reserved_Electricity_Possible;
@@ -26,6 +26,7 @@ package Global_Variables is
    type Status_System_Type  is
       record
          Consumption_Measured : Electricity_Range;
+         Init_Supplied_Measured : Electricity_Range;
          Supplied_Measured : Electricity_Range;
          Reserved_Measured : Reserve_Electricity_Range;
 	 Status_Reserved_Electricity : Status_Reserved_Electricity_Type;

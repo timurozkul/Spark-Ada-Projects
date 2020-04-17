@@ -14,6 +14,7 @@ package body Power_Grid_Energy_Stabilizer is
       -- Set the global variables to their inital value.
       Status_System.Consumption_Measured := 0;
       Status_System.Supplied_Measured := 0;
+      Status_System.Init_Supplied_Measured := 0;
       Status_System.Reserved_Measured := Maximum_Reserved_Electricity_Possible;
       Status_System.Status_Reserved_Electricity := Not_Activated;
       
@@ -23,7 +24,7 @@ package body Power_Grid_Energy_Stabilizer is
    begin
       AS_Put_Line("=============================================");
       AS_Put_Line("");
-      AS_Put_Line(" Power Grid Energy Stabilizer Setzter System");
+      AS_Put_Line(" Power Grid Energy Stabilizer Setzer System");
       AS_Put_Line("");
       AS_Put_Line("=============================================");
       AS_Put_Line("");
@@ -58,13 +59,14 @@ package body Power_Grid_Energy_Stabilizer is
 	 AS_Put_Line("");
       end loop;
       -- The input then gets assigned to the global variable
+      Status_System.Init_Supplied_Measured := Electricity_Range(Electricity);
       Status_System.Supplied_Measured := Electricity_Range(Electricity);
    end Read_Supply;   
 
    procedure Energy_Stabilizerg_System is
       Electricity_Required: Integer;
    begin
-    -- Energy_Stabilizerg_System procedure needs only to stabilize the system if there isnt enough energy supplied . 
+      -- Energy_Stabilizerg_System procedure needs only to stabilize the system if there isnt enough energy supplied. 
     if Integer(Status_System.Consumption_Measured) > Integer(Status_System.Supplied_Measured)
       then 
          Electricity_Required := Integer(Status_System.Consumption_Measured) - Integer(Status_System.Supplied_Measured);
@@ -103,6 +105,9 @@ package body Power_Grid_Energy_Stabilizer is
       AS_Put("Electric consumption = ");
       AS_Put(Status_System.Consumption_Measured);
       AS_Put_Line(" watts");
+      AS_Put("Initial electric supply = ");
+      AS_Put(Status_System.Init_Supplied_Measured);
+      AS_Put_Line(" watts"); 
       AS_Put("Electric supply = ");
       AS_Put(Status_System.Supplied_Measured);
       AS_Put_Line(" watts"); 
@@ -144,7 +149,7 @@ package body Power_Grid_Energy_Stabilizer is
       AS_Put_Line("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
       AS_Put_Line(" - After Refilling Reserves - ");
       AS_Put_Line("");
-      AS_Put("Electricity remaining = ");
+      AS_Put("Electricity remaining reserve = ");
       AS_Put(Status_System.Reserved_Measured);
       AS_Put_Line(" watts");
       AS_Put_Line("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
@@ -158,6 +163,7 @@ package body Power_Grid_Energy_Stabilizer is
       -- Reserve_Total is the addtion of the existing reserve and the remaining supply
       Reserve_Total: Integer;
       User_Input : String(1 .. 20);
+      Last : Integer;
    begin
       Remaining_Supply := Integer(Status_System.Supplied_Measured) - Integer(Status_System.Consumption_Measured);
       -- If we have remaining supply after consumption and there is space to fill the energy reserves,
@@ -184,7 +190,7 @@ package body Power_Grid_Energy_Stabilizer is
             AS_Put_Line("Would you like to buy non renewable energy from another company to refill the battery back above level critical?");
             AS_Put_Line("");
             AS_Put_Line("Please type (y/n)? Please enter a non-empty string");
-            AS_Get(User_Input);
+            As_Get_Line(User_Input, Last);
             AS_Put_Line("");
                if User_Input(1 .. 1) = "y"
                then

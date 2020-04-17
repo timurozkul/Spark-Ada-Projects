@@ -61,11 +61,11 @@
   <goal name="VC def.13" expl="precondition">
   <proof prover="0"><result status="valid" steps="13"/></proof>
   </goal>
-  <goal name="VC def.3" expl="postcondition">
+  <goal name="VC def.5" expl="postcondition">
   </goal>
   <goal name="VC def.4" expl="postcondition">
   </goal>
-  <goal name="VC def.5" expl="postcondition">
+  <goal name="VC def.3" expl="postcondition">
   </goal>
   <goal name="VC def.3" expl="postcondition">
   </goal>
@@ -73,16 +73,16 @@
   </goal>
   <goal name="VC def.13" expl="postcondition">
   </goal>
-  <goal name="VC def.19" expl="assertion">
-  <proof prover="0"><result status="valid" steps="5"/></proof>
-  </goal>
   <goal name="VC def.21" expl="assertion">
   <proof prover="0"><result status="valid" steps="5"/></proof>
   </goal>
-  <goal name="VC def.18" expl="assertion">
+  <goal name="VC def.19" expl="assertion">
   <proof prover="0"><result status="valid" steps="5"/></proof>
   </goal>
   <goal name="VC def.20" expl="assertion">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.18" expl="assertion">
   <proof prover="0"><result status="valid" steps="5"/></proof>
   </goal>
  </transf>
