@@ -1,9 +1,6 @@
 -- This file was created by Timur Ozkul
 -- it is an ultra simple example of a critical system
 -- namely a energy stabilizer for a power grid.
--- If the consumption for the energy gets to a critical level 
--- then the necessary is extra electricity is taken from its 
--- storage facilicty.
 
 pragma SPARK_Mode (On);
 
@@ -11,13 +8,6 @@ with SPARK.Text_IO;use  SPARK.Text_IO;
 with Global_Variables; use Global_Variables;
 
 package Power_Grid_Energy_Stabilizer is
-   
-   -- Average home consumption is 11 kw per day 
-   -- .13 watts per second is GW 0.000011
-   -- Power grid system supplies 3.2 million homes in Wales 
-   -- with an average energy consumption of 416,000 watts (416 kw) per second
-   
-
    -- The Init procedure is used to initialise the program. It sets the Input/Ouput library
    -- and sets the global veriables to their starting values.
    procedure Init with

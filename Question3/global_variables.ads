@@ -1,12 +1,6 @@
 pragma SPARK_Mode (On);
 
 package Global_Variables is
-
-   -- Average home consumption is 11 kw per day
-   -- .13 watts per second is GW 0.000011
-   -- Power grid system supplies 3.2 million homes in Wales
-   -- with an average energy consumption of 416,000 watts (416 kw) per second
-
    -- The maximum possible electricity at any given time can be only 10,000kw.
    Maximum_Electricity_Possible : constant Integer := 10000000;--in watts or 10,000kw
    -- The maximum possible reserve electricty at any given time can be only 10,000kw

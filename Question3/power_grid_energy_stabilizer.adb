@@ -64,18 +64,18 @@ package body Power_Grid_Energy_Stabilizer is
    procedure Energy_Stabilizerg_System is
       Electricity_Required: Integer;
    begin
-    -- Energy_Stabilizerg_System procedure needs only to stabilize the system if there isnt enough energy supplied  
+    -- Energy_Stabilizerg_System procedure needs only to stabilize the system if there isnt enough energy supplied . 
     if Integer(Status_System.Consumption_Measured) > Integer(Status_System.Supplied_Measured)
       then 
          Electricity_Required := Integer(Status_System.Consumption_Measured) - Integer(Status_System.Supplied_Measured);
-         -- if there is enough energy in the reserve batteries
+         -- if there is enough energy in the reserve batteries,
          if Electricity_Required <= Status_System.Reserved_Measured 
             then
-            -- Update reserve battery status to active
+            -- update reserve battery status to active,
             Status_System.Status_Reserved_Electricity := Activated;
-            -- Subtract the needed electricy from the battery
+            -- subtract the needed electricy from the battery.
             Status_System.Reserved_Measured := Status_System.Reserved_Measured - Electricity_Required;
-            -- The battery reserve then gets added to the supply 
+            -- The battery reserve then gets added to the supply. 
             Status_System.Supplied_Measured := Status_System.Consumption_Measured;
            else 
             AS_Put_Line("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
@@ -155,7 +155,7 @@ package body Power_Grid_Energy_Stabilizer is
    procedure Refill_Reserve is
       -- Remaining_Supply is the remaining energy supply once the ennergy comsumption is subtracted.
       Remaining_Supply: Integer;
-      -- 
+      -- Reserve_Total is the addtion of the existing reserve and the remaining supply
       Reserve_Total: Integer;
       User_Input : String(1 .. 20);
    begin
