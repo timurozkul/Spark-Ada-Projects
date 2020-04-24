@@ -13,19 +13,12 @@
   ],
   "flow": [
   ],
-  "proof": [
-  ],
   "assumptions": [
   ],
   "timings": {
-    "marking": 1.86000004759990E-04,
-    "globals (basic)": 2.74999998509884E-04,
-    "globals/properties (advanced)": 3.20999999530613E-04,
-    "flow analysis": 2.44800001382828E-03,
-    "codepeer results": 1.10000000859145E-05,
-    "init_why_sections": 7.34000001102686E-04,
-    "translation of standard": 6.31800014525652E-03,
-    "translation of compilation unit": 2.71799997426569E-03,
-    "proof": 3.99999998990097E-06
+    "marking": 1.80999995791353E-04,
+    "globals (basic)": 2.88000010186806E-04,
+    "globals/properties (advanced)": 1.96900009177625E-03,
+    "flow analysis": 3.70700005441904E-03
   }
 }

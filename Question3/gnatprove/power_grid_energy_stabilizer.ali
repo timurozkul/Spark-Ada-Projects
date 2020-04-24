@@ -13,10 +13,10 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 RV SPARK_05
 
-U power_grid_energy_stabilizer%b  power_grid_energy_stabilizer.adb  5b9a9bdf OO PK
+U power_grid_energy_stabilizer%b  power_grid_energy_stabilizer.adb  4d2bb56a OO PK
 W as_io_wrapper%s	as_io_wrapper.adb	as_io_wrapper.ali
 
-U power_grid_energy_stabilizer%s  power_grid_energy_stabilizer.ads  f26c6c45 OO PK
+U power_grid_energy_stabilizer%s  power_grid_energy_stabilizer.ads  7b49db15 OO PK
 W global_variables%s	global_variables.ads	global_variables.ali
 W spark%s		spark.ads		spark.ali
 W spark.text_io%s	spark-text_io.adb	spark-text_io.ali
@@ -26,11 +26,11 @@ D a-ioexce.ads		20190518041254 e4a01f64 ada.io_exceptions%s
 D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
 D a-textio.ads		20190518041256 aef4d56d ada.text_io%s
 D as_io_wrapper.ads	20200214112854 000fc6dc as_io_wrapper%s
-D global_variables.ads	20200417153419 796723ca global_variables%s
+D global_variables.ads	20200417154209 f042949a global_variables%s
 D interfac.ads		20190518041254 5ab55268 interfaces%s
 D i-cstrea.ads		20190518041254 e53d8b8e interfaces.c_streams%s
 D power_grid_energy_stabilizer.ads  20200417135042 b45e20eb power_grid_energy_stabilizer%s
-D power_grid_energy_stabilizer.adb  20200417153429 efcb7de8 power_grid_energy_stabilizer%b
+D power_grid_energy_stabilizer.adb  20200417160416 f97a535d power_grid_energy_stabilizer%b
 D spark.ads		20200214112854 86380d85 spark%s
 D spark-text_io.ads	20200214112854 3f556f64 spark.text_io%s
 D system.ads		20190518041255 085b6ffb system%s
@@ -43,43 +43,43 @@ X 5 as_io_wrapper.ads
 21K9*AS_Io_Wrapper 124e18 10|3w6 4r5
 25U14*AS_Init_Standard_Input 10|12s7
 32U14*AS_Init_Standard_Output 10|13s7
-53U14*AS_Get 10|192s13
 59U14*AS_Put 10|41s10 57s10 105s7 108s7 111s7 116s15 118s7 119s7 121s7 124s7
 . 152s7
+76U14*AS_Get_Line 10|193s13
 83U14*AS_Put_Line 10|25s7 26s7 27s7 28s7 29s7 30s7 36s7 43s10 52s7 59s10
 . 83s13 84s13 85s13 86s13 87s13 88s13 95s13 103s7 104s7 107s7 110s7 113s7
 . 120s7 123s7 129s10 130s15 133s7 134s7 149s7 150s7 151s7 154s7 155s7 156s7
-. 188s13 189s13 190s13 191s13 193s13
+. 189s13 190s13 191s13 192s13 194s13
 106U14*AS_Get 10|38s10 54s10
 114U14*AS_Put 10|42s10 58s10 106s7 109s7 112s7 122s7 128s10 153s7
 X 6 global_variables.ads
 3K9*Global_Variables 38e22 9|8w6 8r28
 5i4*Maximum_Electricity_Possible{integer} 10|42r17 58r17
 7i4*Maximum_Reserved_Electricity_Possible{integer} 9|18r41 10|18r42 40r58
-. 56r58 169r78 173r77 176r48
-10i4*Critical_Reserve_level{integer} 10|115r54 186r44 197r52
+. 56r58 170r78 174r77 177r48
+10i4*Critical_Reserve_level{integer} 10|115r54 187r44 198r52
 12I12*Electricity_Range{integer} 10|46r45 62r47 63r42
-13I12*Reserve_Electricity_Range{integer} 10|180r48
+13I12*Reserve_Electricity_Range{integer} 10|181r48
 18n46*Activated{18E9} 10|77r58 94r58 141r59
-18n57*Not_Activated{18E9} 9|19r51 32r60 78r62 10|19r52 201r52
+18n57*Not_Activated{18E9} 9|19r51 32r60 78r62 10|19r52 202r52
 28i10*Consumption_Measured{12I12} 9|16r30 46r29 76r28 77r30 10|15m21 46m21
-. 70r30 72r56 81r62 93r62 106r28 126r77 128r82 167r92
+. 70r30 72r56 81r62 93r62 106r28 126r77 128r82 168r92
 29i10*Init_Supplied_Measured{12I12} 10|17m21 62m21 109r28
 30i10*Supplied_Measured{12I12} 9|17r21 46r67 76r66 77r68 10|16m21 63m21 70r76
-. 72r102 81m27 93m27 112r28 126r34 128r39 167r49
+. 72r102 81m27 93m27 112r28 126r34 128r39 168r49
 31i10*Reserved_Measured{13I12} 9|18r21 10|18m21 74r51 79m27 79r62 91m27 115r33
-. 122r28 153r28 169r57 173r55 176m27 179r71 180m27 186r24 197m31
+. 122r28 153r28 170r57 174r55 177m27 180r71 181m27 187r24 198m31
 32e10*Status_Reserved_Electricity{18E9} 9|19r21 32r30 78r32 10|19m21 77m27
-. 94m27 141r29 201m21
+. 94m27 141r29 202m21
 36r4*Status_System{26R9} 9|14r59 15r50 16r16 17r7 18r7 19r7 28r60 31r18 31r38
 . 32r16 36r60 39r18 39r38 43r28 44r18 44r36 45r55 46r15 46r53 51r26 52r55
 . 65r26 66r55 72r61 73r18 73r36 74r53 75r71 76r14 76r52 77r16 77r54 78r18
 . 10|15m7 16m7 17m7 18m7 19m7 46m7 62m7 63m7 70r16 70r62 72r42 72r88 74r37
 . 77m13 79m13 79r48 81m13 81r48 91m13 93m13 93r48 94m13 106r14 109r14 112r14
-. 115r19 122r14 126r20 126r63 128r25 128r68 141r15 153r14 167r35 167r78 169r43
-. 173r41 176m13 179r57 180m13 186r10 197m17 201m7
+. 115r19 122r14 126r20 126r63 128r25 128r68 141r15 153r14 168r35 168r78 170r43
+. 174r41 177m13 180r57 181m13 187r10 198m17 202m7
 X 9 power_grid_energy_stabilizer.ads
-10K9*Power_Grid_Energy_Stabilizer 80l6 80e34 10|7b14 210l5 210t33
+10K9*Power_Grid_Energy_Stabilizer 80l6 80e34 10|7b14 211l5 211t33
 13U14*Init 10|9b14 21l8 21t12
 22U15*Print_Welcome 10|23b14 31l8 31t21
 27U14*Read_Consumption 10|33b13 47l8 47t24
@@ -88,15 +88,16 @@ X 9 power_grid_energy_stabilizer.ads
 49U14*Print_Status 10|101b14 135l8 135t20
 57V14*Status_Electricity_System_To_String{string} 10|119s14 137b13 145l8
 . 145t43
-63U14*Print_Reserve_levels 10|147b14 158l8 158t28 181s13 198s17
-71U14*Refill_Reserve 10|160b14 202l8 202t22
+63U14*Print_Reserve_levels 10|147b14 158l8 158t28 182s13 199s17
+71U14*Refill_Reserve 10|160b14 203l8 203t22
 X 10 power_grid_energy_stabilizer.adb
 34i7 Electricity{integer} 38m17 40r21 40r43 46r63
 50i7 Electricity{integer} 54m17 56r21 56r43 62r65 63r60
 67i7 Electricity_Required{integer} 72m10 74r13 79r82
-162i7 Remaining_Supply{integer} 167m7 169r10 173r14 179r30
-164i7 Reserve_Total{integer} 179m13 180r74
-165a7 User_Input{string} 192m20 194r19
+162i7 Remaining_Supply{integer} 168m7 170r10 174r14 180r30
+164i7 Reserve_Total{integer} 180m13 181r74
+165a7 User_Input{string} 193m25 195r19
+166i7 Last{integer} 193m37
 X 11 spark.ads
 37K9*SPARK 9|7r6 7r25 11|74e10
 X 12 spark-text_io.ads
@@ -125,10 +126,20 @@ GG EK_DIRECT_CALLS power_grid_energy_stabilizer__status_electricity_system_to_st
 GG EK_GLOBALS power_grid_energy_stabilizer__status_electricity_system_to_string local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 1 global_variables__status_system proper_output 0 refined_proof_in 0 refined_input 1 global_variables__status_system refined_output 0 calls_proof 0 calls 0 calls_conditional 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 1 global_variables__status_system LOCKS 0
 GG EK_DIRECT_CALLS power_grid_energy_stabilizer__print_reserve_levels 3 as_io_wrapper__as_put__2 as_io_wrapper__as_put_line as_io_wrapper__as_put__3
 GG EK_GLOBALS power_grid_energy_stabilizer__print_reserve_levels local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 2 spark__text_io__standard_output global_variables__status_system proper_output 1 spark__text_io__standard_output refined_proof_in 0 refined_input 2 spark__text_io__standard_output global_variables__status_system refined_output 1 spark__text_io__standard_output calls_proof 0 calls 0 calls_conditional 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 2 spark__text_io__standard_output global_variables__status_system LOCKS 0
-GG EK_DIRECT_CALLS power_grid_energy_stabilizer__refill_reserve 3 power_grid_energy_stabilizer__print_reserve_levels as_io_wrapper__as_get__2 as_io_wrapper__as_put_line
+GG EK_DIRECT_CALLS power_grid_energy_stabilizer__refill_reserve 3 power_grid_energy_stabilizer__print_reserve_levels as_io_wrapper__as_get_line as_io_wrapper__as_put_line
 GG EK_GLOBALS power_grid_energy_stabilizer__refill_reserve local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 3 spark__text_io__standard_input spark__text_io__standard_output global_variables__status_system proper_output 3 spark__text_io__standard_input spark__text_io__standard_output global_variables__status_system refined_proof_in 0 refined_input 3 spark__text_io__standard_input spark__text_io__standard_output global_variables__status_system refined_output 3 spark__text_io__standard_input spark__text_io__standard_output global_variables__status_system calls_proof 0 calls 0 calls_conditional 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 3 spark__text_io__standard_input spark__text_io__standard_output global_variables__status_system LOCKS 0
 GG EK_DIRECT_CALLS power_grid_energy_stabilizer 0
 GG EK_GLOBALS power_grid_energy_stabilizer local FALSE E_PACKAGE TRUE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 initializes 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_FLOW_SCOPE spark__text_io__end_of_line FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE as_io_wrapper__as_get_line FALSE FALSE FALSE FALSE TRUE as_io_wrapper VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__line_length__3 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__name FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE interfaces__c_streams__setvbuf FALSE FALSE FALSE FALSE TRUE interfaces__c_streams VISIBLE_PART
+GG EK_FLOW_SCOPE spark__text_io__delete FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__open FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE system__crtl__strlen FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__is_open FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada__text_io__end_of_file FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE ada__streams__write FALSE FALSE FALSE FALSE TRUE ada__streams VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__line FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE spark__text_io__page_length__2 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
@@ -248,8 +259,8 @@ GG EK_FLOW_SCOPE ada__text_io__set_page_length__2 FALSE FALSE FALSE FALSE TRUE a
 GG EK_FLOW_SCOPE ada__text_io__current_output FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__get__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE spark__text_io__new_line__3 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
-GG EK_FLOW_SCOPE ada__text_io__end_of_line__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE interfaces__c_streams TRUE FALSE FALSE FALSE FALSE interfaces
+GG EK_FLOW_SCOPE ada__text_io__end_of_line__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE interfaces__c_streams__is_regular_file FALSE FALSE FALSE FALSE TRUE interfaces__c_streams VISIBLE_PART
 GG EK_FLOW_SCOPE system__crtl__dup2 FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
 GG EK_FLOW_SCOPE power_grid_energy_stabilizer__refill_reserve FALSE FALSE FALSE FALSE TRUE power_grid_energy_stabilizer VISIBLE_PART
@@ -361,8 +372,8 @@ GG EK_FLOW_SCOPE interfaces__c_streams__set_mode FALSE FALSE FALSE FALSE TRUE in
 GG EK_FLOW_SCOPE system__crtl__fgets FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
 GG EK_FLOW_SCOPE as_io_wrapper__as_get__2 FALSE FALSE FALSE FALSE TRUE as_io_wrapper VISIBLE_PART
 GG EK_FLOW_SCOPE spark__text_io__skip_line__3 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
-GG EK_FLOW_SCOPE interfaces__shift_right FALSE FALSE FALSE FALSE TRUE interfaces VISIBLE_PART
 GG EK_FLOW_SCOPE system__Olt FALSE FALSE FALSE FALSE TRUE system VISIBLE_PART
+GG EK_FLOW_SCOPE interfaces__shift_right FALSE FALSE FALSE FALSE TRUE interfaces VISIBLE_PART
 GG EK_FLOW_SCOPE system__crtl__write FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
 GG EK_FLOW_SCOPE interfaces__shift_left__4 FALSE FALSE FALSE FALSE TRUE interfaces VISIBLE_PART
 GG EK_FLOW_SCOPE system__crtl__rewind FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
@@ -399,8 +410,8 @@ GG EK_FLOW_SCOPE ada__streams__read FALSE FALSE FALSE FALSE TRUE ada__streams VI
 GG EK_FLOW_SCOPE ada__text_io__form FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE spark__text_io__get__2 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE global_variables TRUE FALSE FALSE FALSE FALSE __standard
-GG EK_FLOW_SCOPE power_grid_energy_stabilizer__read_consumption FALSE FALSE FALSE FALSE TRUE power_grid_energy_stabilizer VISIBLE_PART
 GG EK_FLOW_SCOPE interfaces__c_streams__fread FALSE FALSE FALSE FALSE TRUE interfaces__c_streams VISIBLE_PART
+GG EK_FLOW_SCOPE power_grid_energy_stabilizer__read_consumption FALSE FALSE FALSE FALSE TRUE power_grid_energy_stabilizer VISIBLE_PART
 GG EK_FLOW_SCOPE ada__text_io__put__4 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE spark__text_io__set_line_length__2 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE interfaces__c_streams__stderr FALSE FALSE FALSE FALSE TRUE interfaces__c_streams VISIBLE_PART
@@ -416,14 +427,4 @@ GG EK_FLOW_SCOPE ada__streams__stream_element_arraySW FALSE FALSE FALSE FALSE TR
 GG EK_FLOW_SCOPE system__crtl__isatty FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
 GG EK_FLOW_SCOPE system__parameters TRUE FALSE FALSE FALSE FALSE system
 GG EK_FLOW_SCOPE ada__text_io__col__2 FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
-GG EK_FLOW_SCOPE spark__text_io__end_of_line FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
-GG EK_FLOW_SCOPE as_io_wrapper__as_get_line FALSE FALSE FALSE FALSE TRUE as_io_wrapper VISIBLE_PART
-GG EK_FLOW_SCOPE spark__text_io__line_length__3 FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
-GG EK_FLOW_SCOPE spark__text_io__name FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
-GG EK_FLOW_SCOPE interfaces__c_streams__setvbuf FALSE FALSE FALSE FALSE TRUE interfaces__c_streams VISIBLE_PART
-GG EK_FLOW_SCOPE spark__text_io__delete FALSE FALSE FALSE FALSE TRUE spark__text_io VISIBLE_PART
-GG EK_FLOW_SCOPE ada__text_io__open FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
-GG EK_FLOW_SCOPE system__crtl__strlen FALSE FALSE FALSE FALSE TRUE system__crtl VISIBLE_PART
-GG EK_FLOW_SCOPE ada__text_io__is_open FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
-GG EK_FLOW_SCOPE ada__text_io__end_of_file FALSE FALSE FALSE FALSE TRUE ada__text_io VISIBLE_PART
 GG EK_END_MARKER

@@ -13,7 +13,7 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 RV SPARK_05
 
-U main%b		main.adb		2a2f2a14 OO SU
+U main%b		main.adb		a30a9d44 OO SU
 W global_variables%s	global_variables.ads	global_variables.ali
 W power_grid_energy_stabilizer%s  power_grid_energy_stabilizer.adb  power_grid_energy_stabilizer.ali
 Z system%s		system.ads		system.ali
@@ -24,7 +24,7 @@ D ada.ads		20190518041255 76789da1 ada%s
 D a-ioexce.ads		20190518041254 e4a01f64 ada.io_exceptions%s
 D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
 D a-textio.ads		20190518041256 aef4d56d ada.text_io%s
-D global_variables.ads	20200417153419 796723ca global_variables%s
+D global_variables.ads	20200417154209 f042949a global_variables%s
 D interfac.ads		20190518041254 5ab55268 interfaces%s
 D i-cstrea.ads		20190518041254 e53d8b8e interfaces.c_streams%s
 D main.ads		20200327134543 cd1c0576 main%s

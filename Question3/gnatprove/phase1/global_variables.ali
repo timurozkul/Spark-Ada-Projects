@@ -10,9 +10,9 @@ RN
 RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 
-U global_variables%s	global_variables.ads	796723ca OO PK
+U global_variables%s	global_variables.ads	f042949a OO PK
 
-D global_variables.ads	20200417153419 796723ca global_variables%s
+D global_variables.ads	20200417154209 f042949a global_variables%s
 D system.ads		20190518041255 085b6ffb system%s
 G a Z
 X 1 global_variables.ads
