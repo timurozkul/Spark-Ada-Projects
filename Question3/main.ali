@@ -29,7 +29,7 @@ D global_variables.ads	20200417154209 f042949a global_variables%s
 D interfac.ads		20190518041254 5ab55268 interfaces%s
 D i-cstrea.ads		20190518041254 e53d8b8e interfaces.c_streams%s
 D main.ads		20200327134543 cd1c0576 main%s
-D main.adb		20200416145545 2a0a2c43 main%b
+D main.adb		20200424160918 2a0a2c43 main%b
 D power_grid_energy_stabilizer.ads  20200417135042 b45e20eb power_grid_energy_stabilizer%s
 D spark.ads		20200214112854 86380d85 spark%s
 D spark-text_io.ads	20200214112854 3f556f64 spark.text_io%s
@@ -58,20 +58,20 @@ G r c none [main standard 14 11 none] [refill_reserve power_grid_energy_stabiliz
 X 8 global_variables.ads
 3K9*Global_Variables 38e22 12|19w6 20r5
 12I12*Electricity_Range{integer}
-18n57*Not_Activated{18E9} 12|32r78
-28i10*Consumption_Measured{12I12} 12|31r44
-30i10*Supplied_Measured{12I12} 12|31r82
-32e10*Status_Reserved_Electricity{18E9} 12|32r48
-36r4*Status_System{26R9} 12|31r30 31r68 32r34
+18n57*Not_Activated{18E9} 12|31r78
+28i10*Consumption_Measured{12I12} 12|30r44
+30i10*Supplied_Measured{12I12} 12|30r82
+32e10*Status_Reserved_Electricity{18E9} 12|31r48
+36r4*Status_System{26R9} 12|30r30 30r68 31r34
 X 11 main.ads
-14U11*Main 12|22b11 54l5 54t9
+14U11*Main 12|22b11 45l5 45t9
 X 13 power_grid_energy_stabilizer.ads
 10K9*Power_Grid_Energy_Stabilizer 12|17w6 18r5 13|80e34
-13U14*Init 12|27s4
-22U15*Print_Welcome 12|29s4
-27U14*Read_Consumption 12|35s7
-35U15*Read_Supply 12|37s7
-42U14*Energy_Stabilizerg_System 12|39s7
-49U14*Print_Status 12|41s7
-71U14*Refill_Reserve 12|43s7
+13U14*Init 12|26s4
+22U15*Print_Welcome 12|28s4
+27U14*Read_Consumption 12|34s7
+35U15*Read_Supply 12|36s7
+42U14*Energy_Stabilizerg_System 12|38s7
+49U14*Print_Status 12|40s7
+71U14*Refill_Reserve 12|42s7
 

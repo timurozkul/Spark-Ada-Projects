@@ -13,6 +13,190 @@
   ],
   "flow": [
   ],
+  "proof": [
+    {
+      "file": "main.adb",
+      "line": 34,
+      "col": 7,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "Main",
+        "sloc": [
+          {
+            "file": "main.ads",
+            "line": 14
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "main.adb",
+      "check_line": 34,
+      "check_col": 7,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "main.adb",
+      "line": 42,
+      "col": 7,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "Main",
+        "sloc": [
+          {
+            "file": "main.ads",
+            "line": 14
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "main.adb",
+      "check_line": 42,
+      "check_col": 7,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "main.adb",
+      "line": 30,
+      "col": 30,
+      "rule": "VC_LOOP_INVARIANT_PRESERV",
+      "severity": "info",
+      "entity": {
+        "name": "Main",
+        "sloc": [
+          {
+            "file": "main.ads",
+            "line": 14
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "main.adb",
+      "check_line": 30,
+      "check_col": 30,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "main.adb",
+      "line": 30,
+      "col": 30,
+      "rule": "VC_LOOP_INVARIANT_INIT",
+      "severity": "info",
+      "entity": {
+        "name": "Main",
+        "sloc": [
+          {
+            "file": "main.ads",
+            "line": 14
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "main.adb",
+      "check_line": 30,
+      "check_col": 30,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    }
+  ],
   "assumptions": [
     {
       "assumptions": [
@@ -113,12 +297,237 @@
           ]
         }
       }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Energy_Stabilizerg_System",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 42
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Init",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 13
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Refill_Reserve",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 71
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Energy_Stabilizerg_System",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 42
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Init",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 13
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Print_Status",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 49
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Print_Welcome",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 22
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Read_Consumption",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 27
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Read_Supply",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 35
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Refill_Reserve",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 71
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Energy_Stabilizerg_System",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 42
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Init",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 13
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Print_Status",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 49
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Print_Welcome",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 22
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Read_Consumption",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 27
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Read_Supply",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 35
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Power_Grid_Energy_Stabilizer.Refill_Reserve",
+            "sloc": [
+              {
+                "file": "power_grid_energy_stabilizer.ads",
+                "line": 71
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "Main",
+          "sloc": [
+            {
+              "file": "main.ads",
+              "line": 14
+            }
+          ]
+        }
+      }
     }
   ],
   "timings": {
-    "marking": 2.07899999804795E-03,
-    "globals (basic)": 1.15639995783567E-02,
-    "globals/properties (advanced)": 1.69459991157055E-02,
-    "flow analysis": 1.33250001817942E-02
+    "marking": 2.04799999482930E-03,
+    "globals (basic)": 6.55200006440282E-03,
+    "globals/properties (advanced)": 1.74659993499517E-02,
+    "flow analysis": 1.16419997066259E-02,
+    "codepeer results": 9.00000031833770E-06,
+    "init_why_sections": 8.37000028695911E-04,
+    "translation of standard": 4.92999982088804E-03,
+    "translation of compilation unit": 1.43740000203252E-02,
+    "proof": 9.11422014236450E-01
   }
 }

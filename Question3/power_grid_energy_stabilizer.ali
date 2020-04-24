@@ -13,7 +13,7 @@ RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U power_grid_energy_stabilizer%b  power_grid_energy_stabilizer.adb  4d2bb56a NE OO PK
+U power_grid_energy_stabilizer%b  power_grid_energy_stabilizer.adb  0c365bef NE OO PK
 W as_io_wrapper%s	as_io_wrapper.adb	as_io_wrapper.ali
 Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 
@@ -34,7 +34,7 @@ D global_variables.ads	20200417154209 f042949a global_variables%s
 D interfac.ads		20190518041254 5ab55268 interfaces%s
 D i-cstrea.ads		20190518041254 e53d8b8e interfaces.c_streams%s
 D power_grid_energy_stabilizer.ads  20200417135042 b45e20eb power_grid_energy_stabilizer%s
-D power_grid_energy_stabilizer.adb  20200417160416 f97a535d power_grid_energy_stabilizer%b
+D power_grid_energy_stabilizer.adb  20200424161928 b867bdd8 power_grid_energy_stabilizer%b
 D spark.ads		20200214112854 86380d85 spark%s
 D spark-text_io.ads	20200214112854 3f556f64 spark.text_io%s
 D system.ads		20190518041255 085b6ffb system%s
@@ -92,37 +92,37 @@ X 8 as_io_wrapper.ads
 83U14*AS_Put_Line 13|25s7 26s7 27s7 28s7 29s7 30s7 36s7 43s10 52s7 59s10
 . 83s13 84s13 85s13 86s13 87s13 88s13 95s13 103s7 104s7 107s7 110s7 113s7
 . 120s7 123s7 129s10 130s15 133s7 134s7 149s7 150s7 151s7 154s7 155s7 156s7
-. 189s13 190s13 191s13 192s13 194s13
+. 189s13 190s13 191s13 192s13 195s13
 106U14*AS_Get 13|38s10 54s10
-114U14*AS_Put 13|42s10 58s10 106s7 109s7 112s7 122s7 128s10 153s7
+114U14*AS_Put 13|42s10 58s10 106s7 109s7 112s7 122s7 128s10 153s7 194s13
 X 9 global_variables.ads
 3K9*Global_Variables 38e22 12|8w6 8r28
 5i4*Maximum_Electricity_Possible{integer} 13|42r17 58r17
 7i4*Maximum_Reserved_Electricity_Possible{integer} 12|18r41 13|18r42 40r58
 . 56r58 170r78 174r77 177r48
-10i4*Critical_Reserve_level{integer} 13|115r54 187r44 198r52
+10i4*Critical_Reserve_level{integer} 13|115r54 187r44 199r52
 12I12*Electricity_Range{integer} 13|46r45 62r47 63r42
 13I12*Reserve_Electricity_Range{integer} 13|181r48
 18n46*Activated{18E9} 13|77r58 94r58 141r59
-18n57*Not_Activated{18E9} 12|19r51 32r60 78r62 13|19r52 202r52
+18n57*Not_Activated{18E9} 12|19r51 32r60 78r62 13|19r52 203r52
 28i10*Consumption_Measured{12I12} 12|16r30 46r29 76r28 77r30 13|15m21 46m21
 . 70r30 72r56 81r62 93r62 106r28 126r77 128r82 168r92
 29i10*Init_Supplied_Measured{12I12} 13|17m21 62m21 109r28
 30i10*Supplied_Measured{12I12} 12|17r21 46r67 76r66 77r68 13|16m21 63m21
 . 70r76 72r102 81m27 93m27 112r28 126r34 128r39 168r49
 31i10*Reserved_Measured{13I12} 12|18r21 13|18m21 74r51 79m27 79r62 91m27
-. 115r33 122r28 153r28 170r57 174r55 177m27 180r71 181m27 187r24 198m31
+. 115r33 122r28 153r28 170r57 174r55 177m27 180r71 181m27 187r24 199m31
 32e10*Status_Reserved_Electricity{18E9} 12|19r21 32r30 78r32 13|19m21 77m27
-. 94m27 141r29 202m21
+. 94m27 141r29 203m21
 36r4*Status_System{26R9} 12|14r59 15r50 16r16 17r7 18r7 19r7 28r60 31r18
 . 31r38 32r16 36r60 39r18 39r38 43r28 44r18 44r36 45r55 46r15 46r53 51r26
 . 52r55 65r26 66r55 72r61 73r18 73r36 74r53 75r71 76r14 76r52 77r16 77r54
 . 78r18 13|15m7 16m7 17m7 18m7 19m7 46m7 62m7 63m7 70r16 70r62 72r42 72r88
 . 74r37 77m13 79m13 79r48 81m13 81r48 91m13 93m13 93r48 94m13 106r14 109r14
 . 112r14 115r19 122r14 126r20 126r63 128r25 128r68 141r15 153r14 168r35 168r78
-. 170r43 174r41 177m13 180r57 181m13 187r10 198m17 202m7
+. 170r43 174r41 177m13 180r57 181m13 187r10 199m17 203m7
 X 12 power_grid_energy_stabilizer.ads
-10K9*Power_Grid_Energy_Stabilizer 80l6 80e34 13|7b14 211l5 211t33
+10K9*Power_Grid_Energy_Stabilizer 80l6 80e34 13|7b14 212l5 212t33
 13U14*Init 13|9b14 21l8 21t12
 22U15*Print_Welcome 13|23b14 31l8 31t21
 27U14*Read_Consumption 13|33b13 47l8 47t24
@@ -131,16 +131,16 @@ X 12 power_grid_energy_stabilizer.ads
 49U14*Print_Status 13|101b14 135l8 135t20
 57V14*Status_Electricity_System_To_String{string} 13|119s14 137b13 145l8
 . 145t43
-63U14*Print_Reserve_levels 13|147b14 158l8 158t28 182s13 199s17
-71U14*Refill_Reserve 13|160b14 203l8 203t22
+63U14*Print_Reserve_levels 13|147b14 158l8 158t28 182s13 200s17
+71U14*Refill_Reserve 13|160b14 204l8 204t22
 X 13 power_grid_energy_stabilizer.adb
 34i7 Electricity{integer} 38m17 40r21 40r43 46r63
 50i7 Electricity{integer} 54m17 56r21 56r43 62r65 63r60
 67i7 Electricity_Required{integer} 72m10 74r13 79r82
 162i7 Remaining_Supply{integer} 168m7 170r10 174r14 180r30
 164i7 Reserve_Total{integer} 180m13 181r74
-165a7 User_Input{string} 193m25 195r19
-166i7 Last{integer} 193m37
+165a7 User_Input{string} 193m25 196r19
+166i7 Last{integer} 193m37 194r20
 X 14 spark.ads
 37K9*SPARK 12|7r6 7r25 14|74e10
 X 15 spark-text_io.ads

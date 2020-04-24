@@ -20,8 +20,7 @@ with Global_Variables;
 use Global_Variables;
 
 procedure Main is
-  -- Last : Integer;
-  -- User_Input : String(1 .. 20);
+ 
 begin 
    -- The Init procedure is used to initialise the program
    Init;
@@ -42,14 +41,6 @@ begin
       -- Refills the battery reserve if necessary
       Refill_Reserve;
       -- This loop is used to exit the program
-     -- loop
-        --Loop_Invariant ()
-	--As_Put("Do you want to exit (y/n)? ");
-	--As_Get_Line(User_Input, Last);
---	exit when Last > 0;
---	As_Put_Line("Please enter a non-empty string");
- --     end loop;
-  --   exit when User_Input(1 .. 1) = "y";
    end loop;
 end Main;
       

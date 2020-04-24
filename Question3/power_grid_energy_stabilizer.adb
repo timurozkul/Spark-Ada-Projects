@@ -191,6 +191,7 @@ package body Power_Grid_Energy_Stabilizer is
             AS_Put_Line("");
             AS_Put_Line("Please type (y/n)? Please enter a non-empty string");
             As_Get_Line(User_Input, Last);
+            AS_Put(Last);
             AS_Put_Line("");
                if User_Input(1 .. 1) = "y"
                then

@@ -3259,7 +3259,7 @@ module Power_grid_energy_stabilizer__print_welcome
 
 end
 
-(* Module for defining the loop exit exception for the loop "L_1" defined at main.adb:30, created in Gnat2Why.Decls.Translate_Loop_Entity *)
+(* Module for defining the loop exit exception for the loop "L_1" defined at main.adb:29, created in Gnat2Why.Decls.Translate_Loop_Entity *)
 module Main__L_1
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -3268,7 +3268,7 @@ module Main__L_1
 
 end
 
-(* Module giving an empty axiom for the entity "L_1" defined at main.adb:30, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+(* Module giving an empty axiom for the entity "L_1" defined at main.adb:29, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
 module Main__L_1___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -3771,54 +3771,54 @@ module Main__subprogram_def
   ;
   [#"main.ads" 14 0 0] try
    ( ();
-   ([#"main.adb" 30 0 0] ());
+   ([#"main.adb" 29 0 0] ());
    ();
-   ( [@GP_Sloc:main.adb:27:4] ([#"main.adb" 27 0 0] ()) );
-   ( [@GP_Sloc:main.adb:27:4] ([#"main.adb" 27 0 0] ( (Power_grid_energy_stabilizer__init___axiom.init(())) )) );
-   ( [@GP_Sloc:main.adb:29:4] ([#"main.adb" 29 0 0] ()) );
-   ( [@GP_Sloc:main.adb:29:4] ([#"main.adb" 29 0 0] ( (Power_grid_energy_stabilizer__print_welcome___axiom.print_welcome(())) )) );
-   ( [@GP_Sloc:main.adb:30:4] ([#"main.adb" 30 0 0] ( () (* Translation of an Ada loop from main.adb:30 *)
+   ( [@GP_Sloc:main.adb:26:4] ([#"main.adb" 26 0 0] ()) );
+   ( [@GP_Sloc:main.adb:26:4] ([#"main.adb" 26 0 0] ( (Power_grid_energy_stabilizer__init___axiom.init(())) )) );
+   ( [@GP_Sloc:main.adb:28:4] ([#"main.adb" 28 0 0] ()) );
+   ( [@GP_Sloc:main.adb:28:4] ([#"main.adb" 28 0 0] ( (Power_grid_energy_stabilizer__print_welcome___axiom.print_welcome(())) )) );
+   ( [@GP_Sloc:main.adb:29:4] ([#"main.adb" 29 0 0] ( () (* Translation of an Ada loop from main.adb:29 *)
    ;
    (if (True) then (
-    [#"main.adb" 30 0 0] try
-     ( [#"main.adb" 30 0 0] begin ensures {true} let _ = (let _ = { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content } in (
+    [#"main.adb" 29 0 0] try
+     ( [#"main.adb" 29 0 0] begin ensures {true} let _ = (let _ = { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content } in (
       ()))
       in () end ;
-     (let temp___222 [@mlw:proxy_symbol] [@introduced] = [#"main.adb" 30 0 0] (val _f : Global_variables__status_system_type.status_system_type
-     ensures {[#"main.adb" 30 0 0] (result = { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content })} 
+     (let temp___222 [@mlw:proxy_symbol] [@introduced] = [#"main.adb" 29 0 0] (val _f : Global_variables__status_system_type.status_system_type
+     ensures {[#"main.adb" 29 0 0] (result = { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content })} 
      in _f) in (
-      ( () (* First unroling of the loop statements appearing before the loop invariant of loop main.adb:30 *)
+      ( () (* First unroling of the loop statements appearing before the loop invariant of loop main.adb:29 *)
       ;
-      () (* While loop translating the Ada loop from main.adb:30 *)
+      () (* While loop translating the Ada loop from main.adb:29 *)
       ;
       (let temp___inv_223 [@mlw:proxy_symbol] [@introduced] = (Boolean.andb(((Global_variables__electricity_range__rep.to_rep({ Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__consumption_measured)) <= (Global_variables__electricity_range__rep.to_rep({ Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__supplied_measured)))) (((Global_variables__status_reserved_electricity_type__rep.to_rep({ Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__status_reserved_electricity)) = (1 : int)))) in (
-       [#"main.adb" 30 0 0] begin ensures {true} let _ = (let _ = () in (
+       [#"main.adb" 29 0 0] begin ensures {true} let _ = (let _ = () in (
         ()))
         in () end ))
       ;
-      [#"main.adb" 30 0 0] while True do
+      [#"main.adb" 29 0 0] while True do
        invariant { 
-        ([#"main.adb" 31 0 0] ( [@GP_Reason:VC_LOOP_INVARIANT] [@GP_Shape:L_1_loop__pragargs__and] [@vc:annotation] [@comment:      pragma Loop_Invariant (Status_System.Consumption_Measured <= Status_System.Supplied_Measured                               ^ main.adb:31:30:VC_LOOP_INVARIANT] [@GP_Sloc:main.adb:31:30] [@GP_Id:2] ( ( [@GP_Pretty_Ada:2333] [@GP_Sloc:main.adb:31:30] ((Global_variables__electricity_range__rep.to_rep { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__consumption_measured) <= (Global_variables__electricity_range__rep.to_rep { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__supplied_measured)) ) /\ ( [@GP_Sloc:main.adb:32:34] [@GP_Pretty_Ada:2341] ((Global_variables__status_reserved_electricity_type__rep.to_rep { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__status_reserved_electricity) = (1 : int)) ) ) ))
+        ([#"main.adb" 30 0 0] ( [@GP_Reason:VC_LOOP_INVARIANT] [@comment:      pragma Loop_Invariant (Status_System.Consumption_Measured <= Status_System.Supplied_Measured                               ^ main.adb:30:30:VC_LOOP_INVARIANT] [@GP_Shape:L_1_loop__pragargs__and] [@vc:annotation] [@GP_Sloc:main.adb:30:30] [@GP_Id:2] ( ( [@GP_Pretty_Ada:2333] [@GP_Sloc:main.adb:30:30] ((Global_variables__electricity_range__rep.to_rep { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__consumption_measured) <= (Global_variables__electricity_range__rep.to_rep { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__supplied_measured)) ) /\ ( [@GP_Pretty_Ada:2341] [@GP_Sloc:main.adb:31:34] ((Global_variables__status_reserved_electricity_type__rep.to_rep { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content }.Global_variables__status_system_type.__split_fields.Global_variables__status_system_type.rec__global_variables__status_system_type__status_reserved_electricity) = (1 : int)) ) ) ))
         }
-       ( () (* Assume implicit invariants from the loop main.adb:30 *)
+       ( () (* Assume implicit invariants from the loop main.adb:29 *)
        ;
         assume {  ( ( true /\ (Global_variables__status_system_type___axiom.dynamic_invariant { Global_variables__status_system_type.__split_fields = Global_variables__status_system.status_system__split_fields.Global_variables__status_system_type.__split_fields__content } False True True True) )/\true ) };
-       () (* Check for absence of RTE in the invariant of loop main.adb:30 *)
+       () (* Check for absence of RTE in the invariant of loop main.adb:29 *)
        ;
-       () (* Loop statements appearing after the loop invariant of loop main.adb:30 *)
+       () (* Loop statements appearing after the loop invariant of loop main.adb:29 *)
        ;
        ();
-       ( [@GP_Sloc:main.adb:35:7] ([#"main.adb" 35 0 0] ()) );
-       ( [@GP_Sloc:main.adb:35:7] ([#"main.adb" 35 0 0] ( ([#"main.adb" 35 0 0] ( [@GP_Reason:VC_PRECONDITION] [@GP_Shape:L_1_loop__call_read_consumption] [@comment:      Read_Consumption;       ^ main.adb:35:7:VC_PRECONDITION] [@vc:annotation] [@GP_Sloc:main.adb:35:7] [@GP_Id:0] (Power_grid_energy_stabilizer__read_consumption___axiom.read_consumption(())) )) )) );
-       ( [@GP_Sloc:main.adb:37:7] ([#"main.adb" 37 0 0] ()) );
-       ( [@GP_Sloc:main.adb:37:7] ([#"main.adb" 37 0 0] ( (Power_grid_energy_stabilizer__read_supply___axiom.read_supply(())) )) );
-       ( [@GP_Sloc:main.adb:39:7] ([#"main.adb" 39 0 0] ()) );
-       ( [@GP_Sloc:main.adb:39:7] ([#"main.adb" 39 0 0] ( (Power_grid_energy_stabilizer__energy_stabilizerg_system___axiom.energy_stabilizerg_system(())) )) );
-       ( [@GP_Sloc:main.adb:41:7] ([#"main.adb" 41 0 0] ()) );
-       ( [@GP_Sloc:main.adb:41:7] ([#"main.adb" 41 0 0] ( (Power_grid_energy_stabilizer__print_status___axiom.print_status(())) )) );
-       ( [@GP_Sloc:main.adb:43:7] ([#"main.adb" 43 0 0] ()) );
-       ( [@GP_Sloc:main.adb:43:7] ([#"main.adb" 43 0 0] ( ([#"main.adb" 43 0 0] ( [@GP_Reason:VC_PRECONDITION] [@GP_Sloc:main.adb:43:7] [@vc:annotation] [@comment:      Refill_Reserve;       ^ main.adb:43:7:VC_PRECONDITION] [@GP_Id:1] [@GP_Shape:L_1_loop__call_refill_reserve] (Power_grid_energy_stabilizer__refill_reserve___axiom.refill_reserve(())) )) )) );
-       () (* Check for the exit condition and loop statements appearing before the loop invariant of loop main.adb:30 *)
+       ( [@GP_Sloc:main.adb:34:7] ([#"main.adb" 34 0 0] ()) );
+       ( [@GP_Sloc:main.adb:34:7] ([#"main.adb" 34 0 0] ( ([#"main.adb" 34 0 0] ( [@GP_Reason:VC_PRECONDITION] [@comment:      Read_Consumption;       ^ main.adb:34:7:VC_PRECONDITION] [@GP_Shape:L_1_loop__call_read_consumption] [@GP_Sloc:main.adb:34:7] [@vc:annotation] [@GP_Id:0] (Power_grid_energy_stabilizer__read_consumption___axiom.read_consumption(())) )) )) );
+       ( [@GP_Sloc:main.adb:36:7] ([#"main.adb" 36 0 0] ()) );
+       ( [@GP_Sloc:main.adb:36:7] ([#"main.adb" 36 0 0] ( (Power_grid_energy_stabilizer__read_supply___axiom.read_supply(())) )) );
+       ( [@GP_Sloc:main.adb:38:7] ([#"main.adb" 38 0 0] ()) );
+       ( [@GP_Sloc:main.adb:38:7] ([#"main.adb" 38 0 0] ( (Power_grid_energy_stabilizer__energy_stabilizerg_system___axiom.energy_stabilizerg_system(())) )) );
+       ( [@GP_Sloc:main.adb:40:7] ([#"main.adb" 40 0 0] ()) );
+       ( [@GP_Sloc:main.adb:40:7] ([#"main.adb" 40 0 0] ( (Power_grid_energy_stabilizer__print_status___axiom.print_status(())) )) );
+       ( [@GP_Sloc:main.adb:42:7] ([#"main.adb" 42 0 0] ()) );
+       ( [@GP_Sloc:main.adb:42:7] ([#"main.adb" 42 0 0] ( ([#"main.adb" 42 0 0] ( [@GP_Reason:VC_PRECONDITION] [@vc:annotation] [@GP_Sloc:main.adb:42:7] [@comment:      Refill_Reserve;       ^ main.adb:42:7:VC_PRECONDITION] [@GP_Id:1] [@GP_Shape:L_1_loop__call_refill_reserve] (Power_grid_energy_stabilizer__refill_reserve___axiom.refill_reserve(())) )) )) );
+       () (* Check for the exit condition and loop statements appearing before the loop invariant of loop main.adb:29 *)
        ;
        (if (False) then (
          raise Main__L_1.L_1));
